@@ -1,0 +1,34 @@
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.home-logo{
+    position: fixed;
+    width: 300px;
+    padding-top: 10px;
+    padding-left: 90px;
+    cursor: pointer;    
+}
+
+.team-logo{
+    position:fixed;
+    padding-top: 20px;
+    right:20px;
+    width: 30px;
+    height:30px;
+    cursor: pointer;
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 9999;
+    background-color:white ;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.15);
+}
+
+.hamburger-btn{
+    padding-left: 25px;
+    padding-top: 10px;
+}
+

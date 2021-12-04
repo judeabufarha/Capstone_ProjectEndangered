@@ -7,6 +7,7 @@ import {
   Route
 } from "react-router-dom";
 import { Navbar } from './components/navbar';
+import Polarbear from './components/polarbear';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           </Route>
           <Route path = "/polar-bear">
               <Navbar></Navbar>
+              <Polarbear/>
           </Route>
           <Route path = "/forest-elephant">
               <Navbar></Navbar>

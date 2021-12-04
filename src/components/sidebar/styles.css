@@ -1,0 +1,124 @@
+.sidebar{
+    justify-content: left;
+    display: flex;
+    position: fixed;
+    text-align: left;
+    padding-left: 50px;
+    background-color: white;
+    width:300px;
+    height:1000px;
+    margin-top: 13px;
+    box-shadow: 0 10px 20px  rgba(0,0,0,.2);
+    padding-top: 50px;
+    
+
+}
+
+.sidenav a{
+    color: #013440;
+    text-decoration: none;
+    font-size: 12px;
+    text-transform: uppercase;
+    
+}
+
+.sidenav h2{
+
+    
+}
+.home{
+    display:flex;
+    justify-content: left;
+}
+.homeImg{
+    width: 28px;
+    height: 35px;
+    padding-right: 15px;
+    margin-top: 10px;
+    padding-left: 3px;
+}
+
+.bearImg{
+    width: 30px;
+    height: 30px;
+    padding-right: 15px;
+    margin-top: 12px;
+}
+.polarbear{
+    display:flex;
+    justify-content: left;
+}
+.elephantImg{
+    width: 35px;
+    height: 30px;
+    padding-right: 12px;
+    margin-top: 12px;
+}
+.forestelephant{
+    display:flex;
+    justify-content: left;
+}
+
+.whoopingcrane{
+    display:flex;
+    justify-content: left;
+}
+.craneImg{
+    width: 42px;
+    height: 40px;
+    padding-right: 9px;
+    margin-top: 12px;
+    margin-left: -5px;
+}
+.turtle{
+    display:flex;
+    justify-content: left;
+}
+
+.turtleImg{
+    width: 35px;
+    height: 35px;
+    padding-right: 10px;
+    margin-top: 12px;
+}
+.orangutan{
+    display:flex;
+    justify-content: left;
+}
+.orangutanImg{
+    width: 35px;
+    height: 30px;
+    padding-right: 10px;
+    margin-top: 12px;
+}
+
+.line{
+    display: flex;
+    justify-content: left;
+    position: absolute;
+    height: 2px;
+    background: #013440;
+    width: 250px;
+    margin-top: 420px;
+    margin-left: 50px;
+    
+}
+
+.colorLogo{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding-top: 50px;
+    width: 180px;
+    height: 60px;
+    margin-left: 20px;
+}
+
+.copyright p{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding-top: 150px;
+    margin-left: -12px;
+    color: grey;
+}
