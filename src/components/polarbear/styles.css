@@ -28,7 +28,7 @@
 }
 
 .teal {
-  background:lightblue;
+  background:white;
 }
 
 .pink {
@@ -165,3 +165,75 @@ footer a:hover {
     left: 1150px;
 }
 */
+
+.importanceTitle{
+  display: flex;
+  width:40%;
+  position: absolute;
+  left: 0;
+  padding-left: 80px;
+  top:0;
+  padding-top: 100px;
+
+
+
+}
+
+.polarPara1{
+  top: 0;
+  position: absolute;
+  padding-top: 180px;
+  left: 0;
+  text-align: left;
+  padding-left: 80px;
+  width: 90%;
+}
+
+.sepLine{
+  top: 0;
+  position: absolute;
+  display: flex;
+  padding-left: 80px;
+  left: 0;
+  width: 90%;
+  padding-top: 300px;
+
+}
+
+.polarPara2{
+  top: 0;
+  position: absolute;
+  padding-top: 310px;
+  left: 0;
+  text-align: left;
+  padding-left: 80px;
+  width: 90%;
+}
+
+.polarAnimImg{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-top: 3%;
+
+}
+
+.fishBlob{
+  width:500px;
+  padding-right: 80px;
+}
+
+.sealBlob{
+  width: 500px;
+
+}
+
+.polarBlob{
+  width: 500px;
+  padding-left: 80px;
+}
+
+.titleContainer{
+  display: flex;
+}
+

@@ -3,8 +3,12 @@ import "./styles.css";
 import React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import ScriptTag from 'react-script-tag';
+import { Navbar } from "../navbar";
 
-const Page = ({ offset, color }) => ( //for all pages
+
+
+
+const Page1 = ({ offset, color }) => ( //for all pages
   <>
     <ParallaxLayer offset={offset} speed={0.2}>
     </ParallaxLayer>
@@ -34,9 +38,8 @@ const Page = ({ offset, color }) => ( //for all pages
        
       </div> 
     </ParallaxLayer>
-    
 
-    
+  
     <ParallaxLayer className="polarbearOnIce" offset={offset} speed={0.6}>
       <div> 
       <img className="polarIce" src="https://i.ibb.co/fMtZSVX/polarbear-Ice.png" alt="polar"/>  
@@ -48,6 +51,56 @@ const Page = ({ offset, color }) => ( //for all pages
   </>
 );
 
+const Page2 = ({ offset, color }) => ( //for all pages
+  <>
+ 
+    <ParallaxLayer offset={offset} speed={0.2}>
+    </ParallaxLayer>
+
+    <ParallaxLayer offset={offset} speed={0}>
+      <div className={`gradient ${color}`} />
+    </ParallaxLayer>
+
+
+    <ParallaxLayer className="importance" offset={offset} speed={0.6}>
+    <div className="titleContainer"> 
+      <img className="importanceTitle" src="https://i.ibb.co/v12VHb7/importance-Title.png" alt="polar"/>  
+      </div> 
+    </ParallaxLayer>
+
+    <ParallaxLayer className="textArea" offset={offset} speed={0.9}>
+      <div> 
+      <p className="polarPara1">The polar bear is a keystone species, at the top of the food chain, which makes them an apex predator. Because of this, they have an important role in balancing the Arctic food chain. Without polar bears, the population of their prey would begin to grow, and the entire Arctic ecosystem would be thrown out of balance. Because the polar bear is a keystone species, they are a reflection of the health of their ecosystem. If the keystone species is endangered, the entire ecosystem is put at risk.</p>
+      <img className="sepLine" src="https://i.ibb.co/p3Hz2r0/line.png" alt="polar"/>  
+      <p className="polarPara2" >Polar bears also play an important part in the cultures and economies of indigenous Arctic peoples. Because of the decline in the polar bear population, indigenous peoples have experienced significant cultural changes and economic issues.</p>
+      </div> 
+    </ParallaxLayer>
+
+    <ParallaxLayer className="polarAnimImg" offset={offset} speed={1.2}>
+      <div className="groupAnimals"> 
+      <img className="fishBlob" src="https://i.ibb.co/RQfM4ck/fish.png" alt="polar"/>  
+      <img className="sealBlob" src="https://i.ibb.co/rGz54Tj/seal.png" alt="polar"/>  
+      <img className="polarBlob" src="https://i.ibb.co/kq9NHvj/polar.png" alt="polar"/>  
+      </div> 
+    </ParallaxLayer>
+
+
+
+  </>
+);
+
+const Page3 = ({ offset, color }) => ( //for all pages
+  <>
+    <ParallaxLayer offset={offset} speed={0.2}>
+    </ParallaxLayer>
+
+    <ParallaxLayer offset={offset} speed={0}>
+      <div className={`gradient ${color}`} />
+    </ParallaxLayer>
+    
+
+  </>
+);
  {/* <img className="polarIce" src="https://i.ibb.co/fMtZSVX/polarbear-Ice.png" alt="polar" />
         <img className="bird" src="https://i.ibb.co/xmWNfr7/birds.png" alt="birds" />
         <img className="mountain1" src=" https://i.ibb.co/syxV6Pj/mountain1.png" alt="mountain1" />
@@ -60,17 +113,18 @@ const Page = ({ offset, color }) => ( //for all pages
 export const Polarbear = () => {
   return (
     <>
+   
     <ScriptTag type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" />
     <ScriptTag type="text/javascript" src="https://rawgit.com/jquery/jquery-mousewheel/master/jquery.mousewheel.js" />
 
     <ScriptTag type="text/javascript" src="./scripts/scroll.js" />
     
     <div>
-
+    <Navbar/>
       <Parallax className="container" pages={3} horizontal={true}>
-        <Page offset={0} color="orange" />
-        <Page offset={1} color="teal" />
-        <Page offset={2} color="pink" />
+        <Page1 offset={0} color="orange" />
+        <Page2 offset={1} color="teal" />
+        <Page3 offset={2} color="pink" />
         
       </Parallax>
 
