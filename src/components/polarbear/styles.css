@@ -1,0 +1,167 @@
+
+
+.container > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Kanit", sans-serif;
+  line-height: 0px;
+  text-transform: uppercase;
+  font-size: 80px;
+  color: #545864;
+}
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.orange {
+  background-image: url(https://i.ibb.co/GCP7k1j/sky.png);
+}
+
+.teal {
+  background:lightblue;
+}
+
+.pink {
+  background: skyblue;
+}
+
+h3,
+footer {
+  color: #b8c1ec;
+  padding: 1rem;
+  text-align: center;
+  margin: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: hotpink;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: teal;
+  
+}
+.title{
+    position: absolute;
+    left: 72px;
+    top: 120px;
+    height: 115px;
+    width:385px
+}
+
+/* .waterbase{
+    height: 379px;
+    width: 100%;
+    position:absolute;
+    bottom:0;
+    left: 0px;
+
+} */
+
+
+.ice{
+    display: flex;
+   height: 18em ;
+   width: 150em ;
+   padding-top: 10% ;
+    
+
+}  
+
+.polarIce{
+    display: flex;
+    height: 400px;
+    width: 550px;
+    padding-top: 70%;
+    padding-left: 20%;
+
+  
+    
+    z-index: 999;
+} 
+
+/* .lightdetail{
+    height: 100px;
+    width: 100%;
+    padding-top: 820px;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+
+}
+
+.darkdetail{
+    height: 150px;
+    width: 90%;
+    padding-top: 740px;
+    position: absolute;
+    z-index: 1;
+    left: 150px;
+}  */
+
+/* 
+.bird{
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    z-index: 999;
+    padding-top: 150px;
+    left: 1000px;
+
+}
+.polarIce{
+    height: 400px;
+    width: 550px;
+    padding-top: 500px;
+    padding-left: 200px;
+    position: absolute;
+    z-index: 999;
+}
+.mountain1{
+    height: 500px;
+    width: 750px;
+    padding-top: 150px;
+    margin-left: -300px;
+
+}
+
+
+.mountain2{
+    height: 400px;
+    width: 750px;
+    padding-top: 250px;
+    position: absolute;
+    right: 0;
+    z-index: 90;
+} 
+
+
+.mountain3{
+    height: 500px;
+    width: 250px;
+    padding-top: 150px;
+    position: absolute;
+    right: 0;
+
+}
+.sun{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    z-index: 999;
+    padding-top: 250px;
+    left: 1150px;
+}
+*/

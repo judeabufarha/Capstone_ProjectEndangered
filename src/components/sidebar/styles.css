@@ -1,124 +1,152 @@
-.sidebar{
-    justify-content: left;
-    display: flex;
-    position: fixed;
-    text-align: left;
-    padding-left: 50px;
-    background-color: white;
-    width:300px;
-    height:1000px;
-    margin-top: 13px;
-    box-shadow: 0 10px 20px  rgba(0,0,0,.2);
-    padding-top: 50px;
-    
-
+.sidebar {
+  justify-content: left;
+  display: flex;
+  flex-direction: column;
+position: absolute;
+  text-align: left;
+  padding: 50px 20px 50px 50px;
+  background-color: white;
+  width: 350px;
+  height: 100vh;
+  margin-top: 12px;
+  box-shadow: 0 40px 50px rgba(0, 0, 0, 0.4);
+  transform: translateX(-350px);
+  transition: all 0.5s linear;
+ 
+  box-sizing: border-box;
+  z-index: 1;
 }
 
-.sidenav a{
-    color: #013440;
-    text-decoration: none;
-    font-size: 12px;
-    text-transform: uppercase;
-    
+.sidebar.show {
+  transform: translateX(0px);
 }
 
-.sidenav h2{
-
-    
-}
-.home{
-    display:flex;
-    justify-content: left;
-}
-.homeImg{
-    width: 28px;
-    height: 35px;
-    padding-right: 15px;
-    margin-top: 10px;
-    padding-left: 3px;
+.sub {
+  display: none !important;
 }
 
-.bearImg{
-    width: 30px;
-    height: 30px;
-    padding-right: 15px;
-    margin-top: 12px;
-}
-.polarbear{
-    display:flex;
-    justify-content: left;
-}
-.elephantImg{
-    width: 35px;
-    height: 30px;
-    padding-right: 12px;
-    margin-top: 12px;
-}
-.forestelephant{
-    display:flex;
-    justify-content: left;
+.sub.open {
+  display: flex !important;
+  flex-direction: column;
 }
 
-.whoopingcrane{
-    display:flex;
-    justify-content: left;
-}
-.craneImg{
-    width: 42px;
-    height: 40px;
-    padding-right: 9px;
-    margin-top: 12px;
-    margin-left: -5px;
-}
-.turtle{
-    display:flex;
-    justify-content: left;
+.sidenav a {
+  color: #013440;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
-.turtleImg{
-    width: 35px;
-    height: 35px;
-    padding-right: 10px;
-    margin-top: 12px;
-}
-.orangutan{
-    display:flex;
-    justify-content: left;
-}
-.orangutanImg{
-    width: 35px;
-    height: 30px;
-    padding-right: 10px;
-    margin-top: 12px;
+.sidenav {
+  position: relative;
 }
 
-.line{
-    display: flex;
-    justify-content: left;
-    position: absolute;
-    height: 2px;
-    background: #013440;
-    width: 250px;
-    margin-top: 420px;
-    margin-left: 50px;
-    
+.btm {
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 100px;
+  transform: translateX(-10px);
 }
 
-.colorLogo{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    padding-top: 50px;
-    width: 180px;
-    height: 60px;
-    margin-left: 20px;
+.home {
+  display: flex;
+  justify-content: left;
+}
+.homeImg {
+  width: 28px;
+  height: 35px;
+  padding-right: 15px;
+  margin-top: 10px;
+  padding-left: 3px;
 }
 
-.copyright p{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    padding-top: 150px;
-    margin-left: -12px;
-    color: grey;
+.bearImg {
+  width: 30px;
+  height: 30px;
+  padding-right: 15px;
+  margin-top: 12px;
+}
+.polarbear {
+  display: flex;
+  justify-content: left;
+}
+.elephantImg {
+  width: 35px;
+  height: 30px;
+  padding-right: 12px;
+  margin-top: 12px;
+}
+.forestelephant {
+  display: flex;
+  justify-content: left;
+}
+
+.whoopingcrane {
+  display: flex;
+  justify-content: left;
+}
+.craneImg {
+  width: 42px;
+  height: 40px;
+  padding-right: 9px;
+  margin-top: 12px;
+  margin-left: -5px;
+}
+.turtle {
+  display: flex;
+  justify-content: left;
+}
+
+.turtleImg {
+  width: 35px;
+  height: 35px;
+  padding-right: 10px;
+  margin-top: 12px;
+}
+.orangutan {
+  display: flex;
+  justify-content: left;
+}
+.orangutanImg {
+  width: 35px;
+  height: 30px;
+  padding-right: 10px;
+  margin-top: 12px;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 2px;
+  background: #013440;
+  z-index: 4;
+  width: 250px;
+}
+
+.colorLogo {
+  margin: 0px auto;
+  padding-top: 30px;
+  width: 180px;
+  height: 60px;
+  display: block;
+  padding-left: 30px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-left: 40px;
+  color: grey;
+  font-size: 10px;
+}
+
+.sub a {
+  text-transform: capitalize;
+  font-size: 15px;
+  padding-bottom: 15px;
+  padding-left: 45px;
+  font-weight: 600;
 }
