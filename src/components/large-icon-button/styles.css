@@ -28,7 +28,3 @@
 .large-icon-button:hover {
     background-color: #013440BF;
 }
-
-.xxxlarge-icon-button:focus {
-    border: 0.25rem solid #28A0D3;
-}

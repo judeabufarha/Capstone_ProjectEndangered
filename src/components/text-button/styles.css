@@ -1,0 +1,49 @@
+.text-button-container {
+    display: inline-block;
+    border-radius: 2rem;
+    box-shadow: 4px 4px 8px 0px #0000001A;
+}
+
+.light {
+    cursor: pointer;
+    height: 3rem;
+    min-width: 10rem;
+    border: none;
+    border-radius: 2rem;
+    padding-left: 1.5rem;
+    text-align: center;
+    padding-right: 1.5rem;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #013440;
+    background-color: #F8F8F8;
+    box-shadow: 4px 4px 8px 0px #0000001A;
+}
+
+.light:hover {
+    background-color: #DFE4E6;
+}
+
+.dark-orange {
+    cursor: pointer;
+    height: 3rem;
+    min-width: 10rem;
+    border: none;
+    border-radius: 2rem;
+    padding-left: 1.5rem;
+    text-align: center;
+    padding-right: 1.5rem;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #013440;
+    background-color: #FFAF81;
+    box-shadow: 4px 4px 8px 0px #0000001A;
+}
+
+.dark-orange:hover {
+    background-color: #FFBF9A;
+}

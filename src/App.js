@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 import {LargeIconButton} from '../src/components/large-icon-button';
 import {ToggleSwitch} from '../src/components/toggle-switch';
+import {ToggleButtons} from '../src/components/toggle-buttons';
+import { TextButton } from './components/text-button';
 
 
 import {
@@ -41,6 +43,11 @@ function App() {
           <LargeIconButton type='right'/>
           <LargeIconButton type='left'/>
           <ToggleSwitch/>
+          <ToggleButtons/>
+          <TextButton type='light' text='Explore' colour='light'/>
+
+          <TextButton type='dark-orange' text='click to learn more' colour='dark'/>
+
           </Route>
           <Route path = "/whooping-crane">
             

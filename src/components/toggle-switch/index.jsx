@@ -1,7 +1,5 @@
-import PropTypes from "prop-types";
 import "./styles.css";
 import { useState } from "react";
-import { useEffect} from "react";
 
 export const ToggleSwitch = () => {
 
