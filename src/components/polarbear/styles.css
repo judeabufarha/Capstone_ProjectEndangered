@@ -18,7 +18,7 @@
 }
 
 .gradient {
-  position: absolute;
+  position: block;
   width: 100%;
   height: 100%;
 }
@@ -54,7 +54,7 @@ footer a:hover {
   
 }
 .title{
-    position: absolute;
+    position: block;
     left: 72px;
     top: 120px;
     height: 115px;
@@ -167,47 +167,51 @@ footer a:hover {
 */
 
 .importanceTitle{
-  display: flex;
-  width:40%;
-  position: absolute;
+  top: 0;
+  position: block;
+ 
   left: 0;
-  padding-left: 80px;
-  top:0;
+  text-align: left;
+
   padding-top: 100px;
-
-
-
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .polarPara1{
   top: 0;
-  position: absolute;
-  padding-top: 180px;
+  position: block;
+ 
   left: 0;
   text-align: left;
-  padding-left: 80px;
-  width: 90%;
+  padding-top: 200px;
+
+  padding-left: 50px;
+  padding-right: 50px;
+
 }
 
 .sepLine{
   top: 0;
-  position: absolute;
+  position: block;
   display: flex;
-  padding-left: 80px;
+
   left: 0;
-  width: 90%;
-  padding-top: 300px;
+ 
+
 
 }
 
 .polarPara2{
   top: 0;
-  position: absolute;
-  padding-top: 310px;
+  position: block;
+ 
   left: 0;
   text-align: left;
-  padding-left: 80px;
-  width: 90%;
+
+  padding-left: 50px;
+  padding-right: 50px;
+
 }
 
 .polarAnimImg{
@@ -235,5 +239,14 @@ footer a:hover {
 
 .titleContainer{
   display: flex;
+}
+
+.flexbox{
+  margin-top: 0% !important;
+}
+
+.textArea2{
+  padding-top: 500px;
+  position: block;
 }
 
