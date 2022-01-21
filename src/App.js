@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import {LargeIconButton} from '../src/components/large-icon-button';
 
 
 import {
@@ -27,7 +28,6 @@ function App() {
     <div className="App" onClick = {handleClick}>
       <Router>
         <Switch>
-          
           <Route exact path = "/">
              <Navbar/>
           </Route>
@@ -37,7 +37,8 @@ function App() {
      
           </Route>
           <Route path = "/forest-elephant">
-            
+          <LargeIconButton type='right'/>
+          <LargeIconButton type='left'/>
           </Route>
           <Route path = "/whooping-crane">
             
