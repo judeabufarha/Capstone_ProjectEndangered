@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import {LargeIconButton} from '../src/components/large-icon-button';
+import {ToggleSwitch} from '../src/components/toggle-switch';
 
 
 import {
@@ -39,6 +40,7 @@ function App() {
           <Route path = "/forest-elephant">
           <LargeIconButton type='right'/>
           <LargeIconButton type='left'/>
+          <ToggleSwitch/>
           </Route>
           <Route path = "/whooping-crane">
             
