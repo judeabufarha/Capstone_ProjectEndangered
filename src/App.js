@@ -43,10 +43,10 @@ function App() {
           <LargeIconButton type='right'/>
           <LargeIconButton type='left'/>
           <ToggleSwitch/>
-          <ToggleButtons/>
+          <ToggleButtons type='toggle-orange'/>
           <TextButton type='light' text='Explore' colour='light'/>
 
-          <TextButton type='dark-orange' text='click to learn more' colour='dark'/>
+          <TextButton type='button-orange' text='click to learn more' colour='dark'/>
 
           </Route>
           <Route path = "/whooping-crane">

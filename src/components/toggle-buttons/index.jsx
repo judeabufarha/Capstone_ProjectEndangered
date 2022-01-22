@@ -12,12 +12,20 @@ export const ToggleButtons = () => {
     }; 
 
     return (
-        <section class="model-14">
-  <div class="checkbox">
-    <input type="checkbox"/>
-    <label></label>
-  </div>
-</section>
+        <div>
+            <input type="checkbox" id="switch" className="switch" onChange={handleChange}/>
+            <div class="app">
+                <div class="content">
+                    <label for="switch" className="text-switch">
+                        <div class="toggle"></div>
+                        <div class="names">
+                            <p class="then">Then</p>
+                            <p class="now">Now</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </div>
     );
 }
 

@@ -15,7 +15,7 @@ export const ToggleSwitch = () => {
             <form>
                 <div class="toggle-switch">
                     <input type="checkbox" onChange={handleChange}/>
-                    <label></label>
+                    <label className="label"></label>
                 </div>
             </form>
         </section>
