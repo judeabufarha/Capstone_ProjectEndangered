@@ -43,7 +43,7 @@ function App() {
           <LargeIconButton type='right'/>
           <LargeIconButton type='left'/>
           <ToggleSwitch/>
-          <ToggleButtons type='toggle-orange'/>
+          <ToggleButtons colour='toggle-orange' text='positive-negative' base='base-orange'/>
           <TextButton type='light' text='Explore' colour='light'/>
 
           <TextButton type='button-orange' text='click to learn more' colour='dark'/>
