@@ -1,0 +1,90 @@
+.menu-item {
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    align-items: center;
+    appearance: none;
+    cursor: pointer;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: #013440;
+}
+
+#normal {
+    background-color: #FFFFFF;
+    font-weight: 600;
+}
+
+#expanded {
+    background-color: #FFFFFF;
+    font-weight:900;
+}
+
+#selected {
+    background-color: #D6EBED;
+    font-weight:900;
+}
+
+.menu-item-icon {
+    width: 2rem;
+    padding-right: 0.5rem;
+    image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.material-icons.expand-icon {
+    margin-left: auto;
+    font-size: 1.5rem;
+    color: #013440;
+    transition: 1.5s;
+    border-radius: 50%;
+}
+
+#normal .material-icons.expand-icon {
+    display: none;
+}
+
+#selected .material-icons.expand-icon, #expanded .material-icons.expand-icon {
+    transform: rotate(180deg);
+}
+
+#normal:hover, #expanded:hover {
+    background-color: #0134401A;
+    transition: 1.5s;
+}
+
+#normal:hover .material-icons.expand-icon {
+    display: block;
+}
+
+#normal:active, #expanded:active {
+    background-color: #01344033;
+}
+
+#normal:active .material-icons.expand-icon {
+    display: block;
+    transform: rotate(1080deg);
+}
+
+#selected:hover {
+    background-color: #C1D9DC;
+    transition: 1.5s;
+}
+
+#selected:active {
+    background-color: #ABC6CA;
+}
+
+.material-icons.expand-icon:hover {
+    background-color: #0134401A;
+}
+
+.material-icons.expand-icon:active {
+    background-color: #01344033;
+}

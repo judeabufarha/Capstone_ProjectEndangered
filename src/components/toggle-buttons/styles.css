@@ -116,6 +116,7 @@ input.switch[type="checkbox"]:checked + .app #toggle-orange{
 }
 input.switch[type="checkbox"]:hover + .app #toggle-orange{
   background-color: #FFBF9A;
+  transition: 1.5s;
 }
 
 input.switch[type="checkbox"]:active + .app #toggle-orange{

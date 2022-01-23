@@ -24,6 +24,7 @@
 
 .light:hover {
     background-color: #DFE4E6;
+    transition: 1.5s;
 }
 
 .button-orange {
@@ -42,8 +43,10 @@
     color: #013440;
     background-color: #FFAF81;
     box-shadow: 4px 4px 8px 0px #0000001A;
+    transition: 1.5s;
 }
 
 .button-orange:hover {
     background-color: #FFBF9A;
+    transition: 1.5s;
 }

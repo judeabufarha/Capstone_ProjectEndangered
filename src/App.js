@@ -4,7 +4,8 @@ import {LargeIconButton} from '../src/components/large-icon-button';
 import {ToggleSwitch} from '../src/components/toggle-switch';
 import {ToggleButtons} from '../src/components/toggle-buttons';
 import { TextButton } from './components/text-button';
-
+import { MenuItem } from './components/menu-item';
+import { SubMenuItem } from './components/sub-menu-item';
 
 import {
   BrowserRouter as Router,
@@ -47,6 +48,9 @@ function App() {
           <TextButton type='light' text='Explore' colour='light'/>
 
           <TextButton type='button-orange' text='click to learn more' colour='dark'/>
+          <div></div>
+          <MenuItem icon="https://i.ibb.co/BZXSvm2/Web-Icons-Final-polarbear-dark.png" text='Polar Bear' state='normal'/>
+          <SubMenuItem text='About' state='normal'/>
 
           </Route>
           <Route path = "/whooping-crane">
