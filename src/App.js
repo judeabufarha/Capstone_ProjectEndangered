@@ -16,6 +16,7 @@ import { Navbar } from './components/navbar';
 import { useContext } from 'react';
 import { ToggleContext } from './contexts/ToggleContext';
 import { Polarbear } from './components/polarbear';
+import { SideMenu } from './components/side-menu';
 
 function App() {
   const {bodyClick} = useContext(ToggleContext)
@@ -49,11 +50,12 @@ function App() {
 
           <TextButton type='button-orange' text='click to learn more' colour='dark'/>
           <div></div>
-          <MenuItem icon="https://i.ibb.co/BZXSvm2/Web-Icons-Final-polarbear-dark.png" text='Polar Bear' state='normal'/>
+          <MenuItem icon="https://i.ibb.co/BZXSvm2/Web-Icons-Final-polarbear-dark.png" text='Polar Bear' state='normal' expand='true'/>
           <SubMenuItem text='About' state='normal'/>
 
           </Route>
           <Route path = "/whooping-crane">
+            <SideMenu/>
             
           </Route>
           <Route path = "/turtle">

@@ -56,7 +56,7 @@
 
 #normal:hover, #expanded:hover {
     background-color: #0134401A;
-    transition: 1.5s;
+    transition: .5s;
 }
 
 #normal:hover .material-icons.expand-icon {
@@ -74,7 +74,7 @@
 
 #selected:hover {
     background-color: #C1D9DC;
-    transition: 1.5s;
+    transition: .5s;
 }
 
 #selected:active {
