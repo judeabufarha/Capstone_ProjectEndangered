@@ -1,0 +1,16 @@
+.sub-menu-item {
+    width: 20rem;
+    display: flex;
+    flex-direction: row;
+    border: none;
+    align-items: center;
+    appearance: none;
+    cursor: pointer;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 4rem;
+    padding-right: 1.5rem;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    color: #013440;
+}
