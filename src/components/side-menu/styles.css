@@ -6,10 +6,13 @@
     box-shadow: 4px 4px 8px 0px #0000001A;
     background-color: #FFFFFF;
     text-decoration: none;
+    
     overflow-y: auto;
     overflow-x: hidden;
 }
-
+.side-menu-container::-webkit-scrollbar {
+    display: none;
+  }
 .side-menu-container b {
     font-size: 18px;
     font-family: 'Poppins', sans-serif;

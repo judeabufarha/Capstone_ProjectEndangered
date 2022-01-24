@@ -1,0 +1,27 @@
+
+
+.textAreaContainer{
+  display: flex;
+  justify-content: center;
+}
+.textArea{
+ 
+  /* position: absolute; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  max-width: 90%;
+  margin-top: 9%;
+  
+}
+.statusTitle{
+  display: flex;
+  width:40%;
+  /* position: absolute; */
+  left: 0;
+  padding-left: 80px;
+  top:0;
+  padding-top: 100px;
+}
+

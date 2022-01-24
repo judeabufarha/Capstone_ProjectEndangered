@@ -1,14 +1,9 @@
-import "./styles.css";
-
-import React from "react";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import ScriptTag from 'react-script-tag';
 import { Navbar } from "../navbar";
+import Page1 from "./Page1";
 
-
-
-
-const Page1 = ({ offset, color }) => ( 
+const Page2 = ({ offset, color }) => ( //for all pages
   <>
     <ParallaxLayer offset={offset} speed={0.2}>
     </ParallaxLayer>
@@ -17,41 +12,14 @@ const Page1 = ({ offset, color }) => (
       <div className={`gradient ${color}`} />
     </ParallaxLayer>
 
-    <ParallaxLayer className="title" offset={offset} speed={0.6}>
-      <div> 
-        <img className="title" src="https://i.ibb.co/rM1GN44/title.png" alt="title"/>
-      </div> 
-    </ParallaxLayer>
+   
     
-    <ParallaxLayer className="backgroundMountains" offset={offset} speed={0.6}>
-      <div> 
-      {/* <img className="mountain1" src=" https://i.ibb.co/syxV6Pj/mountain1.png" alt="mountain1" />
-        <img className="mountain2" src=" https://i.ibb.co/4p2g6J4/mountain2.png" alt="mountain2"/> */}
-        {/* <img className="mountain3" src="https://i.ibb.co/dM6z6qN/mountain3.png " alt="mountain3" /> */}
-      </div> 
-    </ParallaxLayer>
-
-    <ParallaxLayer className="water" offset={offset} speed={0.6}>
-      <div> 
-        {/* <img className="waterbase" src="https://i.ibb.co/tx0FqC2/water-Base.png" alt="waterbase"/>    */}
-        <img className="ice" src="https://i.ibb.co/dGJyCqr/ice.png" alt="ice" />
-       
-      </div> 
-    </ParallaxLayer>
-
-  
-    <ParallaxLayer className="polarbearOnIce" offset={offset} speed={0.6}>
-      <div> 
-      <img className="polarIce" src="https://i.ibb.co/fMtZSVX/polarbear-Ice.png" alt="polar"/>  
-      </div> 
-    </ParallaxLayer>
-
-
-
   </>
 );
 
-const Page3 = ({ offset, color }) => ( //for all pages
+const Page3 = ({ offset, color }) => {
+  console.log({offset})
+  return ( //for all pages
   <>
  
     <ParallaxLayer offset={offset} speed={0.2}>
@@ -62,7 +30,7 @@ const Page3 = ({ offset, color }) => ( //for all pages
     </ParallaxLayer>
 
 
-  <div className="importContainer">
+  
     <ParallaxLayer className="importance" offset={offset} speed={0.6}>
     <div className="titleContainer"> 
       <img className="importanceTitle" src="https://i.ibb.co/v12VHb7/importance-Title.png" alt="polar"/>  
@@ -78,17 +46,23 @@ const Page3 = ({ offset, color }) => ( //for all pages
     </ParallaxLayer>
 
     <ParallaxLayer className="polarAnimImg" offset={offset} speed={1.2}>
-      <div className="groupAnimals"> 
-      <img className="fishBlob" src="https://i.ibb.co/RQfM4ck/fish.png" alt="polar"/>  
-      <img className="sealBlob" src="https://i.ibb.co/rGz54Tj/seal.png" alt="polar"/>  
-      <img className="polarBlob" src="https://i.ibb.co/kq9NHvj/polar.png" alt="polar"/>  
+      <div className="groupAnimals">
+        <div className="groupAnimalsItem">
+          <img src="https://i.ibb.co/RQfM4ck/fish.png" alt="polar"/>  
+        </div>
+        <div className="groupAnimalsItem">
+          <img src="https://i.ibb.co/rGz54Tj/seal.png" alt="polar"/>  
+        </div>
+        <div className="groupAnimalsItem">
+          <img src="https://i.ibb.co/kq9NHvj/polar.png" alt="polar"/>  
+        </div>
       </div> 
     </ParallaxLayer>
-  </div>
+
 
 
   </>
-);
+)};
 
 const Page4 = ({ offset, color }) => ( //for all pages
   <>
@@ -129,19 +103,7 @@ const Page4 = ({ offset, color }) => ( //for all pages
   </>
 );
 
-const Page2 = ({ offset, color }) => ( //for all pages
-  <>
-    <ParallaxLayer offset={offset} speed={0.2}>
-    </ParallaxLayer>
 
-    <ParallaxLayer offset={offset} speed={0}>
-      <div className={`gradient ${color}`} />
-    </ParallaxLayer>
-
-   
-    
-  </>
-);
  {/* <img className="polarIce" src="https://i.ibb.co/fMtZSVX/polarbear-Ice.png" alt="polar" />
         <img className="bird" src="https://i.ibb.co/xmWNfr7/birds.png" alt="birds" />
         <img className="mountain1" src=" https://i.ibb.co/syxV6Pj/mountain1.png" alt="mountain1" />
@@ -165,7 +127,7 @@ export const Polarbear = () => {
       <Parallax className="container" pages={9} horizontal={true}>
         <Page1 offset={0} color="orange" />
         <Page2 offset={1} color="teal" />
-        <Page3 offset={2} color="teal" />
+        <Page3 offset={2} color="orange" />
         <Page4 offset={3} color="teal" />
         <Page2 offset={4} color="pink" />
         <Page2 offset={5} color="pink" />
