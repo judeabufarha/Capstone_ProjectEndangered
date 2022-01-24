@@ -40,6 +40,15 @@
     padding-bottom: 1rem;
 }
 
+.sub-item {
+    display: none;
+}
+
+.sub-item.open {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-div {
     display: flex;
     justify-content: center;

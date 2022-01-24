@@ -58,7 +58,7 @@ function App() {
             <SideMenu/>
             
           </Route>
-          <Route path = "/turtle">
+          <Route path = "/sea-turtle">
             
           </Route>
           <Route path = "/orangutan">
