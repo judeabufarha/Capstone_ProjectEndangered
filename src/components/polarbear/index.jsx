@@ -3,7 +3,7 @@ import ScriptTag from 'react-script-tag';
 import { Navbar } from "../navbar";
 import Page1 from "./Page1";
 
-const Page2 = ({ offset, color }) => ( //for all pages
+const Page2 = ({ offset, color }) => ( 
   <>
     <ParallaxLayer offset={offset} speed={0.2}>
     </ParallaxLayer>
@@ -11,9 +11,6 @@ const Page2 = ({ offset, color }) => ( //for all pages
     <ParallaxLayer offset={offset} speed={0}>
       <div className={`gradient ${color}`} />
     </ParallaxLayer>
-
-   
-    
   </>
 );
 
@@ -104,94 +101,28 @@ const Page4 = ({ offset, color }) => ( //for all pages
 );
 
 
- {/* <img className="polarIce" src="https://i.ibb.co/fMtZSVX/polarbear-Ice.png" alt="polar" />
-        <img className="bird" src="https://i.ibb.co/xmWNfr7/birds.png" alt="birds" />
-        <img className="mountain1" src=" https://i.ibb.co/syxV6Pj/mountain1.png" alt="mountain1" />
-        <img className="sun" src=" https://i.ibb.co/C0ggdGP/sun.png " alt="sun" />
-        <img className="mountain2" src=" https://i.ibb.co/4p2g6J4/mountain2.png" alt="mountain2"/>
-        <img className="mountain3" src="https://i.ibb.co/dM6z6qN/mountain3.png " alt="mountain3" />
-        <img className="lightdetail" src="https://i.ibb.co/vsqYpWc/waterdetail-Light.png" alt="lightdetail"/>
-        <img className="darkdetail" src="https://i.ibb.co/fFxbrr2/waterdetail-Dark.png" alt="darkdetail"/>  */}
-
 export const Polarbear = () => {
   return (
     <>
    
     <ScriptTag type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" />
     <ScriptTag type="text/javascript" src="https://rawgit.com/jquery/jquery-mousewheel/master/jquery.mousewheel.js" />
-
     <ScriptTag type="text/javascript" src="./scripts/scroll.js" />
     
-    <div>
-  
-      <Parallax className="container" pages={9} horizontal={true}>
-        <Page1 offset={0} color="orange" />
-        <Page2 offset={1} color="teal" />
-        <Page3 offset={2} color="orange" />
-        <Page4 offset={3} color="teal" />
-        <Page2 offset={4} color="pink" />
-        <Page2 offset={5} color="pink" />
-        <Page2 offset={6} color="pink" />
-        <Page2 offset={7} color="pink" />
-        <Page2 offset={8} color="pink" />
-        
-      </Parallax>
+    <Parallax className="container" pages={9} horizontal={true}>
+      <Page1 offset={0} color="orange" />
+      <Page2 offset={1} color="teal" />
+      <Page3 offset={2} color="orange" />
+      <Page4 offset={3} color="teal" />
+      <Page2 offset={4} color="pink" />
+      <Page2 offset={5} color="pink" />
+      <Page2 offset={6} color="pink" />
+      <Page2 offset={7} color="pink" />
+      <Page2 offset={8} color="pink" />   
+    </Parallax>
 
-    </div>
+    
     </>
   );
-      {/* <img
-        className="scrollImage"
-        src="https://i.ibb.co/fSKqN42/Scroll.png"
-        alt="scroll"
-      /> */}
-      {/* <img
-        className="title"
-        src="https://i.ibb.co/rM1GN44/title.png"
-        alt="title"
-      />
-      <img
-        className="waterbase"
-        src="https://i.ibb.co/tx0FqC2/water-Base.png"
-        alt="waterbase"
-      />
-      <img className="ice" src="https://i.ibb.co/dGJyCqr/ice.png" alt="ice" />
-      <img
-        className="polarIce"
-        src="https://i.ibb.co/fMtZSVX/polarbear-Ice.png"
-        alt="polar"
-      />
-      <img
-        className="bird"
-        src="https://i.ibb.co/xmWNfr7/birds.png"
-        alt="birds"
-      />
-      <img
-        className="mountain1"
-        src=" https://i.ibb.co/syxV6Pj/mountain1.png"
-        alt="mountain1"
-      />
-      <img className="sun" src=" https://i.ibb.co/C0ggdGP/sun.png " alt="sun" />
-      <img
-        className="mountain2"
-        src=" https://i.ibb.co/4p2g6J4/mountain2.png"
-        alt="mountain2"
-      />
-      <img
-        className="mountain3"
-        src="https://i.ibb.co/dM6z6qN/mountain3.png "
-        alt="mountain3"
-      />
-      <img
-        className="lightdetail"
-        src="https://i.ibb.co/vsqYpWc/waterdetail-Light.png"
-        alt="lightdetail"
-      />
-      <img
-        className="darkdetail"
-        src="https://i.ibb.co/fFxbrr2/waterdetail-Dark.png"
-        alt="darkdetail"
-      /> */}
-      
-
+     
 };

@@ -18,7 +18,7 @@ const Page1 = ({ offset, color }) => (
       />
     </ParallaxLayer>
 
-    <ParallaxLayer className="backgroundMountains" offset={offset} speed={0.9}>
+    <ParallaxLayer className="backgroundMountains" offset={offset} speed={1.0}>
       <img
         className="mountain1"
         src=" https://i.ibb.co/syxV6Pj/mountain1.png"
@@ -36,7 +36,7 @@ const Page1 = ({ offset, color }) => (
       />
     </ParallaxLayer>
 
-    <ParallaxLayer className="water" offset={offset} speed={0.9}>
+    <ParallaxLayer className="water" offset={offset} speed={0.6}>
       <img
         className="waterbase"
         src="https://i.ibb.co/tx0FqC2/water-Base.png"
