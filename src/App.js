@@ -34,11 +34,11 @@ function App() {
       <Router>
         <Switch>
           <Route exact path = "/">
-             <Navbar/>
+          <Navbar/>
           </Route>
           <Route path = "/polar-bear">
           <Navbar/>
-              <Polarbear/>
+          <Polarbear/>
      
           </Route>
           <Route path = "/forest-elephant">
