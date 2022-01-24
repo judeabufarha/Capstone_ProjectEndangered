@@ -6,7 +6,8 @@
     box-shadow: 4px 4px 8px 0px #0000001A;
     background-color: #FFFFFF;
     text-decoration: none;
-    overflow: auto
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .side-menu-container b {
