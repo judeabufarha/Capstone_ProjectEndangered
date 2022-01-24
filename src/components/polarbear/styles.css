@@ -171,7 +171,7 @@ footer a:hover {
   width:40%;
   position: absolute;
   left: 0;
-  padding-left: 80px;
+  padding-left: 100px;
   top:0;
   padding-top: 100px;
 
@@ -179,7 +179,7 @@ footer a:hover {
 
 }
 
-.polarPara1{
+/* .polarPara1{
   top: 0;
   position: absolute;
   padding-top: 180px;
@@ -208,13 +208,15 @@ footer a:hover {
   text-align: left;
   padding-left: 80px;
   width: 90%;
-}
+} */
 
 .polarAnimImg{
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding-top: 3%;
+  padding-top: 2.3%;
+  justify-content: center;
+
 
 }
 
@@ -235,5 +237,29 @@ footer a:hover {
 
 .titleContainer{
   display: flex;
+}
+.textAreaContainer{
+  display: flex;
+  justify-content: center;
+}
+.textArea{
+ 
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  max-width: 90%;
+  margin-top: 9%;
+  
+}
+.statusTitle{
+  display: flex;
+  width:40%;
+  position: absolute;
+  left: 0;
+  padding-left: 80px;
+  top:0;
+  padding-top: 100px;
 }
 

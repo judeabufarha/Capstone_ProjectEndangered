@@ -27,13 +27,13 @@ function App() {
     <div className="App" onClick = {handleClick}>
       <Router>
         <Switch>
-      
+       
           <Route exact path = "/">
-        
+          <Navbar/>
           </Route>
           <Route path = "/polar-bear">
-         
-              <Polarbear/>
+          <Navbar/>
+          <Polarbear/>
      
           </Route>
           <Route path = "/forest-elephant">
