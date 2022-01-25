@@ -1,0 +1,10 @@
+.flex-map{
+    display: flex; 
+    width: 100%;
+}
+
+svg {
+    vertical-align: middle;
+    width: 70%;
+  }
+
