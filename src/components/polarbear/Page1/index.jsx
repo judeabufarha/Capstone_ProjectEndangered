@@ -6,7 +6,7 @@ const Page1 = ({ offset, color }) => (
    <ParallaxLayer offset={offset} speed={0.2}>
     </ParallaxLayer>
 
-    <ParallaxLayer offset={offset} speed={0}>
+    <ParallaxLayer className="transitionGradient" offset={offset} speed={0}>
       <div className={`gradient ${color}`} />
     </ParallaxLayer>
 
@@ -18,7 +18,7 @@ const Page1 = ({ offset, color }) => (
       />
     </ParallaxLayer>
 
-    <ParallaxLayer className="backgroundMountains" offset={offset} speed={1.0}>
+    <ParallaxLayer className="backgroundMountains" offset={offset} speed={1.9}>
       <img
         className="mountain1"
         src=" https://i.ibb.co/syxV6Pj/mountain1.png"
@@ -72,7 +72,13 @@ const Page1 = ({ offset, color }) => (
         alt="polar"
       />
     </ParallaxLayer>
+
+    <ParallaxLayer className="transitionNext" offset={offset} speed={0.6}>
+      <img src="https://i.ibb.co/5W1Bv31/white-Overlay1.png" alt="" />
+    </ParallaxLayer> 
   </>
 );
 
 export default Page1;
+
+

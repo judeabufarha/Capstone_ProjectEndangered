@@ -1,0 +1,49 @@
+@import "../../../scss/root.scss";
+
+.page7Background {
+  background-image: url(https://i.ibb.co/sCNDbb8/positive-Future.png);
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.page7BackgroundOn{
+  background-image: url(https://i.ibb.co/cbJ0gqK/future-Negative.png);
+  background-repeat: no-repeat;
+  background-size: cover
+} 
+
+
+
+.toggleButtonsParent {
+  z-index: 9999;
+}
+
+
+
+.future{
+  &Title {
+  top: 10%;
+  z-index:0;
+  color: $pe_dark;
+  font-size: 48px;
+  }
+  
+  &Text{
+    top:19%;
+    z-index: 1;
+    color: $pe_dark;
+    font-size: 20px;
+  }
+}
+
+.wrapperCommonContainer{
+  .rectangle {
+    height: 200px;
+    width: 80%;
+    background-color: white;
+    z-index: 999999;
+  
+  
+  }
+}
+

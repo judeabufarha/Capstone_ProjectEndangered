@@ -1,10 +1,4 @@
-@import "../../../scss/colors.scss";
-
-.container > div > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+@import "../../../scss/root.scss";
 
 .gradient {
   position: absolute;
@@ -132,4 +126,22 @@
     left: 43%;
     z-index: 3;
   }
+}
+
+.transitionNext {
+  position:absolute;
+  z-index:10;
+
+  img{
+    position: absolute;
+    top: 0;
+    right:-471px;
+    width: 471px;
+    height: 100vh;
+  }
+}
+
+.pageContainer {
+  height:100vh;
+  overflow: hidden;
 }

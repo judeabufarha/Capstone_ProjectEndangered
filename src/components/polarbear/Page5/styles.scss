@@ -1,0 +1,37 @@
+@import "../../../scss/root.scss";
+
+.population{
+  &Title {
+  top: 5%;
+  z-index:0;
+  color: $pe_dark;
+  font-size: 48px;
+  }
+  
+  &Text{
+    top:18%;
+    z-index: 1;
+    color: $pe_dark;
+    font-size: 20px;
+  }
+}
+
+.toggleButtonsParent{
+  z-index: 9999;
+
+  .flexContainer100{
+    width: 100%;
+    flex-direction: row-reverse;
+    height: 100px;
+  }
+}
+
+.wrapperCommonContainer.toggleButtons {
+  position:absolute;
+  top:10%;
+  z-index: 9999;
+}
+
+
+
+
