@@ -17,6 +17,8 @@ import { useContext } from 'react';
 import { ToggleContext } from './contexts/ToggleContext';
 import { Polarbear } from './components/polarbear';
 import { SideMenu } from './components/side-menu';
+import { Map } from './components/interactive-map';
+
 
 function App() {
   const {bodyClick} = useContext(ToggleContext)
@@ -36,6 +38,7 @@ function App() {
           <Route exact path = "/">
           <Navbar/>
           </Route>
+          <Route exact path = "/map"><Map></Map></Route>
           <Route path = "/polar-bear">
           <Navbar/>
           <Polarbear/>
