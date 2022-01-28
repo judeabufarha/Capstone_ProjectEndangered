@@ -3,12 +3,21 @@
 	border-radius: 50%;
 	box-shadow: 0 0 0 0 rgba(148, 210, 237, 1);
 	margin: 10px;
-	height: 40px;
-	width: 40px;
+	
 	transform: scale(2);
 	animation: pulse-blue 2s infinite;
     position: absolute;
   }
+
+#large{
+	height: 60px;
+	width: 60px;
+}
+
+#medium{
+	height: 40px;
+	width: 40px;
+}
 
 @keyframes pulse-blue {
 	0% {
@@ -31,9 +40,7 @@
     background: rgba(172, 212, 172, 0.5);
 	border-radius: 50%;
 	box-shadow: 0 0 0 0 rgba(148, 210, 237, 1);
-	margin: 10px;
-	height: 40px;
-	width: 40px;
+	
     border: 2px solid #2d6c73;
 	transform: scale(1.5);
 	animation: pulse-blue 0s infinite;

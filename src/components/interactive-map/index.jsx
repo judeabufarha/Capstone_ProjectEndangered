@@ -37,12 +37,7 @@ export const Map = (props) => {
                 }
             </Geographies>
             </ComposableMap>
-            <div className="map-marker-01-container">
-                <MapMarker className="map-marker-blue" text="Canada 5000-7000"></MapMarker>
-            </div>
-            <div className="map-marker-02-container">
-                <MapMarker className="map-marker-blue-02" text="Southern Arctic"></MapMarker>
-            </div>
+           
         </div>
         </>
         

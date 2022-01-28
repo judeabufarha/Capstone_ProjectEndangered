@@ -5,6 +5,8 @@
 
 import { ParallaxLayer } from "@react-spring/parallax";
 import ToggleButtons from "../../toggle-buttons";
+import { Map } from '../../interactive-map';
+import { MapMarker } from "../../map-marker";
 import "./styles.scss";
 
 const Page5 = ({ offset, color }) => {
@@ -24,7 +26,7 @@ const Page5 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer className="toggleButtonsParent" offset={offset} speed={0.6}>
+      <ParallaxLayer className="toggleButtonsParent" offset={offset} speed={0.6} style={{height: "500px"}}>
         <div className="wrapperCommonContainer toggleButtons">
         <div className="commonContainerSpecial">
             <div className="flexContainer100">
@@ -45,6 +47,18 @@ const Page5 = ({ offset, color }) => {
           </div>
         </div>
       </ParallaxLayer>
+
+      <ParallaxLayer offset={offset} speed={0.8} style={{paddingTop: "50px"}}>
+            <Map className="interactive-map-component"></Map>
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={offset} speed={0.8}>
+            <div className="marker-point-container">
+              <MapMarker size="medium" className="map-marker-blue" text="Canada; 5000-7000"></MapMarker>
+            </div>
+      </ParallaxLayer>
+
+      
     </>
   );
 };

@@ -8,16 +8,3 @@ svg {
     width: 70%;
   }
 
-.map-marker-01-container{
-    position: absolute;
-    padding-top: 11%;
-    padding-left: 18%;
-    z-index: 2;
-}
-
-.map-marker-02-container{
-    position: absolute;
-    padding-top: 20%;
-    padding-left: 40%;
-    z-index: 1;
-}
