@@ -21,6 +21,7 @@
     "react-scripts": "4.0.3",
     "react-simple-maps": "^2.3.0",
     "react-simple-tooltip": "^2.6.3",
+    "react-spring": "^9.4.2",
     "react-view-slider": "^4.5.0",
     "styled-components": "^5.3.3",
     "web-vitals": "^1.1.2"

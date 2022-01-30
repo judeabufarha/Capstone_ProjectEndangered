@@ -37,32 +37,6 @@
   margin:0;
 }
 
-.wrapperCommonContainer {
-  position:absolute;
-  left:0;
-  width: 100%;
-}
-
-
-
-.commonContainer { 
-  position: absolute;
-  width: calc(100% - 160px);
-  margin: 0 80px;
-
-  * {
-    display: initial;
-    align-items: unset;
-    justify-content: unset;
-  }
-}
-
-.commonContainerSpecial { 
-  position: absolute;
-  width: calc(100% - 160px);
-  margin: 0 80px;
-}
-
 
 // image container 
 .trioImg__container{

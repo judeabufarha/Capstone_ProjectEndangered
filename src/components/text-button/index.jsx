@@ -21,11 +21,17 @@ export const TextButton = (props) => {
 
     }, [props.colour])
 
+    const HandleOnClick = () => {
+      if(props.onClick){
+        props.onClick();
+      }
+    }
+
     return (
         <div className="text-button-container">
             <div style={{display: 'inline-flex', borderRadius: 50, overflow: "hidden",}}>
                 <Ripples color={hex} during={1200}>
-                    <button id="text-button" className={props.type} disabled={props.isDisabled}>
+                    <button className={props.type} disabled={props.isDisabled} onClick={HandleOnClick}>
                     {props.text}
                     </button>
                 </Ripples>
@@ -37,5 +43,6 @@ export const TextButton = (props) => {
 TextButton.propTypes = {
     text: PropTypes.string.isRequired,
     type: PropTypes.string.isRequired,
-    colour: PropTypes.string.isRequired
+    colour: PropTypes.string.isRequired,
+    onClick: PropTypes.func
 }

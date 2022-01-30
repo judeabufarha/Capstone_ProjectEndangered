@@ -1,8 +1,38 @@
-// Background image, title, textArea, button 
+import PropTypes from "prop-types";
 
+import { TextButton } from "../text-button";
 
-//https://i.ibb.co/9cKpF7q/blob1.png
+import './styles.scss';
 
-//https://i.ibb.co/dj4tH32/blob2.png
+const InfoBlob = (props) => {
+  const { title, text, linkText, linkFn, BgImage } = props;
+  return (
+    <div className="infoBlob">
+      <div className="infoBlob_image">
+        <img src={BgImage} alt="" />
+      </div>
+      <div className="infoBlob_textFlow">
+        <div className="infoBlob_title">{title}</div>
+        <div className="infoBlob_text">{text}</div>
+        <div className="infoBlob_link">
+          <TextButton
+            onClick={linkFn}
+            text={linkText}
+            colour="dark"
+            type="button-orange"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
 
-//https://i.ibb.co/KWDkjkC/blob3.png
+InfoBlob.propTypes = {
+  title: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
+  linkText: PropTypes.string.isRequired,
+  BgImage: PropTypes.string.isRequired,
+  linkFn: PropTypes.func.isRequired,
+};
+
+export default InfoBlob;

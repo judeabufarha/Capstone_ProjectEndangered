@@ -1,12 +1,29 @@
 .content {
   display: flex;
   text-align: center;
-  position: relative;
 }
 
 label, .toggle-then-now, .toggle-positive-negative {
   height: 2.8rem;
   border-radius: 100px;
+}
+
+.text-switch-then-now{
+  width: 9.5rem;
+  height: 3rem;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px 0px #0000001A;
+}
+
+.text-switch-positive-negative {
+  width: 14.5rem;
+  height: 3rem;
+  border-radius: 100px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px 0px #0000001A;
 }
 
 .base-orange {
@@ -17,20 +34,23 @@ label, .toggle-then-now, .toggle-positive-negative {
   background-color: #f8f8f880;
 }
 
-
-
-.toggle {
+.toggle-then-now {
   position: absolute;
-  width:6.7em;
-  top: 5px;
-  left: 5px;
-  bottom:5px;
-  border-radius: 2em;
+  width: 4.5rem;
+  height: 2.5rem;
+  top: 0.25rem;
+  left: 0.25rem;
   transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  z-index: 0;
 }
 
-
+.toggle-positive-negative {
+  position: absolute;
+  width: 7rem;
+  height: 2.5rem;
+  top: 0.25rem;
+  left: 0.25rem;
+  transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
 
 .toggle-orange {
   background-color: #FFAF81;
@@ -47,46 +67,66 @@ label, .toggle-then-now, .toggle-positive-negative {
   display: flex;
   align-items: center;
   height: 100%;
-  padding: 0 12px;
-  z-index: 3;
+  padding: 0 11px
 
-  .item {
-    margin: 0 8px;
-    position: relative;
-    z-index: 100;
+  span {
+    margin: 0 5px;
   }
 }
 
-
-input.switch[type="checkbox"] {
-  display: block;
-    position: absolute;
-    z-index: 9999;
-    margin: 0;
-    right: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    cursor: pointer;
+.then{
+  width: 75%;
+  position: absolute;
+  top: -.5rem;
+  left: 1rem;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
 }
 
-input.switch[type="checkbox"]:checked + .app .toggle{
+.now{
+  width: 75%;
+  position: absolute;
+  top: -.5rem;
+  left: 5.60rem;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.positive{
+  width: 75%;
+  position: absolute;
+  top: -.5rem;
+  left: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.negative{
+  width: 75%;
+  position: absolute;
+  top: -.5rem;
+  left: 8.05rem;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+
+input.switch[type="checkbox"] {
+  display: none;
+}
+
+.toggleButtonActivated .app .toggle-orange{
   transform: translateX(100%);
   background-color: #FFAF81;;
 }
-input.switch[type="checkbox"]:hover + .app .toggle{
-  background-color: #FFBF9A;
-  transition: .5s;
-}
+// input.switch[type="checkbox"]:hover + .app .toggle-orange{
+//   background-color: #FFBF9A;
+//   transition: .5s;
+// }
 
-input.switch[type="checkbox"]:active + .app .toggle{
-  background-color: #FFCFB3;
-}
-
-
-.switchContaner{
-  position: relative
-}
+// input.switch[type="checkbox"]:active + .app .toggle-orange{
+//   background-color: #FFCFB3;
+// }

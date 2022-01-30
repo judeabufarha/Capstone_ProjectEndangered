@@ -1,5 +1,11 @@
 @import "../../../scss/root.scss";
 
+.page5Background {
+  background-image: url(https://i.ibb.co/0nTt05S/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .population{
   &Title {
   top: 5%;
@@ -16,26 +22,96 @@
   }
 }
 
-.toggleButtonsParent{
+.p5toggleButtonsParent{
   z-index: 9999;
-
   .flexContainer100{
+    margin-top:80px;
     width: 100%;
     flex-direction: row-reverse;
-    height: 0px;
+    height: 100%;
+  }
+  
+  .wrapperCommonContainer.toggleButtons {
+    position:absolute;
+    top:12%;
+    z-index: 9999;
+  }
+  
+}
+
+.page5{
+  &.marker .now {
+    width:20px;
+    height: 20px;
+  }
+
+  .marker {
+    z-index: 999999;
+    position:absolute;
+
+    .commonContainerSpecial{
+      margin:0;
+    } 
+
+    &-1 {
+      left: 18%;
+      top:30%;
+    }
+
+    &-2{
+      left: 23%;
+      top:36%;
+    }
+    &-3{
+      left: 33%;
+      top:35%;
+    }
+    &-4{
+      left: 29%;
+      top:25%;
+    }
+    &-5{
+      left: 35%;
+      top:22%;
+    }
+    &-6{
+      left: 41%;
+      top:23%;
+    }
+    &-7{
+      left: 54%;
+      top:35%;
+    }&-8{
+      left: 60%;
+      top:22%;
+    }
+    &-9{
+      left: 61%;
+      top:34%;
+    }
+    &-10{
+      left: 70%;
+      top:27%;
+    }
+    h3 {
+      margin:0;
+      padding:0;
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      color: $pe_dark;
+      white-space: nowrap;
+    }
   }
 }
 
-.wrapperCommonContainer.toggleButtons {
-  position:absolute;
-  top:10%;
-  z-index: 9999;
-}
 
-.marker-point-container{
-  z-index: 999999;
-  position:absolute;
-}
+
+
+
+
 
 
 
