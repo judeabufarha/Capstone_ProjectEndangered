@@ -24,24 +24,24 @@ const Page1 = ({ offset, color }) => (
         src=" https://i.ibb.co/syxV6Pj/mountain1.png"
         alt="mountain1"
       />
-      <img
+       <img
         className="mountain2"
-        src=" https://i.ibb.co/4p2g6J4/mountain2.png"
+        src=" https://i.ibb.co/k4Fxhct/mountain-1.png"
         alt="mountain2"
-      />
+      /> 
       <img
         className="mountain3"
-        src="https://i.ibb.co/dM6z6qN/mountain3.png "
+        src="https://i.ibb.co/yS4qscw/mountain.png "
         alt="mountain3"
       />
     </ParallaxLayer>
 
     <ParallaxLayer className="water" offset={offset} speed={0.6}>
-      <img
+      {/* <img
         className="waterbase"
         src="https://i.ibb.co/tx0FqC2/water-Base.png"
         alt="waterbase"
-      />
+      /> */}
       <img
         className="lightdetail"
         src="https://i.ibb.co/vsqYpWc/waterdetail-Light.png"
@@ -52,7 +52,7 @@ const Page1 = ({ offset, color }) => (
         src="https://i.ibb.co/fFxbrr2/waterdetail-Dark.png"
         alt="darkdetail"
       />
-      <img className="ice" src="https://i.ibb.co/dGJyCqr/ice.png" alt="ice" />
+      <img className="ice" src="https://i.ibb.co/6XXswjQ/Group-47.png" alt="ice" />
     </ParallaxLayer>
 
     
@@ -73,9 +73,7 @@ const Page1 = ({ offset, color }) => (
       />
     </ParallaxLayer>
 
-    <ParallaxLayer className="transitionNext" offset={offset} speed={0.6}>
-      <img src="https://i.ibb.co/5W1Bv31/white-Overlay1.png" alt="" />
-    </ParallaxLayer> 
+   
   </>
 );
 

@@ -71,100 +71,116 @@ const Page5 = ({ offset, color }) => {
         <div className="wrapperCommonContainer marker marker-1">
           <div className="commonContainerSpecial">
             <MapMarker
-              size="large"
+              size={`${now ? 'large' : 'medium'}`}
               className="map-marker-blue"
-              text={mapItem('Southern Arctic','5000 - 6000')}
-            ></MapMarker>
+              text={now ? mapItem('Canada','5000 - 6000') : mapItem('Canada','2000 - 3000')}
+            />
           </div>
         </div>
         <div className="wrapperCommonContainer marker  marker-2">
           <div className="commonContainerSpecial">
             <MapMarker
-              size="medium"
+              size={`${now ? 'medium' : 'small'}`}
               className="map-marker-blue"
               text={mapItem('Canada','3000 - 4000')}
               css={{width:'500px'}}
-            ></MapMarker>
+            />
           </div>
         </div>
         <div className="wrapperCommonContainer marker  marker-3">
           <div className="commonContainerSpecial">
             <MapMarker
-              size="medium"
+              size={`${now ? 'medium' : 'small'}`}
               className="map-marker-blue"
               text={mapItem('Greenland','3000 - 4000')}
               css={{width:'500px'}}
-            ></MapMarker>
+            />
           </div>
         </div>
         <div className="wrapperCommonContainer marker  marker-4">
           <div className="commonContainerSpecial">
-            <MapMarker
-              size="small"
-              className="map-marker-blue"
-              text={mapItem('Greenland','3000 - 4000')}
-              css={{width:'500px'}}
-            ></MapMarker>
+              <div className={`${!now ? 'decrease' : 'increase'}`}>
+                <MapMarker
+                  size={`small`}
+                  className={`map-marker-blue`}
+                  text={mapItem('Greenland','3000 - 4000')}
+                  css={{width:'500px'}}
+                />
+
+              </div>
+
+            
           </div>
         </div>
         <div className="wrapperCommonContainer marker  marker-5">
           <div className="commonContainerSpecial">
             <MapMarker
-              size="medium"
+              size={`${now ? 'medium' : 'small'}`}
               className="map-marker-blue"
-              text={mapItem('USA','2 - 3')}
+              text={mapItem('USA','2 - 6000')}
               css={{width:'500px'}}
-            ></MapMarker>
+            />
           </div>
         </div>
         <div className="wrapperCommonContainer marker  marker-6">
           <div className="commonContainerSpecial">
             <MapMarker
-              size="large"
+              size={`${now ? 'large' : 'medium'}`}
               className="map-marker-blue"
-              text={mapItem('USA','2 - 3')}
+              text={mapItem('USA','2 - 99999')}
               css={{width:'500px'}}
-            ></MapMarker>
+            />
           </div>
         </div>
         <div className="wrapperCommonContainer marker  marker-7">
           <div className="commonContainerSpecial">
-            <MapMarker
-              size="small"
-              className="map-marker-blue"
-              text={mapItem('USA','2 - 3')}
-              css={{width:'500px'}}
-            ></MapMarker>
+              <div className={`${!now ? 'decrease' : 'increase'}`}>
+                <MapMarker
+                  size={`small`}
+                  className={`map-marker-blue`}
+                  text={mapItem('USA','2 - 3')}
+                  css={{width:'500px'}}
+                />
+
+              </div>
+
+            
           </div>
         </div>
         <div className="wrapperCommonContainer marker  marker-8">
           <div className="commonContainerSpecial">
-            <MapMarker
-              size="small"
-              className="map-marker-blue"
-              text={mapItem('USA','2 - 3')}
-              css={{width:'500px'}}
-            ></MapMarker>
+              <div className={`${!now ? 'decrease' : 'increase'}`}>
+                <MapMarker
+                  size={`small`}
+                  className={`map-marker-blue`}
+                  text={now ? mapItem('USA','500 - 600') : mapItem('USA','200 - 300')}
+                  css={{width:'500px'}}
+                />
+
+              </div>
+
+            
           </div>
         </div>
         <div className="wrapperCommonContainer marker  marker-9">
           <div className="commonContainerSpecial">
             <MapMarker
-              size="large"
+              size={`${now ? 'large' : 'medium'}`}
               className="map-marker-blue"
-              text={mapItem('USA','2 - 3')}
+              text={now ? mapItem('USA','2 - 3') : mapItem('USA','200 - 300')}
               css={{width:'500px'}}
-            ></MapMarker>
+            />
           </div>
         </div>
         <div className="wrapperCommonContainer marker  marker-10">
           <div className="commonContainerSpecial">
+
             <MapMarker
-              size="medium"
+              size={`${now ? 'medium' : 'small'}`}
               className="map-marker-blue"
-              text={mapItem('USA','2 - 3')}
+              text={now ? mapItem('USA','200 - 300') : mapItem('USA','400 - 900')}
               css={{width:'500px'}}
-            ></MapMarker>
+            />
           </div>
         </div>
       </ParallaxLayer>

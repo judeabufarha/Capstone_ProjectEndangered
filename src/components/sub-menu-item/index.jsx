@@ -13,6 +13,9 @@ export const SubMenuItem = (props) => {
     }, [props.state])
 
     const handleClick = () => {
+        if(props.onClick){
+          props.onClick();
+        }
         if (count === '0') {
             setState('selected');
             setCount('1');
@@ -36,5 +39,6 @@ export const SubMenuItem = (props) => {
 
 SubMenuItem.propTypes = {
     text: PropTypes.string.isRequired,
-    state: PropTypes.string.isRequired
+    state: PropTypes.string.isRequired,
+    onClick: PropTypes.func.isRequired
 }

@@ -26,10 +26,12 @@
   
   .fade-in {
     animation: fadeIn ease-in-out 1s forwards;
+    
   }
   
   .fade-out{
     animation: fadeOut ease-in-out 1s forwards;
+
   }
   
   @keyframes fadeIn {

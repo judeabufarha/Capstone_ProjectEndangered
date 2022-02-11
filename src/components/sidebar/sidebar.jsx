@@ -3,6 +3,9 @@ import { useState, useContext } from "react";
 
 import { BrowserRouter as Router, NavLink } from "react-router-dom";
 import { ToggleContext } from "../../contexts/ToggleContext";
+import { MenuItem } from "../menu-item";
+import { SubMenuItem } from "../sub-menu-item";
+import { ToggleSwitch } from "../toggle-switch";
 
 export const Sidebar = ({ handleStepNavigation }) => {
   const [showSub, setShowSub] = useState(() => {
@@ -29,121 +32,183 @@ export const Sidebar = ({ handleStepNavigation }) => {
     <nav>
       <div className={showSidebar ? "sidebar show" : "sidebar"}>
         <div className="sidenav">
-          <NavLink exact to="/" className="home">
-            <img
-              className="homeImg"
-              src="https://i.ibb.co/t8C4mJB/homelogo.png"
+        <div className="parallax-toggle-group">
+          <b className="parallax-toggle-text">Side Scrolling</b>
+          <div className="parallax-toggle-switch">
+            <ToggleSwitch />
+          </div>
+        </div>
+        <NavLink exact to="/" className="home">
+            <MenuItem
+              icon="https://i.ibb.co/rwj94wN/Web-Icons-Final-home.png"
+              text="Home"
+              state="normal"
+              expand="false"
             />
-            <h2 className="h2">Home</h2>
           </NavLink>
-          <div>
+          <div className="polar-bear-menu-content">
             <NavLink
               exact
               to="/polar-bear"
-              className="polarbear"
+              className="polar-bear"
               onClick={() => {
                 handleClick(0);
               }}
             >
-              <img
-                className="bearImg"
-                src="https://i.ibb.co/6XSLK21/polarbearicon.png"
+              <MenuItem
+                icon="https://i.ibb.co/BZXSvm2/Web-Icons-Final-polarbear-dark.png"
+                text="Polar Bear"
+                state="normal"
+                expand="true"
               />
-              <h2 className="h2">Polar Bear</h2>
             </NavLink>
-            <div className={showSub[0] ? " sub open" : "sub"}>
-              <span onClick={() => handleStepNavigation(1)}>About</span>
-              <span onClick={() => handleStepNavigation(2)}>Importance</span>
-              <span onClick={() => handleStepNavigation(3)}>Status</span>
-              <span onClick={() => handleStepNavigation(4)}>Population</span>
-              <span onClick={() => handleStepNavigation(5)}>Past</span>
-              <span onClick={() => handleStepNavigation(6)}>Future</span>
-              <span onClick={() => handleStepNavigation(7)}>Conservation</span>
-              <span onClick={() => handleStepNavigation(8)}>Virtual Experience</span>
+            <div className={showSub[0] ? "sub-item open" : "sub-item"}>
+                <SubMenuItem onClick={() => handleStepNavigation(1)} text="About" state="normal" />
+                <SubMenuItem onClick={() => handleStepNavigation(2)} text="Importance" state="normal" />
+                <SubMenuItem onClick={() => handleStepNavigation(3)} text="Status" state="normal" />
+                <SubMenuItem onClick={() => handleStepNavigation(4)} text="Population" state="normal" />
+                <SubMenuItem onClick={() => handleStepNavigation(5)} text="Past" state="normal" />
+                <SubMenuItem onClick={() => handleStepNavigation(6)} text="Future" state="normal" />
+                <SubMenuItem onClick={() => handleStepNavigation(7)} text="Conservation" state="normal" />
+                <SubMenuItem onClick={() => handleStepNavigation(8)} text="Immersive Experience" state="normal" />
             </div>
           </div>
-          <div>
+
+
+          <div className="forest-elephant-menu-content">
             <NavLink
               exact
               to="/forest-elephant"
-              className="forestelephant"
+              className="forest-elephant"
               onClick={() => {
                 handleClick(1);
               }}
             >
-              <img
-                className="elephantImg"
-                src="https://i.ibb.co/XYC31yr/elephantlogo.png"
+              <MenuItem
+                icon="https://i.ibb.co/ft1vPKc/Web-Icons-Final-elephant-dark.png"
+                text="Forest Elephant"
+                state="normal"
+                expand="true"
               />
-              <h2 className="h2">Forest Elephant</h2>{" "}
             </NavLink>
-            <div className={showSub[1] ? "sub open" : "sub"}>
-              <NavLink to="/forest-elephant/about">About</NavLink>
-              <NavLink to="/forest-elephant/importance">Importance</NavLink>
-              <NavLink to="/forest-elephant/status">Status</NavLink>
-              <NavLink to="/forest-elephant/population">Population</NavLink>
-              <NavLink to="/forest-elephant/past">Past</NavLink>
-              <NavLink to="/forest-elephant/future">Future</NavLink>
-              <NavLink to="/forest-elephant/conservation">Conservation</NavLink>
-              <NavLink to="/forest-elephant/vr">Virtual Experience</NavLink>
+            <div className={showSub[1] ? "sub-item open" : "sub-item"}>
+              <NavLink to="/forest-elephant/about">
+                <SubMenuItem text="About" state="normal" />
+              </NavLink>
+              <NavLink to="/forest-elephant/importance">
+                <SubMenuItem text="Importance" state="normal" />
+              </NavLink>
+              <NavLink to="/forest-elephant/status">
+                <SubMenuItem text="Status" state="normal" />
+              </NavLink>
+              <NavLink to="/forest-elephant/population">
+                <SubMenuItem text="Population" state="normal" />
+              </NavLink>
+              <NavLink to="/forest-elephant/past">
+                <SubMenuItem text="Past" state="normal" />
+              </NavLink>
+              <NavLink to="/forest-elephant/future">
+                <SubMenuItem text="Future" state="normal" />
+              </NavLink>
+              <NavLink to="/forest-elephant/conservation">
+                <SubMenuItem text="Conservation" state="normal" />
+              </NavLink>
+              <NavLink to="/forest-elephant/experience">
+                <SubMenuItem text="Immersive Experience" state="normal" />
+              </NavLink>
             </div>
           </div>
 
-          <div>
+
+          <div className="whooping-crane-menu-content">
             <NavLink
               exact
               to="/whooping-crane"
-              className="whoopingcrane"
+              className="whooping-crane"
               onClick={() => {
                 handleClick(2);
               }}
             >
-              <img
-                className="craneImg"
-                src="https://i.ibb.co/GRbqrM7/cranelogo.png"
+              <MenuItem
+                icon="https://i.ibb.co/Vm3c5Xg/Web-Icons-Final-crane-dark.png"
+                text="Whooping Crane"
+                state="normal"
+                expand="true"
               />
-              <h2 className="h2">Whooping Crane</h2>{" "}
             </NavLink>
-            <div className={showSub[2] ? "sub open" : "sub"}>
-              <NavLink to="/polar-bear/about">About</NavLink>
-              <NavLink to="/polar-bear/importance">Importance</NavLink>
-              <NavLink to="/polar-bear/status">Status</NavLink>
-              <NavLink to="/polar-bear/population">Population</NavLink>
-              <NavLink to="/polar-bear/past">Past</NavLink>
-              <NavLink to="/polar-bear/future">Future</NavLink>
-              <NavLink to="/polar-bear/conservation">Conservation</NavLink>
-              <NavLink to="/polar-bear/vr">Virtual Experience</NavLink>
+            <div className={showSub[2] ? "sub-item open" : "sub-item"}>
+              <NavLink to="/whooping-crane/about">
+                <SubMenuItem text="About" state="normal" />
+              </NavLink>
+              <NavLink to="/whooping-crane/importance">
+                <SubMenuItem text="Importance" state="normal" />
+              </NavLink>
+              <NavLink to="/whooping-crane/status">
+                <SubMenuItem text="Status" state="normal" />
+              </NavLink>
+              <NavLink to="/whooping-crane/population">
+                <SubMenuItem text="Population" state="normal" />
+              </NavLink>
+              <NavLink to="/whooping-crane/past">
+                <SubMenuItem text="Past" state="normal" />
+              </NavLink>
+              <NavLink to="/whooping-crane/future">
+                <SubMenuItem text="Future" state="normal" />
+              </NavLink>
+              <NavLink to="/whooping-crane/conservation">
+                <SubMenuItem text="Conservation" state="normal" />
+              </NavLink>
+              <NavLink to="/whooping-crane/experience">
+                <SubMenuItem text="Immersive Experience" state="normal" />
+              </NavLink>
             </div>
           </div>
 
-          <div>
+          <div className="sea-turtle-menu-content">
             <NavLink
               exact
-              to="/turtle"
-              className="turtle"
+              to="/sea-turtle"
+              className="sea-turtle"
               onClick={() => {
                 handleClick(3);
               }}
             >
-              <img
-                className="turtleImg"
-                src="https://i.ibb.co/6RkSGmC/turtlelogo.png"
+              <MenuItem
+                icon="https://i.ibb.co/qjTcq1h/Web-Icons-Final-turtle-dark.png"
+                text="Green Sea Turtle"
+                state="normal"
+                expand="true"
               />
-              <h2 className="h2">Green Sea Turtle</h2>{" "}
             </NavLink>
-            <div className={showSub[3] ? "sub open" : "sub"}>
-              <NavLink to="/polar-bear/about">About</NavLink>
-              <NavLink to="/polar-bear/importance">Importance</NavLink>
-              <NavLink to="/polar-bear/status">Status</NavLink>
-              <NavLink to="/polar-bear/population">Population</NavLink>
-              <NavLink to="/polar-bear/past">Past</NavLink>
-              <NavLink to="/polar-bear/future">Future</NavLink>
-              <NavLink to="/polar-bear/conservation">Conservation</NavLink>
-              <NavLink to="/polar-bear/vr">Virtual Experience</NavLink>
+            <div className={showSub[3] ? "sub-item open" : "sub-item"}>
+              <NavLink to="/sea-turtle/about">
+                <SubMenuItem text="About" state="normal" />
+              </NavLink>
+              <NavLink to="/sea-turtle/importance">
+                <SubMenuItem text="Importance" state="normal" />
+              </NavLink>
+              <NavLink to="/sea-turtle/status">
+                <SubMenuItem text="Status" state="normal" />
+              </NavLink>
+              <NavLink to="/sea-turtle/population">
+                <SubMenuItem text="Population" state="normal" />
+              </NavLink>
+              <NavLink to="/sea-turtle/past">
+                <SubMenuItem text="Past" state="normal" />
+              </NavLink>
+              <NavLink to="/sea-turtle/future">
+                <SubMenuItem text="Future" state="normal" />
+              </NavLink>
+              <NavLink to="/sea-turtle/conservation">
+                <SubMenuItem text="Conservation" state="normal" />
+              </NavLink>
+              <NavLink to="/sea-turtle/experience">
+                <SubMenuItem text="Immersive Experience" state="normal" />
+              </NavLink>
             </div>
           </div>
 
-          <div>
+          <div className="orangutan-menu-content">
             <NavLink
               exact
               to="/orangutan"
@@ -152,21 +217,38 @@ export const Sidebar = ({ handleStepNavigation }) => {
                 handleClick(4);
               }}
             >
-              <img
-                className="orangutanImg"
-                src="https://i.ibb.co/rt5Z1Cd/monkeylogo.png"
+              <MenuItem
+                icon="https://i.ibb.co/bBJfcCx/Web-Icons-Final-orangutan-dark.png"
+                text="Orangutan"
+                state="normal"
+                expand="true"
               />
-              <h2 className="h2">Orangutan</h2>{" "}
             </NavLink>
-            <div className={showSub[4] ? "sub open" : "sub"}>
-              <NavLink to="/polar-bear/about">About</NavLink>
-              <NavLink to="/polar-bear/importance">Importance</NavLink>
-              <NavLink to="/polar-bear/status">Status</NavLink>
-              <NavLink to="/polar-bear/population">Population</NavLink>
-              <NavLink to="/polar-bear/past">Past</NavLink>
-              <NavLink to="/polar-bear/future">Future</NavLink>
-              <NavLink to="/polar-bear/conservation">Conservation</NavLink>
-              <NavLink to="/polar-bear/vr">Virtual Experience</NavLink>
+            <div className={showSub[4] ? "sub-item open" : "sub-item"}>
+              <NavLink to="/orangutan/about">
+                <SubMenuItem text="About" state="normal" />
+              </NavLink>
+              <NavLink to="/orangutan/importance">
+                <SubMenuItem text="Importance" state="normal" />
+              </NavLink>
+              <NavLink to="/orangutan/status">
+                <SubMenuItem text="Status" state="normal" />
+              </NavLink>
+              <NavLink to="/orangutan/population">
+                <SubMenuItem text="Population" state="normal" />
+              </NavLink>
+              <NavLink to="/orangutan/past">
+                <SubMenuItem text="Past" state="normal" />
+              </NavLink>
+              <NavLink to="/orangutan/future">
+                <SubMenuItem text="Future" state="normal" />
+              </NavLink>
+              <NavLink to="/orangutan/conservation">
+                <SubMenuItem text="Conservation" state="normal" />
+              </NavLink>
+              <NavLink to="/orangutan/experience">
+                <SubMenuItem text="Immersive Experience" state="normal" />
+              </NavLink>
             </div>
           </div>
         </div>

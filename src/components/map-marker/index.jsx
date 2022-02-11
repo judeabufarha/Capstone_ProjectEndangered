@@ -8,12 +8,13 @@ import { MapTooltip } from "../map-tooltip";
 
 export const MapMarker = (props) => {
   return (
-    <div className="centered">
+    <div className={`centered ${props.size}`}>
       <Tooltip
         customCss={css`
           top: 35px;
-          white-space: no-wrap;
-        `}
+          white-space: nowrap;`
+        }
+        className='shadowTooltip'
         content={props.text}
         background="#c4e1e4"
         border="none"
@@ -23,9 +24,8 @@ export const MapMarker = (props) => {
         radius={8}
         color="#013440"
         arrow={15}
-        
       >
-        <div style={{ top: "-30px" }} className="circle" id={props.size}></div>
+        <div style={{ top: "-30px" }} className={`circle ${props.size}`}></div>
       </Tooltip>
     </div>
   );

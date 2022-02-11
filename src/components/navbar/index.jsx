@@ -5,6 +5,7 @@ import { slide as Menu } from "react-burger-menu";
 import { NavLink } from "react-router-dom";
 import { Sidebar } from "../sidebar/sidebar";
 import { ToggleContext } from "../../contexts/ToggleContext";
+import { SideMenu } from "../side-menu";
 
 export const Navbar = ({ handleStepNavigation }) => {
   // const [showSidebar, setShowSidebar] = useState(false)

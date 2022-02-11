@@ -4,19 +4,25 @@
   flex-direction: column;
   position: absolute;
   text-align: left;
-  padding: 50px 20px 50px 50px;
+  padding: 0 0px 50px 0px;
   background-color: white;
-  width: 350px;
-  height: 100vh;
-  margin-top: 12px;
-  box-shadow: 0 40px 50px rgba(0, 0, 0, 0.4);
+  width: 22rem;
+  height: calc(100vh - 70px);
+  /* margin-top: 12px; */
+  box-shadow: 0 40px 50px rgb(0 0 0 / 40%);
   transform: translateX(-350px);
   transition: all 0.5s linear;
- 
   box-sizing: border-box;
   z-index: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  justify-content: space-between;
+  top: 70px;
 }
 
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
 .sidebar.show {
   transform: translateX(0px);
 }
@@ -39,14 +45,26 @@
 
 .sidenav {
   position: relative;
+    margin-top: 28px;
+}
+
+.sidenav b {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  color: #013440;
+  font-weight: lighter;
 }
 
 .btm {
-  justify-content: space-between;
-  align-items: center;
-  position: absolute;
-  bottom: 100px;
-  transform: translateX(-10px);
+  /*justify-content: space-between; */
+    /* align-self: center; */
+    /* position: absolute; */
+    /* bottom: 100px; */
+    /* transform: translateX(-10px); */
+    margin: 0 auto;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
 }
 
 .home {
@@ -118,29 +136,30 @@
 .line {
   display: flex;
   justify-content: center;
-  position: absolute;
+  /* position: absolute; */
   height: 2px;
   background: #013440;
-  z-index: 4;
+  /* z-index: 4; */
   width: 250px;
+  margin: auto;
 }
 
 .colorLogo {
-  margin: 0px auto;
-  padding-top: 30px;
-  width: 180px;
-  height: 60px;
-  display: block;
-  padding-left: 30px;
+  margin: auto;
+    padding-top: 30px;
+    width: 180px;
+    height: 60px;
+    display: flex;
 }
 
 .copyright {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   padding-top: 30px;
-  padding-left: 40px;
+  /* padding-left: 40px; */
   color: grey;
   font-size: 10px;
+  margin: 0 auto;
 }
 
 .sub a {

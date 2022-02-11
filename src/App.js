@@ -45,6 +45,7 @@ function App() {
             />
           </Route>
           <Route path="/forest-elephant">
+          <Navbar handleStepNavigation={setCurrentStep} />
             <LargeIconButton type="right" />
             <LargeIconButton type="left" />
             <ToggleSwitch />

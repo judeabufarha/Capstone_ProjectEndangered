@@ -28,26 +28,26 @@
     height: 500px;
     width: 750px;
     margin-top: 9%;
-    margin-left: 18%;
+    margin-left: 10%;
     position: absolute;
     left: 0;
     top: 0;
   }
   .mountain2{
-    height: 400px;
-    width: 750px;
-    margin-top: 15%;
+    height: 300px;
+    width: 900px;
+    margin-top: 20%;
     position: absolute;
-    margin-left: 61%;
+    margin-left: 25%;
     top: 0;
     z-index: 1;
   }
   .mountain3 {
     height: 500px;
-    width: 250px;
-    margin-top: 8%;
+    width: 650px;
+    margin-top: 10%;
     position: absolute;
-    right: 0;
+    margin-left: 37%;
     top: 0;
     z-index: 0;
   }
@@ -73,17 +73,18 @@
   .ice {
     display: flex;
     height: auto;
-    margin-top: 21%;
+    margin-top: 20%;
     position: absolute;
     z-index: 5;
-    width: 100%;
+    width: 97%;
+    left: 0;
   }
 
   .lightdetail {
     position: absolute;
     z-index: 7;
     margin-top: 45%;
-    width: 100%;
+    width: 90%;
   }
 
   .darkdetail {
@@ -91,7 +92,7 @@
     position: absolute;
     z-index: 6;
     margin-top: 40%;
-    width: 100%;
+    width: 85%;
     margin-left: 8%;
 }
 }
@@ -116,8 +117,8 @@
     position: absolute;
     z-index: 1;
     top: 19%;
-    width: 244px;
-    left: 51%;
+    width: 200px;
+    left: 42%;
   }
 
   .bird {
@@ -125,7 +126,7 @@
     width: 700px;
     position: absolute;
     top: 12%;
-    left: 43%;
+    left: 32%;
     z-index: 3;
   }
 }

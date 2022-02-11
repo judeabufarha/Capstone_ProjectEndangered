@@ -1,5 +1,5 @@
 .menu-item {
-    width: 20rem;
+    width: 22rem;
     display: flex;
     flex-direction: row;
     border: none;
@@ -50,9 +50,9 @@
     display: none;
 }
 
-#selected .material-icons.expand-icon, #expanded .material-icons.expand-icon {
+/* #selected .material-icons.expand-icon, #expanded .material-icons.expand-icon {
     transform: rotate(180deg);
-}
+} */
 
 #normal:hover, #expanded:hover {
     background-color: #0134401A;
@@ -69,7 +69,7 @@
 
 #normal:active .material-icons.expand-icon {
     display: block;
-    transform: rotate(1080deg);
+    transform: rotate(180deg); 
 }
 
 #selected:hover {

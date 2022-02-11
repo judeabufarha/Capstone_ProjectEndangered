@@ -39,6 +39,33 @@
   
 }
 
+.increase {
+  animation: Increase ease-in-out forwards 1s;
+}
+
+.decrease {
+  animation: Decrease ease-in-out forwards 1s;
+}
+
+@keyframes Increase {
+  0%{
+    opacity: 0;
+    
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes Decrease {
+  0%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .page5{
   &.marker .now {
     width:20px;
@@ -56,11 +83,13 @@
     &-1 {
       left: 18%;
       top:30%;
+      z-index: 999999999;
     }
 
     &-2{
       left: 23%;
       top:36%;
+      
     }
     &-3{
       left: 33%;
@@ -73,10 +102,12 @@
     &-5{
       left: 35%;
       top:22%;
+      
     }
     &-6{
       left: 41%;
       top:23%;
+      z-index:9999;
     }
     &-7{
       left: 54%;
