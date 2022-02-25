@@ -42,7 +42,6 @@ export const Polarbear = () => {
 
   useEffect(()=> {
     const handleWheel = (e) => {
-      console.log(e)
       if(typeof offset !== "undefined"){
         const currentPage = offset + 1;
 
@@ -57,7 +56,6 @@ export const Polarbear = () => {
           newOffset = offset - 1
         }
 
-        console.log('newOffset',newOffset)
         
         // newOffset =  (offset + 1) * width  / width
         if(newOffset < 9 && newOffset >= 0){
@@ -66,50 +64,29 @@ export const Polarbear = () => {
         }
       }
     }
-
-    const handleScroll = (e) => {
-
-    }
-
-    
-
-    
     window.addEventListener("wheel", handleWheel, false);
-    window.addEventListener("scroll", handleScroll, false);
-    console.log ({width,offset})
     // let offset = this.parallax.offset || 0;
     
     return(()=>{
       window.removeEventListener("wheel", handleWheel, false);
-      window.removeEventListener("scroll", handleScroll, false);
+    
     })
   },[offset])
 
   useEffect(() => {
-    console.log(ref.current)
     ref.current.scrollTo(pageCurrentState);
-    console.log({ref})
-
-
-    
   }, [pageCurrentState]);
 
   
 
   return (
     <>
-      {/* <ScriptTag defer
-        type="text/javascript"
-        src="https://rawgit.com/jquery/jquery-mousewheel/master/jquery.mousewheel.js"
-      />
-      <ScriptTag type="text/javascript" src="./scripts/scroll.js" /> */}
-
       <Parallax
         ref={ref}
         className="container"
         pages={9}
         horizontal={true}
-        enabled={true} //disable scroll
+        enabled={false} //disable scroll
       >
         <Page1 offset={0} color="orange" />
         <Page2 offset={1} color="page2Background" />
