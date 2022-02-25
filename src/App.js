@@ -9,7 +9,7 @@ import { SubMenuItem } from "./components/sub-menu-item";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar } from "./components/navbar";
-import { useContext, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { ToggleContext } from "./contexts/ToggleContext";
 import { Polarbear } from "./components/polarbear";
 import { SideMenu } from "./components/side-menu";
@@ -17,22 +17,56 @@ import { Map } from "./components/interactive-map";
 import { Footer } from "./components/footer";
 import { Statusbar } from "./components/statusBar";
 import { Turtle } from "./components/turtle";
+import { useSwipeable } from "react-swipeable";
 
 function App() {
   const { bodyClick, pageState, setPageState} = useContext(ToggleContext);
   const {currentStep} = setPageState;
+
+  const myRef = useRef();
+
+  // const handlers = useSwipeable({
+  //   onSwiped: (e) => {
+  //     console.log('onSwiped',e)
+  //   },
+  //   onSwipedLeft: (e) => {
+  //     console.log('onSwipedLeft', e)
+  //   },
+  //   onSwipedRight: (e) => {
+  //     console.log('onSwipedRight')
+  //   }
+  // })
+
+  const [currentScroll, setCurrentScroll] = useState(0);
 
   const setCurrentStep = (stepNumber) => {
     const tmpPageState = {...pageState}
     tmpPageState.currentStep = stepNumber;
     setPageState(tmpPageState);
   }
-  
 
   const handleClick = (e) => {
     //   console.log(e.target.className)
     // e.target.className === "" && bodyClick()
   };
+
+  // const handleScroll = (e) => {
+  //   console.log('handleScroll', e)
+  //   console.log(currentStep,currentScroll)
+  // }
+
+  // const handleWheel = (e) => {
+  //   console.log('handleWheeel', e)
+  // }
+
+
+  // const refPassthrough = (elementToUse) => {
+  //   handlers.ref(elementToUse);
+  //   myRef.current = elementToUse
+  // }
+
+
+  
 
   return (
     <div className="App" onClick={handleClick}>

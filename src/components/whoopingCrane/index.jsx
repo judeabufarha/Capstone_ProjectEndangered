@@ -22,7 +22,7 @@ export const Turtle = ({ currentStep }) => {
 
   return (
     <>
-      <ScriptTag
+      {/* <ScriptTag
         type="text/javascript"
         src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
       />
@@ -30,7 +30,7 @@ export const Turtle = ({ currentStep }) => {
         type="text/javascript"
         src="https://rawgit.com/jquery/jquery-mousewheel/master/jquery.mousewheel.js"
       />
-      <ScriptTag type="text/javascript" src="./scripts/scroll.js" />
+      <ScriptTag type="text/javascript" src="./scripts/scroll.js" /> */}
 
       <Parallax
         ref={ref}
