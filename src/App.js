@@ -19,8 +19,15 @@ import { Statusbar } from "./components/statusBar";
 import { Turtle } from "./components/turtle";
 
 function App() {
-  const { bodyClick } = useContext(ToggleContext);
-  const [currentStep, setCurrentStep] = useState(0);
+  const { bodyClick, pageState, setPageState} = useContext(ToggleContext);
+  const {currentStep} = setPageState;
+
+  const setCurrentStep = (stepNumber) => {
+    const tmpPageState = {...pageState}
+    tmpPageState.currentStep = stepNumber;
+    setPageState(tmpPageState);
+  }
+  
 
   const handleClick = (e) => {
     //   console.log(e.target.className)
@@ -39,35 +46,23 @@ function App() {
           </Route>
           <Route path="/polar-bear">
             <Navbar handleStepNavigation={setCurrentStep} />
-            <Polarbear currentStep={currentStep} key="polar-bear-page"   handleStepNavigation={setCurrentStep}/>
-            <Footer
-              currentStep={currentStep}
-              handleStepNavigation={setCurrentStep}
-            />
+            <Polarbear key="polar-bear-page"/>
+            <Footer />
           </Route>
           <Route path="/forest-elephant">
           <Navbar handleStepNavigation={setCurrentStep} />
             <Polarbear currentStep={currentStep} key="forest-elephant-page" handleStepNavigation={setCurrentStep}/>
-            <Footer
-              currentStep={currentStep}
-              handleStepNavigation={setCurrentStep}
-            />
+            <Footer />
           </Route>
           <Route path="/whooping-crane">
           <Navbar handleStepNavigation={setCurrentStep} />
             <Polarbear currentStep={currentStep} key="whooping-crane-page" handleStepNavigation={setCurrentStep}/>
-            <Footer
-              currentStep={currentStep}
-              handleStepNavigation={setCurrentStep}
-            />
+            <Footer />
           </Route>
           <Route path="/sea-turtle">
           <Navbar handleStepNavigation={setCurrentStep} />
             <Turtle currentStep={currentStep} key="sea-turtle-page" handleStepNavigation={setCurrentStep}/>
-            <Footer
-              currentStep={currentStep}
-              handleStepNavigation={setCurrentStep}
-            />
+            <Footer />
           </Route>
           <Route path="/orangutan">
             <Statusbar />

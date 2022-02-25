@@ -7,10 +7,18 @@ import { MenuItem } from "../menu-item";
 import { SubMenuItem } from "../sub-menu-item";
 import { ToggleSwitch } from "../toggle-switch";
 
-export const Sidebar = ({ handleStepNavigation }) => {
+export const Sidebar = () => {
   const [showSub, setShowSub] = useState(() => {
     return [false, false, false, false, false];
   });
+
+  const { showSidebar, pageState, setPageState} = useContext(ToggleContext);
+
+  const handleStepNavigation = (index) => {
+    const tmpState = {...pageState};
+    tmpState.currentStep = index;
+    setPageState(tmpState)
+  }
 
   const handleClick = (index) => {
     if (
@@ -27,7 +35,6 @@ export const Sidebar = ({ handleStepNavigation }) => {
     }
   };
 
-  const { showSidebar } = useContext(ToggleContext);
   return (
     <nav>
       <div className={showSidebar ? "sidebar show" : "sidebar"}>

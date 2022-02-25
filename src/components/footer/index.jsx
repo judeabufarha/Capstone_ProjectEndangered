@@ -1,8 +1,23 @@
+import { useContext } from "react";
+import { ToggleContext } from "../../contexts/ToggleContext";
 import { LargeIconButton } from "../large-icon-button";
 import { Statusbar } from "../statusBar";
 import "./styles.scss";
 
-export const Footer = ({ currentStep, handleStepNavigation }) => {
+export const Footer = ({ }) => {
+
+  const appData = useContext(ToggleContext)
+  const {pageState, setPageState } = appData;
+  const { currentStep } = pageState;
+
+  const handleStepNavigation = (index) => {
+    const tmpState = {...pageState};
+    tmpState.currentStep = index;
+    setPageState(tmpState)
+  }
+
+  
+  const pageCurrentState = pageState.currentStep;
   return (
     <div className="footer-btns">
       <LargeIconButton

@@ -13,57 +13,36 @@ import Page8 from "./Page8";
 import Page9 from "./Page9";
 
 import './styles.scss';
+import { useContext } from "react";
+import { ToggleContext } from "../../contexts/ToggleContext";
 
-export const Polarbear = (props) => {
-  console.log({props})
-  const { currentStep, handleStepNavigation } = props;
+export const Polarbear = () => {
+  const appContext =  useContext(ToggleContext);
+  const { pageState, setPageState } = appContext;
+  const pageCurrentState = pageState.currentStep;
+
+
+  const handleStepNavigation = (index) => {
+    const tmpState = {...pageState};
+    tmpState.currentStep = index;
+    setPageState(tmpState)
+  }
+  
+
+
   const ref = useRef();
 
   useEffect(()=>{
-    /*
-     const container = containerRef.current
-      if (!container) return
-
-      const spaceProp = horizontal ? 'clientWidth' : 'clientHeight'
-      state.space = container[spaceProp]
-
-      const scrollType = getScrollType(horizontal)
-      if (enabled) {
-        state.current = container[scrollType]
-      } else {
-        container[scrollType] = state.current = state.offset * state.space
-      }
-      
-      if(scroll >= x1 && scroll< x2){
-        -we know :
-        - number of pages
-        - space from ref.current.value.space
-        [{
-          idx : 1
-          start: 0
-          end: offset[0]*space
-        }]
-
-        fn(window.currentscroll => scroll)
-      }
-      */
       ref.current.scrollTo(0)
       handleStepNavigation(0);
-      console.log('i have been loaded');
-      return () => {
-     
-        console.log('im leaving the page')
-        console.log({ref});
-        // ref.current.scrollTo(0);
-      }
   },[])
 
   useEffect(() => {
     console.log(ref.current)
-    ref.current.scrollTo(currentStep);
+    ref.current.scrollTo(pageCurrentState);
     console.log({ref})
     
-  }, [currentStep]);
+  }, [pageCurrentState]);
 
   return (
     <>
