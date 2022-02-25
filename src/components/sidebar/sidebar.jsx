@@ -181,30 +181,14 @@ export const Sidebar = ({ handleStepNavigation }) => {
               />
             </NavLink>
             <div className={showSub[3] ? "sub-item open" : "sub-item"}>
-              <NavLink to="/sea-turtle/about">
-                <SubMenuItem text="About" state="normal" />
-              </NavLink>
-              <NavLink to="/sea-turtle/importance">
-                <SubMenuItem text="Importance" state="normal" />
-              </NavLink>
-              <NavLink to="/sea-turtle/status">
-                <SubMenuItem text="Status" state="normal" />
-              </NavLink>
-              <NavLink to="/sea-turtle/population">
-                <SubMenuItem text="Population" state="normal" />
-              </NavLink>
-              <NavLink to="/sea-turtle/past">
-                <SubMenuItem text="Past" state="normal" />
-              </NavLink>
-              <NavLink to="/sea-turtle/future">
-                <SubMenuItem text="Future" state="normal" />
-              </NavLink>
-              <NavLink to="/sea-turtle/conservation">
-                <SubMenuItem text="Conservation" state="normal" />
-              </NavLink>
-              <NavLink to="/sea-turtle/experience">
-                <SubMenuItem text="Immersive Experience" state="normal" />
-              </NavLink>
+            <SubMenuItem onClick={() => handleStepNavigation(1)} text="About" state="normal" />
+                <SubMenuItem onClick={() => handleStepNavigation(2)} text="Importance" state="normal" />
+                <SubMenuItem onClick={() => handleStepNavigation(3)} text="Status" state="normal" />
+                <SubMenuItem onClick={() => handleStepNavigation(4)} text="Population" state="normal" />
+                <SubMenuItem onClick={() => handleStepNavigation(5)} text="Past" state="normal" />
+                <SubMenuItem onClick={() => handleStepNavigation(6)} text="Future" state="normal" />
+                <SubMenuItem onClick={() => handleStepNavigation(7)} text="Conservation" state="normal" />
+                <SubMenuItem onClick={() => handleStepNavigation(8)} text="Immersive Experience" state="normal" />
             </div>
           </div>
 

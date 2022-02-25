@@ -56,4 +56,19 @@
   
 }
 
+@media screen and (max-width: 600px) {
+
+  
+  .standPolar,
+  .birdsSky {
+    display: none;
+  }
+
+  .textListContainer {
+    width:90%;
+    height: 100vh;
+ 
+  }
+}
+
 

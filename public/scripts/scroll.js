@@ -1,5 +1,3 @@
-import $ from "jquery";
-
 $("*").mousewheel(function(event, delta) {
   console.log ("scroll fired");
   this.scrollLeft -= (delta*1.5);

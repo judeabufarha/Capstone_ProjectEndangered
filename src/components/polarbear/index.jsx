@@ -12,21 +12,62 @@ import Page7 from "./Page7";
 import Page8 from "./Page8";
 import Page9 from "./Page9";
 
-export const Polarbear = ({ currentStep }) => {
+import './styles.scss';
+
+export const Polarbear = (props) => {
+  console.log({props})
+  const { currentStep, handleStepNavigation } = props;
   const ref = useRef();
 
+  useEffect(()=>{
+    /*
+     const container = containerRef.current
+      if (!container) return
+
+      const spaceProp = horizontal ? 'clientWidth' : 'clientHeight'
+      state.space = container[spaceProp]
+
+      const scrollType = getScrollType(horizontal)
+      if (enabled) {
+        state.current = container[scrollType]
+      } else {
+        container[scrollType] = state.current = state.offset * state.space
+      }
+      
+      if(scroll >= x1 && scroll< x2){
+        -we know :
+        - number of pages
+        - space from ref.current.value.space
+        [{
+          idx : 1
+          start: 0
+          end: offset[0]*space
+        }]
+
+        fn(window.currentscroll => scroll)
+      }
+      */
+      ref.current.scrollTo(0)
+      handleStepNavigation(0);
+      console.log('i have been loaded');
+      return () => {
+     
+        console.log('im leaving the page')
+        console.log({ref});
+        // ref.current.scrollTo(0);
+      }
+  },[])
 
   useEffect(() => {
+    console.log(ref.current)
     ref.current.scrollTo(currentStep);
+    console.log({ref})
+    
   }, [currentStep]);
 
   return (
     <>
-      <ScriptTag
-        type="text/javascript"
-        src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"
-      />
-      <ScriptTag
+      <ScriptTag defer
         type="text/javascript"
         src="https://rawgit.com/jquery/jquery-mousewheel/master/jquery.mousewheel.js"
       />
@@ -37,7 +78,7 @@ export const Polarbear = ({ currentStep }) => {
         className="container"
         pages={9}
         horizontal={true}
-        //enabled={false} //disable scroll
+        enabled={true} //disable scroll
       >
         <Page1 offset={0} color="orange" />
         <Page2 offset={1} color="page2Background" />

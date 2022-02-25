@@ -34,11 +34,11 @@ export const MenuItem = (props) => {
                         <img src={(props.icon)} className="menu-item-icon"/>
                         {props.text}
                         { expand === "true" && (
-                            <span class="material-icons expand-icon">expand_more</span>
+                            <span className="material-icons expand-icon">expand_more</span>
                         )}
 
                         { expand === "false" && (
-                            <span class="material-icons expand-icon"></span>
+                            <span className="material-icons expand-icon"></span>
                         )}
             </button>
         </div>

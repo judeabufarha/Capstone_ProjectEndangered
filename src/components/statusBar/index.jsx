@@ -18,7 +18,7 @@ export const Statusbar = ({ currentStep, handleStepNavigation }) => {
       {statusDots.map((_, index) => (
         <span
           onClick={() => handleStepNavigation(index)}
-          class="dot"
+          className="dot"
           style={{
             backgroundColor: statusDots[currentStep].backgroundColor,
             opacity: index === currentStep ? 1 : 0.5,

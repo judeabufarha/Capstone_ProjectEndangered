@@ -28,11 +28,11 @@ export const LargeIconButton = (props) => {
         <Ripples color={"#013440CC"} during={1200}>
           <button className="large-icon-button" onClick={HandleOnClick}>
             {direction === "right" && (
-              <span class="material-icons chevron-icon">chevron_right</span>
+              <span className="material-icons chevron-icon">chevron_right</span>
             )}
 
             {direction === "left" && (
-              <span class="material-icons chevron-icon">chevron_left</span>
+              <span className="material-icons chevron-icon">chevron_left</span>
             )}
           </button>
         </Ripples>

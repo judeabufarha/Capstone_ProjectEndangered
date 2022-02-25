@@ -16,6 +16,7 @@ import { SideMenu } from "./components/side-menu";
 import { Map } from "./components/interactive-map";
 import { Footer } from "./components/footer";
 import { Statusbar } from "./components/statusBar";
+import { Turtle } from "./components/turtle";
 
 function App() {
   const { bodyClick } = useContext(ToggleContext);
@@ -38,7 +39,7 @@ function App() {
           </Route>
           <Route path="/polar-bear">
             <Navbar handleStepNavigation={setCurrentStep} />
-            <Polarbear currentStep={currentStep} />
+            <Polarbear currentStep={currentStep} key="polar-bear-page"   handleStepNavigation={setCurrentStep}/>
             <Footer
               currentStep={currentStep}
               handleStepNavigation={setCurrentStep}
@@ -46,35 +47,28 @@ function App() {
           </Route>
           <Route path="/forest-elephant">
           <Navbar handleStepNavigation={setCurrentStep} />
-            <LargeIconButton type="right" />
-            <LargeIconButton type="left" />
-            <ToggleSwitch />
-            <ToggleButtons
-              colour="toggle-orange"
-              text="positive-negative"
-              base="base-orange"
+            <Polarbear currentStep={currentStep} key="forest-elephant-page" handleStepNavigation={setCurrentStep}/>
+            <Footer
+              currentStep={currentStep}
+              handleStepNavigation={setCurrentStep}
             />
-            <TextButton type="light" text="Explore" colour="light" />
-
-            <TextButton
-              type="button-orange"
-              text="click to learn more"
-              colour="dark"
-            />
-
-            <div></div>
-            <MenuItem
-              icon="https://i.ibb.co/BZXSvm2/Web-Icons-Final-polarbear-dark.png"
-              text="Polar Bear"
-              state="normal"
-              expand="true"
-            />
-            <SubMenuItem text="About" state="normal" />
           </Route>
           <Route path="/whooping-crane">
-            <SideMenu />
+          <Navbar handleStepNavigation={setCurrentStep} />
+            <Polarbear currentStep={currentStep} key="whooping-crane-page" handleStepNavigation={setCurrentStep}/>
+            <Footer
+              currentStep={currentStep}
+              handleStepNavigation={setCurrentStep}
+            />
           </Route>
-          <Route path="/sea-turtle"></Route>
+          <Route path="/sea-turtle">
+          <Navbar handleStepNavigation={setCurrentStep} />
+            <Turtle currentStep={currentStep} key="sea-turtle-page" handleStepNavigation={setCurrentStep}/>
+            <Footer
+              currentStep={currentStep}
+              handleStepNavigation={setCurrentStep}
+            />
+          </Route>
           <Route path="/orangutan">
             <Statusbar />
           </Route>

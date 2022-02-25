@@ -10,7 +10,7 @@
   height: calc(100vh - 70px);
   /* margin-top: 12px; */
   box-shadow: 0 40px 50px rgb(0 0 0 / 40%);
-  transform: translateX(-350px);
+  transform: translateX(-360px);
   transition: all 0.5s linear;
   box-sizing: border-box;
   z-index: 1;
