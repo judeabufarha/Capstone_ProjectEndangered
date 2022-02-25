@@ -224,49 +224,7 @@ export const SideMenu = () => {
             </div>
           </div>
 
-          <div className="orangutan-menu-content">
-            <NavLink
-              exact
-              to="/orangutan"
-              className="orangutan"
-              onClick={() => {
-                handleClick(4);
-              }}
-            >
-              <MenuItem
-                icon="https://i.ibb.co/bBJfcCx/Web-Icons-Final-orangutan-dark.png"
-                text="Orangutan"
-                state="normal"
-                expand="true"
-              />
-            </NavLink>
-            <div className={showSub[4] ? "sub-item open" : "sub-item"}>
-              <NavLink to="/orangutan/about">
-                <SubMenuItem text="About" state="normal" />
-              </NavLink>
-              <NavLink to="/orangutan/importance">
-                <SubMenuItem text="Importance" state="normal" />
-              </NavLink>
-              <NavLink to="/orangutan/status">
-                <SubMenuItem text="Status" state="normal" />
-              </NavLink>
-              <NavLink to="/orangutan/population">
-                <SubMenuItem text="Population" state="normal" />
-              </NavLink>
-              <NavLink to="/orangutan/past">
-                <SubMenuItem text="Past" state="normal" />
-              </NavLink>
-              <NavLink to="/orangutan/future">
-                <SubMenuItem text="Future" state="normal" />
-              </NavLink>
-              <NavLink to="/orangutan/conservation">
-                <SubMenuItem text="Conservation" state="normal" />
-              </NavLink>
-              <NavLink to="/orangutan/experience">
-                <SubMenuItem text="Immersive Experience" state="normal" />
-              </NavLink>
-            </div>
-          </div>
+        
         </div>
         <div className="side-menu-footer">
           <div className="footer-div"></div>

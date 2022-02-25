@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+// Gets the window size and exports that value 
 const getWindowDimensions = () => {
     const {
         innerWidth: width,

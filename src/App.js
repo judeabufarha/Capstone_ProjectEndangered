@@ -1,72 +1,30 @@
-import logo from "./logo.svg";
-import "./App.css";
-import { LargeIconButton } from "../src/components/large-icon-button";
-import { ToggleSwitch } from "../src/components/toggle-switch";
-import { ToggleButtons } from "../src/components/toggle-buttons";
-import { TextButton } from "./components/text-button";
-import { MenuItem } from "./components/menu-item";
-import { SubMenuItem } from "./components/sub-menu-item";
 
+import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar } from "./components/navbar";
-import { useContext, useEffect, useRef, useState } from "react";
+import { useContext } from "react";
 import { ToggleContext } from "./contexts/ToggleContext";
 import { Polarbear } from "./components/polarbear";
-import { SideMenu } from "./components/side-menu";
-import { Map } from "./components/interactive-map";
 import { Footer } from "./components/footer";
 import { Statusbar } from "./components/statusBar";
 import { Turtle } from "./components/turtle";
-import { useSwipeable } from "react-swipeable";
+
 
 function App() {
-  const { bodyClick, pageState, setPageState} = useContext(ToggleContext);
-  const {currentStep} = setPageState;
-
-  const myRef = useRef();
-
-  // const handlers = useSwipeable({
-  //   onSwiped: (e) => {
-  //     console.log('onSwiped',e)
-  //   },
-  //   onSwipedLeft: (e) => {
-  //     console.log('onSwipedLeft', e)
-  //   },
-  //   onSwipedRight: (e) => {
-  //     console.log('onSwipedRight')
-  //   }
-  // })
-
-  const [currentScroll, setCurrentScroll] = useState(0);
+  const { bodyClick, pageState, setPageState } = useContext(ToggleContext);
+  const { currentStep } = setPageState;
 
   const setCurrentStep = (stepNumber) => {
-    const tmpPageState = {...pageState}
+    const tmpPageState = { ...pageState }
     tmpPageState.currentStep = stepNumber;
     setPageState(tmpPageState);
   }
 
+  // Hamburger menu open and close on click of screen feature 
   const handleClick = (e) => {
     //   console.log(e.target.className)
     // e.target.className === "" && bodyClick()
   };
-
-  // const handleScroll = (e) => {
-  //   console.log('handleScroll', e)
-  //   console.log(currentStep,currentScroll)
-  // }
-
-  // const handleWheel = (e) => {
-  //   console.log('handleWheeel', e)
-  // }
-
-
-  // const refPassthrough = (elementToUse) => {
-  //   handlers.ref(elementToUse);
-  //   myRef.current = elementToUse
-  // }
-
-
-  
 
   return (
     <div className="App" onClick={handleClick}>
@@ -75,32 +33,27 @@ function App() {
           <Route exact path="/">
             <Navbar />
           </Route>
-          <Route exact path="/map">
-            <Map></Map>
-          </Route>
           <Route path="/polar-bear">
             <Navbar handleStepNavigation={setCurrentStep} />
-            <Polarbear key="polar-bear-page"/>
+            <Polarbear key="polar-bear-page" />
             <Footer />
           </Route>
           <Route path="/forest-elephant">
-          <Navbar handleStepNavigation={setCurrentStep} />
-            <Polarbear currentStep={currentStep} key="forest-elephant-page" handleStepNavigation={setCurrentStep}/>
+            <Navbar handleStepNavigation={setCurrentStep} />
+            <Polarbear key="forest-elephant-page" />
             <Footer />
           </Route>
           <Route path="/whooping-crane">
-          <Navbar handleStepNavigation={setCurrentStep} />
-            <Polarbear currentStep={currentStep} key="whooping-crane-page" handleStepNavigation={setCurrentStep}/>
+            <Navbar handleStepNavigation={setCurrentStep} />
+            <Polarbear key="whooping-crane-page" />
             <Footer />
           </Route>
           <Route path="/sea-turtle">
-          <Navbar handleStepNavigation={setCurrentStep} />
-            <Turtle currentStep={currentStep} key="sea-turtle-page" handleStepNavigation={setCurrentStep}/>
+            <Navbar handleStepNavigation={setCurrentStep} />
+            <Turtle key="sea-turtle-page" />
             <Footer />
           </Route>
-          <Route path="/orangutan">
-            <Statusbar />
-          </Route>
+        
         </Switch>
       </Router>
     </div>

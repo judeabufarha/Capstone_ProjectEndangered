@@ -17,67 +17,56 @@ import { ToggleContext } from "../../contexts/ToggleContext";
 import useWindowDimensions from "../../hooks/windowDimensions";
 
 export const Polarbear = () => {
-  const appContext =  useContext(ToggleContext);
+  const appContext = useContext(ToggleContext);
   const { pageState, setPageState } = appContext;
   const pageCurrentState = pageState.currentStep;
 
-
   const handleStepNavigation = (index) => {
-    const tmpState = {...pageState};
+    const tmpState = { ...pageState };
     tmpState.currentStep = index;
     setPageState(tmpState)
   }
-  const {width} = useWindowDimensions();
-  
-
-
+  const { width } = useWindowDimensions();
   const ref = useRef();
   const offset = ref.current?.offset
 
+  useEffect(() => {
+    ref.current.scrollTo(0)
+    handleStepNavigation(0);
+  }, [])
 
-  useEffect(()=>{
-      ref.current.scrollTo(0)
-      handleStepNavigation(0);
-  },[])
-
-  useEffect(()=> {
+  // https://codesandbox.io/s/3nzke?file=/src/App.js:680-688
+  useEffect(() => {
     const handleWheel = (e) => {
-      if(typeof offset !== "undefined"){
+      if (typeof offset !== "undefined") {
         const currentPage = offset + 1;
 
         let newOffset;
         let min = width * offset;
         let max = width * (offset + 1)
         window.scrollLeft += e.deltaY
-        if(e.deltaY <= 0){
+        if (e.deltaY <= 0) {
           newOffset = offset + 1
-          
+
         } else {
           newOffset = offset - 1
         }
-
-        
-        // newOffset =  (offset + 1) * width  / width
-        if(newOffset < 9 && newOffset >= 0){
+        if (newOffset < 9 && newOffset >= 0) {
           ref.current.scrollTo(newOffset);
-          handleStepNavigation(newOffset); 
+          handleStepNavigation(newOffset);
         }
       }
     }
     window.addEventListener("wheel", handleWheel, false);
-    // let offset = this.parallax.offset || 0;
-    
-    return(()=>{
+    return (() => {
       window.removeEventListener("wheel", handleWheel, false);
-    
+
     })
-  },[offset])
+  }, [offset])
 
   useEffect(() => {
     ref.current.scrollTo(pageCurrentState);
   }, [pageCurrentState]);
-
-  
 
   return (
     <>
@@ -86,7 +75,7 @@ export const Polarbear = () => {
         className="container"
         pages={9}
         horizontal={true}
-        enabled={false} //disable scroll
+        enabled={true} //disable scroll
       >
         <Page1 offset={0} color="orange" />
         <Page2 offset={1} color="page2Background" />
