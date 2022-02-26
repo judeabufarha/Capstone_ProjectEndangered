@@ -11,6 +11,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar } from "./components/navbar";
 import { useContext, useState } from "react";
 import { ToggleContext } from "./contexts/ToggleContext";
+import { HomePage } from "./components/homepage";
 import { Polarbear } from "./components/polarbear";
 import { SideMenu } from "./components/side-menu";
 import { Map } from "./components/interactive-map";
@@ -32,6 +33,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Navbar />
+            <HomePage/>
           </Route>
           <Route exact path="/map">
             <Map></Map>
