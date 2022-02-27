@@ -1,62 +1,27 @@
-.homepage-container {
+.homepage-animals-desktop {
+    display: none;
+}
+
+.homepage-animals-mobile {
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    height:auto;
 }
 
-.hero-container {
-    background-color: #C4E1E4;
-    background-size: cover;
-    display: block;
-    height: 100%;
-    min-height: 100vh;
-    width: 100%;
-}
-
-.hero-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: 3.5rem;
-    transform: translate(-50%, -50%);
-    width: 95%;
-}
-
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 25%;
-    width: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.homepage-title {
-    color: #013440;
-    font-size: 72px;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-.homepage-description {
-    color: #013440;
-    margin: 0;
-}
-
-.hero-button {
-    text-align: center;
-    position: absolute;
-    bottom: 3rem;
-    width: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.homepage-content {
-    margin-top: 5rem;
-    background-color: white;
-}
-
-.homepage-animal-title {
-    font-size: 48px;
-    color: #013440;
+@media only screen and (min-width: 800px) {
+    .homepage-animals-desktop {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height:auto;
+    }
+    
+    .homepage-animals-mobile {
+        display: none;
+    }
 }
