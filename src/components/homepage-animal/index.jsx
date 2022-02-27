@@ -28,7 +28,12 @@ export const HomePageAnimal = (props) => {
                                 <h1 className="homepage-animal-title">{props.title}</h1>
                                 <p className="homepage-animal-text">{props.description}</p>
                                 <div className="learn-more-button">
-                                    <TextButton type="button-homepage" text="Learn More" colour="light" />
+                                    <TextButton 
+                                        onClick={props.linkFn}
+                                        type="button-homepage" 
+                                        text="Learn More" 
+                                        colour="light"
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -42,7 +47,12 @@ export const HomePageAnimal = (props) => {
                                 <h1 className="homepage-animal-title">{props.title}</h1>
                                 <p className="homepage-animal-text">{props.description}</p>
                                 <div className="learn-more-button">
-                                    <TextButton type="button-homepage" text="Learn More" colour="light" />
+                                    <TextButton 
+                                        onClick={props.linkFn}
+                                        type="button-homepage" 
+                                        text="Learn More" 
+                                        colour="light"
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -66,5 +76,6 @@ export const HomePageAnimal = (props) => {
     title: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired
+    alt: PropTypes.string.isRequired,
+    linkFn: PropTypes.func.isRequired
   };

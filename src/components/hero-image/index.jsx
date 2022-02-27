@@ -1,5 +1,6 @@
 import "./styles.css";
 import { TextButton } from "../text-button";
+import PropTypes from "prop-types";
 
 export const HeroImage = (props) => {
     
@@ -22,8 +23,17 @@ export const HeroImage = (props) => {
             </p>
         </div>
         <div className="hero-button">
-            <TextButton onclick="document.getElementById('content-container').scrollIntoView()" type="light" text="Enter" colour="light" />
+            <TextButton 
+                onClick={props.scrollFn}
+                type="light" 
+                text="Enter" 
+                colour="light" 
+            />
         </div>
     </div>
     );
   };
+
+HeroImage.propTypes = {
+    scrollFn: PropTypes.func.isRequired
+};
