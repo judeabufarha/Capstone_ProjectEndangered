@@ -1,13 +1,8 @@
-// Title
-// Paragraph
-// Interactive map component
-// Toggle button
-
 import { ParallaxLayer } from "@react-spring/parallax";
 import ToggleButtons from "../../toggle-buttons";
 import { Map } from "../../interactive-map";
 import { MapMarker } from "../../map-marker";
-import "./styles.scss";
+import "./style.scss";
 import { useState } from "react";
 
 const Page5 = ({ offset, color }) => {
@@ -40,8 +35,8 @@ const Page5 = ({ offset, color }) => {
           <div className="commonContainerSpecial toggleButtons">
             <div className="flexContainer100">
               <ToggleButtons
-                colour="toggle-orange"
-                base="base-orange"
+                colour="toggle-pink"
+                base="base-pink"
                 onClick={() => {
                 setNow(!now);
                 }}
@@ -63,16 +58,14 @@ const Page5 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
-      {/* <ParallaxLayer offset={offset} speed={0.8} style={{paddingTop: "50px"}}>
-            <Map className="interactive-map-component"></Map>
-      </ParallaxLayer> */}
+     
 
       <ParallaxLayer offset={offset} className={`page5 ${!now ? 'then' : 'now'}`} speed={0.8}>
         <div className="wrapperCommonContainer marker marker-1">
           <div className="commonContainerSpecial">
             <MapMarker
               size={`${now ? 'large' : 'medium'}`}
-              colour="blueCircle"
+              colour="greenCircle"
               className="map-marker-blue"
               text={now ? mapItem('Canada','5000 - 6000') : mapItem('Canada','2000 - 3000')}
             />
@@ -82,7 +75,6 @@ const Page5 = ({ offset, color }) => {
           <div className="commonContainerSpecial">
             <MapMarker
               size={`${now ? 'medium' : 'small'}`}
-              colour="blueCircle"
               className="map-marker-blue"
               text={mapItem('Canada','3000 - 4000')}
               css={{width:'500px'}}
@@ -93,7 +85,6 @@ const Page5 = ({ offset, color }) => {
           <div className="commonContainerSpecial">
             <MapMarker
               size={`${now ? 'medium' : 'small'}`}
-              colour="blueCircle"
               className="map-marker-blue"
               text={mapItem('Greenland','3000 - 4000')}
               css={{width:'500px'}}
@@ -105,7 +96,6 @@ const Page5 = ({ offset, color }) => {
               <div className={`${!now ? 'decrease' : 'increase'}`}>
                 <MapMarker
                   size={`small`}
-                  colour="blueCircle"
                   className={`map-marker-blue`}
                   text={mapItem('Greenland','3000 - 4000')}
                   css={{width:'500px'}}
@@ -120,7 +110,6 @@ const Page5 = ({ offset, color }) => {
           <div className="commonContainerSpecial">
             <MapMarker
               size={`${now ? 'medium' : 'small'}`}
-              colour="blueCircle"
               className="map-marker-blue"
               text={mapItem('USA','2 - 6000')}
               css={{width:'500px'}}
@@ -131,7 +120,6 @@ const Page5 = ({ offset, color }) => {
           <div className="commonContainerSpecial">
             <MapMarker
               size={`${now ? 'large' : 'medium'}`}
-              colour="blueCircle"
               className="map-marker-blue"
               text={mapItem('USA','2 - 99999')}
               css={{width:'500px'}}
@@ -143,7 +131,6 @@ const Page5 = ({ offset, color }) => {
               <div className={`${!now ? 'decrease' : 'increase'}`}>
                 <MapMarker
                   size={`small`}
-                  colour="blueCircle"
                   className={`map-marker-blue`}
                   text={mapItem('USA','2 - 3')}
                   css={{width:'500px'}}
@@ -159,7 +146,6 @@ const Page5 = ({ offset, color }) => {
               <div className={`${!now ? 'decrease' : 'increase'}`}>
                 <MapMarker
                   size={`small`}
-                  colour="blueCircle"
                   className={`map-marker-blue`}
                   text={now ? mapItem('USA','500 - 600') : mapItem('USA','200 - 300')}
                   css={{width:'500px'}}
@@ -174,7 +160,6 @@ const Page5 = ({ offset, color }) => {
           <div className="commonContainerSpecial">
             <MapMarker
               size={`${now ? 'large' : 'medium'}`}
-              colour="blueCircle"
               className="map-marker-blue"
               text={now ? mapItem('USA','2 - 3') : mapItem('USA','200 - 300')}
               css={{width:'500px'}}
@@ -186,7 +171,6 @@ const Page5 = ({ offset, color }) => {
 
             <MapMarker
               size={`${now ? 'medium' : 'small'}`}
-              colour="blueCircle"
               className="map-marker-blue"
               text={now ? mapItem('USA','200 - 300') : mapItem('USA','400 - 900')}
               css={{width:'500px'}}

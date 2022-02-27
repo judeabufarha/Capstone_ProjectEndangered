@@ -15,13 +15,14 @@ export const ToggleButtons = (props) => {
     const handleChange = () => { 
         setToggled(!toggled); 
         console.log('Toggle change: ' + toggled); 
+        
         if(props.onClick){
           props.onClick();
         }
     }; 
 
     return (
-        <div className={toggled ? 'toggleButtonActivated' : ''} onClick={handleChange}>
+        <div className={ toggled ? 'toggleButtonActivated' : ''} onClick={handleChange}>
             { text === "then-now" && (
                 <div>
                     

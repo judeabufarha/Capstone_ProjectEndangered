@@ -30,10 +30,16 @@ label, .toggle-then-now, .toggle-positive-negative {
   background-color: #FFAF8140;
 }
 
+.base-pink {
+  background-color: #F1BEDC40;
+}
+
 .base-white {
   background-color: #f8f8f880;
 }
 
+
+// text-switch-then-now base-orange
 .toggle-then-now {
   position: absolute;
   width: 4.5rem;
@@ -54,6 +60,10 @@ label, .toggle-then-now, .toggle-positive-negative {
 
 .toggle-orange {
   background-color: #FFAF81;
+}
+
+.toggle-pink {
+  background-color: #F1BEDC;
 }
 
 .names { 
@@ -118,10 +128,17 @@ input.switch[type="checkbox"] {
   display: none;
 }
 
+
+.toggleButtonActivated .app .toggle-pink{
+  transform: translateX(100%);
+}
+
 .toggleButtonActivated .app .toggle-orange{
   transform: translateX(100%);
-  background-color: #FFAF81;;
+  background-color: #FFAF81;
 }
+
+
 // input.switch[type="checkbox"]:hover + .app .toggle-orange{
 //   background-color: #FFBF9A;
 //   transition: .5s;

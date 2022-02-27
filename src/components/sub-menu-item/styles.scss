@@ -13,4 +13,14 @@
     font-size: 18px;
     font-family: 'Poppins', sans-serif;
     color: #013440;
+
+    &.selected {
+        background-color: #D6EBED;
+        font-weight:900;
+    }
+
+    &.normal {
+        background-color: #FFFFFF;
+        font-weight: 600;
+    }
 }

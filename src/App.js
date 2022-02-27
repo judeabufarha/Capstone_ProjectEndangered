@@ -6,8 +6,9 @@ import { useContext } from "react";
 import { ToggleContext } from "./contexts/ToggleContext";
 import { Polarbear } from "./components/polarbear";
 import { Footer } from "./components/footer";
-import { Statusbar } from "./components/statusBar";
 import { Turtle } from "./components/turtle";
+import { Elephant } from "./components/elephant";
+
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Navbar />
+           
           </Route>
           <Route path="/polar-bear">
             <Navbar handleStepNavigation={setCurrentStep} />
@@ -40,7 +42,7 @@ function App() {
           </Route>
           <Route path="/forest-elephant">
             <Navbar handleStepNavigation={setCurrentStep} />
-            <Polarbear key="forest-elephant-page" />
+            <Elephant key="forest-elephant-page" />
             <Footer />
           </Route>
           <Route path="/whooping-crane">

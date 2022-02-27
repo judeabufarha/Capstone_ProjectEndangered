@@ -1,21 +1,19 @@
-// Background Image
-// Component - Orange dots + date
-// Number line
-// Text box
-
 import { ParallaxLayer } from "@react-spring/parallax";
 import DiscusDate from "../../DiscusDate";
 import Tooltip from "../../Tooltip";
 import TrioImg from "../../trioImg";
-import "./styles.scss";
+import "./style.scss";
 
 const Page6 = ({ offset, color }) => {
+
+  const urlOfImage = 'https://i.ibb.co/HTgn4T7/Group-4.png'
+
   const years = [
-    <DiscusDate date="1940" />,
-    <DiscusDate date="1960" />,
-    <DiscusDate date="1980" />,
-    <DiscusDate date="2000" />,
-    <DiscusDate date="2020" />,
+    <DiscusDate date="1940" image={urlOfImage} />,
+    <DiscusDate date="1960"  image={urlOfImage}/>,
+    <DiscusDate date="1980"  image={urlOfImage} />,
+    <DiscusDate date="2000"  image={urlOfImage} />,
+    <DiscusDate date="2020"  image={urlOfImage} />,
   ];
 
   return (
@@ -27,7 +25,7 @@ const Page6 = ({ offset, color }) => {
             <div
               className="pastBackground"
               style={{
-                backgroundImage: "url('https://i.ibb.co/bbJdGTS/timeline.png')",
+                backgroundImage: "url('https://i.ibb.co/RCF1ySQ/elephant-Timeline.png')",
               }}
             />
           
@@ -56,18 +54,24 @@ const Page6 = ({ offset, color }) => {
       <ParallaxLayer className="tooltip1" offset={offset} speed={2}>
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
-            <Tooltip text={{title:'1971',description:'Polar bears are named Ursus maritimus.'}} width={239} />
+            <Tooltip text={{title:'1986',description:'The Asian elephant is classified as endangered.'}} width={239} />
           </div>
         </div>
       </ParallaxLayer>
       <ParallaxLayer className="tooltip2" offset={offset} speed={3}>
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
-            <Tooltip text={{title:'2008',description:'Polar bears are classifies as endangered.'}} width={250} />
+            <Tooltip text={{title:'1997',description:'The Asian Elephant Conservation Act is passed.'}} width={250} />
           </div>
         </div>
       </ParallaxLayer>
-
+      <ParallaxLayer className="tooltip3" offset={offset} speed={3}>
+        <div className="wrapperCommonContainer">
+          <div className="commonContainerSpecial">
+            <Tooltip text={{title:'2008',description:'Asian elephant poaching increases significantly.'}} width={250} />
+          </div>
+        </div>
+      </ParallaxLayer>
       
     <ParallaxLayer className="mobileTimeline" offset={offset} speed={1.2}>
       <img
@@ -82,4 +86,3 @@ const Page6 = ({ offset, color }) => {
 };
 
 export default Page6;
-
