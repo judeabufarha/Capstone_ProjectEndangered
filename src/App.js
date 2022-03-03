@@ -17,6 +17,7 @@ import { SideMenu } from "./components/side-menu";
 import { Map } from "./components/interactive-map";
 import { Footer } from "./components/footer";
 import { Statusbar } from "./components/statusBar";
+import { PolarBearMobile } from "./components/mobile-pages/polar-bear-mobile";
 
 function App() {
   const { bodyClick } = useContext(ToggleContext);
@@ -79,6 +80,10 @@ function App() {
           <Route path="/sea-turtle"></Route>
           <Route path="/orangutan">
             <Statusbar />
+          </Route>
+          <Route path="/polar-bear-mobile">
+            <Navbar />
+            <PolarBearMobile/>
           </Route>
         </Switch>
       </Router>

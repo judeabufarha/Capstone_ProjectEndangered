@@ -1,26 +1,39 @@
 import "./styles.css";
 import { HeroImage } from "../hero-image";
 import { HomePageAnimal } from "../homepage-animal";
-import {  useRef } from "react";
+import {  useEffect, useRef } from "react";
 import { useHistory } from "react-router-dom";
 import smoothscroll from 'smoothscroll-polyfill';
 
 export const HomePage = (props) => {
     const history = useHistory(); 
-    const myRef = useRef(null);
+    const scrollAnchor = useRef(null);
 
     smoothscroll.polyfill();
     window.__forceSmoothScrollPolyfill__ = true;
-     
+
+    //useEffect(
+        //() => {
+          //checkSize();
+        //}, []
+      //);
+
+
+    //const checkSize = () => {
+        //if (window.innerWidth <= 800) {
+            //history.push("/polar-bear-mobile")
+        //}
+    //}
+
     return (
         <div className="homepage-container">
             <HeroImage
                 scrollFn={() => {
-                    myRef.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+                    scrollAnchor.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
                 }}
             />
 
-            <div className="scroll-content"  ref={myRef}>
+            <div className="scroll-content"  ref={scrollAnchor}>
                 <div className="homepage-animals-desktop">
                     <HomePageAnimal
                         type="odd"
