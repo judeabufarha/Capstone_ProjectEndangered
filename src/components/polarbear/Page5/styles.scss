@@ -1,5 +1,11 @@
 @import "../../../scss/root.scss";
 
+.page5Background {
+  background-image: url(https://i.ibb.co/0nTt05S/map.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
 .population{
   &Title {
   top: 5%;
@@ -16,21 +22,225 @@
   }
 }
 
-.toggleButtonsParent{
+.p5toggleButtonsParent{
   z-index: 9999;
-
   .flexContainer100{
+    margin-top:80px;
     width: 100%;
     flex-direction: row-reverse;
-    height: 100px;
+    height: 100%;
+  }
+  
+  .wrapperCommonContainer.toggleButtons {
+    position:absolute;
+    top:12%;
+    z-index: 9999;
+  }
+  
+}
+
+.increase {
+  animation: Increase ease-in-out forwards 1s;
+}
+
+.decrease {
+  animation: Decrease ease-in-out forwards 1s;
+}
+
+@keyframes Increase {
+  0%{
+    opacity: 0;
+    
+  }
+  100% {
+    opacity: 1;
   }
 }
 
-.wrapperCommonContainer.toggleButtons {
-  position:absolute;
-  top:10%;
-  z-index: 9999;
+@keyframes Decrease {
+  0%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
+
+.page5{
+  &.marker .now {
+    width:20px;
+    height: 20px;
+  }
+
+  .marker {
+    z-index: 999999;
+    position:absolute;
+
+    .commonContainerSpecial{
+      margin:0;
+    } 
+
+    &-1 {
+      left: 18%;
+      top:30%;
+      z-index: 999999999;
+    }
+
+    &-2{
+      left: 23%;
+      top:36%;
+      
+    }
+    &-3{
+      left: 33%;
+      top:35%;
+    }
+    &-4{
+      left: 29%;
+      top:25%;
+    }
+    &-5{
+      left: 35%;
+      top:22%;
+      
+    }
+    &-6{
+      left: 41%;
+      top:23%;
+      z-index:9999;
+    }
+    &-7{
+      left: 54%;
+      top:35%;
+    }&-8{
+      left: 60%;
+      top:22%;
+    }
+    &-9{
+      left: 61%;
+      top:34%;
+    }
+    &-10{
+      left: 70%;
+      top:27%;
+    }
+    h3 {
+      margin:0;
+      padding:0;
+      margin-bottom: 10px;
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      color: $pe_dark;
+      white-space: nowrap;
+    }
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+
+  .population{
+    &Title {
+    top: 5%;
+    z-index:0;
+    color: $pe_dark;
+    font-size: 45px;
+    }
+    
+    &Text{
+      top:18%;
+      z-index: 1;
+      color: $pe_dark;
+      font-size: 0px;
+    }
+  }
+  .p5toggleButtonsParent{
+    z-index: 9999;
+    .flexContainer100{
+      justify-content: center;
+      margin-top:240%;
+      width: 100%;
+      flex-direction: row-reverse;
+      height: 100%;
+    }
+    
+    .wrapperCommonContainer.toggleButtons {
+      position:absolute;
+      top:12%;
+      z-index: 9999;
+    }
+    
+  }
+  .page5Background {
+    background-image: url(https://i.ibb.co/0nTt05S/map.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: 20% ;
+  }
+  .page5{
+    &.marker .now {
+      width:20px;
+      height: 20px;
+    }
+  
+    .marker {
+      z-index: 999999;
+      position:absolute;
+  
+      .commonContainerSpecial{
+        margin:0;
+      } 
+  
+      &-1 {
+        left: 18%;
+        top:30%;
+        z-index: 999999999;
+      }
+  
+      &-2{
+        left: 30%;
+        top:39%;
+        
+      }
+      &-3{
+        left: 80%;
+        top:25%;
+      }
+      &-4{
+        display: none;
+      }
+      &-5{
+        display: none;
+        
+      }
+      &-6{
+        display: none;
+      }
+      &-7{
+        display: none;
+      }&-8{
+        display: none;
+      }
+      &-9{
+        display: none;
+      }
+      &-10{
+        display: none;
+      }
+    
+    }
+  }
+}
+
+
+
+
+
+
+
+
 
 
 

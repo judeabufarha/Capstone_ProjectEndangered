@@ -1,0 +1,60 @@
+.elephantTitle {
+  position: absolute;
+  left: 72px;
+  top: 120px;
+  height: auto;
+  width: 350px;
+  z-index: 99999;
+}
+
+.page1ElephantBackground {
+  background-image: url(https://i.ibb.co/1q5GgY8/BG-7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bottomGrass {
+  z-index: 999;
+  .grass {
+    position: absolute;
+    display: flex;
+    left: 0;
+    bottom: 0;
+  }
+}
+.highGrass {
+  z-index: 1;
+  .lightHighGrass {
+    position: absolute;
+    display: flex;
+    padding-top: 30%;
+  }
+}
+
+.homeElephant {
+  .sideHomeElephant {
+    position: absolute;
+    display: flex;
+    padding-top: 17%;
+  }
+}
+
+.elephantSky {
+  position: inherit;
+
+  .elephantSun {
+    position: absolute;
+    z-index: 1;
+    top: 19%;
+    width: 200px;
+    left: 63%;
+  }
+
+  .elephantBirds {
+    height: auto;
+    width: 750px;
+    position: absolute;
+    top: 20%;
+    left: 51%;
+    z-index: 3;
+  }
+}

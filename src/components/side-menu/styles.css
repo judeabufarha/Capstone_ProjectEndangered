@@ -1,4 +1,4 @@
-.side-menu-container {
+/* .side-menu-container {
     display: flex;
     flex-direction: column;
     width: 20rem;
@@ -24,19 +24,6 @@
     text-decoration: none;
 }
 
-.parallax-toggle-group {
-    display: flex;
-    flex-direction: row;
-    padding-left: 1.5rem;
-    padding-top: 1.5rem;
-    padding-right: 1.5rem;
-    padding-bottom: 0.75rem;
-    align-items: center;
-}
-
-.parallax-toggle-switch {
-    margin-left: auto;
-}
 
 .side-menu-footer {
     margin-top: auto;
@@ -44,14 +31,6 @@
     padding-bottom: 1rem;
 }
 
-.sub-item {
-    display: none;
-}
-
-.sub-item.open {
-    display: flex;
-    flex-direction: column;
-}
 
 .footer-div {
     display: flex;
@@ -74,4 +53,4 @@
     color: #013440;
     font-weight: lighter;
     margin: 0rem;
-}
+} */

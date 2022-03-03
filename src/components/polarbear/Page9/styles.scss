@@ -1,0 +1,51 @@
+@import "../../../scss/root.scss";
+
+.enviromentArtic3d{
+  margin-top: 5%;
+
+
+}
+
+.enviro{
+  &Text {
+  top: 18%;
+  z-index:0;
+  color: $pe_dark;
+  font-size: 22px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+  }
+}
+
+.exploreButton{
+  margin-top: 32%;
+}
+
+@media screen and (max-width: 500px) {
+  .exploreButton{
+    margin-top: 90%;
+  }
+
+  .enviro{
+    &Text {
+    top: 29%;
+    z-index:0;
+    color: $pe_dark;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    }
+  }
+  
+.enviromentArtic3d{
+  zoom: 0.4;
+}
+  
+}
+

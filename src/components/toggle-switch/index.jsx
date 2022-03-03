@@ -11,9 +11,9 @@ export const ToggleSwitch = () => {
     }; 
 
     return (
-        <section class="toggle-component">
+        <section className="toggle-component">
             <form>
-                <div class="toggle-switch">
+                <div className="toggle-switch">
                     <input type="checkbox" onChange={handleChange}/>
                     <label className="label"></label>
                 </div>

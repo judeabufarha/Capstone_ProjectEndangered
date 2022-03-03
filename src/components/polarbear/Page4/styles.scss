@@ -44,3 +44,35 @@
     zoom: 1.2;
   }
 }
+
+@media screen and (max-width: 500px) {
+
+  
+  .statusTitle {
+    top: 8%;
+    color: $pe_dark;
+  
+  }
+  .wrapperCommonContainer.statusTextArea {
+    color: $pe_dark;
+    top: 53%;
+    width: 100%;
+  
+    p {
+      font-size: 18px;
+      display: block;
+    }
+  }
+  .sideArcticImage {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+  
+    img {
+      margin: auto;
+      zoom: 0.5;
+      margin-top: 45%;
+    }
+  }
+}

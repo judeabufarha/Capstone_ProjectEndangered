@@ -1,121 +1,249 @@
-import "./styles.css";
-import {useState, useContext} from "react";
-
-import {
-    BrowserRouter as Router,
-    NavLink
-  } from "react-router-dom";
+import "./styles.scss";
+import { useState, useContext } from "react";
+import { BrowserRouter as Router, NavLink } from "react-router-dom";
 import { ToggleContext } from "../../contexts/ToggleContext";
+import { MenuItem } from "../menu-item";
+import { SubMenuItem } from "../sub-menu-item";
+import { ToggleSwitch } from "../toggle-switch";
+import { useEffect } from "react";
 
 export const Sidebar = () => {
-  
-    const [showSub, setShowSub] = useState(()=>{
-       return [false, false, false, false, false]
-    })
+  const [showSub, setShowSub] = useState([false, false, false, false, false]);
 
-    const handleClick = (index)=>{
-     if(index === 0 || index === 1 || index === 2 || index === 3 || index === 4){
-        setShowSub({
-            ...!showSub,
-            [index]: !showSub[index]
-          })
-     }
+  const templateMenu = [
+    { name: "About", isEnabled: false },
+    { name: "Importance", isEnabled: false },
+    { name: "Status", isEnabled: false },
+    { name: "Population", isEnabled: false },
+    { name: "Past", isEnabled: false },
+    { name: "Future", isEnabled: false },
+    { name: "Conservation", isEnabled: false },
+    { name: "Immersive Experience", isEnabled: false },
+  ]
+
+  const menuStructure = {
+    animals: {
+      polarbear: [...templateMenu],
+      elephant: [...templateMenu],
+      crane: [...templateMenu],
+      turtle: [...templateMenu]
+    }
+  }
+
+  const [subMenuItems, setsubMenuItems] = useState(menuStructure)
+
+
+  const { showSidebar, pageState, setPageState } = useContext(ToggleContext);
+
+  const handleStepNavigation = (index) => {
+    const tmpState = { ...pageState };
+    tmpState.currentStep = index;
+    setPageState(tmpState)
+  }
+
+  const handleClick = (index) => {
+    const tmpShowSub = [...showSub] 
+    tmpShowSub[index] = !tmpShowSub[index];
+
+    let openItems = tmpShowSub.filter(Boolean);
+
+    if(openItems.length <= 1){
+      setShowSub(tmpShowSub)
     }
 
-    const {showSidebar} =  useContext(ToggleContext)
-    return (
-        <nav>
-        <div className={showSidebar? "sidebar show" : "sidebar" } >
-            <div className= "sidenav">
-                <NavLink exact to="/" className = "home">< img className = "homeImg" src="https://i.ibb.co/t8C4mJB/homelogo.png"/><h2 className="h2">Home</h2>
-               
-                </NavLink>
-                <div>
+    if(openItems.length > 1){
+      const cleanup = [...showSub].map(item=>false);
+      cleanup[index] = true;
+      setShowSub(cleanup)
+    }
+  };
 
-                <NavLink exact to="/polar-bear" className = "polarbear" onClick={()=>{handleClick(0)}} >< img className = "bearImg" src="https://i.ibb.co/6XSLK21/polarbearicon.png"/><h2 className="h2">Polar Bear</h2> 
-                
-                    </NavLink>
-                    <div className={showSub[0]? " sub open" : "sub"}>
-                        
-                        <NavLink to="/polar-bear/about">About</NavLink>
-                        <NavLink to="/polar-bear/importance">Importance</NavLink>
-                        <NavLink to="/polar-bear/status">Status</NavLink>
-                        <NavLink to="/polar-bear/population">Population</NavLink>
-                        <NavLink to="/polar-bear/past">Past</NavLink>
-                        <NavLink to="/polar-bear/future">Future</NavLink>
-                        <NavLink to="/polar-bear/conservation">Conservation</NavLink>
-                        <NavLink to="/polar-bear/vr">Virtual Experience</NavLink>
-                        
-                        
-                    </div>
-                </div>
-                <div>
-                <NavLink exact to="/forest-elephant" className = "forestelephant" onClick={()=>{handleClick(1)}} >< img className = "elephantImg" src="https://i.ibb.co/XYC31yr/elephantlogo.png"/><h2 className="h2">Forest Elephant</h2> </NavLink>
-                <div className={showSub[1]? "sub open" : "sub"}>
-                        <NavLink to="/forest-elephant/about">About</NavLink>
-                        <NavLink to="/forest-elephant/importance">Importance</NavLink>
-                        <NavLink to="/forest-elephant/status">Status</NavLink>
-                        <NavLink to="/forest-elephant/population">Population</NavLink>
-                        <NavLink to="/forest-elephant/past">Past</NavLink>
-                        <NavLink to="/forest-elephant/future">Future</NavLink>
-                        <NavLink to="/forest-elephant/conservation">Conservation</NavLink>
-                        <NavLink to="/forest-elephant/vr">Virtual Experience</NavLink>
-                    </div>
-                </div>
+  /**
+   * Sets a specific item of the menu to be selected.
+   * Ensures that if you have another animal on the menu, those are reset to default
+   */
+  const menuState = (stringName, animal) => {
 
-                <div>
-                <NavLink exact to="/whooping-crane" className = "whoopingcrane" onClick={()=>{handleClick(2)}}>< img className = "craneImg" src="https://i.ibb.co/GRbqrM7/cranelogo.png"/><h2 className="h2">Whooping Crane</h2> </NavLink>
-                <div className={showSub[2]? "sub open" : "sub"}>
-                        <NavLink to="/polar-bear/about">About</NavLink>
-                        <NavLink to="/polar-bear/importance">Importance</NavLink>
-                        <NavLink to="/polar-bear/status">Status</NavLink>
-                        <NavLink to="/polar-bear/population">Population</NavLink>
-                        <NavLink to="/polar-bear/past">Past</NavLink>
-                        <NavLink to="/polar-bear/future">Future</NavLink>
-                        <NavLink to="/polar-bear/conservation">Conservation</NavLink>
-                        <NavLink to="/polar-bear/vr">Virtual Experience</NavLink>
-                    </div>
-                </div>
+    // Copy of current state
+    const tmpMenuState = { ...subMenuItems };
 
-                <div>
-                <NavLink exact to="/turtle" className = "turtle" onClick={()=>{handleClick(3)}}>< img className = "turtleImg" src="https://i.ibb.co/6RkSGmC/turtlelogo.png"/><h2 className="h2">Green Sea Turtle</h2> </NavLink>
-                <div className={showSub[3]? "sub open" : "sub"}>
-                        <NavLink to="/polar-bear/about">About</NavLink>
-                        <NavLink to="/polar-bear/importance">Importance</NavLink>
-                        <NavLink to="/polar-bear/status">Status</NavLink>
-                        <NavLink to="/polar-bear/population">Population</NavLink>
-                        <NavLink to="/polar-bear/past">Past</NavLink>
-                        <NavLink to="/polar-bear/future">Future</NavLink>
-                        <NavLink to="/polar-bear/conservation">Conservation</NavLink>
-                        <NavLink to="/polar-bear/vr">Virtual Experience</NavLink>
-                    </div>
-                </div>
+    //reset every item to false;
+    Object.keys(tmpMenuState.animals).forEach(animalKey => {
+      tmpMenuState.animals[animalKey] = [...templateMenu];
+    })
 
-                <div>
-                <NavLink exact to="/orangutan" className = "orangutan" onClick={()=>{handleClick(4)}}>< img className = "orangutanImg" src="https://i.ibb.co/rt5Z1Cd/monkeylogo.png"/><h2 className="h2">Orangutan</h2> </NavLink>  
-                <div className={showSub[4]? "sub open" : "sub"}>
-                        <NavLink to="/polar-bear/about">About</NavLink>
-                        <NavLink to="/polar-bear/importance">Importance</NavLink>
-                        <NavLink to="/polar-bear/status">Status</NavLink>
-                        <NavLink to="/polar-bear/population">Population</NavLink>
-                        <NavLink to="/polar-bear/past">Past</NavLink>
-                        <NavLink to="/polar-bear/future">Future</NavLink>
-                        <NavLink to="/polar-bear/conservation">Conservation</NavLink>
-                        <NavLink to="/polar-bear/vr">Virtual Experience</NavLink>
-                    </div>   
-                </div>
+    // Get the index of the element
+    const getIndex = tmpMenuState.animals[animal]
+      .findIndex(item => item.name === stringName)
 
+    const currentState = tmpMenuState.animals[animal][getIndex].isEnabled
+
+    tmpMenuState.animals[animal][getIndex].isEnabled = !currentState;
+
+    setsubMenuItems(tmpMenuState)
+
+  }
+
+  const handleMenuItemClick = () => {
+    setsubMenuItems(menuStructure)
+  }
+
+  useEffect(()=>{
+    console.log({showSub})
+  },[showSub])
+
+
+  return (
+    <nav>
+      <div className={showSidebar ? "sidebar show" : "sidebar"}>
+        <div className="sidenav">
+          <div className="parallax-toggle-group">
+            <b className="parallax-toggle-text">Side Scrolling</b>
+            <div className="parallax-toggle-switch">
+              <ToggleSwitch />
             </div>
-            <div className="btm">
-                <div className= "line"></div>   
-                <img className="colorLogo"src="https://i.ibb.co/2tCZtBY/coloured-Logo.png" alt="coloured-Logo" border="0"></img>            
-                <p className = "copyright">Copyright © 2022 Parallax Designs</p>
+          </div>
+          <NavLink
+            exact
+            to="/"
+            className="home"
+            >
+            <MenuItem
+              icon="https://i.ibb.co/rwj94wN/Web-Icons-Final-home.png"
+              text="Home"
+              state={showSub[0]}
+              expand={false}
+              displayExpandIcon={false}
+              onClick={() => {
+                handleClick(0);
+                handleMenuItemClick();
+              }}
+            />
+          </NavLink>
+          <div className="polar-bear-menu-content">
+            <NavLink
+              exact
+              to="/polar-bear"
+              className="polar-bear"
+              onClick={() => {
+                handleClick(1);
+                handleMenuItemClick();
+              }}
+
+            >
+              <MenuItem
+                icon="https://i.ibb.co/BZXSvm2/Web-Icons-Final-polarbear-dark.png"
+                text="Polar Bear"
+                state={showSub[1]}
+                expand={showSub[1]}
+              />
+            </NavLink>
+            <div className={showSub[1] ? "sub-item open" : "sub-item"}>
+              {subMenuItems.animals.polarbear.map((item, index) =>
+                <SubMenuItem
+                  onClick={() => {
+                    menuState(item.name, 'polarbear');
+                    handleStepNavigation(index + 1)
+                  }} text={item.name} isEnabled={item.isEnabled} key={`polarbear-${item.name}`} />
+
+              )}
             </div>
+          </div>
+          <div className="forest-elephant-menu-content">
+            <NavLink
+              exact
+              to="/forest-elephant"
+              className="forest-elephant"
+              onClick={() => {
+                handleMenuItemClick(0)
+                handleClick(2);
+              }}
+            >
+              <MenuItem
+                icon="https://i.ibb.co/ft1vPKc/Web-Icons-Final-elephant-dark.png"
+                text="Forest Elephant"
+                state={showSub[2]}
+                expand={showSub[2]}
+              />
+            </NavLink>
+            <div className={showSub[2] ? "sub-item open" : "sub-item"}>
+              {subMenuItems.animals.elephant.map((item, index) =>
+                <SubMenuItem
+                  onClick={() => {
+                    menuState(item.name, 'elephant');
+                    handleStepNavigation(index + 1)
+                  }} text={item.name} isEnabled={item.isEnabled} key={`elephant-${item.name}`} />
+
+              )}
             </div>
-  
-            
-        </nav>
-        
-    );
+          </div>
+          <div className="whooping-crane-menu-content">
+            <NavLink
+              exact
+              to="/whooping-crane"
+              className="whooping-crane"
+              onClick={() => {
+                handleMenuItemClick()
+                handleClick(3);
+              }}
+            >
+              <MenuItem
+                icon="https://i.ibb.co/Vm3c5Xg/Web-Icons-Final-crane-dark.png"
+                text="Whooping Crane"
+                state={showSub[3]}
+                expand={showSub[3]}
+              />
+            </NavLink>
+            <div className={showSub[3] ? "sub-item open" : "sub-item"}>
+              {subMenuItems.animals.crane.map((item, index) =>
+                <SubMenuItem
+                  onClick={() => {
+                    menuState(item.name, 'crane');
+                    handleStepNavigation(index + 1)
+                  }} text={item.name} isEnabled={item.isEnabled} key={`crane-${item.name}`} />
+              )}
+            </div>
+          </div>
+          <div className="sea-turtle-menu-content">
+            <NavLink
+              exact
+              to="/sea-turtle"
+              className="sea-turtle"
+              onClick={() => {
+                handleMenuItemClick()
+                handleClick(4);
+              }}
+            >
+              <MenuItem
+                icon="https://i.ibb.co/qjTcq1h/Web-Icons-Final-turtle-dark.png"
+                text="Green Sea Turtle"
+                state="normal"
+                state={showSub[4]}
+                expand={showSub[4]}
+              />
+            </NavLink>
+            <div className={showSub[4] ? "sub-item open" : "sub-item"}>
+              {subMenuItems.animals.turtle.map((item, index) =>
+                <SubMenuItem
+                  onClick={() => {
+                    menuState(item.name, 'turtle');
+                    handleStepNavigation(index + 1)
+                  }} text={item.name} isEnabled={item.isEnabled} key={`turtle-${item.name}`} />
+              )}
+            </div>
+          </div>
+        </div>
+        <div className="btm">
+          <div className="line"></div>
+          <img
+            className="colorLogo"
+            src="https://i.ibb.co/2tCZtBY/coloured-Logo.png"
+            alt="coloured-Logo"
+            border="0"
+          ></img>
+          <p className="copyright">Copyright © 2022 Parallax Designs</p>
+        </div>
+      </div>
+    </nav>
+  );
 };
-
