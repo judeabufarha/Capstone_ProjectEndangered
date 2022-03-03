@@ -5,11 +5,11 @@ import Page1 from "./Page1";
 import Page2 from "./Page2";
 import Page3 from "./Page3";
 import Page4 from "./Page4";
-// import Page5 from "./Page5";
-// import Page6 from "./Page6";
-// import Page7 from "./Page7";
-// import Page8 from "./Page8";
-// import Page9 from "./Page9";
+import Page5 from "./Page5";
+import Page6 from "./Page6";
+import Page7 from "./Page7";
+import Page8 from "./Page8";
+import Page9 from "./Page9";
 
 import './styles.scss';
 import { useContext } from "react";
@@ -77,15 +77,15 @@ export const Turtle = () => {
         horizontal={true}
         enabled={true} //disable scroll
       >
-        <Page1 offset={0} color="orange" />
+        <Page1 offset={0} color="page1TurtleBackground" />
         <Page2 offset={1} color="page2TurtleBackground" />
         <Page3 offset={2} color="white" />
         <Page4 offset={3} color="white" />
-        <Page1 offset={4} color="page5Background" />
-        <Page1 offset={5} color="page6Background" />
-        <Page1 offset={6} color="page7Background" />
-        <Page1 offset={7} color="white" />
-        <Page1 offset={8} color="white" />
+        <Page5 offset={4} color="page5Background" />
+        <Page6 offset={5} color="page6TurtleBackground" />
+        <Page7 offset={6} color="page7TurtleBackground" />
+        <Page8 offset={7} color="white" />
+        <Page9 offset={8} color="white" />
       </Parallax>
     </>
   );
