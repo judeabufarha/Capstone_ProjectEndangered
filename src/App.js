@@ -36,9 +36,6 @@ function App() {
             <Navbar />
             <HomePage/>
           </Route>
-          <Route exact path="/map">
-            <Map></Map>
-          </Route>
           <Route path="/polar-bear">
             <Navbar handleStepNavigation={setCurrentStep} />
             <Polarbear key="polar-bear-page" />
