@@ -9,10 +9,6 @@
     padding-bottom: 5rem;
 }
 
-.page03 {
-    overflow: hidden;
-}
-
 .mobile-page-03::-webkit-scrollbar {
     display: none;
 }

@@ -11,9 +11,6 @@ export const MobilePage03 = (props) => {
                     <p className="mobile-importance-details">{props.para1}</p>
                     <div id="importance-divider"></div>
                     <p className="mobile-importance-details">{props.para2}</p>
-                    <p className="mobile-importance-details">{props.para1}</p>
-                    <div id="importance-divider"></div>
-                    <p className="mobile-importance-details">{props.para2}</p>
                 </div>
 
                 <div className="mobile-importance-images">
@@ -33,6 +30,7 @@ export const MobilePage03 = (props) => {
                         alt={props.alt3}
                     />
                 </div>
+                
                 <div className="mobile-space"></div>
             </div>
       </div>
@@ -42,5 +40,11 @@ export const MobilePage03 = (props) => {
 MobilePage03.propTypes = {
     title: PropTypes.func.isRequired,
     para1: PropTypes.func.isRequired,
-    para2: PropTypes.func.isRequired
+    para2: PropTypes.func.isRequired,
+    image1: PropTypes.func.isRequired,
+    alt1: PropTypes.func.isRequired,
+    image2: PropTypes.func.isRequired,
+    alt2: PropTypes.func.isRequired,
+    image3: PropTypes.func.isRequired,
+    alt3: PropTypes.func.isRequired
 }

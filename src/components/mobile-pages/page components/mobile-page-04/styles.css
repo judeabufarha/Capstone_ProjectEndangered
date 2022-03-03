@@ -1,0 +1,59 @@
+.mobile-page-04 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-y: auto;
+    padding-bottom: 5rem;
+}
+
+.mobile-page-04::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-status {
+    position: absolute;
+    left: 1.5rem;
+    top: 5rem;
+    padding-right: 1.5rem;
+    height: 100%;
+}
+
+.mobile-status-images {
+    width: 100%;
+}
+
+.mobile-status-image {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.mobile-status-title {
+    color: #013440;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 0px;
+}
+
+.mobile-status-status {
+    color: #013440;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+    margin-top: 0rem;
+}
+
+.mobile-status-text {
+    vertical-align:top;
+    width: 100%;
+    white-space:normal;
+    word-wrap: break-word;
+}
+
+.mobile-status-paragraph {
+    color: #013440;
+}
+

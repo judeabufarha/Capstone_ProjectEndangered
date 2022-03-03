@@ -4,13 +4,19 @@
     background-color: #FFFFFF;
     display: flex;
     align-items: center;
+    flex-direction: column;
     position: relative;
 }
 
 .mobile-about {
     position: absolute;
+    width: 100vw;
     left: 1.5rem;
     top: 8rem;
+}
+
+.mobile-about-info {
+    width: 100%;
 }
 
 #about-divider {
@@ -19,6 +25,7 @@
     height: 2px;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .mobile-about-label {
@@ -33,4 +40,5 @@
     font-weight: bold;
     line-height: 36px;
     margin-top: .5rem;
+    width: 100vw;
 }
