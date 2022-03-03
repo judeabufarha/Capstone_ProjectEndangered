@@ -29,7 +29,7 @@ export const MobilePage02 = (props) => {
 
                 <div className="mobile-about-info">
                     <h1 className="mobile-about-label">Life Span</h1>
-                    <p className="mobile-about-details">{props.lifespan}</p>
+                    <p className="mobile-about-details">{props.lifespan}</p> 
                 </div>
             </div>
       </div>

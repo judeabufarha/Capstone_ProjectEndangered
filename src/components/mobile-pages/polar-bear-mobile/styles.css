@@ -2,6 +2,7 @@
     height: 100%;
     white-space: nowrap;
     width: 100%;
+    overflow-y: none;
 }
 
 .mobile-page {
