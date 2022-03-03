@@ -1,0 +1,31 @@
+.scroll-content {
+    padding-top: 4rem;
+}
+
+.homepage-animals-desktop {
+    display: none;
+}
+
+.homepage-animals-mobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:auto;
+}
+
+@media only screen and (min-width: 800px) {
+    .homepage-animals-desktop {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height:auto;
+    }
+    
+    .homepage-animals-mobile {
+        display: none;
+    }
+}

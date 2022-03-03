@@ -1,0 +1,126 @@
+.homepage-content {
+    left: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:auto;
+}
+
+.homepage-animal {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.content-odd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content-even {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.homepage-animal-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 1.5rem;
+}
+
+.homepage-animal-title {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 36px;
+    color: #013440;
+}
+
+.homepage-animal-text {
+    color: #013440;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.learn-more-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.homepage-animal-image {
+    width: 100%;
+}
+
+#white-bg {
+    background-color: #ffffff;
+}
+
+#grey-bg {
+    background-color: #F8F8F8;
+}
+
+@media only screen and (min-width: 800px) {
+    
+    .homepage-animal {
+        flex-direction: row;
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .content-odd {
+        flex-direction: row;
+    }
+
+    .content-even {
+        flex-direction: row;
+    }
+
+    .content-left {
+        float: left;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 100%;
+        margin-right: 2rem;
+    }
+    
+    .content-right {
+        float: left;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 100%;
+        margin-left: 2rem;
+    }
+    
+    .homepage-animal-info {
+        margin-top: 0rem;
+    }
+    
+    .homepage-animal-title {
+        font-size: 48px;
+    }
+    
+}

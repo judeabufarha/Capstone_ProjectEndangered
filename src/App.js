@@ -4,12 +4,13 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar } from "./components/navbar";
 import { useContext } from "react";
 import { ToggleContext } from "./contexts/ToggleContext";
+import { HomePage } from "./components/homepage";
 import { Polarbear } from "./components/polarbear";
 import { Footer } from "./components/footer";
+import { Statusbar } from "./components/statusBar";
+import { PolarBearMobile } from "./components/mobile-pages/polar-bear-mobile";
 import { Turtle } from "./components/turtle";
 import { Elephant } from "./components/elephant";
-
-
 
 function App() {
   const { bodyClick, pageState, setPageState } = useContext(ToggleContext);
@@ -33,7 +34,10 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Navbar />
-           
+            <HomePage/>
+          </Route>
+          <Route exact path="/map">
+            <Map></Map>
           </Route>
           <Route path="/polar-bear">
             <Navbar handleStepNavigation={setCurrentStep} />
@@ -55,7 +59,10 @@ function App() {
             <Turtle key="sea-turtle-page" />
             <Footer />
           </Route>
-        
+          <Route path="/polar-bear-mobile">
+            <Navbar />
+            <PolarBearMobile/>
+          </Route>
         </Switch>
       </Router>
     </div>
