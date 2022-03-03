@@ -1,0 +1,150 @@
+@import "../../../scss/root.scss";
+
+
+
+.gradient {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.title {
+  position: absolute;
+  left: 72px;
+  top: 120px;
+  height: 115px;
+  width:385px;
+}
+
+.backgroundMountains {
+  display: flex;
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+
+  .mountain1{
+    height: 500px;
+    width: 750px;
+    margin-top: 9%;
+    margin-left: 10%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .mountain2{
+    height: 300px;
+    width: 900px;
+    margin-top: 20%;
+    position: absolute;
+    margin-left: 25%;
+    top: 0;
+    z-index: 1;
+  }
+  .mountain3 {
+    height: 500px;
+    width: 650px;
+    margin-top: 10%;
+    position: absolute;
+    margin-left: 37%;
+    top: 0;
+    z-index: 0;
+  }
+}
+
+.water {
+  position: absolute;
+  z-index: 4;
+  bottom:0;
+  left: 0;
+  width: 100%;
+  height: 50vh;
+
+
+  &base {
+    height: 379px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+  }
+
+  .ice {
+    display: flex;
+    height: auto;
+    margin-top: 20%;
+    position: absolute;
+    z-index: 5;
+    width: 97%;
+    left: 0;
+  }
+
+  .lightdetail {
+    position: absolute;
+    z-index: 7;
+    margin-top: 45%;
+    width: 90%;
+  }
+
+  .darkdetail {
+    display: inherit;
+    position: absolute;
+    z-index: 6;
+    margin-top: 40%;
+    width: 85%;
+    margin-left: 8%;
+}
+}
+
+.polarbearOnIce{
+  z-index: 8;
+
+  .polarIce{
+    height: 400px;
+    width: 550px;
+    position: absolute;
+    margin-top: 458px;
+    margin-left: 312px;
+  }
+}
+
+
+.sky {
+  position: inherit;
+
+  .sun{
+    position: absolute;
+    z-index: 1;
+    top: 19%;
+    width: 200px;
+    left: 42%;
+  }
+
+  .bird {
+    height: 100px;
+    width: 700px;
+    position: absolute;
+    top: 12%;
+    left: 32%;
+    z-index: 3;
+  }
+}
+
+.transitionNext {
+  position:absolute;
+  z-index:10;
+
+  img{
+    position: absolute;
+    top: 0;
+    right:-471px;
+    width: 471px;
+    height: 100vh;
+  }
+}
+
+.pageContainer {
+  height:100vh;
+  overflow: hidden;
+}

@@ -82,6 +82,67 @@
     }
   }
 }
+@media screen and (max-width: 600px) {
+  .page7 {
+
+    .page7Background {
+      background-image: url(https://i.ibb.co/sCNDbb8/positive-Future.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 44%;
+    }
+  
+    .future{
+      &Title {
+      top: 10%;
+      z-index:0;
+      color: $pe_dark;
+      font-size: 48px;
+      }
+      
+      &Text{
+        top:80%;
+        z-index: 1;
+        color: $pe_dark;
+        font-size: 18px;
+      }
+    }
+  
+    
+    .futureText {
+      .commonContainer{
+        .pContainer {
+          padding:30px;
+          display: block;
+        }
+      }
+    }
+  
+    .toggleButtonsP7 {
+      z-index: 9999;
+      top: 40px;
+      position: absolute;
+      left: 0;
+      width: 100%;
+  
+      .flexContainer100{
+        margin-top:200%;
+        width: 100%;
+        flex-direction: row-reverse;
+        height: 100%;
+        justify-content: center;
+      }
+    
+      .wrapperCommonContainer.toggleButtons {
+        position:absolute;
+        top:12%;
+        z-index: 9999;
+      }
+    }
+  }
+ 
+}
+                         
 
 
 

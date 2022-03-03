@@ -1,6 +1,9 @@
 @import "../../../scss/root.scss";
 
 
+.mobileImg{
+  display: none;
+}
 
 .gradient {
   position: absolute;
@@ -15,6 +18,7 @@
   top: 120px;
   height: 115px;
   width:385px;
+  z-index: 99999;
 }
 
 .backgroundMountains {
@@ -54,6 +58,7 @@
 }
 
 .water {
+  display: flex;
   position: absolute;
   z-index: 4;
   bottom:0;
@@ -61,23 +66,13 @@
   width: 100%;
   height: 50vh;
 
-
-  &base {
-    height: 379px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0px;
-  }
-
   .ice {
-    display: flex;
     height: auto;
     margin-top: 20%;
     position: absolute;
     z-index: 5;
     width: 97%;
-    left: 0;
+    left: 0;    
   }
 
   .lightdetail {
@@ -148,3 +143,69 @@
   height:100vh;
   overflow: hidden;
 }
+
+
+@media screen and (max-width: 600px) {
+
+  .title {
+  zoom: 0.9;
+  }
+
+  .backgroundMountains {
+  
+    .mountain1{
+     display: none;
+    }
+    .mountain2{
+     display: none;
+    }
+    .mountain3 {
+      display: none;
+    }
+  }
+
+  .water {
+
+    display: none;
+
+  
+    .ice {
+    display: none !important;
+    }
+  
+    .lightdetail {
+     display: none !important;
+    }
+  
+    .darkdetail {
+      display: none !important;
+  }
+  }
+
+  .polarbearOnIce{
+  
+    .polarIce{
+      display: none;
+    }
+  }
+  
+  .sky {
+    display: none;
+  
+    .sun{
+     display: none;
+    }
+  
+    .bird {
+      display: none;
+    }
+  }
+  
+  .mobileImg{
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: scroll;
+  }
+}
+                                                                   

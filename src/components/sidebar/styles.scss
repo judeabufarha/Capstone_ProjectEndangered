@@ -1,0 +1,184 @@
+.sidebar {
+  justify-content: left;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: left;
+  padding: 0 0px 50px 0px;
+  background-color: white;
+  width: 22rem;
+  height: calc(100vh - 70px);
+  /* margin-top: 12px; */
+  box-shadow: 0 40px 50px rgb(0 0 0 / 40%);
+  transform: translateX(-360px);
+  transition: all 0.5s linear;
+  box-sizing: border-box;
+  z-index: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  justify-content: space-between;
+  top: 70px;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &.show {
+    transform: translateX(0px);
+    transition: all 0.5s linear;
+  }
+
+  .sidenav {
+    position: relative;
+    margin-top: 28px;
+
+    a {
+      color: #013440;
+      text-decoration: none;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    b {
+      font-size: 18px;
+      font-family: "Poppins", sans-serif;
+      color: #013440;
+      font-weight: lighter;
+    }
+
+    .home,
+    .polarbear,
+    .forestelephant,
+    .whoopingcrane,
+    .turtle {
+      display: flex;
+      justify-content: left;
+      transition: all 0.5s linear;
+    }
+
+    .sub-item {
+      display: none;
+
+      &.open {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .parallax-toggle-group {
+      display: flex;
+      flex-direction: row;
+      padding-left: 1.5rem;
+      padding-top: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 0.75rem;
+      align-items: center;
+    }
+
+    .parallax-toggle-switch {
+      margin-left: auto;
+    }
+  }
+
+  .btm {
+    /*justify-content: space-between; */
+    /* align-self: center; */
+    /* position: absolute; */
+    /* bottom: 100px; */
+    /* transform: translateX(-10px); */
+    margin: 0 auto;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+
+    .line {
+      display: flex;
+      justify-content: center;
+      /* position: absolute; */
+      height: 2px;
+      background: #013440;
+      /* z-index: 4; */
+      width: 250px;
+      margin: auto;
+    }
+
+    .colorLogo {
+      margin: auto;
+      padding-top: 30px;
+      width: 180px;
+      height: 60px;
+      display: flex;
+    }
+
+    .copyright {
+      display: flex;
+      /* justify-content: center; */
+      padding-top: 30px;
+      /* padding-left: 40px; */
+      color: grey;
+      font-size: 10px;
+      margin: 0 auto;
+    }
+  }
+}
+
+// .sidebar
+// .sidebar
+
+// .sub {
+//   display: none !important;
+// }
+
+// .sub.open {
+//   display: flex !important;
+//   flex-direction: column;
+// }
+
+// .bearImg {
+//   width: 30px;
+//   height: 30px;
+//   padding-right: 15px;
+//   margin-top: 12px;
+// }
+
+// .elephantImg {
+//   width: 35px;
+//   height: 30px;
+//   padding-right: 12px;
+//   margin-top: 12px;
+// }
+// .forestelephant {
+//   display: flex;
+//   justify-content: left;
+// }
+
+// .whoopingcrane {
+//   display: flex;
+//   justify-content: left;
+// }
+// .craneImg {
+//   width: 42px;
+//   height: 40px;
+//   padding-right: 9px;
+//   margin-top: 12px;
+//   margin-left: -5px;
+// }
+// .turtle {
+//   display: flex;
+//   justify-content: left;
+// }
+
+// .turtleImg {
+//   width: 35px;
+//   height: 35px;
+//   padding-right: 10px;
+//   margin-top: 12px;
+// }
+
+// .sub a {
+//   text-transform: capitalize;
+//   font-size: 15px;
+//   padding-bottom: 15px;
+//   padding-left: 45px;
+//   font-weight: 600;
+// }

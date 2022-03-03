@@ -19,3 +19,27 @@
     }
   }
 }
+@media screen and (max-width: 500px) {
+
+  .trioImg{
+    &__container {
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 40px;
+    }
+  
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+  
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+}

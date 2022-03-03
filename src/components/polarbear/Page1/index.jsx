@@ -10,7 +10,7 @@ const Page1 = ({ offset, color }) => (
       <div className={`gradient ${color}`} />
     </ParallaxLayer>
 
-    <ParallaxLayer className="title" offset={offset} speed={0.6}>
+    <ParallaxLayer className="titleContainer" offset={offset} speed={0.6}>
       <img
         className="title"
         src="https://i.ibb.co/rM1GN44/title.png"
@@ -37,11 +37,7 @@ const Page1 = ({ offset, color }) => (
     </ParallaxLayer>
 
     <ParallaxLayer className="water" offset={offset} speed={0.6}>
-      {/* <img
-        className="waterbase"
-        src="https://i.ibb.co/tx0FqC2/water-Base.png"
-        alt="waterbase"
-      /> */}
+  
       <img
         className="lightdetail"
         src="https://i.ibb.co/vsqYpWc/waterdetail-Light.png"
@@ -70,6 +66,14 @@ const Page1 = ({ offset, color }) => (
         className="polarIce"
         src="https://i.ibb.co/fMtZSVX/polarbear-Ice.png"
         alt="polar"
+      />
+    </ParallaxLayer>
+
+    <ParallaxLayer className="mobileBackground" offset={offset} speed={1.2}>
+      <img
+        className="mobileImg"
+        src="https://i.ibb.co/1GRCqgp/Illustration-9.png"
+        alt="polarMobile"
       />
     </ParallaxLayer>
 

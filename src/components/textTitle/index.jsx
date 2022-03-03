@@ -2,7 +2,7 @@
 import "./style.scss"
 
 const TextTitle = (props)=> (
-  <ul class="textTitleList">
+  <ul className="textTitleList">
     {props.list.map(item => (
       <li>
         <h3>{item.title}</h3>

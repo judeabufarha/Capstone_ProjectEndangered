@@ -32,6 +32,7 @@ const Page6 = ({ offset, color }) => {
             />
           
       </ParallaxLayer>
+      
 
       <ParallaxLayer offset={offset} speed={0}>
         <div className={`gradient ${color}`} />
@@ -66,10 +67,19 @@ const Page6 = ({ offset, color }) => {
           </div>
         </div>
       </ParallaxLayer>
+
+      
+    <ParallaxLayer className="mobileTimeline" offset={offset} speed={1.2}>
+      <img
+        className="mobileTimeline"
+        src="https://i.ibb.co/GPbYKBx/Lines-1.png"
+        alt="mobile timeline"
+      />
+    </ParallaxLayer>
+
     </>
   );
 };
 
 export default Page6;
 
-//

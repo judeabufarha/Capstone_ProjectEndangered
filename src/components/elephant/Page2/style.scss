@@ -1,0 +1,53 @@
+.page2ElephantBackground {
+  background-image: url(https://i.ibb.co/vms5Wcq/About.png);
+  background-repeat: no-repeat;
+  background-size: cover
+}
+
+.sideBottomGrass{
+  position: absolute;
+  z-index: 12;
+
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+
+.sideLongGrass{
+  position: absolute;
+  z-index: 10;
+
+  img {
+    position: absolute;
+    right: 0;
+   margin-top: 30%;
+  }
+}
+
+
+.aboutElephant{
+  position: absolute;
+  z-index: 1;
+
+  img {
+    position: absolute;
+    margin-left: 35%;
+   margin-top: 15%;
+  }
+}
+
+
+.aboutElephBirds{
+  position: absolute;
+  z-index: 1;
+
+  img {
+    position: absolute;
+    margin-left: 40%;
+    margin-bottom: 30%;
+
+  }
+}
