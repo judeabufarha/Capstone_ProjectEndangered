@@ -57,7 +57,7 @@ function App() {
             <Footer />
           </Route>
           <Route path="/polar-bear-mobile">
-            <Navbar />
+            <Navbar/>
             <PolarBearMobile/>
           </Route>
         </Switch>

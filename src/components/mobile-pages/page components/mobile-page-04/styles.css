@@ -51,6 +51,7 @@
     width: 100%;
     white-space:normal;
     word-wrap: break-word;
+    margin-bottom: 5rem;
 }
 
 .mobile-status-paragraph {

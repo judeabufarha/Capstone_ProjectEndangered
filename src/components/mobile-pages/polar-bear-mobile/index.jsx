@@ -4,6 +4,10 @@ import { MobilePage02 } from "../page components/mobile-page-02";
 import { MobilePage03 } from "../page components/mobile-page-03";
 import { MobilePage04 } from "../page components/mobile-page-04";
 import { MobilePage05 } from "../page components/mobile-page-05";
+import { MobilePage06PolarBear } from "../page components/mobile-page-06-polar-bear";
+import { MobilePage07 } from "../page components/mobile-page-07";
+import { MobilePage08 } from "../page components/mobile-page-08";
+import { MobilePage09 } from "../page components/mobile-page-09";
 
 export const PolarBearMobile = (props) => {
 
@@ -58,6 +62,51 @@ export const PolarBearMobile = (props) => {
                     text="Explore the population of polar bears in different areas of the world."
                     map="https://i.ibb.co/hF7N1cF/Map.png"
                     alt="Map of the world."
+                />
+            </div>
+
+            <div className="mobile-page page06">
+                <MobilePage06PolarBear
+                    animal="polarBear"
+                    image="https://i.ibb.co/84wfNjw/06-History.png"
+                    alt="Arctic environment illustration."
+                />
+            </div>
+
+            <div className="mobile-page page07">
+                <MobilePage07
+                    animal="polarBear"
+                    image1="https://i.ibb.co/1K1DvwS/07-Future.png"
+                    image2="https://i.ibb.co/3sr8BXT/07-Future-negative.png"
+                    alt="Arctic environment illustration with polar bears and seals."
+                />
+            </div>
+
+            <div className="mobile-page page08">
+                <MobilePage08
+                    text="Without global change the polar bear will be extinct by 2100. It is up to us to change our ways in order to save the polar bear species. There are many ways each of us can help save the polar bears, including volunteering, fighting climate change, and raising money for conservation efforts. If you would like to learn more about how you can help the polar bear population, take a look at the conservation efforts below."
+                    blob1="https://i.ibb.co/9cKpF7q/blob1.png"
+                    title1="Polar Bears International"
+                    text1="“Polar Bears International is made up of a passionate team of conservationists, scientists, and volunteers—working to secure a future for polar bears across the Arctic.”"
+                    link1="https://polarbearsinternational.org/"
+                    blob2="https://i.ibb.co/TB5HGCp/Vector.png"
+                    title2="World Wildlife Fund"
+                    text2="“Polar bears have long been a focus in WWF’s on-the-ground research and conservation projects in the Arctic, going back to 1972 – and climate change is a primary focus of our global conservation efforts.”"
+                    link2="https://arcticwwf.org/species/polar-bear/"
+                    blob3="https://i.ibb.co/gFSNnSB/Vector.png"
+                    title3="Canadian Polar Bear Habitat"
+                    text3="“The Canadian Polar Bear Habitat is committed to advancing the conservation of wild polar bears and elevating the standard of care for polar bears in human care through research and education.”"
+                    link3="https://canadianpolarbearhabitat.com/"
+                />
+            </div>
+
+            <div className="mobile-page page09">
+                <MobilePage09
+                    text="Launch into the polar bear’s habitat to explore their home and play activities to learn more about them."
+                    image="https://i.ibb.co/Q6wzNSn/Vector.png"
+                    alt="Image of 3D Arctic environment."
+                    button="button-orange"
+                    link="https://vickeychee.github.io/Project_Endangered/public/arctic/"
                 />
             </div>
         </div>

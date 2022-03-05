@@ -1,0 +1,87 @@
+.mobile-page-06 {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-y: auto;
+    padding-bottom: 5rem;
+    background-color: #4292A8;
+    overflow-x: hidden;
+}
+
+.mobile-page-06::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-past {
+    position: absolute;
+    left: 1.5rem;
+    top: 4.5rem;
+    padding-right: 1.5rem;
+    height: 100%;
+}
+
+.mobile-past-text {
+    vertical-align:top;
+    width: 100%;
+    white-space:normal;
+    word-wrap: break-word;
+}
+
+.mobile-past-title {
+    color: #013440;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.mobile-past-timeline {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+.mobile-past-timeline-base {
+    display: flex;
+    flex-direction: row;
+}
+
+.mobile-past-lines {
+    height: 55rem;
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+
+.mobile-past-point1 {
+    margin-bottom: 16rem;
+}
+
+.mobile-past-point2 {
+    margin-bottom: 15.75rem;
+}
+
+.mobile-past-point3 {
+    margin-bottom: 15.75rem;
+}
+
+.mobile-past-image {
+    position: absolute;
+    top: 4.25rem;
+    left: 0rem;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.mobile-past-event1 {
+    margin-top: 7rem;
+}
+
+.mobile-past-event2 {
+    margin-top: 37rem;
+}
+
+.mobile-space {
+    height: 8rem;
+}

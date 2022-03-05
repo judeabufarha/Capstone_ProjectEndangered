@@ -15,6 +15,7 @@ import './styles.scss';
 import { useContext } from "react";
 import { ToggleContext } from "../../contexts/ToggleContext";
 import useWindowDimensions from "../../hooks/windowDimensions";
+import { useHistory } from "react-router-dom";
 
 export const Polarbear = () => {
   const appContext = useContext(ToggleContext);
@@ -67,6 +68,20 @@ export const Polarbear = () => {
   useEffect(() => {
     ref.current.scrollTo(pageCurrentState);
   }, [pageCurrentState]);
+
+  const history = useHistory(); 
+
+  useEffect(
+    () => {
+      checkSize();
+    }, []
+  );
+
+  const checkSize = () => {
+    if (window.innerWidth <= 800) {
+        history.push("/polar-bear-mobile")
+    }
+  }
 
   return (
     <>

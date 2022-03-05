@@ -70,11 +70,6 @@
     transition: .5s;
 }
 
-.button-orange:hover {
-    background-color: #F1BEDC40;
-    transition: .5s;
-}
-
 .button-homepage {
     cursor: pointer;
     height: 3rem;
