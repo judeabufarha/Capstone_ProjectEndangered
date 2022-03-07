@@ -8,8 +8,18 @@ import { MobilePage06PolarBear } from "../page components/mobile-page-06-polar-b
 import { MobilePage07 } from "../page components/mobile-page-07";
 import { MobilePage08 } from "../page components/mobile-page-08";
 import { MobilePage09 } from "../page components/mobile-page-09";
+import smoothscroll from 'smoothscroll-polyfill';
+import { useEffect, useRef } from "react";
 
 export const PolarBearMobile = (props) => {
+    const scrollAnchor = useRef(null);
+
+    smoothscroll.polyfill();
+    window.__forceSmoothScrollPolyfill__ = true;
+
+    //useEffect(() => {
+        //scrollAnchor.current.scrollIntoView({block: "start", inline: "nearest"});
+      //}, [scrollAnchor]);
 
     return (
 
@@ -45,7 +55,7 @@ export const PolarBearMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page04">
+            <div className="mobile-page page04" ref={scrollAnchor}>
                 <MobilePage04
                     status="Vulnerable"
                     image="https://i.ibb.co/zxn68hP/Vector.png"

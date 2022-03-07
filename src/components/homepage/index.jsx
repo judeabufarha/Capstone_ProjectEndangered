@@ -12,19 +12,6 @@ export const HomePage = (props) => {
     smoothscroll.polyfill();
     window.__forceSmoothScrollPolyfill__ = true;
 
-    //useEffect(
-        //() => {
-          //checkSize();
-        //}, []
-      //);
-
-
-    //const checkSize = () => {
-        //if (window.innerWidth <= 800) {
-            //history.push("/polar-bear-mobile")
-        //}
-    //}
-
     return (
         <div className="homepage-container">
             <HeroImage

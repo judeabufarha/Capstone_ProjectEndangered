@@ -8,6 +8,7 @@ import { ToggleSwitch } from "../toggle-switch";
 import { useEffect } from "react";
 
 export const Sidebar = () => {
+
   const [showSub, setShowSub] = useState([false, false, false, false, false]);
 
   const templateMenu = [
