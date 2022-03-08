@@ -1,4 +1,4 @@
-.mobile-page-06-polar-bear {
+.mobile-page-06-whooping-crane {
     width: 100vw;
     height: 100%;
     display: flex;
@@ -6,7 +6,7 @@
     position: relative;
     overflow-y: auto;
     padding-bottom: 5rem;
-    background-color: #4292A8;
+    background-color: #5A82B1;
     overflow-x: hidden;
 }
 
@@ -14,7 +14,7 @@
     display: none;
 }
 
-.pb-past {
+.wc-past {
     position: absolute;
     left: 1.5rem;
     top: 4.5rem;
@@ -22,51 +22,51 @@
     height: 100%;
 }
 
-.pb-past-text {
+.wc-past-text {
     vertical-align:top;
     width: 100%;
     white-space:normal;
     word-wrap: break-word;
 }
 
-.pb-past-title {
+.wc-past-title {
     color: #013440;
     font-size: 36px;
     font-weight: bold;
     line-height: 36px;
 }
 
-.pb-past-timeline {
+.wc-past-timeline {
     display: flex;
     flex-direction: row;
     margin-bottom: 5rem;
 }
 
-.pb-past-timeline-base {
+.wc-past-timeline-base {
     display: flex;
     flex-direction: row;
 }
 
-.pb-past-lines {
-    height: 60.25rem;
+.wc-past-lines {
     width: 1.5rem;
+    height: 80.25rem;
     margin-top: 1rem;
     margin-left: .5rem;
 }
 
-.pb-past-point1 {
-    margin-bottom: 17.70rem;
-}
-
-.pb-past-point2 {
+.wc-past-point1 {
     margin-bottom: 17.7rem;
 }
 
-.pb-past-point3 {
+.wc-past-point2 {
     margin-bottom: 17.6rem;
 }
 
-.pb-past-image {
+.wc-past-point3 {
+    margin-bottom: 17.5rem;
+}
+
+.wc-past-image {
     position: absolute;
     top: 4.25rem;
     left: 0rem;
@@ -75,12 +75,24 @@
     width: 100%;
 }
 
-.pb-past-event1 {
-    margin-top: 10rem;
+.wc-past-event1 {
+    margin-top: 0rem;
 }
 
-.pb-past-event2 {
-    margin-top: 42rem;
+.wc-past-event2 {
+    margin-top: 24rem;
+}
+
+.wc-past-event3 {
+    margin-top: 35rem;
+}
+
+.wc-past-event4 {
+    margin-top: 50rem;
+}
+
+.wc-past-event5 {
+    margin-top: 63rem;
 }
 
 .mobile-space {

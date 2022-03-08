@@ -4,7 +4,7 @@ import { MobilePage02 } from "../page components/mobile-page-02";
 import { MobilePage03 } from "../page components/mobile-page-03";
 import { MobilePage04 } from "../page components/mobile-page-04";
 import { MobilePage05 } from "../page components/mobile-page-05";
-import { MobilePage06PolarBear } from "../page components/mobile-page-06-polar-bear";
+import { MobilePage06WhoopingCrane } from "../page components/mobile-page-06-whooping-crane";
 import { MobilePage07 } from "../page components/mobile-page-07";
 import { MobilePage08 } from "../page components/mobile-page-08";
 import { MobilePage09 } from "../page components/mobile-page-09";
@@ -76,9 +76,9 @@ export const WhoopingCraneMobile = (props) => {
             </div>
 
             <div className="mobile-page page06">
-                <MobilePage06PolarBear
+                <MobilePage06WhoopingCrane
                     animal="polarBear"
-                    image="https://i.ibb.co/84wfNjw/06-History.png"
+                    image="https://i.ibb.co/WvSxKV1/06-History.png"
                     alt="Arctic environment illustration."
                 />
             </div>

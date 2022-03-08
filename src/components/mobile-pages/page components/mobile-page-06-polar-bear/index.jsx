@@ -6,41 +6,41 @@ import { TimelineMarkerMobile } from "../../../timeline-marker-mobile";
 export const MobilePage06PolarBear = (props) => {
 
     return (
-        <div className="mobile-page-06">
-            <div className="mobile-past-background">
+        <div className="mobile-page-06-polar-bear">
+            <div className="pb-past-background">
                     <img
-                        className="mobile-past-image"
+                        className="pb-past-image"
                         src={props.image}
                         alt={props.alt}
                     />
             </div>
-            <div className="mobile-past">
-                <h1 className="mobile-past-title">The Past</h1>
+            <div className="pb-past">
+                <h1 className="pb-past-title">The Past</h1>
 
-                <div className="mobile-past-timeline">
-                    <div className="mobile-past-timeline-base">
-                        <div className="mobile-past-points">
-                            <div className="mobile-past-point1">
+                <div className="pb-past-timeline">
+                    <div className="pb-past-timeline-base">
+                        <div className="pb-past-points">
+                            <div className="pb-past-point1">
                                 <DiscusDate date="1960"/>
                             </div>
-                            <div className="mobile-past-point2">
+                            <div className="pb-past-point2">
                                 <DiscusDate date="1980"/>
                             </div>
-                            <div className="mobile-past-point3">
+                            <div className="pb-past-point3">
                                 <DiscusDate date="2000"/>
                             </div>
-                            <div className="mobile-past-point4">
+                            <div className="pb-past-point4">
                                 <DiscusDate date="2020"/>
                             </div>
                         </div>
                         <img
-                            className="mobile-past-lines"
+                            className="pb-past-lines"
                             src="https://i.ibb.co/jRBsFZg/Lines.png"
                             alt="Timeline"
                         />
                     </div>
 
-                    <div className="mobile-past-event1">
+                    <div className="pb-past-event1">
                         <TimelineMarkerMobile
                             type="double"
                             base="https://i.ibb.co/hLrGVyN/Rectangle-3.png"
@@ -50,7 +50,7 @@ export const MobilePage06PolarBear = (props) => {
                             text2="Commercial hunting of polar bears is now regulated."
                         />
                     </div>
-                    <div className="mobile-past-event2">
+                    <div className="pb-past-event2">
                         <TimelineMarkerMobile
                             type="double"
                             base="https://i.ibb.co/CnyPNwh/Rectangle-3.png"
