@@ -11,11 +11,6 @@ export const MobilePage05 = (props) => {
     return (
         <div className="mobile-page-05">
             <div className="mobile-population">
-                <div className="mobile-population-text">
-                    <h1 className="mobile-population-title">Population</h1>
-                    <p className="mobile-population-details">{props.text}</p>
-                </div>
-
                 <div className="mobile-population-visual">
                     <img
                         className="mobile-population-map"
@@ -55,6 +50,25 @@ export const MobilePage05 = (props) => {
                             <MapMarkerMobile size={`${now ? 'none-mobile' : 'small-mobile'}`} colour="red-mobile" top="42%" left="18%"/>
                         </div>
                     )}
+
+                    {animal === "asianElephant" && (
+                        <div className="mobile-population-points">
+                            <MapMarkerMobile size={`${now ? 'large-mobile' : 'medium-mobile'}`} colour="green-mobile" top="48%" left="39%"/>
+                            <MapMarkerMobile size={`${now ? 'large-mobile' : 'medium-mobile'}`} colour="green-mobile" top="55%" left="41%"/>
+                            <MapMarkerMobile size={`${now ? 'medium-mobile' : 'small-mobile'}`} colour="green-mobile" top="33%" left="50%"/>
+                            <MapMarkerMobile size={`${now ? 'small-mobile' : 'small-mobile'}`} colour="green-mobile" top="46%" left="52%"/>
+                            <MapMarkerMobile size={`${now ? 'medium-mobile' : 'small-mobile'}`} colour="green-mobile" top="46%" left="47%"/>
+                            <MapMarkerMobile size={`${now ? 'medium-mobile' : 'small-mobile'}`} colour="green-mobile" top="55%" left="50%"/>
+                            <MapMarkerMobile size={`${now ? 'small-mobile' : 'medium-mobile'}`} colour="green-mobile" top="53%" left="53%"/>
+                            <MapMarkerMobile size={`${now ? 'medium-mobile' : 'small-mobile'}`} colour="green-mobile" top="50%" left="53%"/>
+                            <MapMarkerMobile size={`${now ? 'large-mobile' : 'medium-mobile'}`} colour="green-mobile" top="56%" left="58%"/>
+                        </div>
+                    )}
+                </div>
+
+                <div className="mobile-population-text">
+                    <h1 className="mobile-population-title">Population</h1>
+                    <p className="mobile-population-details">{props.text}</p>
                 </div>
 
                 {animal === "polarBear" && (
@@ -81,7 +95,20 @@ export const MobilePage05 = (props) => {
                             }}
                         />
                     </div>
-                )}          
+                )}     
+
+                {animal === "asianElephant" && (
+                    <div className="mobile-population-toggle">
+                        <ToggleButtons
+                            colour="toggle-pink"
+                            base="base-pink"
+                            text="then-now"
+                            onClick={() => {
+                                setNow(!now);
+                            }}
+                        />
+                    </div>
+                )}               
                 
             </div>
       </div>

@@ -10,18 +10,17 @@
 
 .mobile-about {
     position: absolute;
-    width: 100vw;
     left: 1.5rem;
     top: 5rem;
+    padding-right: 1.5rem;
 }
 
 .mobile-about-info {
-    width: 100%;
+
 }
 
 #about-divider {
     background-color: #013440;
-    width: 100%;
     height: 2px;
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
@@ -40,7 +39,7 @@
     font-weight: bold;
     line-height: 36px;
     margin-top: .5rem;
-    width: 100vw;
     white-space:normal;
     word-wrap: break-word;
+    padding-right: 1.5rem;
 }

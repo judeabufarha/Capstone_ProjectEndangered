@@ -12,6 +12,7 @@ import { PolarBearMobile } from "./components/mobile-pages/polar-bear-mobile";
 import { Turtle } from "./components/turtle";
 import { Elephant } from "./components/elephant";
 import { WhoopingCraneMobile } from "./components/mobile-pages/whooping-crane-mobile";
+import { AsianElephantMobile } from "./components/mobile-pages/asian-elephant-mobile";
 
 function App() {
   const { bodyClick, pageState, setPageState } = useContext(ToggleContext);
@@ -64,6 +65,10 @@ function App() {
           <Route path="/whooping-crane-mobile">
             <Navbar/>
             <WhoopingCraneMobile/>
+          </Route>
+          <Route path="/asian-elephant-mobile">
+            <Navbar/>
+            <AsianElephantMobile/>
           </Route>
         </Switch>
       </Router>

@@ -10,7 +10,7 @@ export const MobilePage02 = (props) => {
                     <h1 className="mobile-about-label">Scientific Name</h1>
                     <p className="mobile-about-details">{props.name}</p>
                 </div>
-
+                
                 <div id="about-divider"></div>
 
                 <div className="mobile-about-info">
