@@ -46,18 +46,42 @@ export const MobilePage05 = (props) => {
                             <MapMarkerMobile size={`${now ? 'medium-mobile' : 'medium-mobile'}`} colour="blue-outline-mobile" top="3%" left="90%"/>
                         </div>
                     )}
+
+                    {animal === "whoopingCrane" && (
+                        <div className="mobile-population-points">
+                            <MapMarkerMobile size={`${now ? 'small-mobile' : 'medium-mobile'}`} colour="red-mobile" top="22%" left="6%"/>
+                            <MapMarkerMobile size={`${now ? 'small-mobile' : 'medium-mobile'}`} colour="red-mobile" top="27%" left="16%"/>
+                            <MapMarkerMobile size={`${now ? 'none-mobile' : 'small-mobile'}`} colour="red-mobile" top="41%" left="14%"/>
+                            <MapMarkerMobile size={`${now ? 'none-mobile' : 'small-mobile'}`} colour="red-mobile" top="42%" left="18%"/>
+                        </div>
+                    )}
                 </div>
 
-                <div className="mobile-population-toggle">
-                    <ToggleButtons
-                        colour="toggle-orange"
-                        base="base-orange"
-                        text="then-now"
-                        onClick={() => {
-                            setNow(!now);
-                        }}
-                    />
-                </div>
+                {animal === "polarBear" && (
+                    <div className="mobile-population-toggle">
+                        <ToggleButtons
+                            colour="toggle-orange"
+                            base="base-orange"
+                            text="then-now"
+                            onClick={() => {
+                                setNow(!now);
+                            }}
+                        />
+                    </div>
+                )}
+
+                {animal === "whoopingCrane" && (
+                    <div className="mobile-population-toggle">
+                        <ToggleButtons
+                            colour="toggle-green"
+                            base="base-green"
+                            text="then-now"
+                            onClick={() => {
+                                setNow(!now);
+                            }}
+                        />
+                    </div>
+                )}          
                 
             </div>
       </div>

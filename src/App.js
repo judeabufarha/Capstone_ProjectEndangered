@@ -11,6 +11,7 @@ import { Statusbar } from "./components/statusBar";
 import { PolarBearMobile } from "./components/mobile-pages/polar-bear-mobile";
 import { Turtle } from "./components/turtle";
 import { Elephant } from "./components/elephant";
+import { WhoopingCraneMobile } from "./components/mobile-pages/whooping-crane-mobile";
 
 function App() {
   const { bodyClick, pageState, setPageState } = useContext(ToggleContext);
@@ -59,6 +60,10 @@ function App() {
           <Route path="/polar-bear-mobile">
             <Navbar/>
             <PolarBearMobile/>
+          </Route>
+          <Route path="/whooping-crane-mobile">
+            <Navbar/>
+            <WhoopingCraneMobile/>
           </Route>
         </Switch>
       </Router>

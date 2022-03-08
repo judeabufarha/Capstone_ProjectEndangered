@@ -89,11 +89,15 @@ export const PolarBearMobile = (props) => {
                     image1="https://i.ibb.co/1K1DvwS/07-Future.png"
                     image2="https://i.ibb.co/3sr8BXT/07-Future-negative.png"
                     alt="Arctic environment illustration with polar bears and seals."
+                    text="Scientists predict that polar bears will be extinct by the end of the century if greenhouse gas emissions continue to increase. Greenhouse gas emissions have caused climate change on our planet, and this is affecting the polar bears’ environment. As the Arctic becomes warmer, the ice begins to melt. However, there are two possible future outcomes. Reducing greenhouse gas emissions globally would significantly help save the arctic environment. If we change our ways, the Arctic could be saved, and polar bears would be able to feed and nourish themselves, which would help regrow the population."
+                    colour1="polarBear1"
+                    colour2="polarBear1"
                 />
             </div>
 
             <div className="mobile-page page08">
                 <MobilePage08
+                    animal="polarBear"
                     text="Without global change the polar bear will be extinct by 2100. It is up to us to change our ways in order to save the polar bear species. There are many ways each of us can help save the polar bears, including volunteering, fighting climate change, and raising money for conservation efforts. If you would like to learn more about how you can help the polar bear population, take a look at the conservation efforts below."
                     blob1="https://i.ibb.co/9cKpF7q/blob1.png"
                     title1="Polar Bears International"

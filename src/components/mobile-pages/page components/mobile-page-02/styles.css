@@ -12,7 +12,7 @@
     position: absolute;
     width: 100vw;
     left: 1.5rem;
-    top: 8rem;
+    top: 5rem;
 }
 
 .mobile-about-info {
@@ -41,4 +41,6 @@
     line-height: 36px;
     margin-top: .5rem;
     width: 100vw;
+    white-space:normal;
+    word-wrap: break-word;
 }

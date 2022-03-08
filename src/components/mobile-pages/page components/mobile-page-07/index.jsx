@@ -7,7 +7,7 @@ export const MobilePage07 = (props) => {
     const [showImage, setShowImage] = useState(true);
 
     return (
-        <div className="mobile-page-07">
+        <div className="mobile-page-07" id={`${showImage ? props.colour1 : props.colour2}`}>
             <div className="mobile-future-background">
                     <img
                         id="mobile-future-positive"
@@ -27,19 +27,33 @@ export const MobilePage07 = (props) => {
 
                 <div className="mobile-future-content">
                     <div className="mobile-future-toggle">
-                        <ToggleButtons
-                            colour="toggle-orange"
-                            base="base-white"
-                            onClick={() => {
-                                setShowImage(!showImage);
-                                console.log("toggle");
-                            }}
-                            text="positive-negative"
-                        />
+                        {props.animal === "polarBear" && (
+                            <ToggleButtons
+                                colour="toggle-orange"
+                                base="base-white"
+                                onClick={() => {
+                                    setShowImage(!showImage);
+                                    console.log("toggle");
+                                }}
+                                text="positive-negative"
+                            />
+                        )}
+
+                        {props.animal === "whoopingCrane" && (
+                            <ToggleButtons
+                                colour="toggle-green"
+                                base="base-white"
+                                onClick={() => {
+                                    setShowImage(!showImage);
+                                    console.log("toggle");
+                                }}
+                                text="positive-negative"
+                            />
+                        )}
                     </div>
 
                     <div className="mobile-future-text-box">
-                        <p className="mobile-future-text">Scientists predict that polar bears will be extinct by the end of the century if greenhouse gas emissions continue to increase. Greenhouse gas emissions have caused climate change on our planet, and this is affecting the polar bears’ environment. As the Arctic becomes warmer, the ice begins to melt. However, there are two possible future outcomes. Reducing greenhouse gas emissions globally would significantly help save the arctic environment. If we change our ways, the Arctic could be saved, and polar bears would be able to feed and nourish themselves, which would help regrow the population.</p>
+                        <p className="mobile-future-text">{props.text}</p>
                     </div>
 
                 </div>
@@ -51,7 +65,11 @@ export const MobilePage07 = (props) => {
   };
 
 MobilePage07.propTypes = {
+    animal: PropTypes.func.isRequired,
     image1: PropTypes.func.isRequired,
     image2: PropTypes.func.isRequired,
-    alt: PropTypes.func.isRequired
+    alt: PropTypes.func.isRequired,
+    text: PropTypes.func.isRequired,
+    colour1: PropTypes.func.isRequired,
+    colour2: PropTypes.func.isRequired,
 }

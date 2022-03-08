@@ -6,8 +6,19 @@
     position: relative;
     overflow-y: auto;
     padding-bottom: 5rem;
-    background-color: #4292A8;
     overflow-x: hidden;
+}
+
+#polarBear1 {
+    background-color: #4292A8;
+}
+
+#whoopingCrane1 {
+    background-color: #5A82B1;
+}
+
+#whoopingCrane2 {
+    background-color: #5C4833;
 }
 
 .mobile-page-07::-webkit-scrollbar {
