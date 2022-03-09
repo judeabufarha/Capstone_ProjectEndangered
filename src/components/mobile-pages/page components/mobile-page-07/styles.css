@@ -10,15 +10,23 @@
 }
 
 #polarBear1 {
-    background-color: #4292A8;
+    background-color: #94D2ED;
 }
 
 #whoopingCrane1 {
-    background-color: #5A82B1;
+    background-color: #7B97B7;
 }
 
 #whoopingCrane2 {
-    background-color: #5C4833;
+    background-color: #997C5F;
+}
+
+#asianElephant1 {
+    background-color: #A4BC82;
+}
+
+#asianElephant2 {
+    background-color: #B4A290;
 }
 
 .mobile-page-07::-webkit-scrollbar {

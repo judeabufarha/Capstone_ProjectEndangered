@@ -78,7 +78,7 @@ export const PolarBearMobile = (props) => {
             <div className="mobile-page page06">
                 <MobilePage06PolarBear
                     animal="polarBear"
-                    image="https://i.ibb.co/84wfNjw/06-History.png"
+                    image="https://i.ibb.co/x3Y69ZC/06-History.png"
                     alt="Arctic environment illustration."
                 />
             </div>
@@ -86,8 +86,8 @@ export const PolarBearMobile = (props) => {
             <div className="mobile-page page07">
                 <MobilePage07
                     animal="polarBear"
-                    image1="https://i.ibb.co/1K1DvwS/07-Future.png"
-                    image2="https://i.ibb.co/3sr8BXT/07-Future-negative.png"
+                    image1="https://i.ibb.co/6ynLGGX/07-Future-Positive.png"
+                    image2="https://i.ibb.co/Pz3rpD9/07-Future-Negative.png"
                     alt="Arctic environment illustration with polar bears and seals."
                     text="Scientists predict that polar bears will be extinct by the end of the century if greenhouse gas emissions continue to increase. Greenhouse gas emissions have caused climate change on our planet, and this is affecting the polar bears’ environment. As the Arctic becomes warmer, the ice begins to melt. However, there are two possible future outcomes. Reducing greenhouse gas emissions globally would significantly help save the arctic environment. If we change our ways, the Arctic could be saved, and polar bears would be able to feed and nourish themselves, which would help regrow the population."
                     colour1="polarBear1"

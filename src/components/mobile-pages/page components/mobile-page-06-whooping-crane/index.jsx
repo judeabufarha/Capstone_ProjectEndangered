@@ -4,6 +4,7 @@ import DiscusDate from "../../../DiscusDate";
 import { TimelineMarkerMobile } from "../../../timeline-marker-mobile";
 
 export const MobilePage06WhoopingCrane = (props) => {
+    const urlOfImage = 'https://i.ibb.co/hYLr69R/Ellipse-12-2.png';
 
     return (
         <div className="mobile-page-06-whooping-crane">
@@ -21,19 +22,19 @@ export const MobilePage06WhoopingCrane = (props) => {
                     <div className="wc-past-timeline-base">
                         <div className="wc-past-points">
                             <div className="wc-past-point1">
-                                <DiscusDate date="1940"/>
+                                <DiscusDate date="1940" image={urlOfImage}/>
                             </div>
                             <div className="wc-past-point1">
-                                <DiscusDate date="1960"/>
+                                <DiscusDate date="1960" image={urlOfImage}/>
                             </div>
                             <div className="wc-past-point2">
-                                <DiscusDate date="1980"/>
+                                <DiscusDate date="1980" image={urlOfImage}/>
                             </div>
                             <div className="wc-past-point3">
-                                <DiscusDate date="2000"/>
+                                <DiscusDate date="2000" image={urlOfImage}/>
                             </div>
                             <div className="wc-past-point4">
-                                <DiscusDate date="2020"/>
+                                <DiscusDate date="2020" image={urlOfImage}/>
                             </div>
                         </div>
                         <img

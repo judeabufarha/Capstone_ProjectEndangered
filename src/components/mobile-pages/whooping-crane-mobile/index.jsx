@@ -77,8 +77,8 @@ export const WhoopingCraneMobile = (props) => {
 
             <div className="mobile-page page06">
                 <MobilePage06WhoopingCrane
-                    animal="polarBear"
-                    image="https://i.ibb.co/WvSxKV1/06-History.png"
+                    animal="whoopingCrane"
+                    image="https://i.ibb.co/74THprc/06-History.png"
                     alt="Arctic environment illustration."
                 />
             </div>
@@ -86,8 +86,8 @@ export const WhoopingCraneMobile = (props) => {
             <div className="mobile-page page07">
                 <MobilePage07
                     animal="whoopingCrane"
-                    image1="https://i.ibb.co/cr1sYJn/07-Future-Pos.png"
-                    image2="https://i.ibb.co/G5HgRJN/07-Future-Neg.png"
+                    image1="https://i.ibb.co/qB6V3SL/07-Future-Positive.png"
+                    image2="https://i.ibb.co/S6xtgbR/07-Future-Negative.png"
                     alt="Wet prairies environment illustration with whooping crane."
                     text="Several factors put the whooping crane population at risk, including habitat loss and human disturbance, including airplanes, hunting, and ATV traffic. Although the population of whooping cranes is slowly increasing, conservation efforts must continue or the population is still at severe risk. There are two possible future outcomes the whooping crane faces. Continuing to persevere the whooping crane’s habitat would significantly help save the population. If we continue to conserve and protect the wetlands and prairies the whooping cranes live in, the population would continue to grow, until it is no longer at risk."
                     colour1="whoopingCrane1"
@@ -102,15 +102,15 @@ export const WhoopingCraneMobile = (props) => {
                     blob1="https://i.ibb.co/m57tjrR/Vector1.png"
                     title1="Nature Conservancy Canada"
                     text1="“The Nature Conservancy of Canada (NCC) is the country’s unifying force for nature, working to deliver large-scale, permanent land conservation. With nature, we are building a thriving world.”"
-                    link1="https://polarbearsinternational.org/"
+                    link1="https://www.natureconservancy.ca/en/what-we-do/resource-centre/featured-species/birds/whooping-crane.html#:~:text=What%20is%20this%20species%27%20conservation,Red%20List%20of%20Threatened%20Species/"
                     blob2="https://i.ibb.co/stR0vBP/Vector2.png"
                     title2="International Crane Foundation"
                     text2="“The mission of the International Crane Foundation is to work worldwide to conserve cranes and the ecosystems, watersheds, and flyways on which they depend to survive.”"
-                    link2="https://arcticwwf.org/species/polar-bear/"
+                    link2="https://savingcranes.org/species-field-guide/whooping-crane/"
                     blob3="https://i.ibb.co/9s4CdMn/Vector3.png"
                     title3="Friends of the Wild Whoopers"
                     text3="“Friends of the Wild Whoopers is a nonprofit conservation organization whose mission is to help preserve and protect the Aransas/Wood Buffalo population of wild whooping cranes and their habitat.”"
-                    link3="https://canadianpolarbearhabitat.com/"
+                    link3="https://www.friendsofthewildwhoopers.org/"
                 />
             </div>
 

@@ -4,7 +4,7 @@ import { MobilePage02 } from "../page components/mobile-page-02";
 import { MobilePage03 } from "../page components/mobile-page-03";
 import { MobilePage04 } from "../page components/mobile-page-04";
 import { MobilePage05 } from "../page components/mobile-page-05";
-import { MobilePage06PolarBear } from "../page components/mobile-page-06-polar-bear";
+import { MobilePage06AsianElephant } from "../page components/mobile-page-06-asian-elephant";
 import { MobilePage07 } from "../page components/mobile-page-07";
 import { MobilePage08 } from "../page components/mobile-page-08";
 import { MobilePage09 } from "../page components/mobile-page-09";
@@ -76,50 +76,50 @@ export const AsianElephantMobile = (props) => {
             </div>
 
             <div className="mobile-page page06">
-                <MobilePage06PolarBear
-                    animal="polarBear"
-                    image="https://i.ibb.co/84wfNjw/06-History.png"
-                    alt="Arctic environment illustration."
+                <MobilePage06AsianElephant
+                    animal="asianElephant"
+                    image="https://i.ibb.co/mXYxC5d/06-History.png"
+                    alt="Asian grasslands environment illustration."
                 />
             </div>
 
             <div className="mobile-page page07">
                 <MobilePage07
-                    animal="polarBear"
-                    image1="https://i.ibb.co/1K1DvwS/07-Future.png"
-                    image2="https://i.ibb.co/3sr8BXT/07-Future-negative.png"
-                    alt="Arctic environment illustration with polar bears and seals."
-                    text="Scientists predict that polar bears will be extinct by the end of the century if greenhouse gas emissions continue to increase. Greenhouse gas emissions have caused climate change on our planet, and this is affecting the polar bears’ environment. As the Arctic becomes warmer, the ice begins to melt. However, there are two possible future outcomes. Reducing greenhouse gas emissions globally would significantly help save the arctic environment. If we change our ways, the Arctic could be saved, and polar bears would be able to feed and nourish themselves, which would help regrow the population."
-                    colour1="polarBear1"
-                    colour2="polarBear1"
+                    animal="asianElephant"
+                    image1="https://i.ibb.co/BNn6mSf/07-Future-Positive.png"
+                    image2="https://i.ibb.co/5cTtjjJ/07-Future-Negative.png"
+                    alt="Asian grasslands environment illustration with elephants."
+                    text="The population of Asian elephants is at great risk if there is no human intervention. Uncontrolled human developments in the Asian elephant’s habitat have put the population in danger. As the developments continue, the population becomes smaller and more fragmented. However, there are two possible future outcomes. Reducing industrial developments and protecting the Asian elephant’s habitat would significantly help say the population and their environment. If we change our ways, the Asian elephant's home could be saved, which would help the population recover."
+                    colour1="asianElephant1"
+                    colour2="asianElephant2"
                 />
             </div>
 
             <div className="mobile-page page08">
                 <MobilePage08
-                    animal="polarBear"
-                    text="Without global change the polar bear will be extinct by 2100. It is up to us to change our ways in order to save the polar bear species. There are many ways each of us can help save the polar bears, including volunteering, fighting climate change, and raising money for conservation efforts. If you would like to learn more about how you can help the polar bear population, take a look at the conservation efforts below."
-                    blob1="https://i.ibb.co/9cKpF7q/blob1.png"
-                    title1="Polar Bears International"
-                    text1="“Polar Bears International is made up of a passionate team of conservationists, scientists, and volunteers—working to secure a future for polar bears across the Arctic.”"
-                    link1="https://polarbearsinternational.org/"
-                    blob2="https://i.ibb.co/TB5HGCp/Vector.png"
-                    title2="World Wildlife Fund"
-                    text2="“Polar bears have long been a focus in WWF’s on-the-ground research and conservation projects in the Arctic, going back to 1972 – and climate change is a primary focus of our global conservation efforts.”"
-                    link2="https://arcticwwf.org/species/polar-bear/"
-                    blob3="https://i.ibb.co/gFSNnSB/Vector.png"
-                    title3="Canadian Polar Bear Habitat"
-                    text3="“The Canadian Polar Bear Habitat is committed to advancing the conservation of wild polar bears and elevating the standard of care for polar bears in human care through research and education.”"
-                    link3="https://canadianpolarbearhabitat.com/"
+                    animal="asianElephant"
+                    text="Without change, the Asian elephant is in danger of extinction in the near future. It is up to us to take action in order to save the Asian elephant species. Many people are not aware of how humans are hurting the population, and you can help by spreading the word and sharing your knowledge. If you would like to learn more about how you can help the Asian elephant population, take a look at the conservation efforts below."
+                    blob1="https://i.ibb.co/Gc9tBDn/Vector1.png"
+                    title1="Asian Elephant Support"
+                    text1="“Asian Elephant Support is dedicated to the care and conservation of Asian elephants, and to the people whose lives are intertwined with this magnificent and endangered species.”"
+                    link1="https://www.asianelephantsupport.org/"
+                    blob2="https://i.ibb.co/jDMd0Jz/Vector2.png"
+                    title2="Elephant Family"
+                    text2="“Elephant Family works with home grown, in-country conservation experts o protect Asia’s magnificent wildlife through conservation, to enable successful coexistence between all living things.”"
+                    link2="https://elephant-family.org/"
+                    blob3="https://i.ibb.co/3dVnBrT/Vector3.png"
+                    title3="Save the Asian Elephants"
+                    text3="“Save The Asian Elephants works to end the terrible cruelty and brutal conditions suffered by the wondrous and ancient species that is the Asian elephant to help restore the population.”"
+                    link3="https://stae.org/"
                 />
             </div>
 
             <div className="mobile-page page09">
                 <MobilePage09
-                    text="Launch into the polar bear’s habitat to explore their home and play activities to learn more about them."
-                    image="https://i.ibb.co/Q6wzNSn/Vector.png"
-                    alt="Image of 3D Arctic environment."
-                    button="button-orange"
+                    text="Launch into the Asian elephants’s habitat to explore their home and play activities to learn more about them."
+                    image="https://i.ibb.co/jwm1hfw/Vector.png"
+                    alt="Image of 3D Asian grasslands environment."
+                    button="button-pink"
                     link="https://vickeychee.github.io/Project_Endangered/public/arctic/"
                 />
             </div>
