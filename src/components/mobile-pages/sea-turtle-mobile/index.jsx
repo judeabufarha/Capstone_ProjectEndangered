@@ -8,23 +8,66 @@ import { MobilePage06SeaTurtle } from "../page components/mobile-page-06-sea-tur
 import { MobilePage07 } from "../page components/mobile-page-07";
 import { MobilePage08 } from "../page components/mobile-page-08";
 import { MobilePage09 } from "../page components/mobile-page-09";
-import smoothscroll from 'smoothscroll-polyfill';
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useContext } from "react";
+import { ToggleContext } from "../../../contexts/ToggleContext";
 
 export const SeaTurtleMobile = (props) => {
-    const scrollAnchor = useRef(null);
+    const { mobilePage } = useContext(ToggleContext);
 
-    smoothscroll.polyfill();
-    window.__forceSmoothScrollPolyfill__ = true;
+    const currentPage = mobilePage;
 
-    //useEffect(() => {
-        //scrollAnchor.current.scrollIntoView({block: "start", inline: "nearest"});
-      //}, [scrollAnchor]);
+    const page1 = useRef(null);
+    const page2 = useRef(null);
+    const page3 = useRef(null);
+    const page4 = useRef(null);
+    const page5 = useRef(null);
+    const page6 = useRef(null);
+    const page7 = useRef(null);
+    const page8 = useRef(null);
+    const page9 = useRef(null);
+
+    useEffect(() => {
+        if (currentPage == 0) {
+            page1.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 1) {
+            page2.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 2) {
+            page3.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 3) {
+            page4.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 4) {
+            page5.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 5) {
+            page6.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 6) {
+            page7.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 7) {
+            page8.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 8) {
+            page9.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+    }, [currentPage]);
 
     return (
 
         <div className="sea-turtle-mobile-container">
-            <div className="mobile-page page 01">
+            <div className="mobile-page page 01" ref={page1}>
                 <MobilePage01 
                     title="Green Sea Turtle" 
                     image="https://i.ibb.co/VTXvrh7/01-The-Sea-Turtle.png" 
@@ -32,7 +75,7 @@ export const SeaTurtleMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page02">
+            <div className="mobile-page page02" ref={page2}>
                 <MobilePage02
                     name="Chelonia Mydas"
                     location="Oceans"
@@ -41,7 +84,7 @@ export const SeaTurtleMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page03">
+            <div className="mobile-page page03" ref={page3}>
                 <MobilePage03
                     title="Green Sea Turtle"
                     para1="The green sea turtle plays an important role in the ocean’s ecosystem. Their job is to be the lawnmowers of the ocean and eat the seagrass on the ocean floor. By maintaining the seagrass beds, the plants stay healthy and productive. This is important because many animals rely on seagrass beds for their homes. When green sear turtles eat seagrass, they quickly digest and release it, which provides many nutrients to the plants and animals in the ecosystem. Without green sea turtles, the health of their ecosystem would be put at risk."
@@ -55,7 +98,7 @@ export const SeaTurtleMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page04" ref={scrollAnchor}>
+            <div className="mobile-page page04" ref={page4}>
                 <MobilePage04
                     status="Endangered"
                     image="https://i.ibb.co/g91dSHL/Vector.png"
@@ -66,7 +109,7 @@ export const SeaTurtleMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page05">
+            <div className="mobile-page page05" ref={page5}>
                 <MobilePage05
                     animal="seaTurtle"
                     text="Explore the population of whooping cranes in different areas of the world."
@@ -75,7 +118,7 @@ export const SeaTurtleMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page06">
+            <div className="mobile-page page06" ref={page6}>
                 <MobilePage06SeaTurtle
                     animal="whoopingCrane"
                     image="https://i.ibb.co/dGpJpF9/06-History.png"
@@ -83,7 +126,7 @@ export const SeaTurtleMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page07">
+            <div className="mobile-page page07" ref={page7}>
                 <MobilePage07
                     animal="seaTurtle"
                     image1="https://i.ibb.co/sjS56Yv/07-Future-Positive.png"
@@ -95,7 +138,7 @@ export const SeaTurtleMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page08">
+            <div className="mobile-page page08" ref={page8}>
                 <MobilePage08
                     animal="seaTurtle"
                     text="Without global change, the green sea turtle is in danger of extinction in the near future. It is up to us to take action in order to save the green sea turtle species. There are many ways each of us can help save the green sea turtles, including volunteering, recycling, and spreading awareness.  If you would like to learn more about how you can help the green sea turtle population, take a look at the conservation efforts below."
@@ -114,7 +157,7 @@ export const SeaTurtleMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page09">
+            <div className="mobile-page page09" ref={page9}>
                 <MobilePage09
                     text="Launch into the green sea turtles’s habitat to explore their home and play activities to learn more about them."
                     image="https://i.ibb.co/X4kvhWp/Vector.png"
