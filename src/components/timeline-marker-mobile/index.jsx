@@ -55,6 +55,6 @@ TimelineMarkerMobile.propTypes = {
   base: PropTypes.string.isRequired,
   date1: PropTypes.string.isRequired,
   text1: PropTypes.string.isRequired,
-  date2: PropTypes.string.isRequired,
-  text2: PropTypes.string.isRequired
+  date2: PropTypes.string,
+  text2: PropTypes.string
 };

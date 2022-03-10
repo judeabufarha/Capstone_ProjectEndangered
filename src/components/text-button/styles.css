@@ -94,6 +94,34 @@
     background-color: #def8ca;
     transition: .5s;
 }
+.light:hover {
+    background-color: #DFE4E6;
+    transition: .5s;
+}
+
+.button-peach {
+    cursor: pointer;
+    height: 3rem;
+    min-width: 10rem;
+    border: none;
+    border-radius: 2rem;
+    padding-left: 1.5rem;
+    text-align: center;
+    padding-right: 1.5rem;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #013440;
+    background-color: #FFCCB0;
+    box-shadow: 4px 4px 8px 0px #0000001A;
+    transition: .5s;
+}
+
+.button-peach:hover {
+    background-color: #ffdac6;
+    transition: .5s;
+}
 
 .button-homepage {
     cursor: pointer;

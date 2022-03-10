@@ -8,23 +8,66 @@ import { MobilePage06PolarBear } from "../page components/mobile-page-06-polar-b
 import { MobilePage07 } from "../page components/mobile-page-07";
 import { MobilePage08 } from "../page components/mobile-page-08";
 import { MobilePage09 } from "../page components/mobile-page-09";
-import smoothscroll from 'smoothscroll-polyfill';
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useContext } from "react";
+import { ToggleContext } from "../../../contexts/ToggleContext";
 
 export const PolarBearMobile = (props) => {
-    const scrollAnchor = useRef(null);
+    const { mobilePage } = useContext(ToggleContext);
 
-    smoothscroll.polyfill();
-    window.__forceSmoothScrollPolyfill__ = true;
+    const currentPage = mobilePage;
 
-    //useEffect(() => {
-        //scrollAnchor.current.scrollIntoView({block: "start", inline: "nearest"});
-      //}, [scrollAnchor]);
+    const page1 = useRef(null);
+    const page2 = useRef(null);
+    const page3 = useRef(null);
+    const page4 = useRef(null);
+    const page5 = useRef(null);
+    const page6 = useRef(null);
+    const page7 = useRef(null);
+    const page8 = useRef(null);
+    const page9 = useRef(null);
+
+    useEffect(() => {
+        if (currentPage == 0) {
+            page1.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 1) {
+            page2.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 2) {
+            page3.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 3) {
+            page4.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 4) {
+            page5.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 5) {
+            page6.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 6) {
+            page7.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 7) {
+            page8.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 8) {
+            page9.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+    }, [currentPage]);
 
     return (
 
         <div className="polar-bear-mobile-container">
-            <div className="mobile-page page 01">
+            <div className="mobile-page page 01" ref={page1}>
                 <MobilePage01 
                     title="Polar Bear" 
                     image="https://i.ibb.co/37WjKvs/01-The-Polar-Bear.png" 
@@ -32,7 +75,7 @@ export const PolarBearMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page02">
+            <div className="mobile-page page02" ref={page2}>
                 <MobilePage02
                     name="Ursus Maritimus"
                     location="Arctic Circle"
@@ -41,7 +84,7 @@ export const PolarBearMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page03">
+            <div className="mobile-page page03" ref={page3}>
                 <MobilePage03
                     title="Polar Bear"
                     para1="The polar bear is a keystone species, at the top of the food chain, which makes them an apex predator. Because of this, they have an important role in balancing the Arctic food chain. Without polar bears, the population of their prey would begin to grow, and the entire Arctic ecosystem would be thrown out of balance. Because the polar bear is a keystone species, they are a reflection of the health of their ecosystem. If the keystone species is endangered, the entire ecosystem is put at risk."
@@ -55,7 +98,7 @@ export const PolarBearMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page04" ref={scrollAnchor}>
+            <div className="mobile-page page04" ref={page4}>
                 <MobilePage04
                     status="Vulnerable"
                     image="https://i.ibb.co/zxn68hP/Vector.png"
@@ -66,7 +109,7 @@ export const PolarBearMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page05">
+            <div className="mobile-page page05" ref={page5}>
                 <MobilePage05
                     animal="polarBear"
                     text="Explore the population of polar bears in different areas of the world."
@@ -75,7 +118,7 @@ export const PolarBearMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page06">
+            <div className="mobile-page page06" ref={page6}>
                 <MobilePage06PolarBear
                     animal="polarBear"
                     image="https://i.ibb.co/x3Y69ZC/06-History.png"
@@ -83,7 +126,7 @@ export const PolarBearMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page07">
+            <div className="mobile-page page07" ref={page7}>
                 <MobilePage07
                     animal="polarBear"
                     image1="https://i.ibb.co/6ynLGGX/07-Future-Positive.png"
@@ -95,7 +138,7 @@ export const PolarBearMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page08">
+            <div className="mobile-page page08" ref={page8}>
                 <MobilePage08
                     animal="polarBear"
                     text="Without global change the polar bear will be extinct by 2100. It is up to us to change our ways in order to save the polar bear species. There are many ways each of us can help save the polar bears, including volunteering, fighting climate change, and raising money for conservation efforts. If you would like to learn more about how you can help the polar bear population, take a look at the conservation efforts below."
@@ -114,7 +157,7 @@ export const PolarBearMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page09">
+            <div className="mobile-page page09" ref={page9}>
                 <MobilePage09
                     text="Launch into the polar bear’s habitat to explore their home and play activities to learn more about them."
                     image="https://i.ibb.co/Q6wzNSn/Vector.png"

@@ -12,7 +12,7 @@ ReactDOM.render(
     
 <ToggleContextProvider>
     <App />
-    </ToggleContextProvider>
+  </ToggleContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

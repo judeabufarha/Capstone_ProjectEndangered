@@ -108,6 +108,19 @@ export const MobilePage05 = (props) => {
                             }}
                         />
                     </div>
+                )}   
+
+                {animal === "seaTurtle" && (
+                    <div className="mobile-population-toggle">
+                        <ToggleButtons
+                            colour="toggle-peach"
+                            base="base-peach"
+                            text="then-now"
+                            onClick={() => {
+                                setNow(!now);
+                            }}
+                        />
+                    </div>
                 )}               
                 
             </div>

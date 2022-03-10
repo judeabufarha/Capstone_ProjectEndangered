@@ -27,6 +27,7 @@ export const Polarbear = () => {
     tmpState.currentStep = index;
     setPageState(tmpState)
   }
+  
   const { width } = useWindowDimensions();
   const ref = useRef();
   const offset = ref.current?.offset
@@ -67,6 +68,7 @@ export const Polarbear = () => {
 
   useEffect(() => {
     ref.current.scrollTo(pageCurrentState);
+    console.log("scroll");
   }, [pageCurrentState]);
 
   const history = useHistory(); 

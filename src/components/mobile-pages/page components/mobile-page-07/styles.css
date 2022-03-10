@@ -29,6 +29,10 @@
     background-color: #B4A290;
 }
 
+#seaTurtle1 {
+    background-color: #DDCFB3;
+}
+
 .mobile-page-07::-webkit-scrollbar {
     display: none;
 }

@@ -8,23 +8,66 @@ import { MobilePage06AsianElephant } from "../page components/mobile-page-06-asi
 import { MobilePage07 } from "../page components/mobile-page-07";
 import { MobilePage08 } from "../page components/mobile-page-08";
 import { MobilePage09 } from "../page components/mobile-page-09";
-import smoothscroll from 'smoothscroll-polyfill';
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useContext } from "react";
+import { ToggleContext } from "../../../contexts/ToggleContext";
 
 export const AsianElephantMobile = (props) => {
-    const scrollAnchor = useRef(null);
+    const { mobilePage } = useContext(ToggleContext);
 
-    smoothscroll.polyfill();
-    window.__forceSmoothScrollPolyfill__ = true;
+    const currentPage = mobilePage;
 
-    //useEffect(() => {
-        //scrollAnchor.current.scrollIntoView({block: "start", inline: "nearest"});
-      //}, [scrollAnchor]);
+    const page1 = useRef(null);
+    const page2 = useRef(null);
+    const page3 = useRef(null);
+    const page4 = useRef(null);
+    const page5 = useRef(null);
+    const page6 = useRef(null);
+    const page7 = useRef(null);
+    const page8 = useRef(null);
+    const page9 = useRef(null);
+
+    useEffect(() => {
+        if (currentPage == 0) {
+            page1.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 1) {
+            page2.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 2) {
+            page3.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 3) {
+            page4.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 4) {
+            page5.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 5) {
+            page6.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 6) {
+            page7.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 7) {
+            page8.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+
+        else if (currentPage == 8) {
+            page9.current.scrollIntoView({block: "start", inline: "nearest"});
+        }
+    }, [currentPage]);
 
     return (
 
         <div className="asian-elephant-mobile-container">
-            <div className="mobile-page page 01">
+            <div className="mobile-page page 01" ref={page1}>
                 <MobilePage01 
                     title="Asian Elephant" 
                     image="https://i.ibb.co/c22ftyx/01.png" 
@@ -32,7 +75,7 @@ export const AsianElephantMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page02">
+            <div className="mobile-page page02" ref={page2}>
                 <MobilePage02
                     name="Elephas Maximus"
                     location="Asia"
@@ -41,7 +84,7 @@ export const AsianElephantMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page03">
+            <div className="mobile-page page03" ref={page3}>
                 <MobilePage03
                     title="Asian Elephant"
                     para1="The Asian elephant plays an important role in the forest and grasslands ecosystem. This is because they help to maintain the health of these habitats. Asian elephants eat many different plants, and as they travel around their dung is dropped, which is filled with many different seeds. They help spread plants around the environment, which helps to keep the ecosystem diverse. This is important because it keeps the habitat healthy which benefits the many animals that live there."
@@ -55,7 +98,7 @@ export const AsianElephantMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page04" ref={scrollAnchor}>
+            <div className="mobile-page page04" ref={page4}>
                 <MobilePage04
                     status="Endangered"
                     image="https://i.ibb.co/pQyPS6p/Vector.png"
@@ -66,7 +109,7 @@ export const AsianElephantMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page05">
+            <div className="mobile-page page05" ref={page5}>
                 <MobilePage05
                     animal="asianElephant"
                     text="Explore the population of Asian elephants in different areas of the world."
@@ -75,7 +118,7 @@ export const AsianElephantMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page06">
+            <div className="mobile-page page06" ref={page6}>
                 <MobilePage06AsianElephant
                     animal="asianElephant"
                     image="https://i.ibb.co/mXYxC5d/06-History.png"
@@ -83,7 +126,7 @@ export const AsianElephantMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page07">
+            <div className="mobile-page page07" ref={page7}>
                 <MobilePage07
                     animal="asianElephant"
                     image1="https://i.ibb.co/BNn6mSf/07-Future-Positive.png"
@@ -95,7 +138,7 @@ export const AsianElephantMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page08">
+            <div className="mobile-page page08" ref={page8}>
                 <MobilePage08
                     animal="asianElephant"
                     text="Without change, the Asian elephant is in danger of extinction in the near future. It is up to us to take action in order to save the Asian elephant species. Many people are not aware of how humans are hurting the population, and you can help by spreading the word and sharing your knowledge. If you would like to learn more about how you can help the Asian elephant population, take a look at the conservation efforts below."
@@ -114,7 +157,7 @@ export const AsianElephantMobile = (props) => {
                 />
             </div>
 
-            <div className="mobile-page page09">
+            <div className="mobile-page page09" ref={page9}>
                 <MobilePage09
                     text="Launch into the Asian elephants’s habitat to explore their home and play activities to learn more about them."
                     image="https://i.ibb.co/jwm1hfw/Vector.png"

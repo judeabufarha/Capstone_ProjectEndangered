@@ -62,6 +62,18 @@ export const MobilePage07 = (props) => {
                                 text="positive-negative"
                             />
                         )}
+
+                        {props.animal === "seaTurtle" && (
+                            <ToggleButtons
+                                colour="toggle-peach"
+                                base="base-white"
+                                onClick={() => {
+                                    setShowImage(!showImage);
+                                    console.log("toggle");
+                                }}
+                                text="positive-negative"
+                            />
+                        )}
                     </div>
 
                     <div className="mobile-future-text-box">
