@@ -23,6 +23,12 @@
   animation: pulse-green 2s infinite;
 }
 
+.turquoise-mobile {
+  background: #72B1B7;
+  box-shadow: 0 0 0 0 rgba(148, 210, 237, 1);
+  animation: pulse-turquoise 2s infinite;
+}
+
 .blue-outline-mobile {
   border-radius: 50%;
   border: #94d2ed solid .125rem;
@@ -91,6 +97,23 @@
   0% {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 #A4BC82D9;
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(148, 210, 237, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(148, 210, 237, 0);
+  }
+}
+
+@keyframes pulse-turquoise {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #72B1B7D9;
   }
 
   70% {

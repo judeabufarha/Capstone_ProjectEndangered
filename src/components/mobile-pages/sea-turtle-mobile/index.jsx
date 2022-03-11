@@ -112,8 +112,8 @@ export const SeaTurtleMobile = (props) => {
             <div className="mobile-page page05" ref={page5}>
                 <MobilePage05
                     animal="seaTurtle"
-                    text="Explore the population of whooping cranes in different areas of the world."
-                    map="https://i.ibb.co/hF7N1cF/Map.png"
+                    text="Explore the population of green sea turtles in different areas of the world."
+                    map="https://i.ibb.co/t86F749/Frame-3.png"
                     alt="Map of the world."
                 />
             </div>

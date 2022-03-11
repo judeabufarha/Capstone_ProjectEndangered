@@ -64,6 +64,22 @@ export const MobilePage05 = (props) => {
                             <MapMarkerMobile size={`${now ? 'large-mobile' : 'medium-mobile'}`} colour="green-mobile" top="56%" left="58%"/>
                         </div>
                     )}
+
+                    {animal === "seaTurtle" && (
+                        <div className="mobile-population-points">
+                            <MapMarkerMobile size={`${now ? 'medium-mobile' : 'medium-mobile'}`} colour="turquoise-mobile" top="33%" left="10%"/>
+                            <MapMarkerMobile size={`${now ? 'large-mobile' : 'large-mobile'}`} colour="turquoise-mobile" top="43%" left="17%"/>
+                            <MapMarkerMobile size={`${now ? 'large-mobile' : 'medium-mobile'}`} colour="turquoise-mobile" top="34%" left="23%"/>
+                            <MapMarkerMobile size={`${now ? 'large-mobile' : 'medium-mobile'}`} colour="turquoise-mobile" top="50%" left="36%"/>
+                            <MapMarkerMobile size={`${now ? 'medium-mobile' : 'small-mobile'}`} colour="turquoise-mobile" top="36%" left="38%"/>
+                            <MapMarkerMobile size={`${now ? 'medium-mobile' : 'small-mobile'}`} colour="turquoise-mobile" top="28%" left="50%"/>
+                            <MapMarkerMobile size={`${now ? 'large-mobile' : 'medium-mobile'}`} colour="turquoise-mobile" top="55%" left="58%"/>
+                            <MapMarkerMobile size={`${now ? 'large-mobile' : 'medium-mobile'}`} colour="turquoise-mobile" top="40%" left="62%"/>
+                            <MapMarkerMobile size={`${now ? 'large-mobile' : 'medium-mobile'}`} colour="turquoise-mobile" top="44%" left="73%"/>
+                            <MapMarkerMobile size={`${now ? 'small-mobile' : 'small-mobile'}`} colour="turquoise-mobile" top="28%" left="80%"/>
+                            <MapMarkerMobile size={`${now ? 'medium-mobile' : 'small-mobile'}`} colour="turquoise-mobile" top="51%" left="82%"/>
+                        </div>
+                    )}
                 </div>
 
                 <div className="mobile-population-text">
