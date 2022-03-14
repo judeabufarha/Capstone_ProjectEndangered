@@ -1,0 +1,62 @@
+.mobile-page-05 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-y: auto;
+    padding-bottom: 5rem;
+}
+
+.mobile-page-05::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-population-text {
+    vertical-align:top;
+    white-space:normal;
+    word-wrap: break-word;
+    position: absolute;
+    left: 1.5rem;
+    top: 4.5rem;
+    padding-right: 1.5rem;
+}
+
+.mobile-population-title {
+    color: #013440;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.mobile-population-details {
+    color: #013440;
+}
+
+.mobile-population-visual {
+    margin-top: 50%;
+    position: relative;
+}
+
+.mobile-population-map {
+    object-fit: cover;
+    width: 100%;
+}
+
+.mobile-population-toggle {
+    text-align: center;
+    position: absolute;
+    bottom: 10rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mobile-population-points-then {
+    transition: 1s;
+}
+
+.mobile-population-points-now {
+    transition: 1s;
+}
+

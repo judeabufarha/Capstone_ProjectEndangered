@@ -1,0 +1,88 @@
+.mobile-page-06-asian-elephant {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-y: auto;
+    padding-bottom: 5rem;
+    background-color: #A4BC82;
+    overflow-x: hidden;
+}
+
+.mobile-page-06::-webkit-scrollbar {
+    display: none;
+}
+
+.ae-past {
+    position: absolute;
+    left: 1.5rem;
+    top: 4.5rem;
+    padding-right: 1.5rem;
+    height: 100%;
+}
+
+.ae-past-text {
+    vertical-align:top;
+    width: 100%;
+    white-space:normal;
+    word-wrap: break-word;
+}
+
+.ae-past-title {
+    color: #013440;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.ae-past-timeline {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+.ae-past-timeline-base {
+    display: flex;
+    flex-direction: row;
+}
+
+.ae-past-lines {
+    width: 1.5rem;
+    height: 40.25rem;
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+
+.ae-past-point1 {
+    margin-bottom: 17.7rem;
+}
+
+.ae-past-point2 {
+    margin-bottom: 17.6rem;
+}
+
+.ae-past-image {
+    position: absolute;
+    top: 4.25rem;
+    left: 0rem;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.ae-past-event1 {
+    margin-top: 5rem;
+}
+
+.ae-past-event2 {
+    margin-top: 16rem;
+}
+
+.ae-past-event3 {
+    margin-top: 29rem;
+}
+
+.mobile-space {
+    height: 8rem;
+}

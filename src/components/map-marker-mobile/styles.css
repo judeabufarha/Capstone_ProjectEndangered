@@ -1,0 +1,137 @@
+.circle-mobile {
+  border-radius: 50%;
+  margin: 10px;
+  position: absolute;
+  transition: all ease-in-out 1s;
+}
+
+.blue-mobile {
+  background: #94d2ed;
+  box-shadow: 0 0 0 0 rgba(148, 210, 237, 1);
+  animation: pulse-blue 2s infinite;
+}
+
+.red-mobile {
+  background: #E3959E;
+  box-shadow: 0 0 0 0 rgba(148, 210, 237, 1);
+  animation: pulse-red 2s infinite;
+}
+
+.green-mobile {
+  background: #A4BC82;
+  box-shadow: 0 0 0 0 rgba(148, 210, 237, 1);
+  animation: pulse-green 2s infinite;
+}
+
+.turquoise-mobile {
+  background: #72B1B7;
+  box-shadow: 0 0 0 0 rgba(148, 210, 237, 1);
+  animation: pulse-turquoise 2s infinite;
+}
+
+.blue-outline-mobile {
+  border-radius: 50%;
+  border: #94d2ed solid .125rem;
+  outline-offset: -.125rem;
+  box-shadow: 0 0 0 0 rgba(148, 210, 237, 1);
+  animation: pulse-blue 2s infinite;
+  height: .75rem !important;
+  width: .75rem !important;
+}
+
+.large-mobile {
+  height: 1rem;
+  width: 1rem;
+}
+
+.medium-mobile {
+  height: .75rem;
+  width: .75rem;
+}
+
+.small-mobile {
+  height: .5rem;
+  width: .5rem;
+}
+
+.none-mobile {
+  height: 0rem;
+  width: 0rem;
+}
+
+@keyframes pulse-blue {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(148, 210, 237, 0.85);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(148, 210, 237, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(148, 210, 237, 0);
+  }
+}
+
+@keyframes pulse-red {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #E3959ED9;
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(148, 210, 237, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(148, 210, 237, 0);
+  }
+}
+
+@keyframes pulse-green {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #A4BC82D9;
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(148, 210, 237, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(148, 210, 237, 0);
+  }
+}
+
+@keyframes pulse-turquoise {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 #72B1B7D9;
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(148, 210, 237, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(148, 210, 237, 0);
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

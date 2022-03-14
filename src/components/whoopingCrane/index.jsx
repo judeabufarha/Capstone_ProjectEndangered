@@ -15,6 +15,7 @@ import './styles.scss';
 import { useContext } from "react";
 import { ToggleContext } from "../../contexts/ToggleContext";
 import useWindowDimensions from "../../hooks/windowDimensions";
+import { useHistory } from "react-router-dom";
 
 export const Whoopingcrane = () => {
   const appContext = useContext(ToggleContext);
@@ -68,6 +69,22 @@ export const Whoopingcrane = () => {
   useEffect(() => {
     ref.current.scrollTo(pageCurrentState);
   }, [pageCurrentState]);
+
+  const history = useHistory(); 
+
+  useEffect(
+    () => {
+      checkSize();
+      console.log("switch to crane");
+    }, []
+  );
+
+  const checkSize = () => {
+    if (window.innerWidth <= 800) {
+        history.push("/whooping-crane-mobile");
+        console.log("switch to crane")
+    }
+  }
 
   return (
     <>

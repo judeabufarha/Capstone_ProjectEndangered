@@ -8,6 +8,7 @@ import { ToggleSwitch } from "../toggle-switch";
 import { useEffect } from "react";
 
 export const Sidebar = () => {
+
   const [showSub, setShowSub] = useState([false, false, false, false, false]);
 
   const templateMenu = [
@@ -33,17 +34,20 @@ export const Sidebar = () => {
   const [subMenuItems, setsubMenuItems] = useState(menuStructure)
 
 
-  const { showSidebar, pageState, setPageState } = useContext(ToggleContext);
+  const { showSidebar, pageState, setPageState , initializePage } = useContext(ToggleContext);
 
   const handleStepNavigation = (index) => {
     const tmpState = { ...pageState };
     tmpState.currentStep = index;
-    setPageState(tmpState)
+    setPageState(tmpState);
+
+    initializePage(index);
   }
 
   const handleClick = (index) => {
     const tmpShowSub = [...showSub] 
     tmpShowSub[index] = !tmpShowSub[index];
+    initializePage(0);
 
     let openItems = tmpShowSub.filter(Boolean);
 
