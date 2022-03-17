@@ -134,7 +134,7 @@ export const SeaTurtleMobile = (props) => {
                     alt="Ocean environment illustration with green sea turtles, shrimp, lobsters, and fish."
                     text="The population of green sea turtles is at great risk if there is no human intervention. The uncontrolled coastal building has destroyed many beaches, and this is affecting the green sea turtle’s environment. As the building continues, the ocean environment becomes more polluted. However, there are two possible future outcomes. Reducing coastal building and protecting the green sea turtle’s habitat would significantly help save the population and ocean environment. If we change our ways, the green sea turtle’s home could be saved, which would help regrow the population."
                     colour1="seaTurtle1"
-                    colour2="seaTurtle2"
+                    colour2="seaTurtle1"
                 />
             </div>
 

@@ -6,9 +6,10 @@
     position: relative;
     overflow-y: auto;
     padding-bottom: 5rem;
-    background-color: #94D2ED;
     overflow-x: hidden;
+    background: linear-gradient(to bottom, #FFFFFF 30%, #94D2ED 30% 70%);
 }
+
 
 .mobile-page-06::-webkit-scrollbar {
     display: none;
@@ -19,7 +20,7 @@
     left: 1.5rem;
     top: 4.5rem;
     padding-right: 1.5rem;
-    height: 100%;
+    height: 100%
 }
 
 .pb-past-text {
