@@ -44,6 +44,13 @@
     width: 100%;
 }
 
+.mobile-map-legend {
+    text-align: center;
+    position: absolute;
+    top: 12rem;
+    left: 1.5rem;
+}
+
 .mobile-population-toggle {
     text-align: center;
     position: absolute;
@@ -60,3 +67,14 @@
     transition: 1s;
 }
 
+@media screen and (max-width: 600px) {
+    .mobile-map-legend {
+        top: 14rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .mobile-map-legend {
+        top: 15rem;
+    }
+}
