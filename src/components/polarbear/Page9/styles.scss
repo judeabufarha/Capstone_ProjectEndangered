@@ -24,28 +24,15 @@
   margin-top: 32%;
 }
 
-@media screen and (max-width: 500px) {
-  .exploreButton{
-    margin-top: 90%;
-  }
+
+@media screen and (max-width: 1366px) {
+
 
   .enviro{
     &Text {
-    top: 29%;
-    z-index:0;
-    color: $pe_dark;
-    font-size: 16px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: lighter;
+    font-size: 18px;
     }
   }
-  
-.enviromentArtic3d{
-  zoom: 0.4;
 }
   
-}
-
+ 

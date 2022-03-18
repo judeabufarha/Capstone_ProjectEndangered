@@ -23,8 +23,13 @@
           font-size: 15px;
         }
       }
+      
    
   }
+  #elephNegativeImg{
+    zoom: 0.8;
+  }
+ 
 }
 
   @media screen and (max-width: 1366px) {
@@ -43,6 +48,9 @@
           top: 25%;
           font-size: 15px;
         }
+      }
+      #elephNegativeImg{
+        zoom: 0.715;
       }
    
   }
