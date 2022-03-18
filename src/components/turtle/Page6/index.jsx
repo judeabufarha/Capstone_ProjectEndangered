@@ -25,7 +25,7 @@ const Page6 = ({ offset, color }) => {
             <div
               className="pastBackground"
               style={{
-                backgroundImage: "url('https://i.ibb.co/QrB7Cw8/Timeline-Turtle.png')",
+                backgroundImage: "url('https://i.ibb.co/ZgVdrF3/Timeline-Turtle-1.png')",
               }}
             />
           
@@ -51,21 +51,21 @@ const Page6 = ({ offset, color }) => {
           </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer className="tooltip1" offset={offset} speed={2}>
+      <ParallaxLayer className="tutleTooltip1" offset={offset} speed={2}>
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
             <Tooltip text={{title:'1978',description:'The green sea turtle is classified as endangered in U.S.A.'}} width={239} />
           </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer className="tooltip2" offset={offset} speed={3}>
+      <ParallaxLayer className="tutleTooltip2" offset={offset} speed={3}>
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
             <Tooltip text={{title:'1982',description:'The green sea turtle is classified as endangered internationally.'}} width={250} />
           </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer className="tooltip3" offset={offset} speed={3}>
+      <ParallaxLayer className="tutleTooltip3" offset={offset} speed={3}>
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
             <Tooltip text={{title:'2004',description:'The wild population is said to face high risk of extiction.'}} width={250} />

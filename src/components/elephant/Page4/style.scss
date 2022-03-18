@@ -9,3 +9,107 @@
     zoom: 0.6;
   }
 }
+
+@media screen and (max-width: 1536px) {
+
+
+
+  .statusTitle {
+    top: 20%;
+ 
+  
+    .commonContainerSpecial {
+
+  
+      h2 {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 0;
+        padding: 0;
+      }
+  
+      h3 {
+        margin-top: 0;
+        display: block;
+        font-size: 40px;
+      }
+    }
+  }
+  
+  .wrapperCommonContainer.statusTextArea {
+   
+    top: 35%;
+    width: 50%;
+  
+    p {
+      font-size: 18px;
+      display: block;
+    }
+  }
+  
+  .SideGrasslandImage {
+    position: absolute;
+    width: 55%;
+    top: 0;
+    right: 0;
+  
+    .grasslandSnap {
+      margin: auto;
+      zoom: 0.45;
+    }
+  }
+  
+ 
+  }
+
+@media screen and (max-width: 1366px) {
+
+
+
+  .statusTitle {
+    top: 20%;
+ 
+  
+    .commonContainerSpecial {
+
+  
+      h2 {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 0;
+        padding: 0;
+      }
+  
+      h3 {
+        margin-top: 0;
+        display: block;
+        font-size: 40px;
+      }
+    }
+  }
+  
+  .wrapperCommonContainer.statusTextArea {
+   
+    top: 35%;
+    width: 50%;
+  
+    p {
+      font-size: 16px;
+      display: block;
+    }
+  }
+  
+  .SideGrasslandImage {
+    position: absolute;
+    width: 55%;
+    top: 0;
+    right: 0;
+  
+    .grasslandSnap {
+      margin: auto;
+      zoom: 0.45;
+    }
+  }
+  
+ 
+  }

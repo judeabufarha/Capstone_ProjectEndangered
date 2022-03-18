@@ -1,0 +1,51 @@
+@media screen and (max-width:1536px) {
+
+  .population{
+    &Title {
+    top: 5%;
+    z-index:0;
+    font-size: 40px;
+    }
+    
+    &Text{
+      top:18%;
+      z-index: 1;
+      font-size:18px;
+    }
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 1366px) {
+
+    .population{
+      &Title {
+      top: 5%;
+      z-index:0;
+      font-size: 40px;
+      }
+      
+      &Text{
+        top:18%;
+        z-index: 1;
+        font-size:18px;
+      }
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

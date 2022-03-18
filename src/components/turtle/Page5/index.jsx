@@ -35,8 +35,8 @@ const Page5 = ({ offset, color }) => {
           <div className="commonContainerSpecial toggleButtons">
             <div className="flexContainer100">
               <ToggleButtons
-                colour="toggle-pink"
-                base="base-pink"
+                colour="toggle-peach"
+                base="base-peach"
                 onClick={() => {
                 setNow(!now);
                 }}

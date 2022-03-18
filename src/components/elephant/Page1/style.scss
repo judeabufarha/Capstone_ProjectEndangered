@@ -58,3 +58,83 @@
     z-index: 3;
   }
 }
+
+@media screen and (max-width: 1536px) {
+  .elephantTitle {
+    zoom:0.9
+  }
+  .bottomGrass {
+    z-index: 999;
+    .grass {
+     width: 100%;
+    }
+  }
+  .highGrass {
+    z-index: 1;
+    .lightHighGrass {
+     zoom: 0.8;
+     width: 90%;
+    }
+  }
+  
+  .homeElephant {
+    .sideHomeElephant {
+      zoom: 0.8;
+    }
+  }
+  
+  .elephantSky {
+    position: inherit;
+  
+    .elephantSun {
+     zoom: 0.8;
+    }
+  
+    .elephantBirds {
+   zoom: 0.8;
+    }
+  }
+  
+ 
+}
+                                                                   
+
+@media screen and (max-width: 1366px) {
+  .elephantTitle {
+    zoom:0.9
+  }
+  .bottomGrass {
+    z-index: 999;
+    .grass {
+     width: 100%;
+    }
+  }
+  .highGrass {
+    z-index: 1;
+    .lightHighGrass {
+     zoom: 0.8;
+     width: 90%;
+    }
+  }
+  
+  .homeElephant {
+    .sideHomeElephant {
+      zoom: 0.8;
+    }
+  }
+  
+  .elephantSky {
+    position: inherit;
+  
+    .elephantSun {
+     zoom: 0.8;
+    }
+  
+    .elephantBirds {
+   zoom: 0.8;
+    }
+  }
+  
+ 
+}
+                                                                   

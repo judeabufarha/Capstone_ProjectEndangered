@@ -16,11 +16,11 @@ import { useContext } from "react";
 import { ToggleContext } from "../../contexts/ToggleContext";
 import useWindowDimensions from "../../hooks/windowDimensions";
 
-export const Whoopingcrane = () => {
+
+export const Crane = () => {
   const appContext = useContext(ToggleContext);
   const { pageState, setPageState } = appContext;
   const pageCurrentState = pageState.currentStep;
-
 
   const handleStepNavigation = (index) => {
     const tmpState = { ...pageState };
@@ -78,13 +78,13 @@ export const Whoopingcrane = () => {
         horizontal={true}
         enabled={true} //disable scroll
       >
-        <Page1 offset={0} color="orange" />
-        <Page2 offset={1} color="page2Background" />
+        <Page1 offset={0} color="page1CraneBackground" />
+        <Page2 offset={1} color="page2CraneBackground" />
         <Page3 offset={2} color="white" />
         <Page4 offset={3} color="white" />
         <Page5 offset={4} color="page5Background" />
-        <Page6 offset={5} color="page6Background" />
-        <Page7 offset={6} color="page7Background" />
+        <Page6 offset={5} color="page6CraneBackground" />
+        <Page7 offset={6} color="page7CraneBackground" />
         <Page8 offset={7} color="white" />
         <Page9 offset={8} color="white" />
       </Parallax>

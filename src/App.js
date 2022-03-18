@@ -11,6 +11,7 @@ import { Statusbar } from "./components/statusBar";
 import { PolarBearMobile } from "./components/mobile-pages/polar-bear-mobile";
 import { Turtle } from "./components/turtle";
 import { Elephant } from "./components/elephant";
+import { Crane } from "./components/crane";
 
 function App() {
   const { bodyClick, pageState, setPageState } = useContext(ToggleContext);
@@ -48,7 +49,7 @@ function App() {
           </Route>
           <Route path="/whooping-crane">
             <Navbar handleStepNavigation={setCurrentStep} />
-            <Polarbear key="whooping-crane-page" />
+            <Crane key="whooping-crane-page" />
             <Footer />
           </Route>
           <Route path="/sea-turtle">

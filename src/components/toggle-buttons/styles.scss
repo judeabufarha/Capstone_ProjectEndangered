@@ -34,6 +34,15 @@ label, .toggle-then-now, .toggle-positive-negative {
   background-color: #F1BEDC40;
 }
 
+.base-green {
+  background-color: #CBEBB240;
+}
+
+.base-peach {
+  background-color: #FFCCB040;
+}
+
+
 .base-white {
   background-color: #f8f8f880;
 }
@@ -65,7 +74,13 @@ label, .toggle-then-now, .toggle-positive-negative {
 .toggle-pink {
   background-color: #F1BEDC;
 }
+.toggle-green{
+  background-color: #CBEBB2; 
+}
 
+.toggle-peach{
+  background-color: #FFCCB0; 
+}
 .names { 
   border-radius: 2rem;
   text-align: center;
@@ -138,7 +153,15 @@ input.switch[type="checkbox"] {
   background-color: #FFAF81;
 }
 
+.toggleButtonActivated .app .toggle-green{
+  transform: translateX(100%);
+  background-color: #CBEBB2;
+}
 
+.toggleButtonActivated .app .toggle-peach{
+  transform: translateX(100%);
+  background-color: #FFCCB0;
+}
 // input.switch[type="checkbox"]:hover + .app .toggle-orange{
 //   background-color: #FFBF9A;
 //   transition: .5s;

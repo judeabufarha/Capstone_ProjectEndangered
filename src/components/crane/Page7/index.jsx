@@ -20,7 +20,7 @@ const Page7 = ({ offset, color }) => {
 
       <ParallaxLayer offset={offset} speed={0} className="page7">
         <div className={`${showImage ? "fade-out" : "fade-in"}`}>
-          <img src="https://i.ibb.co/YPMKXXW/Negative-4.png" alt="" />
+          <img src="https://i.ibb.co/Kqwj94Q/Negative-6.png" alt="" />
         </div>
       </ParallaxLayer>
 
@@ -37,7 +37,7 @@ const Page7 = ({ offset, color }) => {
           <div className="commonContainer commonContainer_whiteRadius">
             <div className="pContainer">
               <p>
-              The population of green sea turtles is at great risk if there is no human intervention. The uncontrolled coastal building has destroyed many beaches, and this is affecting the green sea turtle’s environment. As the building continues, the ocean environment becomes more polluted. However, there are two possible future outcomes. Reducing coastal building and protecting the green sea turtle’s habitat would significantly help save the population and ocean environment. If we change our ways, the green sea turtle’s home could be saved, which would help regrow the population.
+              Several factors put the whooping crane population at risk, including habitat loss and human disturbance, including airplanes, hunting, and ATV traffic. Although the population of whooping cranes is slowly increasing, conservation efforts must continue or the population is still at severe risk. There are two possible future outcomes the whooping crane faces. Continuing to persevere the whooping crane’s habitat would significantly help save the population. If we continue to conserve and protect the wetlands and prairies the whooping cranes live in, the population would continue to grow, until it is no longer at risk.
               </p>
             </div>
           </div>
@@ -54,7 +54,7 @@ const Page7 = ({ offset, color }) => {
           <div className="commonContainerSpecial">
             <div className="flexContainer100">
               <ToggleButtons
-                colour="toggle-peach"
+                colour="toggle-green"
                 base="base-white"
                 onClick={() => {
                   setShowImage(!showImage);

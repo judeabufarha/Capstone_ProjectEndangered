@@ -35,8 +35,8 @@ const Page5 = ({ offset, color }) => {
           <div className="commonContainerSpecial toggleButtons">
             <div className="flexContainer100">
               <ToggleButtons
-                colour="toggle-pink"
-                base="base-pink"
+                colour="toggle-green"
+                base="base-green"
                 onClick={() => {
                 setNow(!now);
                 }}
@@ -51,7 +51,7 @@ const Page5 = ({ offset, color }) => {
         <div className="wrapperCommonContainer populationText">
           <div className="commonContainerSpecial">
             <p className="populationParaPolar">
-            Explore the population of Asian elephants in different areas of the world.
+            Explore the population of whooping cranes in different areas of the world.
             </p>
           </div>
         </div>

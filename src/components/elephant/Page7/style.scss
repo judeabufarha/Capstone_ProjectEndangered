@@ -1,10 +1,49 @@
 .page7 {
-
     .page7ElephantBackground {
       background-image: url(https://i.ibb.co/P5HJVm4/Positive-5.png);
       background-repeat: no-repeat;
       background-size: cover
     }
-  
-    
   }
+
+  @media screen and (max-width: 1536px) {
+    .page7 {
+    
+      .future{
+        &Title {
+        top: 13%;
+    
+        font-size: 40px;
+        }
+        
+        &Text{
+      
+        
+          top: 25%;
+          font-size: 15px;
+        }
+      }
+   
+  }
+}
+
+  @media screen and (max-width: 1366px) {
+    .page7 {
+    
+      .future{
+        &Title {
+        top: 13%;
+    
+        font-size: 40px;
+        }
+        
+        &Text{
+      
+        
+          top: 25%;
+          font-size: 15px;
+        }
+      }
+   
+  }
+}

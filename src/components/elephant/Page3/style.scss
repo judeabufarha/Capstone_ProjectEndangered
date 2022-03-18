@@ -1,0 +1,81 @@
+@media screen and (max-width: 1536px) {
+
+  .importanceTitle {  
+     
+  
+    
+      h1 {
+        
+        margin-top: 10px;
+        display: block;
+        font-size: 40px;
+  
+      }
+    }
+    
+    .textAreaContainer {
+      top:19%;
+    
+      p {
+      
+        display: block;
+        font-size: 16px;
+      }
+    
+    
+    }
+    
+    .polarAnimImg{
+      top:45%;
+      margin:0;
+    }
+    
+    
+    // image container 
+    .trioImg__container{
+      height: 380px;
+    }
+   
+  }
+
+
+
+@media screen and (max-width: 1366px) {
+
+.importanceTitle {  
+   
+
+  
+    h1 {
+      
+      margin-top: 10px;
+      display: block;
+      font-size: 40px;
+
+    }
+  }
+  
+  .textAreaContainer {
+    top:19%;
+  
+    p {
+    
+      display: block;
+      font-size: 16px;
+    }
+  
+  
+  }
+  
+  .polarAnimImg{
+    top:48%;
+    margin:0;
+  }
+  
+  
+  // image container 
+  .trioImg__container{
+    height: 340px;
+  }
+ 
+}

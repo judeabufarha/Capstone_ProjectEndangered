@@ -22,6 +22,8 @@ export const Elephant = () => {
   const { pageState, setPageState } = appContext;
   const pageCurrentState = pageState.currentStep;
 
+  console.log(pageCurrentState);
+
   const handleStepNavigation = (index) => {
     const tmpState = { ...pageState };
     tmpState.currentStep = index;
