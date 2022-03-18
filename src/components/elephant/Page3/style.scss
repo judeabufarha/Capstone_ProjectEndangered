@@ -26,19 +26,58 @@
     }
     
     .polarAnimImg{
-      top:50%;
+      top:47%;
       margin:0;
     }
     
     
     // image container 
     .trioImg__container{
-      height: 320px;
+      height: 370px;
     }
    
   }
 
 
+  @media screen and (max-width: 1400px) {
+
+    .importanceTitle {  
+       
+    
+      
+        h1 {
+          
+          margin-top: 10px;
+          display: block;
+          font-size: 40px;
+    
+        }
+      }
+      
+      .textAreaContainer {
+        top:19%;
+      
+        p {
+        
+          display: block;
+          font-size: 16px;
+        }
+      
+      
+      }
+      
+      .polarAnimImg{
+        top:50%;
+        margin:0;
+      }
+      
+      
+      // image container 
+      .trioImg__container{
+        height: 340px;
+      }
+     
+    }
 
 @media screen and (max-width: 1366px) {
 
@@ -68,14 +107,14 @@
   }
   
   .polarAnimImg{
-    top:53%;
+    top:48%;
     margin:0;
   }
   
   
   // image container 
   .trioImg__container{
-    height: 300px;
+    height: 320px;
   }
  
 }
