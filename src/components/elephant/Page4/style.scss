@@ -113,3 +113,35 @@
   
  
   }
+
+  @media screen and (max-width: 1400px) {
+
+    .statusTitle {
+      top: 17%;
+   
+    }
+  
+  .wrapperCommonContainer.statusTextArea {
+   
+    top: 32%;
+    width: 50%;
+  
+    p {
+      font-size: 16px;
+      display: block;
+    }
+  }
+  
+  .SideGrasslandImage {
+    position: absolute;
+    width: 55%;
+    top: 0;
+    right: 0;
+  
+    .grasslandSnap {
+      margin: auto;
+      zoom: 0.45;
+    }
+  
+}
+  }
