@@ -1,9 +1,6 @@
 @import "../../../scss/root.scss";
 
 
-.mobileImg{
-  display: none;
-}
 
 .gradient {
   position: absolute;
@@ -143,69 +140,93 @@
   height:100vh;
   overflow: hidden;
 }
+                                    
 
-
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 1366px) {
   .title {
-  zoom: 0.9;
+    zoom: 0.9;
   }
-
-  .backgroundMountains {
   
+  .backgroundMountains {
+
     .mountain1{
-     display: none;
+      padding-top:7%;
+      zoom: 0.6;
     }
     .mountain2{
-     display: none;
+      zoom: 0.7;
+     
     }
     .mountain3 {
-      display: none;
+      zoom: 0.7;
+    
     }
   }
-
-  .water {
-
-    display: none;
-
   
-    .ice {
-    display: none !important;
-    }
-  
-    .lightdetail {
-     display: none !important;
-    }
-  
-    .darkdetail {
-      display: none !important;
-  }
-  }
-
   .polarbearOnIce{
+   
   
     .polarIce{
-      display: none;
+     zoom: 0.8;
     }
   }
   
-  .sky {
-    display: none;
   
+  .sky {
+ 
     .sun{
-     display: none;
+      zoom: 0.7;
     }
   
     .bird {
-      display: none;
+      zoom: 0.7;
     }
   }
   
-  .mobileImg{
-    display: block;
-    width: 100%;
-    height: auto;
-    overflow: scroll;
+}
+
+@media screen and (max-width: 1536px) {
+  .title {
+    zoom: 0.9;
   }
+  
+  .backgroundMountains {
+
+    .mountain1{
+      padding-top:7%;
+      zoom: 0.6;
+    }
+    .mountain2{
+      padding-top:1%;
+      zoom: 0.7;
+     
+    }
+    .mountain3 {
+      padding-top:2%;
+      zoom: 0.7;
+    
+    }
+  }
+  
+  .polarbearOnIce{
+   
+  
+    .polarIce{
+     zoom: 0.8;
+    }
+  }
+  
+  
+  .sky {
+ 
+    .sun{
+      zoom: 0.7;
+    }
+  
+    .bird {
+      zoom: 0.7;
+    }
+  }
+  
 }
                                                                    

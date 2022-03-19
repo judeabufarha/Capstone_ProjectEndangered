@@ -32,7 +32,27 @@
     &Text {
     font-size: 18px;
     }
+
+    
+  }
+  .enviromentArtic3d{
+    zoom: 0.7;
+  
+  
   }
 }
   
- 
+@media screen and (max-width: 1536px) {
+  .enviro{
+    &Text {
+    font-size: 18px;
+    }
+
+    
+  }
+  .enviromentArtic3d{
+    zoom: 0.7;
+  
+  
+  }
+}

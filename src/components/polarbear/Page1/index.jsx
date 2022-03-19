@@ -69,13 +69,7 @@ const Page1 = ({ offset, color }) => (
       />
     </ParallaxLayer>
 
-    <ParallaxLayer className="mobileBackground" offset={offset} speed={1.2}>
-      <img
-        className="mobileImg"
-        src="https://i.ibb.co/1GRCqgp/Illustration-9.png"
-        alt="polarMobile"
-      />
-    </ParallaxLayer>
+
 
    
   </>
