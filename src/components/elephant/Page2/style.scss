@@ -166,3 +166,49 @@
 
 }
                                 
+@media screen and (max-width: 1366px), 
+       screen and (max-height: 650px) {
+        .sideBottomGrass{
+    
+    
+  
+          img {
+        
+            zoom: 0.75 !important;
+          }
+        }
+ 
+        .sideLongGrass{
+          position: absolute;
+          z-index: 10;
+        
+          img {
+            padding-bottom: 8%;
+            zoom: 0.7 !important;
+          }
+        }
+
+        .aboutElephBirds{
+   
+  
+          img {
+            padding-top: 8%;
+            zoom: 0.7;
+          }
+        }
+        .textListContainer{
+          padding-top: 12%;
+          width:40%;
+          height:100vh;
+          zoom: 0.7;
+        
+          
+          &_flex {
+        
+            width: 80%;
+            height: 90%;
+           
+          }
+        }
+      
+}

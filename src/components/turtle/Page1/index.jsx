@@ -24,7 +24,7 @@ const Page1 = ({ offset, color }) => (
       <img
         className="swimTurtle"
         src="https://i.ibb.co/ZcyXCwm/turtle-and-shadow-1.png"
-        alt="polar"
+        alt="swimming turtle"
       />
     </ParallaxLayer>
 
@@ -32,7 +32,7 @@ const Page1 = ({ offset, color }) => (
       <img
         className="bubbles"
         src="https://i.ibb.co/6XkqPqT/water-details.png"
-        alt="polar"
+        alt="bubbles in water"
       />
     </ParallaxLayer>
 
@@ -40,7 +40,7 @@ const Page1 = ({ offset, color }) => (
       <img
         className="lightEffect"
         src="https://i.ibb.co/NZM04xc/light-1.png"
-        alt="polar"
+        alt="light shadow effect"
       />
     </ParallaxLayer>
 
@@ -48,7 +48,7 @@ const Page1 = ({ offset, color }) => (
       <img
         className="rockDetail"
         src="  https://i.ibb.co/3CcM0M2/ground-details.png"
-        alt="polar"
+        alt="rocks in water"
       />
     </ParallaxLayer>
 

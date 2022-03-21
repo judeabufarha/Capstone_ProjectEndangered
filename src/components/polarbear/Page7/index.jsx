@@ -63,7 +63,7 @@ const Page7 = ({ offset, color }) => {
         offset={offset}
         speed={0.9}
       >
-        <div className="toggleButtonsP7">
+        <div className="toggleButtonsP7" aria-label=" postive-negative toggle">
         <div className="wrapperCommonContainer ">
           <div className="commonContainerSpecial">
             <div className="flexContainer100">

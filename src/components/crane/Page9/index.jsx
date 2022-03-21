@@ -26,12 +26,12 @@ const Page9 = ({ offset, color }) => {
     <img
         className="Enviro3dCrane"
         src="https://i.ibb.co/51j8pD3/Vector-36.png"
-        alt="3D Enviroment"
+        alt="Wet Prairies 3D Enviroment"
       />
     </ParallaxLayer>
 
     <ParallaxLayer offset={offset} speed={1.2}>
-      <div className="exploreButton">
+      <div className="exploreButton" aria-label="begin exploring">
       <TextButton type="light" text="Begin Exploring" colour="light" />
       </div>
 

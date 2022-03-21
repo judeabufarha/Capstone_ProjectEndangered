@@ -76,3 +76,18 @@
   
 }
                         
+
+@media screen and (max-width: 1366px), 
+screen and (max-height: 650px) {
+  .sideArcticImage {
+    position: absolute;
+    width: 55%;
+    top: 0;
+    right: 0;
+  
+    img {
+      margin: auto;
+      zoom: 0.7;
+    }
+  }
+  }

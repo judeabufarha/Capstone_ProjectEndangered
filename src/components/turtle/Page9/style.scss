@@ -1,0 +1,40 @@
+
+  
+  @media screen and (max-width: 1366px) {
+  
+  
+    .enviro{
+      &Text {
+      font-size: 18px;
+      }
+  
+      
+    }
+    .enviromentOcean3d{
+        padding-top: 7%;
+      zoom: 0.8;
+    
+    
+    }
+  }
+    
+  @media screen and (max-width: 1536px) {
+    .enviromentOcean3d{
+        padding-top: 7%;
+      zoom: 0.9;
+    
+    
+    }
+  }
+  
+  @media screen and (max-width: 1366px), 
+  screen and (max-height: 650px) {
+    .enviromentOcean3d{
+        padding-top: 7%;
+      zoom: 0.7;
+    
+    
+    }
+    
+    
+    }

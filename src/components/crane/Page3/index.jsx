@@ -4,9 +4,9 @@ import "./style.scss";
 
 const Page3 = ({ offset, color }) => {
   const groupAnimalsCrane = [
-    <img src="https://i.ibb.co/DMQt098/Vector-30.png" />,
-    <img src="https://i.ibb.co/X3YBpLH/Vector-31.png" />,
-    <img src="https://i.ibb.co/dLSWbtR/Vector-32.png" />,
+    <img src="https://i.ibb.co/DMQt098/Vector-30.png" alt="Crab in Water" />,
+    <img src="https://i.ibb.co/X3YBpLH/Vector-31.png" alt="Crane"/>,
+    <img src="https://i.ibb.co/dLSWbtR/Vector-32.png" alt="Fox"/>,
   ];
   return (
     <>

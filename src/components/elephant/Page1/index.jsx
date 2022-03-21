@@ -31,7 +31,7 @@ const Page1 = ({ offset, color }) => (
       <img
         className="lightHighGrass"
         src="https://i.ibb.co/HPRTcbz/front-grass.png"
-        alt="bottom grass"
+        alt="High grass"
       />
     </ParallaxLayer>
 
@@ -39,7 +39,7 @@ const Page1 = ({ offset, color }) => (
       <img
         className="sideHomeElephant"
         src="https://i.ibb.co/yVc19d4/elephant.png"
-        alt="bottom grass"
+        alt="Elephant Image"
       />
     </ParallaxLayer>
  

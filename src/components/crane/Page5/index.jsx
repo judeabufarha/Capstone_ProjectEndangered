@@ -30,6 +30,7 @@ const Page5 = ({ offset, color }) => {
         offset={offset}
         speed={0.9}
         style={{ height: `100px` }}
+        aria-label="then-now toggle"
       >
         <div className="wrapperCommonContainer ">
           <div className="commonContainerSpecial toggleButtons">
@@ -40,7 +41,7 @@ const Page5 = ({ offset, color }) => {
                 onClick={() => {
                 setNow(!now);
                 }}
-                text="then-now"
+                text="then-now"       
               />
             </div>
           </div>

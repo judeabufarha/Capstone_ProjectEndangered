@@ -230,3 +230,56 @@
   
 }
                                                                    
+@media screen and (max-width: 1366px), 
+screen and (max-height: 650px) {
+  .title {
+    zoom: 0.9;
+  }
+  
+  .backgroundMountains {
+
+    .mountain1{
+      padding-top:7%;
+      padding-left: 8%;
+      zoom: 0.5;
+    }
+    .mountain2{
+    
+      zoom: 0.6;
+     
+    }
+    .mountain3 {
+    
+      zoom: 0.6;
+    
+    }
+  }
+  
+  .polarbearOnIce{
+   
+  
+    .polarIce{
+     zoom: 0.7;
+    }
+  }
+  .water {
+   
+  
+    .ice {
+    padding-top: 4%;
+    }
+  
+  .sky {
+ 
+    .sun{
+      zoom: 0.7;
+    }
+  
+    .bird {
+      padding-top: 3%;
+      zoom: 0.7;
+    }
+  }
+  
+  }
+}

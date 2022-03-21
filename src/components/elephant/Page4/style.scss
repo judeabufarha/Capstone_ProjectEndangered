@@ -145,3 +145,22 @@
   
 }
   }
+@media screen and (max-width: 1366px), 
+       screen and (max-height: 650px) {
+
+ 
+        .SideGrasslandImage {
+          position: absolute;
+          width: 55%;
+          top: 0;
+          right: 0;
+        
+          .grasslandSnap {
+            margin: auto;
+            zoom: 0.35;
+          }
+        
+      }
+      
+ 
+}

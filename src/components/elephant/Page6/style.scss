@@ -187,3 +187,29 @@
   }
 
 
+  @media screen and (max-width: 1366px), 
+       screen and (max-height: 650px) {
+
+        .timelineBullets{
+          z-index: 1000;
+          
+          .wrapperCommonContainer{
+            top:74%
+          }
+        
+          .commonContainerSpecial{
+            display: flex;
+            align-items: center;
+        
+            .trioImg__container{
+            width: 100%;
+            margin: 0 2%;
+            height: auto;
+            }
+          }
+        
+        }
+}
+
+  
+  

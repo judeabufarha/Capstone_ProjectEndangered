@@ -41,7 +41,7 @@ const Page4 = ({ offset, color }) => {
             <img
               className="oceanSnap"
               src="https://i.ibb.co/9HX4LwP/Vector-21.png"
-              alt="oceanSnap"
+              alt="ocean Snapshot"
             />
           </div>
         </div>

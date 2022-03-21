@@ -14,7 +14,7 @@ const Page1 = ({ offset, color }) => (
       <img
         className="craneTitle"
         src="https://i.ibb.co/4Nn9TyZ/The-Whooping-Crane.png"
-        alt="title"
+        alt="Crane Title"
       />
     </ParallaxLayer>
 
@@ -23,7 +23,7 @@ const Page1 = ({ offset, color }) => (
       <img
         className="waterLilypads"
         src="https://i.ibb.co/HNF60cj/water-decor.png"
-        alt="Water Detail"
+        alt="Water Detail For Crane"
       />
     </ParallaxLayer>
        
@@ -47,7 +47,7 @@ const Page1 = ({ offset, color }) => (
       <img
         className="homeCraneImg"
         src="https://i.ibb.co/chks5Jt/bird.png"
-        alt="Crane"
+        alt="Crane Homepage Image"
       />
     </ParallaxLayer>
  
@@ -55,7 +55,7 @@ const Page1 = ({ offset, color }) => (
       <img
         className="craneSkyDetails"
         src="https://i.ibb.co/TPtMgGh/sky-details.png"
-        alt="birds"
+        alt="birds in the sky"
       />
       </ParallaxLayer>
 

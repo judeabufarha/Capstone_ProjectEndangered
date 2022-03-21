@@ -51,28 +51,28 @@ const Page6 = ({ offset, color }) => {
           </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer className="craneTooltip1" offset={offset} speed={2}>
+      <ParallaxLayer className="craneTooltip1" offset={offset} speed={2} aria-label="tooltip 1">
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
-            <Tooltip text={{title:'1941',description:'The population drops to 15 living whooping cranes.'}} width={239} />
+            <Tooltip  text={{title:'1941',description:'The population drops to 15 living whooping cranes.'}} width={239} />
           </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer className="craneTooltip2" offset={offset} speed={3}>
+      <ParallaxLayer className="craneTooltip2" offset={offset} speed={3} aria-label="tooltip 2">
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
             <Tooltip text={{title:'1967',description:'Breeding programs and reintroduction efforts begin.'}} width={250} />
           </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer className="craneTooltip3" offset={offset} speed={3}>
+      <ParallaxLayer className="craneTooltip3" offset={offset} speed={3} aria-label="tooltip 3">
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
             <Tooltip text={{title:'1978',description:'The whooping crane is classified as endangered.'}} width={250} />
           </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer className="craneTooltip4" offset={offset} speed={3}>
+      <ParallaxLayer className="craneTooltip4" offset={offset} speed={3} aria-label="tooltip 4">
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
             <Tooltip text={{title:'1993',description:'Whooping cranes are released into the wild in Florida.'}} width={250} />
@@ -80,7 +80,7 @@ const Page6 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer className="craneTooltip5" offset={offset} speed={3}>
+      <ParallaxLayer className="craneTooltip5" offset={offset} speed={3} aria-label="tooltip 5">
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
             <Tooltip text={{title:'2004',description:'A total of 221 whooping cranes are released into the wild.'}} width={250} />
