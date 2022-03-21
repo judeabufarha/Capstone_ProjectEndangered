@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import ToggleButtons from "../../../toggle-buttons";
 import { MapMarkerMobile } from "../../../map-marker-mobile";
 import { useState } from "react";
+import { MapLegend } from "../../../map-legend";
 
 export const MobilePage05 = (props) => {
     const [animal, setAnimal]= useState(props.animal);
@@ -88,6 +89,30 @@ export const MobilePage05 = (props) => {
                 </div>
 
                 {animal === "polarBear" && (
+                    <div className="mobile-map-legend">
+                        <MapLegend colour="blue-mobile" outline="blue-outline-mobile"/>
+                    </div> 
+                )} 
+
+                {animal === "whoopingCrane" && (
+                    <div className="mobile-map-legend">
+                        <MapLegend colour="red-mobile" outline="red-outline-mobile"/>
+                    </div> 
+                )} 
+
+                {animal === "asianElephant" && (
+                    <div className="mobile-map-legend">
+                        <MapLegend colour="green-mobile" outline="green-outline-mobile"/>
+                    </div> 
+                )} 
+
+                {animal === "seaTurtle" && (
+                    <div className="mobile-map-legend">
+                        <MapLegend colour="turquoise-mobile" outline="turquoise-outline-mobile"/>
+                    </div> 
+                )}  
+
+                {animal === "polarBear" && (
                     <div className="mobile-population-toggle">
                         <ToggleButtons
                             colour="toggle-orange"
@@ -137,7 +162,7 @@ export const MobilePage05 = (props) => {
                             }}
                         />
                     </div>
-                )}               
+                )}             
                 
             </div>
       </div>

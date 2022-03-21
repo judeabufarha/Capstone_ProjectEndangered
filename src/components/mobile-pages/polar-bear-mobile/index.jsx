@@ -65,7 +65,6 @@ export const PolarBearMobile = (props) => {
     }, [currentPage]);
 
     return (
-
         <div className="polar-bear-mobile-container">
             <div className="mobile-page page 01" ref={page1}>
                 <MobilePage01 

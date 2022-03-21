@@ -39,6 +39,36 @@
   width: .75rem !important;
 }
 
+.red-outline-mobile {
+  border-radius: 50%;
+  border: #E3959E solid .125rem;
+  outline-offset: -.125rem;
+  box-shadow: 0 0 0 0 rgba(148, 210, 237, 1);
+  animation: pulse-red 2s infinite;
+  height: .75rem !important;
+  width: .75rem !important;
+}
+
+.green-outline-mobile {
+  border-radius: 50%;
+  border: #A4BC82 solid .125rem;
+  outline-offset: -.125rem;
+  box-shadow: 0 0 0 0 rgba(148, 210, 237, 1);
+  animation: pulse-green 2s infinite;
+  height: .75rem !important;
+  width: .75rem !important;
+}
+
+.turquoise-outline-mobile {
+  border-radius: 50%;
+  border: #72B1B7 solid .125rem;
+  outline-offset: -.125rem;
+  box-shadow: 0 0 0 0 rgba(148, 210, 237, 1);
+  animation: pulse-turquoise 2s infinite;
+  height: .75rem !important;
+  width: .75rem !important;
+}
+
 .large-mobile {
   height: 1rem;
   width: 1rem;

@@ -10,27 +10,27 @@
 }
 
 #polarBear1 {
-    background-color: #94D2ED;
+    background: linear-gradient(to bottom, #FFFFFF 30%, #94D2ED 30% 70%);
 }
 
 #whoopingCrane1 {
-    background-color: #7B97B7;
+    background: linear-gradient(to bottom, #FFFFFF 30%, #7B97B7 30% 70%);
 }
 
 #whoopingCrane2 {
-    background-color: #997C5F;
+    background: linear-gradient(to bottom, #FFFFFF 30%, #997C5F 30% 70%);
 }
 
 #asianElephant1 {
-    background-color: #A4BC82;
+    background: linear-gradient(to bottom, #FFFFFF 30%, #A4BC82 30% 70%);
 }
 
 #asianElephant2 {
-    background-color: #B4A290;
+    background: linear-gradient(to bottom, #FFFFFF 30%, #B4A290 30% 70%);
 }
 
 #seaTurtle1 {
-    background-color: #DDCFB3;
+    background: linear-gradient(to bottom, #FFFFFF 30%, #DDCFB3 30% 70%);
 }
 
 .mobile-page-07::-webkit-scrollbar {
