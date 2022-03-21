@@ -1,0 +1,41 @@
+.page5{
+    &.marker .now {
+      width:20px;
+      height: 20px;
+    }
+  
+    .marker {
+      z-index: 999999;
+      position:absolute;
+  
+      .commonContainerSpecial{
+        margin:0;
+      } 
+  
+      &-11 {
+        left: 18%;
+        top:45%;
+        z-index: 999999999;
+      }
+  
+      &-12{
+        left: 25%;
+        top:50%;
+        z-index: 999999999;
+        
+      }
+      &-13{
+        left: 23%;
+        top:62%;
+        z-index: 999999999;
+        
+      }
+      &-14{
+        left: 27%;
+        top:65%;
+        z-index: 999999999;
+        
+      }
+      
+    }
+  }

@@ -84,7 +84,7 @@ export const Elephant = () => {
         <Page2 offset={1} color="page2ElephantBackground" />
         <Page3 offset={2} color="white" />
         <Page4 offset={3} color="white" />
-        <Page5 offset={4} color="page5Background" />
+        <Page5 offset={4} color="page5ElephantBackground" />
         <Page6 offset={5} color="page6ElephantBackground" />
         <Page7 offset={6} color="page7ElephantBackground" />
         <Page8 offset={7} color="white" />
