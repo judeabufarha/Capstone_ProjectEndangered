@@ -73,6 +73,9 @@ label, .toggle-then-now, .toggle-positive-negative {
 .toggle-pink {
   background-color: #F1BEDC;
 }
+.toggle-green{
+  background-color: #CBEBB2; 
+}
 
 .toggle-green {
   background-color: #CBEBB2;
@@ -166,7 +169,15 @@ input.switch[type="checkbox"] {
   background-color: #FFAF81;
 }
 
+.toggleButtonActivated .app .toggle-green{
+  transform: translateX(100%);
+  background-color: #CBEBB2;
+}
 
+.toggleButtonActivated .app .toggle-peach{
+  transform: translateX(100%);
+  background-color: #FFCCB0;
+}
 // input.switch[type="checkbox"]:hover + .app .toggle-orange{
 //   background-color: #FFBF9A;
 //   transition: .5s;

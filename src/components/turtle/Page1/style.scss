@@ -1,3 +1,10 @@
+.page1TurtleBackground {
+  background-image: url(https://i.ibb.co/mDT0NJ4/BG-9.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
 .turtleTitle {
   position: absolute;
   left: 72px;
@@ -5,4 +12,42 @@
   height: auto;
   width:385px;
   z-index: 99999;
+}
+
+.waterDetails {
+  z-index: 1;
+  .bubbles {
+    position: absolute;
+    display: flex;
+    top: 19%;
+    width: 90%;   
+   
+  }
+}
+.groundDetails {
+  z-index: 1;
+  .rockDetail {
+    position: absolute;
+    display: flex;
+    padding-top: 40%;
+  }
+}
+
+.lightDetails {
+  .lightEffect {
+    position: absolute;
+    display: flex;
+    padding-top: 0%;
+    width: 95%;   
+  }
+}
+
+.turtleImageWithShadow {
+  z-index: 9999;
+  .swimTurtle {
+    position: absolute;
+    display: flex;
+    padding-top: 12%;
+    padding-left: 10%;
+  }
 }

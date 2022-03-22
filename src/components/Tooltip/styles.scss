@@ -31,23 +31,23 @@
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1366px) {
 
   .tooltip {
   &_wrapper {
     background-image: url("https://i.ibb.co/7bg0dCF/Tooltip.png");
-    background-size: 80% 100%;
+    background-size: 95% 100%;
     background-repeat: no-repeat;
     padding: 24px 26px 28px 36px;
   }
 
     &_title {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: bold;
     }
   
     &_description {
-      font-size: 16px;
+      font-size: 15px;
     }
     
   }

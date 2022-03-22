@@ -59,7 +59,7 @@ const Page4 = ({ offset, color }) => {
             <img
               className="arcticSnap"
               src="https://i.ibb.co/txT70v8/arctic-Snap.png"
-              alt="arcticSnap"
+              alt="arctic Snapshot"
             />
           </div>
         </div>

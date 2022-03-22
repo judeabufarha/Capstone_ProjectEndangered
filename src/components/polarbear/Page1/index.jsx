@@ -22,17 +22,17 @@ const Page1 = ({ offset, color }) => (
       <img
         className="mountain1"
         src=" https://i.ibb.co/syxV6Pj/mountain1.png"
-        alt="mountain1"
+        alt="mountain 1"
       />
        <img
         className="mountain2"
         src=" https://i.ibb.co/k4Fxhct/mountain-1.png"
-        alt="mountain2"
+        alt="mountain 2"
       /> 
       <img
         className="mountain3"
         src="https://i.ibb.co/yS4qscw/mountain.png "
-        alt="mountain3"
+        alt="mountain 3"
       />
     </ParallaxLayer>
 
@@ -41,12 +41,12 @@ const Page1 = ({ offset, color }) => (
       <img
         className="lightdetail"
         src="https://i.ibb.co/vsqYpWc/waterdetail-Light.png"
-        alt="lightdetail"
+        alt="light water detail"
       />
       <img
         className="darkdetail"
         src="https://i.ibb.co/fFxbrr2/waterdetail-Dark.png"
-        alt="darkdetail"
+        alt="dark water detail"
       />
       <img className="ice" src="https://i.ibb.co/6XXswjQ/Group-47.png" alt="ice" />
     </ParallaxLayer>
@@ -65,17 +65,11 @@ const Page1 = ({ offset, color }) => (
       <img
         className="polarIce"
         src="https://i.ibb.co/fMtZSVX/polarbear-Ice.png"
-        alt="polar"
+        alt="polar bear standing on ice"
       />
     </ParallaxLayer>
 
-    <ParallaxLayer className="mobileBackground" offset={offset} speed={1.2}>
-      <img
-        className="mobileImg"
-        src="https://i.ibb.co/1GRCqgp/Illustration-9.png"
-        alt="polarMobile"
-      />
-    </ParallaxLayer>
+
 
    
   </>

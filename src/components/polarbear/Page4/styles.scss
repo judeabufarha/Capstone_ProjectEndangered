@@ -45,34 +45,49 @@
   }
 }
 
-@media screen and (max-width: 500px) {
-
-  
-  .statusTitle {
-    top: 8%;
-    color: $pe_dark;
-  
-  }
-  .wrapperCommonContainer.statusTextArea {
-    color: $pe_dark;
-    top: 53%;
-    width: 100%;
-  
-    p {
-      font-size: 18px;
-      display: block;
-    }
-  }
+@media screen and (max-width: 1366px) {
   .sideArcticImage {
     position: absolute;
-    width: 100%;
+    width: 55%;
     top: 0;
     right: 0;
   
     img {
       margin: auto;
-      zoom: 0.5;
-      margin-top: 45%;
+      zoom: 0.9;
     }
   }
+  
 }
+
+
+@media screen and (max-width: 1536px) {
+  .sideArcticImage {
+    position: absolute;
+    width: 55%;
+    top: 0;
+    right: 0;
+  
+    img {
+      margin: auto;
+      zoom: 0.9;
+    }
+  }
+  
+}
+                        
+
+@media screen and (max-width: 1366px), 
+screen and (max-height: 650px) {
+  .sideArcticImage {
+    position: absolute;
+    width: 55%;
+    top: 0;
+    right: 0;
+  
+    img {
+      margin: auto;
+      zoom: 0.7;
+    }
+  }
+  }

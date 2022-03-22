@@ -9,3 +9,20 @@
     zoom: 0.6;
   }
 }
+
+
+
+@media screen and (max-width: 1366px), 
+screen and (max-height: 650px) {
+  .SideOceanImage {
+    position: absolute;
+    width: 55%;
+    top: 0;
+    right: 0;
+  
+    img {
+      margin: auto;
+      zoom: 0.35;
+    }
+  } 
+}

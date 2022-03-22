@@ -3,3 +3,213 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+
+  .elephantTooltip1 {
+    z-index: 9999;
+  
+    
+  
+    .wrapperCommonContainer{
+      top: 48%;
+  
+      .tooltip {
+        margin-left:54%;
+      }
+    }
+  
+    
+    
+  }
+  
+  .elephantTooltip2 {
+    z-index: 9999;
+    
+    .wrapperCommonContainer{
+      top: 16%; 
+  
+      .tooltip {
+        margin-left: 63%;
+      }
+    
+    }
+  }
+
+
+  .elephantTooltip3 {
+    z-index: 9999;
+    
+    .wrapperCommonContainer{
+      top: 48%; 
+  
+      .tooltip {
+        margin-left: 78%;
+      }
+    
+    }
+  }
+
+  
+@media screen and (max-width: 1536px) {
+  
+.pastTitle {
+  top: 7%;
+  font-size:40px;
+}
+
+  .timelineBullets{
+    z-index: 1000;
+    
+    .wrapperCommonContainer{
+      top:70%
+    }
+  
+    .commonContainerSpecial{
+      display: flex;
+      align-items: center;
+  
+      .trioImg__container{
+      width: 100%;
+      margin: 0 2%;
+      height: auto;
+      }
+    }
+  
+  }
+  
+ 
+  .elephantTooltip1 {
+    .wrapperCommonContainer{
+      top: 46%;
+  
+      .tooltip {
+        margin-left:55%;
+      }
+    }
+  
+    
+    
+  }
+  
+  .elephantTooltip2 {
+    z-index: 9999;
+    
+    .wrapperCommonContainer{
+      top: 14%; 
+  
+      .tooltip {
+        margin-left: 63%;
+      }
+    
+    }
+  }
+
+
+  .elephantTooltip3 {
+    z-index: 9999;
+    
+    .wrapperCommonContainer{
+      top: 46%; 
+  
+      .tooltip {
+        margin-left: 79%;
+      }
+    
+    }
+  }
+}
+@media screen and (max-width: 1366px) {
+  
+  .pastTitle {
+    top: 7%;
+    font-size:40px;
+  }
+  
+    .timelineBullets{
+      z-index: 1000;
+      
+      .wrapperCommonContainer{
+        top:70%
+      }
+    
+      .commonContainerSpecial{
+        display: flex;
+        align-items: center;
+    
+        .trioImg__container{
+        width: 100%;
+        margin: 0 2%;
+        height: auto;
+        }
+      }
+    
+    }
+    
+   
+    .elephantTooltip1 {
+      .wrapperCommonContainer{
+        top: 46%;
+    
+        .tooltip {
+          margin-left:55%;
+        }
+      }
+    
+      
+      
+    }
+    
+    .elephantTooltip2 {
+      z-index: 9999;
+      
+      .wrapperCommonContainer{
+        top: 14%; 
+    
+        .tooltip {
+          margin-left: 63%;
+        }
+      
+      }
+    }
+  
+  
+    .elephantTooltip3 {
+      z-index: 9999;
+      
+      .wrapperCommonContainer{
+        top: 46%; 
+    
+        .tooltip {
+          margin-left: 79%;
+        }
+      
+      }
+    }
+  }
+
+
+  @media screen and (max-width: 1366px), 
+       screen and (max-height: 650px) {
+
+        .timelineBullets{
+          z-index: 1000;
+          
+          .wrapperCommonContainer{
+            top:74%
+          }
+        
+          .commonContainerSpecial{
+            display: flex;
+            align-items: center;
+        
+            .trioImg__container{
+            width: 100%;
+            margin: 0 2%;
+            height: auto;
+            }
+          }
+        
+        }
+}
+
+  
+  

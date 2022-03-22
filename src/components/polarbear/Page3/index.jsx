@@ -9,9 +9,9 @@ import "./styles.scss";
 
 const Page3 = ({ offset, color }) => {
   const groupAnimals = [
-    <img src="https://i.ibb.co/RQfM4ck/fish.png" />,
-    <img src="https://i.ibb.co/rGz54Tj/seal.png" />,
-    <img src="https://i.ibb.co/kq9NHvj/polar.png" />,
+    <img src="https://i.ibb.co/RQfM4ck/fish.png" alt= 'fish' />,
+    <img src="https://i.ibb.co/rGz54Tj/seal.png" alt= 'seal'/>,
+    <img src="https://i.ibb.co/kq9NHvj/polar.png" alt= 'polar bear'/>,
   ];
   return (
     <>

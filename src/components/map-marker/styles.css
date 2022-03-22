@@ -11,10 +11,33 @@
   animation: pulse-blue 2s infinite;
 }
 
+.blueCircleOutlined{
+  border-radius: 50%;
+  border: #94d2ed solid .4rem;
+  outline-offset: -.125rem;
+  box-shadow: 0 0 0 0 rgba(148, 210, 237, 1);
+  animation: pulse-blue 2s infinite;
+  height:3.5rem !important;
+  width: 3.5rem !important;
+}
+
+
 .greenCircle{
   background: #A4BC82;
   box-shadow: 0 0 0 0 rgba(148, 210, 237, 1);
   animation: pulse-green 2s infinite;
+}
+
+.salmonCircle{
+  background: #E3959E;
+  box-shadow: 0 0 0 0 rgba(148, 210, 237, 1);
+  animation: pulse-salmon 2s infinite;
+}
+
+.tealCircle{
+  background: #72B1B7;
+  box-shadow: 0 0 0 0 rgba(148, 210, 237, 1);
+  animation: pulse-teal 2s infinite;
 }
 
 
@@ -29,9 +52,12 @@
 }
 .small {
   height: 20px;
-  width: 20px;
+  width: 20px; 
+}
 
-  
+.disappear{
+  height: 0px;
+  width: 0px; 
 }
 
 .small [class*="-BaseToolTop"]{
@@ -50,6 +76,39 @@
 
 [class*="-Bubble"] {
   box-shadow: 3px 3px 10px rgb(0 0 0 / 25%);
+}
+@keyframes pulse-teal {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(39, 177, 183, 0.85);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 18px rgba(164, 188, 130, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(164, 188, 130, 0);
+  }
+}
+
+@keyframes pulse-salmon {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(227, 149, 158, 0.85);
+  }
+
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 18px rgba(164, 188, 130, 0);
+  }
+
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(164, 188, 130, 0);
+  }
 }
 
 @keyframes pulse-green {

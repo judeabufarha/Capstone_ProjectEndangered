@@ -165,7 +165,7 @@ export const Sidebar = () => {
             >
               <MenuItem
                 icon="https://i.ibb.co/ft1vPKc/Web-Icons-Final-elephant-dark.png"
-                text="Forest Elephant"
+                text="Asian Elephant"
                 state={showSub[2]}
                 expand={showSub[2]}
               />

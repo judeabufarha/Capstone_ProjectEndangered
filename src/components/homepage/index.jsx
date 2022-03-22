@@ -39,7 +39,7 @@ export const HomePage = (props) => {
                         bg="grey-bg"
                         title="Asian Elephant"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
-                        image="https://i.ibb.co/YXc09z7/Vector-crane.png"
+                        image="https://i.ibb.co/HgJyygS/Vector.png"
                         alt="3d image of Asian elephant in habitat."
                         linkFn={() => {
                             history.push("/forest-elephant");
@@ -51,7 +51,7 @@ export const HomePage = (props) => {
                         bg="white-bg"
                         title="Whooping Crane"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
-                        image="https://i.ibb.co/YXc09z7/Vector-crane.png"
+                        image="https://i.ibb.co/3dLGy0s/Vector-38.png"
                         alt="3d image of whooping crane in habitat."
                         linkFn={() => {
                             history.push("/whooping-crane");
@@ -63,7 +63,7 @@ export const HomePage = (props) => {
                         bg="grey-bg"
                         title="Green Sea Turtle"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
-                        image="https://i.ibb.co/YXc09z7/Vector-crane.png"
+                        image="https://i.ibb.co/ssM24wh/Vector-39.png"
                         alt="3d image of whooping crane in habitat."
                         linkFn={() => {
                             history.push("/sea-turtle");
@@ -102,7 +102,7 @@ export const HomePage = (props) => {
                         bg="white-bg"
                         title="Whooping Crane"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
-                        image="https://i.ibb.co/YXc09z7/Vector-crane.png"
+                        image="https://i.ibb.co/3dLGy0s/Vector-38.png"
                         alt="3d image of whooping crane in habitat."
                         linkFn={() => {
                             history.push("/whooping-crane");
@@ -114,7 +114,7 @@ export const HomePage = (props) => {
                         bg="grey-bg"
                         title="Green Sea Turtle"
                         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est."
-                        image="https://i.ibb.co/YXc09z7/Vector-crane.png"
+                        image="https://i.ibb.co/ssM24wh/Vector-39.png"
                         alt="3d image of whooping crane in habitat."
                         linkFn={() => {
                             history.push("/sea-turtle");

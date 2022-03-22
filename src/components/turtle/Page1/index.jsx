@@ -18,60 +18,45 @@ const Page1 = ({ offset, color }) => (
       />
     </ParallaxLayer>
 
-    <ParallaxLayer className="backgroundMountains" offset={offset} speed={1.9}>
+  
+    
+    <ParallaxLayer className="turtleImageWithShadow" offset={offset} speed={0.8}>
       <img
-        className="mountain1"
-        src=" https://i.ibb.co/syxV6Pj/mountain1.png"
-        alt="mountain1"
-      />
-       <img
-        className="mountain2"
-        src=" https://i.ibb.co/k4Fxhct/mountain-1.png"
-        alt="mountain2"
-      /> 
-      <img
-        className="mountain3"
-        src="https://i.ibb.co/yS4qscw/mountain.png "
-        alt="mountain3"
+        className="swimTurtle"
+        src="https://i.ibb.co/ZcyXCwm/turtle-and-shadow-1.png"
+        alt="swimming turtle"
       />
     </ParallaxLayer>
 
-    <ParallaxLayer className="water" offset={offset} speed={0.6}>
-      {/* <img
-        className="waterbase"
-        src="https://i.ibb.co/tx0FqC2/water-Base.png"
-        alt="waterbase"
-      /> */}
+    <ParallaxLayer className="waterDetails" offset={offset} speed={1.2}>
       <img
-        className="lightdetail"
-        src="https://i.ibb.co/vsqYpWc/waterdetail-Light.png"
-        alt="lightdetail"
+        className="bubbles"
+        src="https://i.ibb.co/6XkqPqT/water-details.png"
+        alt="bubbles in water"
       />
-      <img
-        className="darkdetail"
-        src="https://i.ibb.co/fFxbrr2/waterdetail-Dark.png"
-        alt="darkdetail"
-      />
-      <img className="ice" src="https://i.ibb.co/6XXswjQ/Group-47.png" alt="ice" />
     </ParallaxLayer>
+
+    <ParallaxLayer className="lightDetails" offset={offset} speed={1.0}>
+      <img
+        className="lightEffect"
+        src="https://i.ibb.co/NZM04xc/light-1.png"
+        alt="light shadow effect"
+      />
+    </ParallaxLayer>
+
+    <ParallaxLayer className="groundDetails" offset={offset} speed={0.6}>
+      <img
+        className="rockDetail"
+        src="  https://i.ibb.co/3CcM0M2/ground-details.png"
+        alt="rocks in water"
+      />
+    </ParallaxLayer>
+
+
+  
 
     
-
-    <ParallaxLayer className="sky" offset={offset} speed={1.6}>
-      <img
-        className="bird"
-        src="https://i.ibb.co/xmWNfr7/birds.png"
-        alt="birds"
-      />
-      <img className="sun" src=" https://i.ibb.co/C0ggdGP/sun.png " alt="sun" />
-    </ParallaxLayer>
-    <ParallaxLayer className="polarbearOnIce" offset={offset} speed={1.2}>
-      <img
-        className="polarIce"
-        src="https://i.ibb.co/fMtZSVX/polarbear-Ice.png"
-        alt="polar"
-      />
-    </ParallaxLayer>
+    
 
    
   </>

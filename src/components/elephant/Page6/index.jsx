@@ -51,21 +51,21 @@ const Page6 = ({ offset, color }) => {
           </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer className="tooltip1" offset={offset} speed={2}>
+      <ParallaxLayer className="elephantTooltip1" offset={offset} speed={2} aria-label="tooltip 1">
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
             <Tooltip text={{title:'1986',description:'The Asian elephant is classified as endangered.'}} width={239} />
           </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer className="tooltip2" offset={offset} speed={3}>
+      <ParallaxLayer className="elephantTooltip2" offset={offset} speed={3}  aria-label="tooltip 2">
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
             <Tooltip text={{title:'1997',description:'The Asian Elephant Conservation Act is passed.'}} width={250} />
           </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer className="tooltip3" offset={offset} speed={3}>
+      <ParallaxLayer className="elephantTooltip3" offset={offset} speed={3}  aria-label="tooltip 3">
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
             <Tooltip text={{title:'2008',description:'Asian elephant poaching increases significantly.'}} width={250} />

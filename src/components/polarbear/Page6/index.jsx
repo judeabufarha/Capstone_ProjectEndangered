@@ -53,14 +53,14 @@ const Page6 = ({ offset, color }) => {
           </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer className="tooltip1" offset={offset} speed={2}>
+      <ParallaxLayer className="tooltip1" offset={offset} speed={2} aria-label='tooltip 1'>
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
             <Tooltip text={{title:'1971',description:'Polar bears are named Ursus maritimus.'}} width={239} />
           </div>
         </div>
       </ParallaxLayer>
-      <ParallaxLayer className="tooltip2" offset={offset} speed={3}>
+      <ParallaxLayer className="tooltip2" offset={offset} speed={3} aria-label='tooltip 2'>
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
             <Tooltip text={{title:'2008',description:'Polar bears are classifies as endangered.'}} width={250} />

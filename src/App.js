@@ -11,6 +11,7 @@ import { Statusbar } from "./components/statusBar";
 import { PolarBearMobile } from "./components/mobile-pages/polar-bear-mobile";
 import { Turtle } from "./components/turtle";
 import { Elephant } from "./components/elephant";
+import { Crane } from "./components/crane";
 import { WhoopingCraneMobile } from "./components/mobile-pages/whooping-crane-mobile";
 import { AsianElephantMobile } from "./components/mobile-pages/asian-elephant-mobile";
 import { SeaTurtleMobile } from "./components/mobile-pages/sea-turtle-mobile";
@@ -51,7 +52,7 @@ function App() {
           </Route>
           <Route path="/whooping-crane">
             <Navbar handleStepNavigation={setCurrentStep} />
-            <Polarbear key="whooping-crane-page" />
+            <Crane key="whooping-crane-page" />
             <Footer />
           </Route>
           <Route path="/sea-turtle">

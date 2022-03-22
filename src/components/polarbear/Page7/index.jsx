@@ -25,7 +25,7 @@ const Page7 = ({ offset, color }) => {
 
       <ParallaxLayer offset={offset} speed={0} className="page7">
         <div className={`${showImage ? "fade-out" : "fade-in"}`}>
-          <img src="https://i.ibb.co/cbJ0gqK/future-Negative.png" alt="" />
+          <img className = "elephNegImg" src="https://i.ibb.co/cbJ0gqK/future-Negative.png" alt="" />
         </div>
       </ParallaxLayer>
 
@@ -63,7 +63,7 @@ const Page7 = ({ offset, color }) => {
         offset={offset}
         speed={0.9}
       >
-        <div className="toggleButtonsP7">
+        <div className="toggleButtonsP7" aria-label=" postive-negative toggle">
         <div className="wrapperCommonContainer ">
           <div className="commonContainerSpecial">
             <div className="flexContainer100">

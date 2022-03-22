@@ -10,6 +10,7 @@ const ToggleContextProvider = (props) => {
         maxSteps: 9
     });
 
+    
     const setMaxPages = (maxPages) => {
         const tmpState = {...pageState};
         tmpState.maxSteps = maxPages;
