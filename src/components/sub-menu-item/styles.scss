@@ -17,10 +17,15 @@
     &.selected {
         background-color: #D6EBED;
         font-weight:900;
+        
     }
 
     &.normal {
         background-color: #FFFFFF;
         font-weight: 600;
+    }
+    &:hover{
+        background-color: #C1D9DC;
+        transition: .5s;
     }
 }
