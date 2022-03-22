@@ -1,0 +1,58 @@
+.mobile-page-09 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-bottom: 5rem;
+    overflow-y: auto;
+}
+
+.mobile-page-09::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-explore {
+    position: absolute;
+    left: 1.5rem;
+    top: 4.5rem;
+    padding-right: 1.5rem;
+    height: 100%;
+    margin-top: 4rem;
+}
+
+.mobile-explore-text {
+    vertical-align:top;
+    width: 100%;
+    white-space:normal;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.mobile-explore-details {
+    color: #013440;
+}
+
+.mobile-explore-content {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.mobile-explore-image {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.mobile-explore-button {
+    margin-top: 1.5rem;
+    align-self: center;
+}
+
+.mobile-space {
+    height: 8rem;
+}

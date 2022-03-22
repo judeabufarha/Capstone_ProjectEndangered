@@ -15,6 +15,7 @@ import './styles.scss';
 import { useContext } from "react";
 import { ToggleContext } from "../../contexts/ToggleContext";
 import useWindowDimensions from "../../hooks/windowDimensions";
+import { useHistory } from "react-router-dom";
 
 
 export const Elephant = () => {
@@ -70,6 +71,20 @@ export const Elephant = () => {
   useEffect(() => {
     ref.current.scrollTo(pageCurrentState);
   }, [pageCurrentState]);
+
+  const history = useHistory(); 
+
+  useEffect(
+    () => {
+      checkSize();
+    }, []
+  );
+
+  const checkSize = () => {
+    if (window.innerWidth <= 800) {
+        history.push("/asian-elephant-mobile")
+    }
+  }
 
   return (
     <>

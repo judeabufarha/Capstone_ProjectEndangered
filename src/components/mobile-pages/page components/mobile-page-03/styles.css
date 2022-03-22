@@ -1,0 +1,64 @@
+.mobile-page-03 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-y: auto;
+    padding-bottom: 5rem;
+}
+
+.mobile-page-03::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-importance {
+    position: absolute;
+    left: 1.5rem;
+    top: 4.5rem;
+    padding-right: 1.5rem;
+    height: 100%;
+}
+
+.mobile-importance-text {
+    vertical-align:top;
+    width: 100%;
+    white-space:normal;
+    word-wrap: break-word;
+}
+
+.mobile-importance-title {
+    color: #013440;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 48px;
+}
+
+.mobile-importance-details {
+    color: #013440;
+}
+
+#importance-divider {
+    background-color: #013440;
+    width: 100%;
+    height: 2px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.mobile-importance-images {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.mobile-importance-image {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.mobile-space {
+    height: 8rem;
+}

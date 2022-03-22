@@ -1,0 +1,88 @@
+.mobile-page-06-sea-turtle {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-y: auto;
+    padding-bottom: 5rem;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #FFFFFF 30%, #DDCFB3 30% 70%);
+}
+
+.mobile-page-06::-webkit-scrollbar {
+    display: none;
+}
+
+.st-past {
+    position: absolute;
+    left: 1.5rem;
+    top: 4.5rem;
+    padding-right: 1.5rem;
+    height: 100%;
+}
+
+.st-past-text {
+    vertical-align:top;
+    width: 100%;
+    white-space:normal;
+    word-wrap: break-word;
+}
+
+.st-past-title {
+    color: #013440;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.st-past-timeline {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+.st-past-timeline-base {
+    display: flex;
+    flex-direction: row;
+}
+
+.st-past-lines {
+    width: 1.5rem;
+    height: 60.25rem;
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+
+.st-past-point1 {
+    margin-bottom: 17.7rem;
+}
+
+.st-past-point2 {
+    margin-bottom: 17.6rem;
+}
+
+.st-past-point3 {
+    margin-bottom: 17.6rem;
+}
+
+.st-past-image {
+    position: absolute;
+    top: 4.25rem;
+    left: 0rem;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.st-past-event1 {
+    margin-top: 17rem;
+}
+
+.st-past-event2 {
+    margin-top: 40rem;
+}
+
+.mobile-space {
+    height: 8rem;
+}

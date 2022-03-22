@@ -26,8 +26,16 @@ const ToggleContextProvider = (props) => {
     const  bodyClick = () =>{
         setShowSidebar(false)
     }
+
+    const [mobilePage, setMobilePage] = useState(0);
+
+    const initializePage = (index) => {
+        //set plants to the plants from the api
+        setMobilePage(index);
+    }
+
     return (
-        <ToggleContext.Provider value={{showSidebar, closeBar, bodyClick, pageState, setPageState, setMaxPages}}>
+        <ToggleContext.Provider value={{showSidebar, closeBar, bodyClick, pageState, setPageState, setMaxPages, mobilePage, setMobilePage, initializePage}}>
             {props.children}
         </ToggleContext.Provider>
     )

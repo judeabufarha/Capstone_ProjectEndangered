@@ -1,0 +1,100 @@
+.mobile-page-06-whooping-crane {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-y: auto;
+    padding-bottom: 5rem;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #FFFFFF 30%, #7B97B7 30% 70%);
+}
+
+.mobile-page-06::-webkit-scrollbar {
+    display: none;
+}
+
+.wc-past {
+    position: absolute;
+    left: 1.5rem;
+    top: 4.5rem;
+    padding-right: 1.5rem;
+    height: 100%;
+}
+
+.wc-past-text {
+    vertical-align:top;
+    width: 100%;
+    white-space:normal;
+    word-wrap: break-word;
+}
+
+.wc-past-title {
+    color: #013440;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.wc-past-timeline {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+.wc-past-timeline-base {
+    display: flex;
+    flex-direction: row;
+}
+
+.wc-past-lines {
+    width: 1.5rem;
+    height: 80.25rem;
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+
+.wc-past-point1 {
+    margin-bottom: 17.7rem;
+}
+
+.wc-past-point2 {
+    margin-bottom: 17.6rem;
+}
+
+.wc-past-point3 {
+    margin-bottom: 17.5rem;
+}
+
+.wc-past-image {
+    position: absolute;
+    top: 4.25rem;
+    left: 0rem;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.wc-past-event1 {
+    margin-top: 0rem;
+}
+
+.wc-past-event2 {
+    margin-top: 24rem;
+}
+
+.wc-past-event3 {
+    margin-top: 35rem;
+}
+
+.wc-past-event4 {
+    margin-top: 50rem;
+}
+
+.wc-past-event5 {
+    margin-top: 63rem;
+}
+
+.mobile-space {
+    height: 8rem;
+}

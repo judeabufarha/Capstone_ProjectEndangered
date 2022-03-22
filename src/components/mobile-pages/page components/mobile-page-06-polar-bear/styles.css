@@ -1,0 +1,89 @@
+.mobile-page-06-polar-bear {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-y: auto;
+    padding-bottom: 5rem;
+    overflow-x: hidden;
+    background: linear-gradient(to bottom, #FFFFFF 30%, #94D2ED 30% 70%);
+}
+
+
+.mobile-page-06::-webkit-scrollbar {
+    display: none;
+}
+
+.pb-past {
+    position: absolute;
+    left: 1.5rem;
+    top: 4.5rem;
+    padding-right: 1.5rem;
+    height: 100%
+}
+
+.pb-past-text {
+    vertical-align:top;
+    width: 100%;
+    white-space:normal;
+    word-wrap: break-word;
+}
+
+.pb-past-title {
+    color: #013440;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.pb-past-timeline {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+.pb-past-timeline-base {
+    display: flex;
+    flex-direction: row;
+}
+
+.pb-past-lines {
+    height: 60.25rem;
+    width: 1.5rem;
+    margin-top: 1rem;
+    margin-left: .5rem;
+}
+
+.pb-past-point1 {
+    margin-bottom: 17.70rem;
+}
+
+.pb-past-point2 {
+    margin-bottom: 17.7rem;
+}
+
+.pb-past-point3 {
+    margin-bottom: 17.6rem;
+}
+
+.pb-past-image {
+    position: absolute;
+    top: 4.25rem;
+    left: 0rem;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.pb-past-event1 {
+    margin-top: 10rem;
+}
+
+.pb-past-event2 {
+    margin-top: 42rem;
+}
+
+.mobile-space {
+    height: 8rem;
+}

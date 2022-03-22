@@ -1,0 +1,49 @@
+.mobile-page-08 {
+    width: 100vw;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow-y: auto;
+    padding-bottom: 5rem;
+}
+
+.mobile-page-08::-webkit-scrollbar {
+    display: none;
+}
+
+.mobile-conservation {
+    position: absolute;
+    left: 1.5rem;
+    top: 4.5rem;
+    padding-right: 1.5rem;
+    height: 100%;
+}
+
+.mobile-conservation-content {
+    vertical-align:top;
+    width: 100%;
+    white-space:normal;
+    word-wrap: break-word;
+}
+
+.mobile-conservation-title {
+    color: #013440;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 36px;
+}
+
+.mobile-conservation-details {
+    color: #013440;
+}
+
+.mobile-conservation-blobs {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.mobile-conservation-blob {
+    margin-top: 2rem;
+}
