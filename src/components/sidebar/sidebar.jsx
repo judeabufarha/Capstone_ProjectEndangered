@@ -157,7 +157,7 @@ export const Sidebar = () => {
           <div className="forest-elephant-menu-content">
             <NavLink
               exact
-              to="/forest-elephant"
+              to="/asian-elephant"
               className="forest-elephant"
               onClick={() => {
                 handleMenuItemClick(0)
