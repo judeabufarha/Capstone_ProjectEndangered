@@ -7,7 +7,7 @@
   padding: 0 0px 50px 0px;
   background-color: white;
   width: 22rem;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 3.5rem);
   /* margin-top: 12px; */
   box-shadow: 0 40px 50px rgb(0 0 0 / 40%);
   transform: translateX(-360px);
@@ -17,7 +17,7 @@
   overflow-y: auto;
   overflow-x: hidden;
   justify-content: space-between;
-  top: 70px;
+  top: 3.5rem;
 
   &::-webkit-scrollbar {
     display: none;
