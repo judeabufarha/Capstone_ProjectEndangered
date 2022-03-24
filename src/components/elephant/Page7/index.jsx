@@ -19,8 +19,19 @@ const Page7 = ({ offset, color }) => {
       </ParallaxLayer>
 
       <ParallaxLayer offset={offset} speed={0} className="page7">
-        <div id='elephNegativeImg' className={`${showImage ? "fade-out" : "fade-in"}` } >
-          <img src="https://i.ibb.co/PYyw8Lg/Negative-2.png" alt="" />
+        <div className="future-background">
+                    <img
+                        id="future-positive"
+                        src='https://i.ibb.co/P5HJVm4/Positive-5.png'
+                        alt='image of elephants in grasslands.'
+                    />
+
+                    <img
+                        className={`${showImage ? "fade-out" : "fade-in"}`} 
+                        id="future-negative"
+                        src="https://i.ibb.co/PYyw8Lg/Negative-2.png"
+                        alt="image of grasslands with train tracks."
+                    />
         </div>
       </ParallaxLayer>
 
@@ -57,6 +68,7 @@ const Page7 = ({ offset, color }) => {
                 colour="toggle-pink"
                 base="base-white"
                 onClick={() => {
+
                   setShowImage(!showImage);
                 }}
                 text="positive-negative"
