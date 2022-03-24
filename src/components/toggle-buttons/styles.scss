@@ -70,19 +70,36 @@ label, .toggle-then-now, .toggle-positive-negative {
   background-color: #FFAF81;
 }
 
+.toggleButtonNormal:hover .app .toggle-orange{
+  background-color: #FFBF9A;
+  transition: .5s;
+}
+
 .toggle-pink {
   background-color: #F1BEDC;
 }
+
+.toggleButtonNormal:hover .app .toggle-pink{
+  background-color: #f5d0e5;
+  transition: .5s;
+}
+
 .toggle-green{
   background-color: #CBEBB2; 
 }
 
-.toggle-green {
-  background-color: #CBEBB2;
+.toggleButtonNormal:hover .app .toggle-green{
+  background-color: #def8ca;
+  transition: .5s;
 }
 
 .toggle-peach {
   background-color: #FFCCB0;
+}
+
+.toggleButtonNormal:hover .app .toggle-peach{
+  background-color: #ffdac6;
+  transition: .5s;
 }
 
 .names { 
@@ -147,7 +164,6 @@ input.switch[type="checkbox"] {
   display: none;
 }
 
-
 .toggleButtonActivated .app .toggle-pink{
   transform: translateX(100%);
 }
@@ -160,29 +176,25 @@ input.switch[type="checkbox"] {
   transform: translateX(100%);
 }
 
-.toggleButtonActivated .app .toggle-green{
-  transform: translateX(100%);
-}
-
 .toggleButtonActivated .app .toggle-orange{
   transform: translateX(100%);
-  background-color: #FFAF81;
 }
 
-.toggleButtonActivated .app .toggle-green{
-  transform: translateX(100%);
-  background-color: #CBEBB2;
+.toggleButtonActivated:hover .app .toggle-orange{
+  background-color: #FFBF9A;
 }
 
-.toggleButtonActivated .app .toggle-peach{
-  transform: translateX(100%);
-  background-color: #FFCCB0;
+.toggleButtonActivated:hover .app .toggle-pink{
+  background-color: #f5d0e5;
+  transition: .5s;
 }
-// input.switch[type="checkbox"]:hover + .app .toggle-orange{
-//   background-color: #FFBF9A;
-//   transition: .5s;
-// }
 
-// input.switch[type="checkbox"]:active + .app .toggle-orange{
-//   background-color: #FFCFB3;
-// }
+.toggleButtonActivated:hover .app .toggle-peach{
+  background-color: #ffdac6;
+  transition: .5s;
+}
+
+.toggleButtonActivated:hover .app .toggle-green{
+  background-color: #def8ca;
+  transition: .5s;
+}

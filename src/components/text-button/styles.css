@@ -70,6 +70,11 @@
     transition: .5s;
 }
 
+.button-pink:hover {
+    background-color: #f5d0e5;
+    transition: .5s;
+}
+
 
 .button-green {
     cursor: pointer;
@@ -94,6 +99,7 @@
     background-color: #def8ca;
     transition: .5s;
 }
+
 .light:hover {
     background-color: #DFE4E6;
     transition: .5s;
