@@ -25,8 +25,8 @@ export const HomePageAnimal = (props) => {
                         </div>
                         <div className="content-right">
                             <div className="homepage-animal-info">
-                                <h1 className="homepage-animal-title">{props.title}</h1>
-                                <p className="homepage-animal-text">{props.description}</p>
+                                <h1 className="homepage-animal-title" tabindex="0" >{props.title}</h1>
+                                <p className="homepage-animal-text" tabindex="0">{props.description}</p>
                                 <div className="learn-more-button">
                                     <TextButton 
                                         onClick={props.linkFn}
@@ -44,8 +44,8 @@ export const HomePageAnimal = (props) => {
                     <div className="content-even">
                         <div className="content-left">
                             <div className="homepage-animal-info">
-                                <h1 className="homepage-animal-title">{props.title}</h1>
-                                <p className="homepage-animal-text">{props.description}</p>
+                                <h1 className="homepage-animal-title" tabindex="0">{props.title}</h1>
+                                <p className="homepage-animal-text" tabindex="0">{props.description}</p>
                                 <div className="learn-more-button">
                                     <TextButton 
                                         onClick={props.linkFn}
