@@ -166,6 +166,8 @@ export const WhoopingCraneMobile = (props) => {
                     link="https://vickeychee.github.io/Project_Endangered/public/arctic/"
                 />
             </div>
+
+            <img className="rotate-img" src="https://i.ibb.co/rtQrTgT/Rotate-Landscape.png"/>
         </div>
     );
   };

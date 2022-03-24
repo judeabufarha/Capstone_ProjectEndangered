@@ -73,7 +73,7 @@ export const HomePage = (props) => {
                 </div>
 
                 <div className="homepage-animals-mobile">
-                <HomePageAnimal
+                    <HomePageAnimal
                         type="odd"
                         bg="white-bg"
                         title="Polar Bear"
@@ -120,6 +120,8 @@ export const HomePage = (props) => {
                             history.push("/sea-turtle");
                         }}
                     />
+
+                    <img className="rotate-img" src="https://i.ibb.co/rtQrTgT/Rotate-Landscape.png"/>
 
                 </div>
 
