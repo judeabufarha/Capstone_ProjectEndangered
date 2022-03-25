@@ -83,7 +83,8 @@ export const AsianElephantMobile = (props) => {
 
     return (
 
-        <div className="asian-elephant-mobile-container" {...handlers}>
+        //<div className="asian-elephant-mobile-container" {...handlers}></div>
+        <div className="asian-elephant-mobile-container">
             <div className="mobile-page page 01" ref={page1}>
                 <MobilePage01 
                     title="Asian Elephant" 
