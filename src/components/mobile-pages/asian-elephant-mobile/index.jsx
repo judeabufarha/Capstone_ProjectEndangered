@@ -18,20 +18,20 @@ export const AsianElephantMobile = (props) => {
 
     const currentPage = mobilePage;
 
-    const handlers = useSwipeable({
-        onSwipedLeft: () => swipeLeft(),
-        onSwipedRight: () => swipeRight(),
-        preventDefaultTouchmoveEvent: true,
-        trackMouse: true
-    });
+    //const handlers = useSwipeable({
+        //onSwipedLeft: () => swipeLeft(),
+        //onSwipedRight: () => swipeRight(),
+        //preventDefaultTouchmoveEvent: true,
+        //trackMouse: true
+    //});
 
-    const swipeLeft = () => {
-        console.log("swipe left")
-    };
+    //const swipeLeft = () => {
+        //console.log("swipe left")
+    //};
 
-    const swipeRight = () => {
-        console.log("swipe right")
-    };
+    //const swipeRight = () => {
+        //console.log("swipe right")
+    //};
 
     const page1 = useRef(null);
     const page2 = useRef(null);
