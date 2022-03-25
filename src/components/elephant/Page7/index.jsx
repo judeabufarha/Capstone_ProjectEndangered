@@ -35,6 +35,7 @@ const Page7 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+
       <ParallaxLayer offset={offset} speed={0.6} className="page7">
         <div className="wrapperCommonContainer futureTitle">
           <div className="commonContainer">

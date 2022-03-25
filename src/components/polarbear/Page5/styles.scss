@@ -73,8 +73,6 @@
   }
 
   .marker {
-    z-index: 999999;
-    position:absolute;
 
     .commonContainerSpecial{
       margin:0;
@@ -83,12 +81,12 @@
     &-1 {
       left: 10%;
       top:33%;
-      z-index: 999999999;
     }
 
     &-2{
       left: 17%;
       top:36%;
+    
       
     }
     &-3{

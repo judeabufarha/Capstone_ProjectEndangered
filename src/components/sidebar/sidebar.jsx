@@ -12,6 +12,7 @@ export const Sidebar = () => {
   const [showSub, setShowSub] = useState([false, false, false, false, false]);
 
   const templateMenu = [
+    { name: "Landing", isEnabled: false },
     { name: "About", isEnabled: false },
     { name: "Importance", isEnabled: false },
     { name: "Status", isEnabled: false },
@@ -147,7 +148,7 @@ export const Sidebar = () => {
                 <SubMenuItem
                   onClick={() => {
                     menuState(item.name, 'polarbear');
-                    handleStepNavigation(index + 1)
+                    handleStepNavigation(index )
                   }} text={item.name} isEnabled={item.isEnabled} key={`polarbear-${item.name}`} />
 
               )}
@@ -156,7 +157,7 @@ export const Sidebar = () => {
           <div className="forest-elephant-menu-content">
             <NavLink
               exact
-              to="/forest-elephant"
+              to="/asian-elephant"
               className="forest-elephant"
               onClick={() => {
                 handleMenuItemClick(0)
@@ -175,7 +176,7 @@ export const Sidebar = () => {
                 <SubMenuItem
                   onClick={() => {
                     menuState(item.name, 'elephant');
-                    handleStepNavigation(index + 1)
+                    handleStepNavigation(index )
                   }} text={item.name} isEnabled={item.isEnabled} key={`elephant-${item.name}`} />
 
               )}
@@ -203,7 +204,7 @@ export const Sidebar = () => {
                 <SubMenuItem
                   onClick={() => {
                     menuState(item.name, 'crane');
-                    handleStepNavigation(index + 1)
+                    handleStepNavigation(index )
                   }} text={item.name} isEnabled={item.isEnabled} key={`crane-${item.name}`} />
               )}
             </div>
@@ -231,7 +232,7 @@ export const Sidebar = () => {
                 <SubMenuItem
                   onClick={() => {
                     menuState(item.name, 'turtle');
-                    handleStepNavigation(index + 1)
+                    handleStepNavigation(index )
                   }} text={item.name} isEnabled={item.isEnabled} key={`turtle-${item.name}`} />
               )}
             </div>

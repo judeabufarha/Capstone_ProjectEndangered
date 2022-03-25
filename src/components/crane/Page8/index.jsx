@@ -18,7 +18,7 @@ const Page8 = ({ offset, color }) => {
       }
       text="“The Nature Conservancy of Canada (NCC) is the country’s unifying force for nature, working to deliver large-scale, permanent land conservation. With nature, we are building a thriving world.”"
       linkFn={() => {
-        window.open("https://polarbearsinternational.org/", "_blank");
+        window.open("https://www.natureconservancy.ca/en/what-we-do/resource-centre/featured-species/birds/whooping-crane.html#:~:text=What%20is%20this%20species'%20conservation,Red%20List%20of%20Threatened%20Species", "_blank");
       }}
     />,
     <InfoBlob
@@ -34,7 +34,7 @@ const Page8 = ({ offset, color }) => {
       }
       text="“The mission of the International Crane Foundation is to work worldwide to conserve cranes and the ecosystems, watersheds, and flyways on which they depend to survive.”"
       linkFn={() => {
-        window.open("https://arcticwwf.org/species/polar-bear/", "_blank");
+        window.open("https://savingcranes.org/species-field-guide/whooping-crane/ ", "_blank");
       }}
     />,
     <InfoBlob
@@ -49,7 +49,7 @@ const Page8 = ({ offset, color }) => {
       }
       text="“Friends of the Wild Whoopers is a nonprofit conservation organization whose mission is to help preserve and protect the Aransas/Wood Buffalo population of wild whooping cranes and their habitat.”"
       linkFn={() => {
-        window.open("https://canadianpolarbearhabitat.com/", "_blank");
+        window.open("https://www.friendsofthewildwhoopers.org/ ", "_blank");
       }}
     />,
   ];

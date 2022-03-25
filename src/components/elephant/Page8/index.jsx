@@ -18,7 +18,7 @@ const Page8 = ({ offset, color }) => {
       }
       text="“Asian Elephant Support is dedicated to the care and conservation of Asian elephants, and to the people whose lives are intertwined with this magnificent and endangered species.”"
       linkFn={() => {
-        window.open("https://polarbearsinternational.org/", "_blank");
+        window.open("https://www.asianelephantsupport.org/", "_blank");
       }}
     />,
     <InfoBlob
@@ -26,6 +26,7 @@ const Page8 = ({ offset, color }) => {
       linkText="Learn More"
       title={
         <>
+        The<br />
         Elephant <br />
         Family  <br />
         
@@ -33,7 +34,7 @@ const Page8 = ({ offset, color }) => {
       }
       text="“Elephant Family works with home grown, in-country conservation experts o protect Asia’s magnificent wildlife through conservation, to enable successful coexistence between all living things.”"
       linkFn={() => {
-        window.open("https://arcticwwf.org/species/polar-bear/", "_blank");
+        window.open("https://elephant-family.org/ ", "_blank");
       }}
     />,
     <InfoBlob
@@ -48,7 +49,7 @@ const Page8 = ({ offset, color }) => {
       }
       text="“Save The Asian Elephants works to end the terrible cruelty and brutal conditions suffered by the wondrous and ancient species that is the Asian elephant to help restore the population.”"
       linkFn={() => {
-        window.open("https://canadianpolarbearhabitat.com/", "_blank");
+        window.open("https://stae.org/", "_blank");
       }}
     />,
   ];

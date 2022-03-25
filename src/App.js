@@ -45,7 +45,7 @@ function App() {
             <Polarbear key="polar-bear-page" />
             <Footer />
           </Route>
-          <Route path="/forest-elephant">
+          <Route path="/asian-elephant">
             <Navbar handleStepNavigation={setCurrentStep} />
             <Elephant key="forest-elephant-page" />
             <Footer />

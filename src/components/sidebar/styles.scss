@@ -81,11 +81,6 @@
   }
 
   .btm {
-    /*justify-content: space-between; */
-    /* align-self: center; */
-    /* position: absolute; */
-    /* bottom: 100px; */
-    /* transform: translateX(-10px); */
     margin: 0 auto;
     height: max-content;
     display: flex;
@@ -95,9 +90,8 @@
     .line {
       display: flex;
       justify-content: center;
-      /* position: absolute; */
       height: 2px;
-      background: #013440;
+      background: #013440
       /* z-index: 4; */
       width: 280px;
       margin: auto;
@@ -123,63 +117,3 @@
   }
 }
 
-// .sidebar
-// .sidebar
-
-// .sub {
-//   display: none !important;
-// }
-
-// .sub.open {
-//   display: flex !important;
-//   flex-direction: column;
-// }
-
-// .bearImg {
-//   width: 30px;
-//   height: 30px;
-//   padding-right: 15px;
-//   margin-top: 12px;
-// }
-
-// .elephantImg {
-//   width: 35px;
-//   height: 30px;
-//   padding-right: 12px;
-//   margin-top: 12px;
-// }
-// .forestelephant {
-//   display: flex;
-//   justify-content: left;
-// }
-
-// .whoopingcrane {
-//   display: flex;
-//   justify-content: left;
-// }
-// .craneImg {
-//   width: 42px;
-//   height: 40px;
-//   padding-right: 9px;
-//   margin-top: 12px;
-//   margin-left: -5px;
-// }
-// .turtle {
-//   display: flex;
-//   justify-content: left;
-// }
-
-// .turtleImg {
-//   width: 35px;
-//   height: 35px;
-//   padding-right: 10px;
-//   margin-top: 12px;
-// }
-
-// .sub a {
-//   text-transform: capitalize;
-//   font-size: 15px;
-//   padding-bottom: 15px;
-//   padding-left: 45px;
-//   font-weight: 600;
-// }

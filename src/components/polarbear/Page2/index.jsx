@@ -16,6 +16,7 @@ const Page2 = ({ offset, color }) => {
       description: "Ursus Maritimus"
     },
     {
+
       title: "Location",
       description: "Arctic Circle"
     },
@@ -24,6 +25,7 @@ const Page2 = ({ offset, color }) => {
       description: "22,000 - 31,000"
     },
     {
+
       title: "Life Span",
       description: "25 Years"
     }

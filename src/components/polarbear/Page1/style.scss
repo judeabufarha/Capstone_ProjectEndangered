@@ -9,13 +9,25 @@
   z-index: 0;
 }
 
-.title {
+
+
+.titleText {
+  position: absolute;
+  left: 72px;
+  top: 90px;
+  color: $pe_dark;
+  font-size: 48px;
+  font-weight: 600;
+
+}
+
+
+.titleTextAnim {
   position: absolute;
   left: 72px;
   top: 120px;
-  height: 115px;
-  width:385px;
-  z-index: 99999;
+  color: $pe_dark;
+  font-size: 72px;
 }
 
 .backgroundMountains {
