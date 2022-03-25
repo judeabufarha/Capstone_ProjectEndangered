@@ -24,8 +24,19 @@ const Page7 = ({ offset, color }) => {
       </ParallaxLayer>
 
       <ParallaxLayer offset={offset} speed={0} className="page7">
-        <div className={`${showImage ? "fade-out" : "fade-in"}`}>
-          <img src="https://i.ibb.co/cbJ0gqK/future-Negative.png" alt="" />
+        <div className="future-background">
+                    <img
+                        id="future-positive"
+                        src='https://i.ibb.co/PCqLfv7/Frame-4.png'
+                        alt='image of polar bears and seals in arctic.'
+                    />
+
+                    <img
+                        className={`${showImage ? "fade-out" : "fade-in"}`} 
+                        id="future-negative"
+                        src="https://i.ibb.co/ZgKjds4/Frame-5.png"
+                        alt="image of melted ice and one seal and polar bear."
+                    />
         </div>
       </ParallaxLayer>
 

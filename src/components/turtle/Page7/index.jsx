@@ -19,9 +19,20 @@ const Page7 = ({ offset, color }) => {
       </ParallaxLayer>
 
       <ParallaxLayer offset={offset} speed={0} className="page7">
-        <div className={`${showImage ? "fade-out" : "fade-in"}`}>
-          <img src="https://i.ibb.co/YPMKXXW/Negative-4.png" alt="" />
-        </div>
+            <div className="future-background">
+                    <img
+                        id="future-positive"
+                        src='https://i.ibb.co/2kPBR3W/Positive-6.png'
+                        alt='image of turtles, fish, shrimp, amd lobsters in ocean.'
+                    />
+
+                    <img
+                        className={`${showImage ? "fade-out" : "fade-in"}`} 
+                        id="future-negative"
+                        src="https://i.ibb.co/YPMKXXW/Negative-4.png"
+                        alt="image of polluted ocean."
+                    />
+            </div>
       </ParallaxLayer>
 
       <ParallaxLayer offset={offset} speed={0.6} className="page7">
