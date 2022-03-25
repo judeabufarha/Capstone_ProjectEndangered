@@ -81,9 +81,31 @@ export const AsianElephantMobile = (props) => {
         }
     }, [currentPage]);
 
+    //var currentScrollY = 0;
+    //var newScrollY = 0;
+    //var pageNumber = 0;
+
+    //const onScroll = () => {
+        //newScrollY = window.scrollY;
+
+        //if (newScrollY > currentScrollY) {
+            //++pageNumber;
+        //}
+
+        //else {
+            //--pageNumber;
+        //}
+
+        //currentScrollY = newScrollY;
+
+        //console.log('current page: ' + pageNumber)
+        //console.log(`onScroll, window.scrollY: ${scrollY}`)
+    //}
+
     return (
 
         //<div className="asian-elephant-mobile-container" {...handlers}></div>
+        //<div className="asian-elephant-mobile-container" onScroll={onScroll}>
         <div className="asian-elephant-mobile-container">
             <div className="mobile-page page 01" ref={page1}>
                 <MobilePage01 
