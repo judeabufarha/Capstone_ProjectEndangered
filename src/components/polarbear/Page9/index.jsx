@@ -35,7 +35,11 @@ const Page9 = ({ offset, color }) => {
 
     <ParallaxLayer offset={offset} speed={1.2}>
       <div className="exploreButton" aria-label="begin exploring">
-      <TextButton type="light" text="Begin Exploring" colour="light" />
+      <TextButton type="light" text="Begin Exploring" colour="light" 
+        onClick={() => {
+          window.open("https://vickeychee.github.io/Project_Endangered/public/arctic/", "_blank");
+        }}
+      />
       </div>
 
     </ParallaxLayer>
