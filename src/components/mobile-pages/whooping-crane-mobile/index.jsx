@@ -88,7 +88,7 @@ export const WhoopingCraneMobile = (props) => {
                 <MobilePage03
                     title="Whooping Crane"
                     para1="The whooping crane is an omnivore, which means it eats both plants and animals. They are also prey for foxes, wolves, coyotes, lynxes, bobcats, and raccoons. Because of this, the whooping crane plays an important role in its ecosystem. They maintain the species population of the animals they eat and also provide food to the animals that hunt them. Without the whooping crane, the entire ecosystem would be thrown out of balance, and other species of animals would be put at risk of endangerment."
-                    para2="Whooping cranes are unique because they play an important role in two different ecosystems. This is because they migrate south during the winter to escape the cold. If the population of whooping cranes is lost, it would have double the impact."
+                    para2="Whoopings cranes are unique because they play an important role in two different ecosystems. This is because they migrate south during the winter to escape the cold. If the population of whooping cranes is lost, it would have double the impact."
                     image1="https://i.ibb.co/z7zw6hJ/Vector1.png"
                     alt1="Underwater illustration of a crab, snail, and fish."
                     image2="https://i.ibb.co/CVdQSHG/Vector2.png"
@@ -103,9 +103,9 @@ export const WhoopingCraneMobile = (props) => {
                     status="Endangered"
                     image="https://i.ibb.co/v17vKT1/Vector.png"
                     alt="Wet prairies environment illustration."
-                    text1="The current status of the whooping crane population is endangered. This means that they face a very high risk of extinction in the wild. Whooping cranes are endangered because of habitat loss and human interference on their breeding grounds."
-                    text2="Human settlements in the North American prairies has had severe effects on whooping cranes. The marshes whooping cranes lived in were drained for buildings and farms, leaving them with no home. Now that there is almost no habitat left, it makes it difficult for them to find food and breed."
-                    text3="In 1941, there were only 21 whooping cranes left, meaning the species was in critical condition and near extinction. However, through conservation efforts, the population is increasing. Today there are about 600 whooping cranes in the wild and captivity."
+                    text1="The current status of the whooping crane is endangered. This means that they face a very high risk of extinction in the wild. Whooping cranes are endangered because of habitat loss and human interference on their breeding grounds."
+                    text2="Human settlement in the North American prairies has had severe effects on the whooping crane population. The marshes whooping cranes lived in were drained for buildings and farms, leaving them with no home. Now that there is almost no habitat left for whooping cranes, it makes it difficult for them to find food and breed."
+                    text3="In 1941, there were only 21 whooping cranes left on earth, which meant the species was in critical condition and near extinction. However, through conservation efforts, the population is increasing. Today there are about 600 whooping cranes in the wild and captivity."
                 />
             </div>
 
@@ -132,7 +132,7 @@ export const WhoopingCraneMobile = (props) => {
                     image1="https://i.ibb.co/qB6V3SL/07-Future-Positive.png"
                     image2="https://i.ibb.co/S6xtgbR/07-Future-Negative.png"
                     alt="Wet prairies environment illustration with whooping crane."
-                    text="Several factors put the whooping crane population at risk, including habitat loss and human disturbance, including airplanes, hunting, and ATV traffic. Although the population of whooping cranes is slowly increasing, conservation efforts must continue or the population is still at severe risk. There are two possible future outcomes the whooping crane faces. Continuing to persevere the whooping crane’s habitat would significantly help save the population. If we continue to conserve and protect the wetlands and prairies the whooping cranes live in, the population would continue to grow, until it is no longer at risk."
+                    text="Several factors put the whooping crane population at risk, including habitat loss and human disturbance, such as airplanes, hunting, and ATV traffic. Although the population of whooping cranes is slowly increasing, conservation efforts must continue or the population is still at severe risk. There are two possible future outcomes the whooping crane faces. Continuing to preserve the whooping crane’s habitat would significantly help save the population. If we continue to conserve and protect the wetlands and prairies the whooping cranes live in, the population would continue to grow, until it is no longer at risk."
                     colour1="whoopingCrane1"
                     colour2="whoopingCrane2"
                 />
@@ -141,7 +141,7 @@ export const WhoopingCraneMobile = (props) => {
             <div className="mobile-page page08" ref={page8}>
                 <MobilePage08
                     animal="whoopingCrane"
-                    text="Without the drastic conservation efforts that have occurred in the last 100 years, the whooping crane would be extinct. Many people are not aware of this endangered species, and you can help by spreading the word and sharing your knowledge. If you would like to learn more about how you can help the whooping crane population, take a look at the conservation efforts below."
+                    text="Without the drastic conservation efforts that have occurred in the last 100 years, the whooping crane would be extinct. Today, scientists continue to explore new ways to protect this fragile species and save the population. Many people are not aware of this endangered species, and you can help by spreading the word and sharing your knowledge. If you would like to learn more about how you can help the whooping crane population, take a look at the conservation efforts below."
                     blob1="https://i.ibb.co/m57tjrR/Vector1.png"
                     title1="Nature Conservancy Canada"
                     text1="“The Nature Conservancy of Canada (NCC) is the country’s unifying force for nature, working to deliver large-scale, permanent land conservation. With nature, we are building a thriving world.”"
