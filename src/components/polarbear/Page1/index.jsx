@@ -14,11 +14,6 @@ const Page1 = ({ offset, color }) => (
       
     <h1 className="titleText">The<br></br></h1>
     <h1 className="titleTextAnim">Polar Bear</h1>
-      <img
-        className="title"
-        src="https://i.ibb.co/rM1GN44/title.png"
-        alt="title"
-      />
     </ParallaxLayer>
 
     <ParallaxLayer className="backgroundMountains" offset={offset} speed={1.9}>
