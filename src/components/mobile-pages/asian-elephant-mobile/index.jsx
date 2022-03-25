@@ -10,11 +10,28 @@ import { MobilePage08 } from "../page components/mobile-page-08";
 import { MobilePage09 } from "../page components/mobile-page-09";
 import { useEffect, useRef, useContext } from "react";
 import { ToggleContext } from "../../../contexts/ToggleContext";
+import { useSwipeable } from 'react-swipeable';
+
 
 export const AsianElephantMobile = (props) => {
     const { mobilePage } = useContext(ToggleContext);
 
     const currentPage = mobilePage;
+
+    const handlers = useSwipeable({
+        onSwipedLeft: () => swipeLeft(),
+        onSwipedRight: () => swipeRight(),
+        preventDefaultTouchmoveEvent: true,
+        trackMouse: true
+    });
+
+    const swipeLeft = () => {
+        console.log("swipe left")
+    };
+
+    const swipeRight = () => {
+        console.log("swipe right")
+    };
 
     const page1 = useRef(null);
     const page2 = useRef(null);
@@ -66,7 +83,7 @@ export const AsianElephantMobile = (props) => {
 
     return (
 
-        <div className="asian-elephant-mobile-container">
+        <div className="asian-elephant-mobile-container" {...handlers}>
             <div className="mobile-page page 01" ref={page1}>
                 <MobilePage01 
                     title="Asian Elephant" 
