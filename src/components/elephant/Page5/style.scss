@@ -3,7 +3,12 @@
   background-repeat: no-repeat;
   background-size: cover
 }
-
+.desktop-map-legend{
+  position: absolute;
+  top: 240px;
+  left: 60px;
+  zoom: 1.2;
+}
 .page5{
   &.marker .now {
     width:20px;
@@ -11,8 +16,8 @@
   }
 
   .marker {
-    z-index: 999999;
     position:absolute;
+    z-index: 99;
 
     .commonContainerSpecial{
       margin:0;
@@ -21,50 +26,55 @@
     &-28 {
       left: 37%;
       top:60%;
-      z-index: 999999999;
+      z-index: 99999;
+   
     }
     &-29 {
       left: 41%;
       top:63%;
-      z-index: 999999999;
+    
     }
 
     &-30 {
       left: 50%;
       top:50%;
-      z-index: 999999999;
+      
     }
     &-31 {
       left: 51%;
       top:58%;
-      z-index: 999999999;
+     
     }
     &-32 {
       left: 46%;
       top:62%;
-      z-index: 999999999;
+
     }
     &-33 {
       left: 48%;
       top:68%;
-      z-index: 999999999;
+
     }
     &-34 {
       left: 51%;
       top:67%;
-      z-index: 999999999;
+    
     }
     &-35 {
       left: 53%;
       top:63%;
-      z-index: 999999999;
+ 
     }
     &-36 {
       left: 56%;
       top:66%;
-      z-index: 999999999;
+
     }
+    
   }
+ 
+ 
+  
 }
 
 @media screen and (max-width:1536px) {

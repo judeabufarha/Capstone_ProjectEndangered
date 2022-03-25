@@ -4,6 +4,7 @@ import { Map } from "../../interactive-map";
 import { MapMarker } from "../../map-marker";
 import "./style.scss";
 import { useState } from "react";
+import { MapLegend } from "../../map-legend";
 
 const Page5 = ({ offset, color }) => {
 
@@ -49,6 +50,12 @@ const Page5 = ({ offset, color }) => {
       </ParallaxLayer>
 
       <ParallaxLayer offset={offset} speed={0.6}>
+        <div className="desktop-map-legend">
+          <MapLegend colour="turquoise-mobile" outline="turquoise-outline-mobile"/>
+        </div> 
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={offset} speed={0.6}>
         <div className="wrapperCommonContainer populationText">
           <div className="commonContainerSpecial">
             <p className="populationParaPolar">
@@ -84,16 +91,7 @@ const Page5 = ({ offset, color }) => {
           </div>
         </div>
 
-        <div className="wrapperCommonContainer marker marker-17"> 
-          <div className="commonContainerSpecial">
-            <MapMarker
-              size={`${now ? 'large' : 'medium'}`}
-              colour="tealCircle"
-              className="map-marker-blue"
-              text={now ? mapItem('Insular Caribbean','Declining') : mapItem('Insular Caribbean','Declining')}
-            />
-          </div>
-        </div>
+     
 
         <div className="wrapperCommonContainer marker marker-18"> 
           <div className="commonContainerSpecial">
@@ -140,17 +138,7 @@ const Page5 = ({ offset, color }) => {
           </div>
         </div>
 
-        <div className="wrapperCommonContainer marker marker-23"> 
-          <div className="commonContainerSpecial">
-            <MapMarker
-              size={`${now ? 'large' : 'medium'}`}
-              colour="tealCircle"
-              className="map-marker-blue"
-              text={now ? mapItem('Central Indian Ocean','Declining') : mapItem('Central Indian Ocean','Declining')}
-            />
-          </div>
-        </div>
-
+      
         <div className="wrapperCommonContainer marker marker-24"> 
           <div className="commonContainerSpecial">
             <MapMarker
@@ -170,6 +158,27 @@ const Page5 = ({ offset, color }) => {
               colour="tealCircle"
               className="map-marker-blue"
               text={now ? mapItem('Southeast Asia','Declining') : mapItem('Southeast Asia','Declining')}
+            />
+          </div>
+        </div>
+        <div className="wrapperCommonContainer marker marker-23"> 
+          <div className="commonContainerSpecial">
+            <MapMarker
+              size={`${now ? 'large' : 'medium'}`}
+              colour="tealCircle"
+              className="map-marker-blue"
+              text={now ? mapItem('Central Indian Ocean','Declining') : mapItem('Central Indian Ocean','Declining')}
+            />
+          </div>
+        </div>
+
+           <div className="wrapperCommonContainer marker marker-17"> 
+          <div className="commonContainerSpecial">
+            <MapMarker
+              size={`${now ? 'large' : 'medium'}`}
+              colour="tealCircle"
+              className="map-marker-blue"
+              text={now ? mapItem('Insular Caribbean','Declining') : mapItem('Insular Caribbean','Declining')}
             />
           </div>
         </div>

@@ -17,7 +17,7 @@ const Page8 = ({ offset, color }) => {
       }
       text="“The Sea Turtle Conservancy is the oldest and most accomplished sea turtle organization in the world and is committed to research and conservation initiatives, with over 60 years of experience.”"
       linkFn={() => {
-        window.open("https://polarbearsinternational.org/", "_blank");
+        window.open("https://conserveturtles.org/", "_blank");
       }}
     />,
     <InfoBlob
@@ -32,7 +32,7 @@ const Page8 = ({ offset, color }) => {
       }
       text="“The Turtle Foundation is an international initiative for the protection of the endangered sea turtles and their habitats, by preventing hunting, coastal building, and ocean pollution.”"
       linkFn={() => {
-        window.open("https://arcticwwf.org/species/polar-bear/", "_blank");
+        window.open("https://www.turtle-foundation.org/en/ ", "_blank");
       }}
     />,
     <InfoBlob
@@ -46,7 +46,7 @@ const Page8 = ({ offset, color }) => {
       }
       text="“WWF works around the world to establish marine protected areas both on land and in the ocean, reduce turtle bycatch, and educate local communities on over-harvesting and illegal trade.”"
       linkFn={() => {
-        window.open("https://canadianpolarbearhabitat.com/", "_blank");
+        window.open("https://www.worldwildlife.org/species/green-turtle", "_blank");
       }}
     />,
   ];

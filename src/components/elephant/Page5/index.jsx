@@ -4,6 +4,7 @@ import { Map } from "../../interactive-map";
 import { MapMarker } from "../../map-marker";
 import "./style.scss";
 import { useState } from "react";
+import { MapLegend } from "../../map-legend";
 
 const Page5 = ({ offset, color }) => {
 
@@ -58,30 +59,14 @@ const Page5 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
-     
+      <ParallaxLayer offset={offset} speed={0.6}>
+      <div className="desktop-map-legend">
+      <MapLegend colour="green-mobile" outline="green-outline-mobile"/>
+      </div> 
+      </ParallaxLayer>
 
       <ParallaxLayer offset={offset} className={`page5 ${!now ? 'then' : 'now'}`} speed={0.8}>
-        <div className="wrapperCommonContainer marker marker-28">
-          <div className="commonContainerSpecial">
-            <MapMarker
-              size={`${now ? 'large' : 'medium'}`}
-              colour="greenCircle"
-              className="map-marker-blue"
-              text={now ? mapItem('India','Declining') : mapItem('India','Declining')}
-            />
-          </div>
-        </div>
        
-        <div className="wrapperCommonContainer marker marker-29">
-          <div className="commonContainerSpecial">
-            <MapMarker
-              size={`${now ? 'large' : 'medium'}`}
-              colour="greenCircle"
-              className="map-marker-blue"
-              text={now ? mapItem('Sri Lanka','Declining') : mapItem('Sri Lanka','Declining')}
-            />
-          </div>
-        </div>
 
         <div className="wrapperCommonContainer marker marker-30">
           <div className="commonContainerSpecial">
@@ -105,23 +90,28 @@ const Page5 = ({ offset, color }) => {
           </div>
         </div>
 
-        <div className="wrapperCommonContainer marker marker-32">
-          <div className="commonContainerSpecial">
-            <MapMarker
-              size={`${now ? 'medium' : 'medium'}`}
-              colour="greenCircle"
-              className="map-marker-blue"
-              text={now ? mapItem('Myanmar','Declining') : mapItem('Myanmar','Declining')}
-            />
-          </div>
-        </div>
-        <div className="wrapperCommonContainer marker marker-33">
+      
+       
+
+     
+
+        <div className="wrapperCommonContainer marker marker-36">
           <div className="commonContainerSpecial">
             <MapMarker
               size={`${now ? 'medium' : 'small'}`}
               colour="greenCircle"
               className="map-marker-blue"
-              text={now ? mapItem('Thailand','Declining') : mapItem('Thailand','Declining')}
+              text={now ? mapItem('Malaysia','Declining') : mapItem('Malaysia','Declining')}
+            />
+          </div>
+        </div>
+        <div className="wrapperCommonContainer marker marker-35">
+          <div className="commonContainerSpecial">
+            <MapMarker
+              size={`${now ? 'medium' : 'small'}`}
+              colour="greenCircle"
+              className="map-marker-blue"
+              text={now ? mapItem('Vietnam','Declining') : mapItem('Vietnam','Declining')}
             />
           </div>
         </div>
@@ -135,32 +125,48 @@ const Page5 = ({ offset, color }) => {
             />
           </div>
         </div>
-
-        <div className="wrapperCommonContainer marker marker-35">
+        <div className="wrapperCommonContainer marker marker-33">
           <div className="commonContainerSpecial">
             <MapMarker
               size={`${now ? 'medium' : 'small'}`}
               colour="greenCircle"
               className="map-marker-blue"
-              text={now ? mapItem('Vietnam','Declining') : mapItem('Vietnam','Declining')}
+              text={now ? mapItem('Thailand','Declining') : mapItem('Thailand','Declining')}
             />
           </div>
         </div>
-
-        <div className="wrapperCommonContainer marker marker-36">
+        <div className="wrapperCommonContainer marker marker-32">
           <div className="commonContainerSpecial">
             <MapMarker
-              size={`${now ? 'medium' : 'small'}`}
+              size={`${now ? 'medium' : 'medium'}`}
               colour="greenCircle"
               className="map-marker-blue"
-              text={now ? mapItem('Malaysia','Declining') : mapItem('Malaysia','Declining')}
+              text={now ? mapItem('Myanmar','Declining') : mapItem('Myanmar','Declining')}
             />
           </div>
         </div>
-
-
-
-
+        <div className="wrapperCommonContainer marker marker-29">
+          <div className="commonContainerSpecial">
+            <MapMarker
+              size={`${now ? 'large' : 'medium'}`}
+              colour="greenCircle"
+              className="map-marker-blue"
+              text={now ? mapItem('Sri Lanka','Declining') : mapItem('Sri Lanka','Declining')}
+            />
+          </div>
+        </div>
+        <div className="wrapperCommonContainer marker marker-28">
+          <div className="commonContainerSpecial">
+            <MapMarker
+              size={`${now ? 'large' : 'medium'}`}
+              colour="greenCircle"
+              className="map-marker-blue" 
+              text={now ? mapItem('India','Declining') : mapItem('India','Declining')}
+            />
+          </div>
+        </div>
+       
+       
       </ParallaxLayer>
     </>
   );
