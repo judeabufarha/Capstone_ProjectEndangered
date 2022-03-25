@@ -25,7 +25,7 @@ const Page7 = ({ offset, color }) => {
 
       <ParallaxLayer offset={offset} speed={0} className="page7">
         <div className={`${showImage ? "fade-out" : "fade-in"}`}>
-          <img className = "elephNegImg" src="https://i.ibb.co/cbJ0gqK/future-Negative.png" alt="" />
+          <img src="https://i.ibb.co/cbJ0gqK/future-Negative.png" alt="" />
         </div>
       </ParallaxLayer>
 

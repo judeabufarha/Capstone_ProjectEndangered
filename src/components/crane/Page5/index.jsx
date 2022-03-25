@@ -4,6 +4,7 @@ import { Map } from "../../interactive-map";
 import { MapMarker } from "../../map-marker";
 import "./style.scss";
 import { useState } from "react";
+import { MapLegend } from "../../map-legend";
 
 const Page5 = ({ offset, color }) => {
 
@@ -49,6 +50,12 @@ const Page5 = ({ offset, color }) => {
       </ParallaxLayer>
 
       <ParallaxLayer offset={offset} speed={0.6}>
+        <div className="desktop-map-legend">
+          <MapLegend colour="red-mobile" outline="red-outline-mobile"/>
+        </div> 
+      </ParallaxLayer>
+
+      <ParallaxLayer offset={offset} speed={0.6}>
         <div className="wrapperCommonContainer populationText">
           <div className="commonContainerSpecial">
             <p className="populationParaPolar">
@@ -84,6 +91,7 @@ const Page5 = ({ offset, color }) => {
         </div>
         <div className="wrapperCommonContainer marker  marker-13">
           <div className="commonContainerSpecial">
+          <div className={`${!now ? 'increase' : 'decrease'}`}>
             <MapMarker
               size={`${now ? 'disappear' : 'small'}`}
               colour="salmonCircle"
@@ -91,10 +99,12 @@ const Page5 = ({ offset, color }) => {
               text={mapItem('Louisana','Increasing')}
               css={{width:'500px'}}
             />
+            </div>
           </div>
         </div>
         <div className="wrapperCommonContainer marker  marker-14">
           <div className="commonContainerSpecial">
+          <div className={`${!now ? 'increase' : 'decrease'}`}>
             <MapMarker
               size={`${now ? 'disappear' : 'small'}`}
               colour="salmonCircle"
@@ -102,6 +112,7 @@ const Page5 = ({ offset, color }) => {
               text={mapItem('Florida','Increasing')}
               css={{width:'500px'}}
             />
+          </div>
           </div>
         </div>
   
