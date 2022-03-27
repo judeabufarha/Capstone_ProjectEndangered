@@ -10,11 +10,36 @@ import { MobilePage08 } from "../page components/mobile-page-08";
 import { MobilePage09 } from "../page components/mobile-page-09";
 import { useEffect, useRef, useContext } from "react";
 import { ToggleContext } from "../../../contexts/ToggleContext";
+import { useSwipeable } from 'react-swipeable';
 
 export const SeaTurtleMobile = (props) => {
-    const { mobilePage } = useContext(ToggleContext);
+    const { mobilePage, initializePage  } = useContext(ToggleContext);
 
-    const currentPage = mobilePage;
+    var currentPage = mobilePage;
+
+    const handlers = useSwipeable({
+        onSwipedLeft: () => swipeLeft(),
+        onSwipedRight: () => swipeRight(),
+        preventDefaultTouchmoveEvent: true,
+        trackMouse: true
+    });
+
+    const swipeLeft = () => {
+        if (currentPage != 8) {
+            currentPage ++;
+            initializePage(currentPage);
+            console.log("swipe left" + currentPage);
+        }
+    };
+
+    const swipeRight = () => {
+        if (currentPage != 0) {
+            currentPage --;
+            initializePage(currentPage);
+            console.log("swipe right" + currentPage);
+        }
+
+    };
 
     const page1 = useRef(null);
     const page2 = useRef(null);
@@ -28,45 +53,45 @@ export const SeaTurtleMobile = (props) => {
 
     useEffect(() => {
         if (currentPage == 0) {
-            page1.current.scrollIntoView({block: "start", inline: "nearest"});
+            page1.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 1) {
-            page2.current.scrollIntoView({block: "start", inline: "nearest"});
+            page2.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 2) {
-            page3.current.scrollIntoView({block: "start", inline: "nearest"});
+            page3.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 3) {
-            page4.current.scrollIntoView({block: "start", inline: "nearest"});
+            page4.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 4) {
-            page5.current.scrollIntoView({block: "start", inline: "nearest"});
+            page5.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 5) {
-            page6.current.scrollIntoView({block: "start", inline: "nearest"});
+            page6.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 6) {
-            page7.current.scrollIntoView({block: "start", inline: "nearest"});
+            page7.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 7) {
-            page8.current.scrollIntoView({block: "start", inline: "nearest"});
+            page8.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 8) {
-            page9.current.scrollIntoView({block: "start", inline: "nearest"});
+            page9.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
     }, [currentPage]);
 
     return (
 
-        <div className="sea-turtle-mobile-container">
+        <div className="sea-turtle-mobile-container" {...handlers}>
             <div className="mobile-page page 01" ref={page1}>
                 <MobilePage01 
                     title="Green Sea Turtle" 
@@ -87,7 +112,7 @@ export const SeaTurtleMobile = (props) => {
             <div className="mobile-page page03" ref={page3}>
                 <MobilePage03
                     title="Green Sea Turtle"
-                    para1="The green sea turtle plays an important role in the ocean’s ecosystem. Their job is to be the lawnmowers of the ocean and eat the seagrass on the ocean floor. By maintaining the seagrass beds, the plants stay healthy and productive. This is important because many animals rely on seagrass beds for their homes. When green sear turtles eat seagrass, they quickly digest and release it, which provides many nutrients to the plants and animals in the ecosystem. Without green sea turtles, the health of their ecosystem would be put at risk."
+                    para1="The green sea turtle plays an important role in the ocean’s ecosystem. Their job is to be the lawnmowers of the ocean and eat the seagrass on the ocean floor. By maintaining the seagrass beds, the plants stay healthy and productive. This is important because many animals rely on seagrass beds for their homes. When green sea turtles eat seagrass, they quickly digest and release it, which provides many nutrients to the plants and animals in the ecosystem. Without green sea turtles, the health of their ecosystem would be put at risk."
                     para2="Green sea turtles also play an important role in oceans around the world. This is because they migrate large distances with different organisms living on their shells. Because of this, they help to create and maintain diverse oceans."
                     image1="https://i.ibb.co/BfvmmB9/Vector1.png"
                     alt1="Underwater illustration of sea grass."
@@ -105,7 +130,7 @@ export const SeaTurtleMobile = (props) => {
                     alt="Ocean environment illustration."
                     text1="The current status of the green sea turtle population is endangered. This means that they face a very high risk of extinction in the wild. Green sea turtles are endangered because of overharvesting and habitat loss on land and in water."
                     text2="The green sea turtle depends on beaches to lay their eggs, and seagrass beds in the ocean for food. However, coastal development has destroyed the green sea turtle’s nesting grounds and polluted the seagrass beds. Now, green sea turtles struggle to eat and reproduce."
-                    text3="Because of overharvesting, the entire green sea turtle popular is in even greater risk. Thousands of green sea turtles are hunted and killed each year. Their eggs are also harvested by humans for trade, which makes it even harder for the population to grow."
+                    text3="Because of extreme harvesting, the entire green sea turtle population is at even greater risk. Thousands of green sea turtles are hunted and killed each year. Their eggs are also harvested by humans for trade, which makes it even harder for the population to grow."
                 />
             </div>
 
@@ -166,6 +191,8 @@ export const SeaTurtleMobile = (props) => {
                     link="https://vickeychee.github.io/Project_Endangered/public/arctic/"
                 />
             </div>
+
+            <img className="rotate-img" src="https://i.ibb.co/rtQrTgT/Rotate-Landscape.png"/>
         </div>
     );
   };

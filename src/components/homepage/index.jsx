@@ -42,7 +42,7 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/HgJyygS/Vector.png"
                         alt="3d image of Asian elephant in habitat."
                         linkFn={() => {
-                            history.push("/forest-elephant");
+                            history.push("/asian-elephant");
                         }}
                     />
 
@@ -73,7 +73,7 @@ export const HomePage = (props) => {
                 </div>
 
                 <div className="homepage-animals-mobile">
-                <HomePageAnimal
+                    <HomePageAnimal
                         type="odd"
                         bg="white-bg"
                         title="Polar Bear"
@@ -89,11 +89,11 @@ export const HomePage = (props) => {
                         type="odd"
                         bg="grey-bg"
                         title="Asian Elephant"
-                        description="The Asian forest elephant is the largest land mammal on the continent of Asia. They live in dry to wet forests and grasslands. The biggest threat to this species is habitat loss and fragmentation. Due to human development, the homes of these elephants have been destroyed, putting the entire population at risk."
-                        image="https://i.ibb.co/YXc09z7/Vector-crane.png"
+                        description="The Asian forest elephant is the largest land mammal on the continent of Asia. They live in dry to wet forests and grasslands. The biggest threat to this species is habitat loss and fragmentation. Due to human development, the homes of these elephants have been destroyed, putting the entire population at risk. "
+                        image="https://i.ibb.co/HgJyygS/Vector.png"
                         alt="3d image of Asian elephant in habitat."
                         linkFn={() => {
-                            history.push("/forest-elephant");
+                            history.push("/asian-elephant");
                         }}
                     />
 
@@ -120,6 +120,8 @@ export const HomePage = (props) => {
                             history.push("/sea-turtle");
                         }}
                     />
+
+                    <img className="rotate-img" src="https://i.ibb.co/rtQrTgT/Rotate-Landscape.png"/>
 
                 </div>
 

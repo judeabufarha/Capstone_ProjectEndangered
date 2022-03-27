@@ -15,22 +15,28 @@ export const Navbar = ({ handleStepNavigation }) => {
 
   return (
     <nav className="navbar">
-      <div className="navigation">
-        <NavLink to="/">
-          <img
-            className="home-logo"
-            src="https://i.ibb.co/wdzwBYL/project-endagered-logo.png"
-            alt="project-endangered-logo"
-          />
-        </NavLink>
+      <div className="navbar-container">
+        <div className="hamburger-btn" onClick={handleClick}>
+          <Hamburger rounded size={24} color="#013440" />
+        </div>
+        <div className="navigation">
+          <NavLink to="/">
+            <img
+              className="home-logo"
+              src="https://i.ibb.co/s9VZGpQ/Project-Endangered-Logo-1.png"
+              alt="project-endangered-logo"
+            />
+          </NavLink>
 
-        {/* <img className ="team-logo"
-                src = "https://i.ibb.co/bbmBWtm/Logo.png" alt = "team-logo"/> */}
+          <NavLink to="/">
+            <p>Project Endangered</p>
+          </NavLink>
+
+          {/* <img className ="team-logo"
+                  src = "https://i.ibb.co/bbmBWtm/Logo.png" alt = "team-logo"/> */}
+        </div>
+
       </div>
-      <div className="hamburger-btn" onClick={handleClick}>
-        <Hamburger rounded size={25} color="#013440" />
-      </div>
-      <div></div>
 
       <Sidebar handleStepNavigation={handleStepNavigation} />
     </nav>

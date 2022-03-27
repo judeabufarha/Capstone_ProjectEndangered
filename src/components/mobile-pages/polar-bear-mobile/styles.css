@@ -22,3 +22,26 @@
 .mobile-page::-webkit-scrollbar {
     display: none;
 }
+
+.rotate-img {
+    display: none;
+}
+
+@media (orientation: landscape) {
+    .rotate-img {
+        display: inline;
+        position: absolute;
+        top: 0rem;
+        left: 0rem;
+        object-fit: cover;
+        height: 100vh;
+        width: 100%;
+        z-index: 99999999 !important;
+    }
+
+    .polar-bear-mobile-container {
+        overflow-y: none;
+        overflow-x: none;
+    }
+    
+}

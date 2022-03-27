@@ -10,11 +10,36 @@ import { MobilePage08 } from "../page components/mobile-page-08";
 import { MobilePage09 } from "../page components/mobile-page-09";
 import { useEffect, useRef, useContext } from "react";
 import { ToggleContext } from "../../../contexts/ToggleContext";
+import { useSwipeable } from 'react-swipeable';
 
 export const PolarBearMobile = (props) => {
-    const { mobilePage } = useContext(ToggleContext);
+    const { mobilePage, initializePage  } = useContext(ToggleContext);
 
-    const currentPage = mobilePage;
+    var currentPage = mobilePage;
+
+    const handlers = useSwipeable({
+        onSwipedLeft: () => swipeLeft(),
+        onSwipedRight: () => swipeRight(),
+        preventDefaultTouchmoveEvent: true,
+        trackMouse: true
+    });
+
+    const swipeLeft = () => {
+        if (currentPage != 8) {
+            currentPage ++;
+            initializePage(currentPage);
+            console.log("swipe left" + currentPage);
+        }
+    };
+
+    const swipeRight = () => {
+        if (currentPage != 0) {
+            currentPage --;
+            initializePage(currentPage);
+            console.log("swipe right" + currentPage);
+        }
+
+    };
 
     const page1 = useRef(null);
     const page2 = useRef(null);
@@ -28,44 +53,44 @@ export const PolarBearMobile = (props) => {
 
     useEffect(() => {
         if (currentPage == 0) {
-            page1.current.scrollIntoView({block: "start", inline: "nearest"});
+            page1.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 1) {
-            page2.current.scrollIntoView({block: "start", inline: "nearest"});
+            page2.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 2) {
-            page3.current.scrollIntoView({block: "start", inline: "nearest"});
+            page3.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 3) {
-            page4.current.scrollIntoView({block: "start", inline: "nearest"});
+            page4.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 4) {
-            page5.current.scrollIntoView({block: "start", inline: "nearest"});
+            page5.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 5) {
-            page6.current.scrollIntoView({block: "start", inline: "nearest"});
+            page6.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 6) {
-            page7.current.scrollIntoView({block: "start", inline: "nearest"});
+            page7.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 7) {
-            page8.current.scrollIntoView({block: "start", inline: "nearest"});
+            page8.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 8) {
-            page9.current.scrollIntoView({block: "start", inline: "nearest"});
+            page9.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
     }, [currentPage]);
 
     return (
-        <div className="polar-bear-mobile-container">
+        <div className="polar-bear-mobile-container" {...handlers}>
             <div className="mobile-page page 01" ref={page1}>
                 <MobilePage01 
                     title="Polar Bear" 
@@ -86,8 +111,8 @@ export const PolarBearMobile = (props) => {
             <div className="mobile-page page03" ref={page3}>
                 <MobilePage03
                     title="Polar Bear"
-                    para1="The polar bear is a keystone species, at the top of the food chain, which makes them an apex predator. Because of this, they have an important role in balancing the Arctic food chain. Without polar bears, the population of their prey would begin to grow, and the entire Arctic ecosystem would be thrown out of balance. Because the polar bear is a keystone species, they are a reflection of the health of their ecosystem. If the keystone species is endangered, the entire ecosystem is put at risk."
-                    para2="Polar bears also play an important part in the cultures and economies of indigenous Arctic peoples. Because of the decline in the polar bear population, indigenous peoples have experienced significant cultural changes and economic issues."
+                    para1="The polar bear is a keystone species, which means they have an important role in balancing the Arctic ecosystem.  They are also at the top of the food chain, which makes them an apex predator. Without polar bears, the population of their prey would begin to grow, and the entire Arctic ecosystem would be thrown out of balance. Because the polar bear is a keystone species, they are a reflection of the health of their ecosystem. If the keystone species is endangered, the entire ecosystem is put at risk."
+                    para2="Polar bears also play an important part in the cultures and economies of indigenous Arctic peoples. Because of the decline in the polar bear population, indigenous Arctic peoples have experienced significant cultural changes and economic issues."
                     image1="https://i.ibb.co/RQfM4ck/fish.png"
                     alt1="Arctic cod illustration."
                     image2="https://i.ibb.co/rGz54Tj/seal.png"
@@ -104,7 +129,7 @@ export const PolarBearMobile = (props) => {
                     alt="Arctic environment illustration."
                     text1="The current status of the polar bear population is vulnerable. This means that they face a high risk of extinction in the wild. Polar bears are endangered because of the effects climate change has on the Arctic, which is where polar bears live."
                     text2="Climate change has caused the Arctic to heat up twice as fast as it used to. This makes it harder for polar bears to hunt seals, rest, and breed because they use the ice to do these things. Now that there is less ice, the polar bears have trouble finding food, and this can lead to malnutrition and starvation."
-                    text3="Because of malnutrition, it also makes it harder for polar bears to reproduce. Even when a polar bear is able to have cubs, many die due to a lack of food or because their mother was malnourished. This has caused extinction in certain areas of the Arctic."
+                    text3="Because of being underfed, it also makes it harder for polar bears to reproduce. Even when a polar bear is able to have cubs, many die due to a lack of food or because their mother was malnourished. This has caused extinction in certain areas of the Arctic."
                 />
             </div>
 
@@ -131,7 +156,7 @@ export const PolarBearMobile = (props) => {
                     image1="https://i.ibb.co/6ynLGGX/07-Future-Positive.png"
                     image2="https://i.ibb.co/Pz3rpD9/07-Future-Negative.png"
                     alt="Arctic environment illustration with polar bears and seals."
-                    text="Scientists predict that polar bears will be extinct by the end of the century if greenhouse gas emissions continue to increase. Greenhouse gas emissions have caused climate change on our planet, and this is affecting the polar bears’ environment. As the Arctic becomes warmer, the ice begins to melt. However, there are two possible future outcomes. Reducing greenhouse gas emissions globally would significantly help save the arctic environment. If we change our ways, the Arctic could be saved, and polar bears would be able to feed and nourish themselves, which would help regrow the population."
+                    text="Scientists predict that polar bears will be extinct by the end of the century if greenhouse gas emissions continue to increase. Greenhouse gas emissions have caused climate change on our planet, and this is affecting the polar bears’ environment. As the Arctic becomes warmer, the ice begins to melt. However, there are two possible future outcomes. Reducing greenhouse gas emissions globally would significantly help save the arctic environment. If we change our ways, the arctic could be saved, and polar bears would be able to feed and nourish themselves, which would help regrow the population."
                     colour1="polarBear1"
                     colour2="polarBear1"
                 />
@@ -140,7 +165,7 @@ export const PolarBearMobile = (props) => {
             <div className="mobile-page page08" ref={page8}>
                 <MobilePage08
                     animal="polarBear"
-                    text="Without global change the polar bear will be extinct by 2100. It is up to us to change our ways in order to save the polar bear species. There are many ways each of us can help save the polar bears, including volunteering, fighting climate change, and raising money for conservation efforts. If you would like to learn more about how you can help the polar bear population, take a look at the conservation efforts below."
+                    text="Without global change, the polar bear will be extinct by 2100. It is up to us to change our ways in order to save the polar bear species. There are many ways each of us can help save the polar bears, including volunteering, fighting climate change, and raising money for conservation efforts. If you would like to learn more about how you can help the polar bear population, take a look at the conservation efforts below."
                     blob1="https://i.ibb.co/9cKpF7q/blob1.png"
                     title1="Polar Bears International"
                     text1="“Polar Bears International is made up of a passionate team of conservationists, scientists, and volunteers—working to secure a future for polar bears across the Arctic.”"
@@ -165,6 +190,8 @@ export const PolarBearMobile = (props) => {
                     link="https://vickeychee.github.io/Project_Endangered/public/arctic/"
                 />
             </div>
+            
+            <img className="rotate-img" src="https://i.ibb.co/rtQrTgT/Rotate-Landscape.png"/>
         </div>
     );
   };

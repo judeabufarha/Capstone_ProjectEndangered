@@ -17,6 +17,7 @@ import { ToggleContext } from "../../contexts/ToggleContext";
 import useWindowDimensions from "../../hooks/windowDimensions";
 import { useHistory } from "react-router-dom";
 
+import useMouse from "@react-hook/mouse-position";
 
 export const Crane = () => {
   const appContext = useContext(ToggleContext);
@@ -43,28 +44,35 @@ export const Crane = () => {
     handleStepNavigation(0);
   }, [])
 
+  //const mouse = useMouse(ref, {
+    //fps: 60,
+    //enterDelay: 100,
+    //leaveDelay: 100,
+  //});
+
   // https://codesandbox.io/s/3nzke?file=/src/App.js:680-688
   useEffect(() => {
     const handleWheel = (e) => {
-      if (typeof offset !== "undefined") {
-        const currentPage = offset + 1;
-
-        let newOffset;
-        let min = width * offset;
-        let max = width * (offset + 1)
-        window.scrollLeft += e.deltaY
-        if (e.deltaY <= 0) {
-          newOffset = offset + 1
-
-        } else {
-          newOffset = offset - 1
+        if (typeof offset !== "undefined") {
+          const currentPage = offset + 1;
+  
+          let newOffset;
+          let min = width * offset;
+          let max = width * (offset + 1)
+          window.scrollLeft += e.deltaY
+          if (e.deltaY <= 0) {
+            newOffset = offset + 1
+  
+          } else {
+            newOffset = offset - 1
+          }
+          if (newOffset < 9 && newOffset >= 0) {
+            ref.current.scrollTo(newOffset);
+            handleStepNavigation(newOffset);
+          }
         }
-        if (newOffset < 9 && newOffset >= 0) {
-          ref.current.scrollTo(newOffset);
-          handleStepNavigation(newOffset);
-        }
-      }
     }
+
     window.addEventListener("wheel", handleWheel, false);
     return (() => {
       window.removeEventListener("wheel", handleWheel, false);

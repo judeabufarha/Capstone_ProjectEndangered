@@ -22,14 +22,14 @@ export const ToggleButtons = (props) => {
     }; 
 
     return (
-        <div className={ toggled ? 'toggleButtonActivated' : ''} onClick={handleChange}>
+        <div className={ toggled ? 'toggleButtonActivated' : 'toggleButtonNormal'} onClick={handleChange}>
             { text === "then-now" && (
                 <div>
                     
                     <div className="app">
                         <div className="content">
                             <label for="switch" className={`text-switch-then-now ${props.base}`}>
-                                <div className={`toggle-then-now ${props.colour}`}></div>
+                                <div className={`toggle-then-now ${props.colour}`}/>
                                 <div className="names">
                                     <p className="then">Then</p>
                                     <p className="now">Now</p>

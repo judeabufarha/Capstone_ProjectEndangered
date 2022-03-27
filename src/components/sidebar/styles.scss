@@ -4,19 +4,20 @@
   flex-direction: column;
   position: absolute;
   text-align: left;
-  padding: 0 0px 50px 0px;
+  padding: 0rem;
   background-color: white;
   width: 22rem;
-  height: calc(100vh - 70px);
+  height: calc(100vh - 3.5rem);
+  /* margin-top: 12px; */
   box-shadow: 0 40px 50px rgb(0 0 0 / 40%);
-  transform: translateX(-500px);
+  transform: translateX(-400px);
   transition: all 0.5s linear;
   box-sizing: border-box;
   z-index: 1;
   overflow-y: auto;
   overflow-x: hidden;
   justify-content: space-between;
-  top: 70px;
+  top: 3.5rem;
 
   &::-webkit-scrollbar {
     display: none;
@@ -84,19 +85,21 @@
     height: max-content;
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 
     .line {
       display: flex;
       justify-content: center;
       height: 2px;
       background: #013440;
-      width: 250px;
+      /* z-index: 4; */
+      width: 280px;
       margin: auto;
     }
 
     .colorLogo {
       margin: auto;
-      padding-top: 30px;
+      padding-top: 1rem;
       width: 180px;
       height: 60px;
       display: flex;
@@ -104,7 +107,9 @@
 
     .copyright {
       display: flex;
-      padding-top: 30px;
+      /* justify-content: center; */
+      padding-top: 1rem;
+      /* padding-left: 40px; */
       color: grey;
       font-size: 10px;
       margin: 0 auto;
