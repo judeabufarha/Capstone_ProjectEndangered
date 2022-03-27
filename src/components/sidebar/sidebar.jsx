@@ -102,12 +102,7 @@ export const Sidebar = () => {
     <nav>
       <div className={showSidebar ? "sidebar show" : "sidebar"}>
         <div className="sidenav">
-          <div className="parallax-toggle-group">
-            <b className="parallax-toggle-text">Side Scrolling</b>
-            <div className="parallax-toggle-switch">
-              <ToggleSwitch />
-            </div>
-          </div>
+        
           <NavLink
             exact
             to="/"
