@@ -1,3 +1,6 @@
+
+@import "../../../scss/root.scss";
+
 .elephantTitle {
   position: absolute;
   left: 72px;
@@ -5,6 +8,13 @@
   height: auto;
   width: 350px;
   z-index: 99999;
+}
+.titleTextAnimLine2 {
+  position: absolute;
+  left: 72px;
+  top: 195px;
+  color: $pe_dark;
+  font-size: 72px;
 }
 
 .page1ElephantBackground {

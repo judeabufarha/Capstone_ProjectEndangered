@@ -20,13 +20,19 @@ import { useHistory } from "react-router-dom";
 
 export const Crane = () => {
   const appContext = useContext(ToggleContext);
-  const { pageState, setPageState } = appContext;
+  const { pageState, setPageState, animal, AnimalDictionary, subMenuItems ,setsubMenuItems, templateMenu } = appContext;
   const pageCurrentState = pageState.currentStep;
 
   const handleStepNavigation = (index) => {
     const tmpState = { ...pageState };
     tmpState.currentStep = index;
     setPageState(tmpState)
+
+    const tmpSubMenuItems = {...subMenuItems}
+    tmpSubMenuItems.animals[AnimalDictionary[animal]] = [...templateMenu];
+    tmpSubMenuItems.animals[AnimalDictionary[animal]][index].isEnabled = true;
+    setsubMenuItems({...tmpSubMenuItems})
+
   }
   const { width } = useWindowDimensions();
   const ref = useRef();

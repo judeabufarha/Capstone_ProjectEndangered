@@ -16,7 +16,7 @@ export const MobilePage07 = (props) => {
                     />
 
                     <img
-                        className={`${showImage ? "fade-out" : "fade-in"}`} 
+                        className={`${showImage ? "fade-out-mobile" : "fade-in-mobile"}`} 
                         id="mobile-future-negative"
                         src={props.image2}
                         alt={props.alt}

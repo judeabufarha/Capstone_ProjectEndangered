@@ -32,7 +32,7 @@ const Page8 = ({ offset, color }) => {
         
       </>
       }
-      text="“The mission of the International Crane Foundation is to work worldwide to conserve cranes and the ecosystems, watersheds, and flyways on which they depend to survive.”"
+      text="“The mission of the International Crane Foundation is to work worldwide to conserve cranes and the ecosystems, watersheds & flyways on which they depend.”"
       linkFn={() => {
         window.open("https://savingcranes.org/species-field-guide/whooping-crane/ ", "_blank");
       }}
@@ -78,7 +78,7 @@ const Page8 = ({ offset, color }) => {
         <div className="wrapperCommonContainer conservationText">
           <div className="commonContainer">
             <p>
-            Without the drastic conservation efforts that have occurred in the last 100 years, the whooping crane would be extinct. Many people are not aware of this endangered species, and you can help by spreading the word and sharing your knowledge. If you would like to learn more about how you can help the whooping crane population, take a look at the conservation efforts below.
+            Without the drastic conservation efforts that have occurred in the last 100 years, the whooping crane would be extinct. Today, scientists continue to explore new ways to protect this fragile species and save the population. Many people are not aware of this endangered species, and you can help by spreading the word and sharing your knowledge. If you would like to learn more about how you can help the whooping crane population, take a look at the conservation efforts below.
             </p>
           </div>
         </div>

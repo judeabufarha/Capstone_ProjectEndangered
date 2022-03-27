@@ -38,7 +38,7 @@ const Page7 = ({ offset, color }) => {
           <div className="commonContainer commonContainer_whiteRadius">
             <div className="pContainer">
               <p>
-            The population of Asian elephants is at great risk if there is no human intervention. Uncontrolled human developments in the Asian elephant’s habitat have put the population in danger. As the developments continue, the population becomes smaller and more fragmented. However, there are two possible future outcomes. Reducing industrial developments and protecting the Asian elephant’s habitat would significantly help say the population and their environment. If we change our ways, the Asian elephant's home could be saved, which would help the population recover.
+              The population of Asian elephants is at great risk if there is no human intervention. Uncontrolled human developments in the Asian elephant’s habitat have put the population in danger. As the developments continue, the population becomes smaller and more fragmented. However, there are two possible future outcomes. Reducing industrial developments and protecting the Asian elephant’s habitat would significantly help save the population and their environment. If we change our ways, the Asian elephant's home could be saved, which would help the population recover.
               </p>
             </div>
           </div>

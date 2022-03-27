@@ -54,7 +54,7 @@ const Page6 = ({ offset, color }) => {
       <ParallaxLayer className="tutleTooltip1" offset={offset} speed={2} aria-label="tooltip 1">
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
-            <Tooltip text={{title:'1978',description:'The green sea turtle is classified as endangered in U.S.A.'}} width={239} />
+            <Tooltip text={{title:'1978',description:'The green sea turtle is classified as endangered in the U.S'}} width={239} />
           </div>
         </div>
       </ParallaxLayer>

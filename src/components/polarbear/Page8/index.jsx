@@ -24,7 +24,7 @@ const Page8 = ({ offset, color }) => {
           Wildlife Fund
         </>
       }
-      text="“Polar bears have long been a focus in WWF’s on-the-ground research and conservation projects in the Arctic, going back to 1972 – and climate change is a primary focus of our global conservation efforts.”"
+      text="“The Canadian Polar Bear Habitat is committed to advancing the conservation of wild polar bears and elevating the standard of care for polar bears in human care through research and education.”"
       linkFn={() => {
         window.open("https://arcticwwf.org/species/polar-bear/", "_blank");
       }}
@@ -37,7 +37,7 @@ const Page8 = ({ offset, color }) => {
           Canadian Polar <br /> Bear Habitat
         </>
       }
-      text="“The Canadian Polar Bear Habitat is committed to advancing the conservation of wild polar bears and elevating the standard of care for polar bears in human care through research and education.”"
+      text="“Polar bears have long been a focus in WWF’s on-the-ground research and conservation projects in the Arctic, going back to 1972 – and climate change is a primary focus of our global conservation efforts.”"
       linkFn={() => {
         window.open("https://canadianpolarbearhabitat.com/", "_blank");
       }}
@@ -68,29 +68,7 @@ const Page8 = ({ offset, color }) => {
         <div className="wrapperCommonContainer conservationText">
           <div className="commonContainer">
             <p>
-              Without global change the polar bear will be extinct by 2100. It
-              is up to us to change our ways in order to save the polar bear
-              species. There are many ways each of us can help save the polar
-              bears, including volunteering, fighting climate change, and
-              raising money for conservation efforts. If you would like to learn
-              more about how you can help the polar bear population, take a look
-              at the conservation efforts below.
-            </p>
-          </div>
-        </div>
-      </ParallaxLayer>
-
-      <ParallaxLayer className="page8" offset={offset} speed={1.2}>
-        <div className="wrapperCommonContainer conservationText">
-          <div className="commonContainer">
-            <p>
-              Without global change the polar bear will be extinct by 2100. It
-              is up to us to change our ways in order to save the polar bear
-              species. There are many ways each of us can help save the polar
-              bears, including volunteering, fighting climate change, and
-              raising money for conservation efforts. If you would like to learn
-              more about how you can help the polar bear population, take a look
-              at the conservation efforts below.
+            Without global change, the polar bear will be extinct by 2100. It is up to us to change our ways in order to save the polar bear species. There are many ways each of us can help save the polar bears, including volunteering, fighting climate change, and raising money for conservation efforts. If you would like to learn more about how you can help the polar bear population, take a look at the conservation efforts below.
             </p>
           </div>
         </div>
