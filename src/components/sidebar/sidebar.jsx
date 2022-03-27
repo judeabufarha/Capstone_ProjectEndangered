@@ -52,7 +52,7 @@ export const Sidebar = () => {
   }
 
   const handleClick = (event,index) => {
-    event.stopPropagation();
+    // event.stopPropagation();
     const tmpShowSub = [...showSub] 
     tmpShowSub[index] = !tmpShowSub[index];
     initializePage(0);
