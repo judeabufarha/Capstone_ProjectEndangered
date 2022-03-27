@@ -11,11 +11,9 @@ const Page1 = ({ offset, color }) => (
     </ParallaxLayer>
 
     <ParallaxLayer className="elephantTitle" offset={offset} speed={0.6}>
-      <img
-        className="elephantTitle"
-        src="https://i.ibb.co/WHFytmh/The-Asian-Elephant.png"
-        alt="title"
-      />
+    <h1 className="titleText">The<br></br></h1>
+    <h1 className="titleTextAnim">Asian </h1>
+    <h1 className="titleTextAnimLine2">Elephant </h1>
     </ParallaxLayer>
 
    

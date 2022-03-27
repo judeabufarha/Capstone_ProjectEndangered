@@ -109,10 +109,10 @@
     height: 8rem;
 }
 
-.fade-in {
+.fade-in-mobile{
     display: block;
 }
-  
-.fade-out{
+
+.fade-out-mobile{
     display: none;
 }

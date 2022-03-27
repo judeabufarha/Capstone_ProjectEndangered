@@ -8,58 +8,57 @@ import { ToggleSwitch } from "../toggle-switch";
 import { useEffect } from "react";
 
 export const Sidebar = () => {
-
+  const appContext = useContext(ToggleContext);
+  const { showSidebar,
+    pageState,
+    setPageState ,
+    initializePage,
+    animal,
+    setAnimal,
+    templateMenu,
+    menuStructure,
+    AnimalDictionary,
+    subMenuItems,
+    setsubMenuItems
+  } = appContext
   const [showSub, setShowSub] = useState([false, false, false, false, false]);
 
-  const templateMenu = [
-    { name: "Landing", isEnabled: false },
-    { name: "About", isEnabled: false },
-    { name: "Importance", isEnabled: false },
-    { name: "Status", isEnabled: false },
-    { name: "Population", isEnabled: false },
-    { name: "Past", isEnabled: false },
-    { name: "Future", isEnabled: false },
-    { name: "Conservation", isEnabled: false },
-    { name: "Immersive Experience", isEnabled: false },
-  ]
+  const [localMenuItems, setLocalMenuItems] = useState({...subMenuItems})
 
-  const menuStructure = {
-    animals: {
-      polarbear: [...templateMenu],
-      elephant: [...templateMenu],
-      crane: [...templateMenu],
-      turtle: [...templateMenu]
-    }
-  }
+  useEffect(()=> {
+    console.log('animal in sidebar',animal)
+  },[])
 
-  const [subMenuItems, setsubMenuItems] = useState(menuStructure)
-
-
-  const { showSidebar, pageState, setPageState , initializePage } = useContext(ToggleContext);
+  useEffect(()=> {
+    console.log('animal in sidebar changed',animal)
+  },[animal])
 
   const handleStepNavigation = (index) => {
     const tmpState = { ...pageState };
     tmpState.currentStep = index;
     setPageState(tmpState);
-
     initializePage(index);
   }
 
-  const handleClick = (index) => {
+  const setupAnimal = (index)=> {
+    setAnimal(index);
+    const app = appContext;
+    console.log('animalIdx', AnimalDictionary[index])
+    if(index > 0){
+      const tmpMenuState = { ...subMenuItems };
+      tmpMenuState.animals[AnimalDictionary[index]][0].isEnabled = true
+      setsubMenuItems({...tmpMenuState})
+    }
+  }
+
+  const handleClick = (event,index) => {
+    event.stopPropagation();
     const tmpShowSub = [...showSub] 
     tmpShowSub[index] = !tmpShowSub[index];
-
-    let openItems = tmpShowSub.filter(Boolean);
-
-    if(openItems.length <= 1){
-      setShowSub(tmpShowSub)
-    }
-
-    if(openItems.length > 1){
-      const cleanup = [...showSub].map(item=>false);
-      cleanup[index] = true;
-      setShowSub(cleanup)
-    }
+    const cleanup = [...showSub].map(item=>false);
+    cleanup[index] = true;
+    setShowSub(cleanup)
+    setupAnimal(index)
   };
 
   /**
@@ -70,6 +69,7 @@ export const Sidebar = () => {
 
     // Copy of current state
     const tmpMenuState = { ...subMenuItems };
+    console.log({tmpMenuState})
 
     //reset every item to false;
     Object.keys(tmpMenuState.animals).forEach(animalKey => {
@@ -84,13 +84,14 @@ export const Sidebar = () => {
 
     tmpMenuState.animals[animal][getIndex].isEnabled = !currentState;
 
-    setsubMenuItems(tmpMenuState)
+    setsubMenuItems(prevState => {
+      console.log({prevState,tmpMenuState})
+      prevState = tmpMenuState
+      return {...tmpMenuState}
+    })
 
   }
 
-  const handleMenuItemClick = () => {
-    setsubMenuItems(menuStructure)
-  }
 
   useEffect(()=>{
     console.log({showSub})
@@ -118,9 +119,8 @@ export const Sidebar = () => {
               state={showSub[0]}
               expand={false}
               displayExpandIcon={false}
-              onClick={() => {
-                handleClick(0);
-                handleMenuItemClick();
+              onClick={(e) => {
+                handleClick(e,0);
               }}
             />
           </NavLink>
@@ -129,9 +129,8 @@ export const Sidebar = () => {
               exact
               to="/polar-bear"
               className="polar-bear"
-              onClick={() => {
-                handleClick(1);
-                handleMenuItemClick();
+              onClick={(e) => {
+                handleClick(e,1);
               }}
 
             >
@@ -143,11 +142,11 @@ export const Sidebar = () => {
               />
             </NavLink>
             <div className={showSub[1] ? "sub-item open" : "sub-item"}>
-              {subMenuItems.animals.polarbear.map((item, index) =>
+              {localMenuItems.animals.polarbear.map((item, index) =>
                 <SubMenuItem
                   onClick={() => {
                     menuState(item.name, 'polarbear');
-                    handleStepNavigation(index )
+                    handleStepNavigation(index)
                   }} text={item.name} isEnabled={item.isEnabled} key={`polarbear-${item.name}`} />
 
               )}
@@ -158,9 +157,8 @@ export const Sidebar = () => {
               exact
               to="/asian-elephant"
               className="forest-elephant"
-              onClick={() => {
-                handleMenuItemClick(0)
-                handleClick(2);
+              onClick={(e) => {
+                handleClick(e,2);
               }}
             >
               <MenuItem
@@ -171,7 +169,7 @@ export const Sidebar = () => {
               />
             </NavLink>
             <div className={showSub[2] ? "sub-item open" : "sub-item"}>
-              {subMenuItems.animals.elephant.map((item, index) =>
+              {localMenuItems.animals.elephant.map((item, index) =>
                 <SubMenuItem
                   onClick={() => {
                     menuState(item.name, 'elephant');
@@ -186,9 +184,8 @@ export const Sidebar = () => {
               exact
               to="/whooping-crane"
               className="whooping-crane"
-              onClick={() => {
-                handleMenuItemClick()
-                handleClick(3);
+              onClick={(e) => {
+                handleClick(e,3);
               }}
             >
               <MenuItem
@@ -199,7 +196,7 @@ export const Sidebar = () => {
               />
             </NavLink>
             <div className={showSub[3] ? "sub-item open" : "sub-item"}>
-              {subMenuItems.animals.crane.map((item, index) =>
+              {localMenuItems.animals.crane.map((item, index) =>
                 <SubMenuItem
                   onClick={() => {
                     menuState(item.name, 'crane');
@@ -213,9 +210,8 @@ export const Sidebar = () => {
               exact
               to="/sea-turtle"
               className="sea-turtle"
-              onClick={() => {
-                handleMenuItemClick()
-                handleClick(4);
+              onClick={(e) => {
+                handleClick(e,4);
               }}
             >
               <MenuItem
@@ -227,7 +223,7 @@ export const Sidebar = () => {
               />
             </NavLink>
             <div className={showSub[4] ? "sub-item open" : "sub-item"}>
-              {subMenuItems.animals.turtle.map((item, index) =>
+              {localMenuItems.animals.turtle.map((item, index) =>
                 <SubMenuItem
                   onClick={() => {
                     menuState(item.name, 'turtle');

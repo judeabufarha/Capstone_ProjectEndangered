@@ -23,13 +23,13 @@ const Page4 = ({ offset, color }) => {
         <div className="wrapperCommonContainer statusTextArea">
           <div className="commonContainerSpecial">
             <p>
-            The current status of the green sea turtle population is endangered. This means that they face a very high risk of extinction in the wild. Green sea turtles are endangered because of over harvesting and habitat loss on land and in water.{" "}
+            The current status of the green sea turtle population is endangered. This means that they face a very high risk of extinction in the wild. Green sea turtles are endangered because of overharvesting and habitat loss on land and in water.{" "}
             </p>
             <p>
             The green sea turtle depends on beaches to lay their eggs, and seagrass beds in the ocean for food. However, coastal development has destroyed the green sea turtle’s nesting grounds and polluted the seagrass beds. Now, green sea turtles struggle to eat and reproduce.{" "}
             </p>
             <p>
-            Because of overharvesting, the entire green sea turtle popular is in even greater risk. Thousands of green sea turtles are hunted and killed each year. Their eggs are also harvested by humans for trade, which makes it even harder for the population to grow.{" "}
+            Because of extreme harvesting, the entire green sea turtle population is at even greater risk. Thousands of green sea turtles are hunted and killed each year. Their eggs are also harvested by humans for trade, which makes it even harder for the population to grow.{" "}
             </p>
           </div>
         </div>

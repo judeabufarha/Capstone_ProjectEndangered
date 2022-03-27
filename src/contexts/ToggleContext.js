@@ -10,6 +10,8 @@ const ToggleContextProvider = (props) => {
         maxSteps: 9
     });
 
+    const [animal, setAnimal] = useState(0);
+
     
     const setMaxPages = (maxPages) => {
         const tmpState = {...pageState};
@@ -34,8 +36,55 @@ const ToggleContextProvider = (props) => {
         setMobilePage(index);
     }
 
+    const templateMenu = [
+        { name: "Landing", isEnabled: false },
+        { name: "About", isEnabled: false },
+        { name: "Importance", isEnabled: false },
+        { name: "Status", isEnabled: false },
+        { name: "Population", isEnabled: false },
+        { name: "Past", isEnabled: false },
+        { name: "Future", isEnabled: false },
+        { name: "Conservation", isEnabled: false },
+        { name: "Immersive Experience", isEnabled: false },
+      ]
+    
+      const menuStructure = {
+        animals: {
+          polarbear: [...templateMenu],
+          elephant: [...templateMenu],
+          crane: [...templateMenu],
+          turtle: [...templateMenu]
+        }
+      }
+    
+      const AnimalDictionary = {
+        1: 'polarbear',
+        2: 'elephant',
+        3: 'crane',
+        4: 'turtle'
+      }
+    
+      const [subMenuItems, setsubMenuItems] = useState(menuStructure)
+
     return (
-        <ToggleContext.Provider value={{showSidebar, closeBar, bodyClick, pageState, setPageState, setMaxPages, mobilePage, setMobilePage, initializePage}}>
+        <ToggleContext.Provider value={{
+            showSidebar,
+            closeBar,
+            bodyClick,
+            pageState,
+            setPageState,
+            setMaxPages,
+            mobilePage,
+            setMobilePage,
+            initializePage,
+            animal,
+            setAnimal,
+            subMenuItems,
+            setsubMenuItems,
+            menuStructure,
+            AnimalDictionary,
+            templateMenu
+        }}>
             {props.children}
         </ToggleContext.Provider>
     )

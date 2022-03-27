@@ -90,7 +90,7 @@ export const HomePage = (props) => {
                         bg="grey-bg"
                         title="Asian Elephant"
                         description="The Asian forest elephant is the largest land mammal on the continent of Asia. They live in dry to wet forests and grasslands. The biggest threat to this species is habitat loss and fragmentation. Due to human development, the homes of these elephants have been destroyed, putting the entire population at risk. "
-                        image="https://i.ibb.co/YXc09z7/Vector-crane.png"
+                        image="https://i.ibb.co/HgJyygS/Vector.png"
                         alt="3d image of Asian elephant in habitat."
                         linkFn={() => {
                             history.push("/asian-elephant");

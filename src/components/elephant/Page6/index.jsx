@@ -68,7 +68,7 @@ const Page6 = ({ offset, color }) => {
       <ParallaxLayer className="elephantTooltip3" offset={offset} speed={3}  aria-label="tooltip 3">
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
-            <Tooltip text={{title:'2008',description:'Asian elephant poaching increases significantly.'}} width={250} />
+            <Tooltip text={{title:'2008',description:'Asian elephant poaching increases.'}} width={250} />
           </div>
         </div>
       </ParallaxLayer>
