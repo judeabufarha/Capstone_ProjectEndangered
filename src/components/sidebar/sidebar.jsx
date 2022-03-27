@@ -55,7 +55,6 @@ export const Sidebar = () => {
     event.stopPropagation();
     const tmpShowSub = [...showSub] 
     tmpShowSub[index] = !tmpShowSub[index];
-    initializePage(0);
     const cleanup = [...showSub].map(item=>false);
     cleanup[index] = true;
     setShowSub(cleanup)
