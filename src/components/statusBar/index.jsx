@@ -6,13 +6,19 @@ import "./styles.scss";
 export const Statusbar = () => {
 
   const appContext =  useContext(ToggleContext);
-  const { pageState, setPageState } = appContext;
+  const { pageState, setPageState, animal, menuStructure, subMenuItems, setsubMenuItems, templateMenu, AnimalDictionary} = appContext;
   const {currentStep} = pageState;
 
   const handleStepNavigation = (index) => {
     const tmpState = {...pageState};
     tmpState.currentStep = index;
     setPageState(tmpState)
+    const tmpSubMenuItems = {...subMenuItems}
+    tmpSubMenuItems.animals[AnimalDictionary[animal]] = [...templateMenu];
+    tmpSubMenuItems.animals[AnimalDictionary[animal]][index].isEnabled = true;
+    setsubMenuItems({...tmpSubMenuItems})
+
+
   }
 
   useEffect(()=> {

@@ -23,13 +23,13 @@ const Page4 = ({ offset, color }) => {
         <div className="wrapperCommonContainer statusTextArea">
           <div className="commonContainerSpecial">
             <p>
-            The current status of the whooping crane population is endangered. This means that they face a very high risk of extinction in the wild. Whooping cranes are endangered because of habitat loss and human interference on their breeding grounds.{" "}
+            The current status of the whooping crane is endangered. This means that they face a very high risk of extinction in the wild. Whooping cranes are endangered because of habitat loss and human interference on their breeding grounds.{" "}
             </p>
             <p>
-            Human settlements in the North American prairies has had severe effects on whooping cranes. The marshes whooping cranes lived in were drained for buildings and farms, leaving them with no home. Now that there is almost no habitat left, it makes it difficult for them to find food and breed.{" "}
+            Human settlement in the North American prairies has had severe effects on the whooping crane population. The marshes whooping cranes lived in were drained for buildings and farms, leaving them with no home. Now that there is almost no habitat left for whooping cranes, it makes it difficult for them to find food and breed.{" "}
             </p>
             <p>
-            In 1941, there were only 21 whooping cranes left, meaning the species was in critical condition and near extinction. However, through conservation efforts, the population is increasing. Today there are about 600 whooping cranes in the wild and captivity.{" "}
+            In 1941, there were only 21 whooping cranes left on earth, which meant the species was in critical condition and near extinction. However, through conservation efforts, the population is increasing. Today there are about 600 whooping cranes in the wild and captivity.{" "}
             </p>
           </div>
         </div>

@@ -20,7 +20,7 @@ import { useHistory } from "react-router-dom";
 
 export const Elephant = () => {
   const appContext = useContext(ToggleContext);
-  const { pageState, setPageState } = appContext;
+  const { pageState, setPageState, animal, AnimalDictionary, subMenuItems ,setsubMenuItems, templateMenu } = appContext;
   const pageCurrentState = pageState.currentStep;
 
   console.log(pageCurrentState);
@@ -29,6 +29,11 @@ export const Elephant = () => {
     const tmpState = { ...pageState };
     tmpState.currentStep = index;
     setPageState(tmpState)
+    
+    const tmpSubMenuItems = {...subMenuItems}
+    tmpSubMenuItems.animals[AnimalDictionary[animal]] = [...templateMenu];
+    tmpSubMenuItems.animals[AnimalDictionary[animal]][index].isEnabled = true;
+    setsubMenuItems({...tmpSubMenuItems})
   }
   const { width } = useWindowDimensions();
   const ref = useRef();

@@ -30,24 +30,13 @@ const Page4 = ({ offset, color }) => {
         <div className="wrapperCommonContainer statusTextArea">
           <div className="commonContainerSpecial">
             <p>
-              The current status of the polar bear population is vulnerable.
-              This means that they face a high risk of extinction in the wild.
-              Polar bears are endangered because of the effects climate change
-              has on the Arctic, which is where polar bears live.{" "}
+            The current status of the polar bear population is vulnerable. This means that they face a high risk of extinction in the wild. Polar bears are endangered because of the effects climate change has on the Arctic, which is where polar bears live. {" "}
             </p>
             <p>
-              Climate change has caused the Arctic to heat up twice as fast as
-              it used to. This makes it harder for polar bears to hunt seals,
-              rest, and breed because they use the ice to do these things. Now
-              that there is less ice, the polar bears have trouble finding food,
-              and this can lead to malnutrition and starvation.{" "}
+            Climate change has caused the Arctic to heat up twice as fast as it used to. This makes it harder for polar bears to hunt seals, rest, and breed because they use the ice to do these things. Now that there is less ice, the polar bears have trouble finding food, and this can lead to malnutrition and starvation.{" "}
             </p>
             <p>
-              Because of malnutrition, it also makes it harder for polar bears
-              to reproduce. Even when a polar bear is able to have cubs, many
-              die due to a lack of food or because their mother was
-              malnourished. This has caused extinction in certain areas of the
-              Arctic.{" "}
+            Because of being underfed, it also makes it harder for polar bears to reproduce. Even when a polar bear is able to have cubs, many die due to a lack of food or because their mother was malnourished. This has caused extinction in certain areas of the Arctic. {" "}
             </p>
           </div>
         </div>

@@ -61,7 +61,7 @@ const Page6 = ({ offset, color }) => {
       <ParallaxLayer className="craneTooltip2" offset={offset} speed={3} aria-label="tooltip 2">
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
-            <Tooltip text={{title:'1967',description:'Breeding programs and reintroduction efforts begin.'}} width={250} />
+            <Tooltip text={{title:'1967',description:'Captive breeding programs and reintroduction efforts begin.'}} width={250} />
           </div>
         </div>
       </ParallaxLayer>
@@ -75,7 +75,7 @@ const Page6 = ({ offset, color }) => {
       <ParallaxLayer className="craneTooltip4" offset={offset} speed={3} aria-label="tooltip 4">
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
-            <Tooltip text={{title:'1993',description:'Whooping cranes are released into the wild in Florida.'}} width={250} />
+            <Tooltip text={{title:'1993',description:'Young whooping cranes were released into the wild in Florida.'}} width={250} />
           </div>
         </div>
       </ParallaxLayer>
@@ -83,7 +83,7 @@ const Page6 = ({ offset, color }) => {
       <ParallaxLayer className="craneTooltip5" offset={offset} speed={3} aria-label="tooltip 5">
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
-            <Tooltip text={{title:'2004',description:'A total of 221 whooping cranes are released into the wild.'}} width={250} />
+            <Tooltip text={{title:'2004',description:' A total of 221 whooping cranes were released into the wild.'}} width={250} />
           </div>
         </div>
       </ParallaxLayer>

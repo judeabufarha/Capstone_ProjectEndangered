@@ -7,13 +7,17 @@ import "./styles.scss";
 export const Footer = ({ }) => {
 
   const appData = useContext(ToggleContext)
-  const {pageState, setPageState } = appData;
+  const {pageState, setPageState, animal, AnimalDictionary, subMenuItems ,setsubMenuItems, templateMenu } = appData;
   const { currentStep } = pageState;
 
   const handleStepNavigation = (index) => {
     const tmpState = {...pageState};
     tmpState.currentStep = index;
     setPageState(tmpState)
+    const tmpSubMenuItems = {...subMenuItems}
+    tmpSubMenuItems.animals[AnimalDictionary[animal]] = [...templateMenu];
+    tmpSubMenuItems.animals[AnimalDictionary[animal]][index].isEnabled = true;
+    setsubMenuItems({...tmpSubMenuItems})
   }
 
   

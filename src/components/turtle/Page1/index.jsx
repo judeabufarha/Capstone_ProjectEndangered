@@ -11,11 +11,9 @@ const Page1 = ({ offset, color }) => (
     </ParallaxLayer>
 
     <ParallaxLayer className="turtleTitle" offset={offset} speed={0.6}>
-      <img
-        className="turtleTitle"
-        src="https://i.ibb.co/nn4KQzr/The-Green-Sea-Turtle.png"
-        alt="title"
-      />
+    <h1 className="titleText">The<br></br></h1>
+    <h1 className="titleTextAnim">Green Sea </h1>
+    <h1 className="titleTextAnimLine2">Turtle </h1>
     </ParallaxLayer>
 
   

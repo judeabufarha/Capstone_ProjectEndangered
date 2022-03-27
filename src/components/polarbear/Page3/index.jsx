@@ -33,21 +33,11 @@ const Page3 = ({ offset, color }) => {
         <div className="wrapperCommonContainer textAreaContainer">
           <div className="commonContainer">
             <p>
-              The polar bear is a keystone species, at the top of the food
-              chain, which makes them an apex predator. Because of this, they
-              have an important role in balancing the Arctic food chain. Without
-              polar bears, the population of their prey would begin to grow, and
-              the entire Arctic ecosystem would be thrown out of balance.
-              Because the polar bear is a keystone species, they are a
-              reflection of the health of their ecosystem. If the keystone
-              species is endangered, the entire ecosystem is put at risk.
+            The polar bear is a keystone species, which means they have an important role in balancing the Arctic ecosystem.  They are also at the top of the food chain, which makes them an apex predator. Without polar bears, the population of their prey would begin to grow, and the entire Arctic ecosystem would be thrown out of balance. Because the polar bear is a keystone species, they are a reflection of the health of their ecosystem. If the keystone species is endangered, the entire ecosystem is put at risk.
             </p>
             <hr />
             <p>
-              Polar bears also play an important part in the cultures and
-              economies of indigenous Arctic peoples. Because of the decline in
-              the polar bear population, indigenous peoples have experienced
-              significant cultural changes and economic issues.
+            Polar bears also play an important part in the cultures and economies of indigenous Arctic peoples. Because of the decline in the polar bear population, indigenous Arctic peoples have experienced significant cultural changes and economic issues.
             </p>
           </div>
         </div>

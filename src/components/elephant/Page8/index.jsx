@@ -16,7 +16,7 @@ const Page8 = ({ offset, color }) => {
           Support
         </>
       }
-      text="“Asian Elephant Support is dedicated to the care and conservation of Asian elephants, and to the people whose lives are intertwined with this magnificent and endangered species.”"
+      text="“Asian Elephant Support is dedicated to the care and conservation of Asian elephants in their range countries, and to the people whose lives are intertwined with this magnificent and endangered species.”"
       linkFn={() => {
         window.open("https://www.asianelephantsupport.org/", "_blank");
       }}
@@ -32,7 +32,7 @@ const Page8 = ({ offset, color }) => {
         
       </>
       }
-      text="“Elephant Family works with home grown, in-country conservation experts o protect Asia’s magnificent wildlife through conservation, to enable successful coexistence between all living things.”"
+      text="“Elephant Family works to protect Asia’s magnificent wildlife through conservation, to enable successful coexistence between all living things.”"
       linkFn={() => {
         window.open("https://elephant-family.org/ ", "_blank");
       }}
@@ -47,7 +47,7 @@ const Page8 = ({ offset, color }) => {
         Elephants 
       </>
       }
-      text="“Save The Asian Elephants works to end the terrible cruelty and brutal conditions suffered by the wondrous and ancient species that is the Asian elephant to help restore the population.”"
+      text="“Save The Asian Elephants works to end the terrible cruelty and brutal conditions suffered by the wondrous and ancient species that is the Asian elephant.”"
       linkFn={() => {
         window.open("https://stae.org/", "_blank");
       }}
