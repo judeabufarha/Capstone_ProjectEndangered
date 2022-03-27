@@ -42,7 +42,7 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/HgJyygS/Vector.png"
                         alt="3d image of Asian elephant in habitat."
                         linkFn={() => {
-                            history.push("/forest-elephant");
+                            history.push("/asian-elephant");
                         }}
                     />
 
@@ -93,7 +93,7 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/YXc09z7/Vector-crane.png"
                         alt="3d image of Asian elephant in habitat."
                         linkFn={() => {
-                            history.push("/forest-elephant");
+                            history.push("/asian-elephant");
                         }}
                     />
 

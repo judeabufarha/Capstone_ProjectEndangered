@@ -12,26 +12,34 @@ import { useEffect, useRef, useContext } from "react";
 import { ToggleContext } from "../../../contexts/ToggleContext";
 import { useSwipeable } from 'react-swipeable';
 
-
 export const AsianElephantMobile = (props) => {
-    const { mobilePage } = useContext(ToggleContext);
+    const { mobilePage, initializePage  } = useContext(ToggleContext);
 
-    const currentPage = mobilePage;
+    var currentPage = mobilePage;
 
-    //const handlers = useSwipeable({
-        //onSwipedLeft: () => swipeLeft(),
-        //onSwipedRight: () => swipeRight(),
-        //preventDefaultTouchmoveEvent: true,
-        //trackMouse: true
-    //});
+    const handlers = useSwipeable({
+        onSwipedLeft: () => swipeLeft(),
+        onSwipedRight: () => swipeRight(),
+        preventDefaultTouchmoveEvent: true,
+        trackMouse: true
+    });
 
-    //const swipeLeft = () => {
-        //console.log("swipe left")
-    //};
+    const swipeLeft = () => {
+        if (currentPage != 8) {
+            currentPage ++;
+            initializePage(currentPage);
+            console.log("swipe left" + currentPage);
+        }
+    };
 
-    //const swipeRight = () => {
-        //console.log("swipe right")
-    //};
+    const swipeRight = () => {
+        if (currentPage != 0) {
+            currentPage --;
+            initializePage(currentPage);
+            console.log("swipe right" + currentPage);
+        }
+
+    };
 
     const page1 = useRef(null);
     const page2 = useRef(null);
@@ -45,68 +53,44 @@ export const AsianElephantMobile = (props) => {
 
     useEffect(() => {
         if (currentPage == 0) {
-            page1.current.scrollIntoView({block: "start", inline: "nearest"});
+            page1.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 1) {
-            page2.current.scrollIntoView({block: "start", inline: "nearest"});
+            page2.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 2) {
-            page3.current.scrollIntoView({block: "start", inline: "nearest"});
+            page3.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 3) {
-            page4.current.scrollIntoView({block: "start", inline: "nearest"});
+            page4.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 4) {
-            page5.current.scrollIntoView({block: "start", inline: "nearest"});
+            page5.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 5) {
-            page6.current.scrollIntoView({block: "start", inline: "nearest"});
+            page6.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 6) {
-            page7.current.scrollIntoView({block: "start", inline: "nearest"});
+            page7.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 7) {
-            page8.current.scrollIntoView({block: "start", inline: "nearest"});
+            page8.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
 
         else if (currentPage == 8) {
-            page9.current.scrollIntoView({block: "start", inline: "nearest"});
+            page9.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
         }
     }, [currentPage]);
 
-    //var currentScrollY = 0;
-    //var newScrollY = 0;
-    //var pageNumber = 0;
-
-    //const onScroll = () => {
-        //newScrollY = window.scrollY;
-
-        //if (newScrollY > currentScrollY) {
-            //++pageNumber;
-        //}
-
-        //else {
-            //--pageNumber;
-        //}
-
-        //currentScrollY = newScrollY;
-
-        //console.log('current page: ' + pageNumber)
-        //console.log(`onScroll, window.scrollY: ${scrollY}`)
-    //}
-
     return (
-
-        //<div className="asian-elephant-mobile-container" {...handlers}></div>
-        //<div className="asian-elephant-mobile-container" onScroll={onScroll}>
-        <div className="asian-elephant-mobile-container">
+        <div className="asian-elephant-mobile-container" {...handlers}>
             <div className="mobile-page page 01" ref={page1}>
                 <MobilePage01 
                     title="Asian Elephant" 

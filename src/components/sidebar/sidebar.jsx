@@ -48,7 +48,6 @@ export const Sidebar = () => {
   const handleClick = (index) => {
     const tmpShowSub = [...showSub] 
     tmpShowSub[index] = !tmpShowSub[index];
-    initializePage(0);
 
     let openItems = tmpShowSub.filter(Boolean);
 
