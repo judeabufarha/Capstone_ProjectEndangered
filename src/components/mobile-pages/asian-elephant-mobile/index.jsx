@@ -13,7 +13,8 @@ import { ToggleContext } from "../../../contexts/ToggleContext";
 import { useSwipeable } from 'react-swipeable';
 
 export const AsianElephantMobile = (props) => {
-    const { mobilePage, initializePage  } = useContext(ToggleContext);
+    const { mobilePage, initializePage } = useContext(ToggleContext);
+    const { pageState, setPageState, animal, AnimalDictionary, subMenuItems ,setsubMenuItems, templateMenu } = useContext(ToggleContext);
 
     var currentPage = mobilePage;
 
@@ -29,6 +30,7 @@ export const AsianElephantMobile = (props) => {
             currentPage ++;
             initializePage(currentPage);
             console.log("swipe left" + currentPage);
+            handleStepNavigation(currentPage);
         }
     };
 
@@ -37,9 +39,21 @@ export const AsianElephantMobile = (props) => {
             currentPage --;
             initializePage(currentPage);
             console.log("swipe right" + currentPage);
+            handleStepNavigation(currentPage);
         }
 
     };
+
+    const handleStepNavigation = (index) => {
+        const tmpState = { ...pageState };
+        tmpState.currentStep = index;
+        setPageState(tmpState)
+    
+        const tmpSubMenuItems = {...subMenuItems}
+        tmpSubMenuItems.animals[AnimalDictionary[animal]] = [...templateMenu];
+        tmpSubMenuItems.animals[AnimalDictionary[animal]][index].isEnabled = true;
+        setsubMenuItems({...tmpSubMenuItems})
+      }
 
     const page1 = useRef(null);
     const page2 = useRef(null);
