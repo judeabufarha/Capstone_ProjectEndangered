@@ -53,7 +53,7 @@ export const AsianElephantMobile = (props) => {
         tmpSubMenuItems.animals[AnimalDictionary[animal]] = [...templateMenu];
         tmpSubMenuItems.animals[AnimalDictionary[animal]][index].isEnabled = true;
         setsubMenuItems({...tmpSubMenuItems})
-      }
+    };
 
     const page1 = useRef(null);
     const page2 = useRef(null);
