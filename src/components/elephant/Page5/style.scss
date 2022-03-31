@@ -5,9 +5,10 @@
 }
 .desktop-map-legend{
   position: absolute;
-  top: 240px;
+  top: 26%;
   left: 60px;
   zoom: 1.2;
+  z-index: 999999;
 }
 .page5{
   &.marker .now {

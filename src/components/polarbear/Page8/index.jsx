@@ -9,6 +9,7 @@ const Page8 = ({ offset, color }) => {
     <InfoBlob
       BgImage="https://i.ibb.co/9cKpF7q/blob1.png"
       linkText="Learn More"
+      butnColour = "button-orange" 
       title="Polar Bears International"
       text="“Polar Bears International is made up of a passionate team of conservationists, scientists, and volunteers—working to secure a future for polar bears across the Arctic.”"
       linkFn={() => {
@@ -18,6 +19,7 @@ const Page8 = ({ offset, color }) => {
     <InfoBlob
       BgImage="https://i.ibb.co/9cKpF7q/blob1.png"
       linkText="Learn More"
+      butnColour = "button-orange" 
       title={
         <>
           World <br />
@@ -32,6 +34,7 @@ const Page8 = ({ offset, color }) => {
     <InfoBlob
       BgImage="https://i.ibb.co/9cKpF7q/blob1.png"
       linkText="Learn More"
+      butnColour = "button-orange" 
       title={
         <>
           Canadian Polar <br /> Bear Habitat
