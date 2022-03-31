@@ -5,7 +5,7 @@ import { TextButton } from "../text-button";
 import './styles.scss';
 
 const InfoBlob = (props) => {
-  const { title, text, linkText, linkFn, BgImage } = props;
+  const { title, text, linkText, linkFn, BgImage, butnColour} = props;
   return (
     <div className="infoBlob">
       <div className="infoBlob_image">
@@ -19,7 +19,7 @@ const InfoBlob = (props) => {
             onClick={linkFn}
             text={linkText}
             colour="dark"
-            type="button-orange"
+            type={butnColour}
           />
         </div>
       </div>
@@ -33,6 +33,7 @@ InfoBlob.propTypes = {
   linkText: PropTypes.string.isRequired,
   BgImage: PropTypes.string.isRequired,
   linkFn: PropTypes.func.isRequired,
+  butnColour: PropTypes.func.isRequired,
 };
 
 export default InfoBlob;

@@ -1,8 +1,21 @@
 
+ .craneEnviro{ 
+    padding-top:5%;
+    zoom:1.8;
+    }
 
 @media screen and (max-width: 1366px) {
     
-    .Enviro3dCrane{ 
+    .craneEnviro{ 
+        padding-top:8%;
+        zoom:1.2;
+        }
+}
+
+
+@media screen and (max-width: 1536px) {
+    
+    .craneEnviro{ 
         padding-top:8%;
         zoom:1.2;
         }

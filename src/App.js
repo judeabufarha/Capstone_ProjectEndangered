@@ -1,6 +1,6 @@
 
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import { Navbar } from "./components/navbar";
 import { useContext } from "react";
 import { ToggleContext } from "./contexts/ToggleContext";

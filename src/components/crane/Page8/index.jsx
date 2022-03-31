@@ -9,6 +9,7 @@ const Page8 = ({ offset, color }) => {
     <InfoBlob
       BgImage="https://i.ibb.co/Jz37FjQ/Vector-34.png"
       linkText="Learn More"
+      butnColour="button-green" 
       title={
         <>
           Nature <br />
@@ -24,6 +25,7 @@ const Page8 = ({ offset, color }) => {
     <InfoBlob
       BgImage="https://i.ibb.co/Jz37FjQ/Vector-34.png"
       linkText="Learn More"
+      butnColour="button-green" 
       title={
         <>
         International <br />
@@ -40,6 +42,7 @@ const Page8 = ({ offset, color }) => {
     <InfoBlob
       BgImage="https://i.ibb.co/Jz37FjQ/Vector-34.png"
       linkText="Learn More"
+      butnColour="button-green" 
       title={
         <>
         Friends of the <br />

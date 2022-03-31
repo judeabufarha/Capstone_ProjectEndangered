@@ -24,7 +24,7 @@ const Page9 = ({ offset, color }) => {
       
     <ParallaxLayer offset={offset} speed={1.2}>
     <img
-        className="Enviro3dCrane"
+        className="craneEnviro"
         src="https://i.ibb.co/51j8pD3/Vector-36.png"
         alt="Wet Prairies 3D Enviroment"
       />
@@ -32,7 +32,11 @@ const Page9 = ({ offset, color }) => {
 
     <ParallaxLayer offset={offset} speed={1.2}>
       <div className="exploreButton" aria-label="begin exploring">
-      <TextButton type="light" text="Begin Exploring" colour="light" />
+      <TextButton type="light" text="Begin Exploring" colour="light" 
+        onClick={() => {
+          window.open("https://project-endangered-experience.com/public/prairies/", "_blank");
+        }}
+      />
       </div>
 
     </ParallaxLayer>
