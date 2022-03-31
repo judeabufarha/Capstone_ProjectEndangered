@@ -193,6 +193,9 @@ export const AsianElephantMobile = (props) => {
                     title3="Save the Asian Elephants"
                     text3="“Save The Asian Elephants works to end the terrible cruelty and brutal conditions suffered by the wondrous and ancient species that is the Asian elephant to help restore the population.”"
                     link3="https://stae.org/"
+                    colour1="button-pink"
+                    colour2="button-pink"
+                    colour3="button-pink"
                 />
             </div>
 

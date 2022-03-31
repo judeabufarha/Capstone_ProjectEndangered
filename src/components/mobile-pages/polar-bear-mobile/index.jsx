@@ -193,6 +193,9 @@ export const PolarBearMobile = (props) => {
                     title3="Canadian Polar Bear Habitat"
                     text3="“The Canadian Polar Bear Habitat is committed to advancing the conservation of wild polar bears and elevating the standard of care for polar bears in human care through research and education.”"
                     link3="https://canadianpolarbearhabitat.com/"
+                    colour1="button-orange"
+                    colour2="button-orange"
+                    colour3="button-orange"
                 />
             </div>
 

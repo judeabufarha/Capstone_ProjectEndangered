@@ -193,6 +193,9 @@ export const SeaTurtleMobile = (props) => {
                     title3="World Wildlife Fund"
                     text3="“WWF works around the world to establish marine protected areas both on land and in the ocean, reduce turtle bycatch, and educate local communities on over-harvesting and illegal trade.”"
                     link3="https://www.worldwildlife.org/species/green-turtle"
+                    colour1="button-peach"
+                    colour2="button-peach"
+                    colour3="button-peach"
                 />
             </div>
 

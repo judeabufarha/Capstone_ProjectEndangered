@@ -17,6 +17,7 @@ export const MobilePage08 = (props) => {
                                 linkText="Learn More"
                                 title={props.title1}
                                 text={props.text1}
+                                butnColour={props.colour1}
                                 linkFn={() => {
                                     window.open(props.link1, "_blank");
                                 }}
@@ -29,6 +30,7 @@ export const MobilePage08 = (props) => {
                                 linkText="Learn More"
                                 title={props.title2}
                                 text={props.text2}
+                                butnColour={props.colour2}
                                 linkFn={() => {
                                     window.open(props.link2, "_blank");
                                 }}
@@ -41,6 +43,7 @@ export const MobilePage08 = (props) => {
                                 linkText="Learn More"
                                 title={props.title3}
                                 text={props.text3}
+                                butnColour={props.colour3}
                                 linkFn={() => {
                                     window.open(props.link3, "_blank");
                                 }}
@@ -70,4 +73,7 @@ MobilePage08.propTypes = {
     title3: PropTypes.func.isRequired,
     text3: PropTypes.func.isRequired,
     link3: PropTypes.func.isRequired,
+    colour1: PropTypes.func.isRequired,
+    colour2: PropTypes.func.isRequired,
+    colour3: PropTypes.func.isRequired
 }

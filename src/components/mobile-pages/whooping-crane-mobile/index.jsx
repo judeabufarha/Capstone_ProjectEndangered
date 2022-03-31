@@ -193,6 +193,9 @@ export const WhoopingCraneMobile = (props) => {
                     title3="Friends of the Wild Whoopers"
                     text3="“Friends of the Wild Whoopers is a nonprofit conservation organization whose mission is to help preserve and protect the Aransas/Wood Buffalo population of wild whooping cranes and their habitat.”"
                     link3="https://www.friendsofthewildwhoopers.org/"
+                    colour1="button-green"
+                    colour2="button-green"
+                    colour3="button-green"
                 />
             </div>
 
