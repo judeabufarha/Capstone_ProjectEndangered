@@ -33,6 +33,7 @@ InfoBlob.propTypes = {
   linkText: PropTypes.string.isRequired,
   BgImage: PropTypes.string.isRequired,
   linkFn: PropTypes.func.isRequired,
+  butnColour: PropTypes.func.isRequired,
 };
 
 export default InfoBlob;
