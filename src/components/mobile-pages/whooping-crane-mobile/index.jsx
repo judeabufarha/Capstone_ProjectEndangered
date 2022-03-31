@@ -202,7 +202,7 @@ export const WhoopingCraneMobile = (props) => {
                     image="https://i.ibb.co/xscpKg5/Vector.png"
                     alt="Image of 3D wet prairies environment."
                     button="button-green"
-                    link="https://vickeychee.github.io/Project_Endangered/public/arctic/"
+                    link="https://project-endangered-experience.com/public/prairies/"
                 />
             </div>
 

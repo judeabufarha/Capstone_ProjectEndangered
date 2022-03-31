@@ -202,7 +202,7 @@ export const SeaTurtleMobile = (props) => {
                     image="https://i.ibb.co/X4kvhWp/Vector.png"
                     alt="Image of 3D ocean environment."
                     button="button-peach"
-                    link="https://vickeychee.github.io/Project_Endangered/public/arctic/"
+                    link="https://project-endangered-experience.com/public/ocean/"
                 />
             </div>
 

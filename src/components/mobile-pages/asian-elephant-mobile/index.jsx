@@ -202,7 +202,7 @@ export const AsianElephantMobile = (props) => {
                     image="https://i.ibb.co/jwm1hfw/Vector.png"
                     alt="Image of 3D Asian grasslands environment."
                     button="button-pink"
-                    link="https://vickeychee.github.io/Project_Endangered/public/arctic/"
+                    link="https://project-endangered-experience.com/public/grassland/"
                 />
             </div>
 

@@ -202,7 +202,7 @@ export const PolarBearMobile = (props) => {
                     image="https://i.ibb.co/Q6wzNSn/Vector.png"
                     alt="Image of 3D Arctic environment."
                     button="button-orange"
-                    link="https://vickeychee.github.io/Project_Endangered/public/arctic/"
+                    link="https://project-endangered-experience.com/public/arctic/"
                 />
             </div>
             
