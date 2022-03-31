@@ -9,6 +9,7 @@ const Page8 = ({ offset, color }) => {
     <InfoBlob
       BgImage="https://i.ibb.co/7KnCVSw/Vector-28.png"
       linkText="Learn More"
+      butnColour="button-peach" 
       title={
         <>
           Sea Turtle <br />
@@ -23,6 +24,7 @@ const Page8 = ({ offset, color }) => {
     <InfoBlob
       BgImage="https://i.ibb.co/7KnCVSw/Vector-28.png"
       linkText="Learn More"
+      butnColour="button-peach"
       title={
         <>
         Turtle <br />
@@ -38,6 +40,7 @@ const Page8 = ({ offset, color }) => {
     <InfoBlob
       BgImage="https://i.ibb.co/7KnCVSw/Vector-28.png"
       linkText="Learn More"
+      butnColour="button-peach"
       title={
         <>
         World Wildlife  <br />

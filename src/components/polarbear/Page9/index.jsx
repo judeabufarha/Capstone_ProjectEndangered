@@ -37,7 +37,7 @@ const Page9 = ({ offset, color }) => {
       <div className="exploreButton" aria-label="begin exploring">
       <TextButton type="light" text="Begin Exploring" colour="light" 
         onClick={() => {
-          window.open("https://vickeychee.github.io/Project_Endangered/public/arctic/", "_blank");
+          window.open("https://project-endangered-experience.com/public/arctic/", "_blank");
         }}
       />
       </div>
