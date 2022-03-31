@@ -96,7 +96,7 @@ const Page5 = ({ offset, color }) => {
               size={`${now ? 'disappear' : 'small'}`}
               colour="salmonCircle"
               className="map-marker-blue"
-              text={mapItem('Louisana','Increasing')}
+              text={mapItem('Louisiana','Increasing')}
               css={{width:'500px'}}
             />
             </div>

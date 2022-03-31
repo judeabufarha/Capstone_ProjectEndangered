@@ -32,7 +32,6 @@ const ToggleContextProvider = (props) => {
     const [mobilePage, setMobilePage] = useState(0);
 
     const initializePage = (index) => {
-        //set plants to the plants from the api
         setMobilePage(index);
     }
 

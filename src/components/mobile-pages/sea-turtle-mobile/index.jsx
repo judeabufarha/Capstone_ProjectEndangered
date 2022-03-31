@@ -14,6 +14,7 @@ import { useSwipeable } from 'react-swipeable';
 
 export const SeaTurtleMobile = (props) => {
     const { mobilePage, initializePage  } = useContext(ToggleContext);
+    const { pageState, setPageState, animal, AnimalDictionary, subMenuItems ,setsubMenuItems, templateMenu } = useContext(ToggleContext);
 
     var currentPage = mobilePage;
 
@@ -29,6 +30,7 @@ export const SeaTurtleMobile = (props) => {
             currentPage ++;
             initializePage(currentPage);
             console.log("swipe left" + currentPage);
+            handleStepNavigation(currentPage);
         }
     };
 
@@ -37,8 +39,20 @@ export const SeaTurtleMobile = (props) => {
             currentPage --;
             initializePage(currentPage);
             console.log("swipe right" + currentPage);
+            handleStepNavigation(currentPage);
         }
 
+    };
+
+    const handleStepNavigation = (index) => {
+        const tmpState = { ...pageState };
+        tmpState.currentStep = index;
+        setPageState(tmpState)
+    
+        const tmpSubMenuItems = {...subMenuItems}
+        tmpSubMenuItems.animals[AnimalDictionary[animal]] = [...templateMenu];
+        tmpSubMenuItems.animals[AnimalDictionary[animal]][index].isEnabled = true;
+        setsubMenuItems({...tmpSubMenuItems})
     };
 
     const page1 = useRef(null);

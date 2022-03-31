@@ -59,7 +59,7 @@ export const Sidebar = () => {
     cleanup[index] = true;
     setShowSub(cleanup)
     setupAnimal(index)
-    initializePage(0);
+    initializePage(0)
   };
 
   /**
