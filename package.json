@@ -28,6 +28,7 @@
     "react-swipeable": "^6.2.1",
     "react-view-slider": "^4.5.0",
     "scroll": "^3.0.1",
+    "seamless-scroll-polyfill": "^2.1.8",
     "smoothscroll-polyfill": "^0.4.4",
     "styled-components": "^5.3.3",
     "web-vitals": "^1.1.2"
