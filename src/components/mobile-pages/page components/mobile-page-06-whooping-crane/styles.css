@@ -7,7 +7,7 @@
     overflow-y: auto;
     padding-bottom: 5rem;
     overflow-x: hidden;
-    background: linear-gradient(to bottom, #FFFFFF 20%, #7B97B7 20% 20%);
+    background: #7B97B7;
 }
 
 .mobile-page-06::-webkit-scrollbar {
