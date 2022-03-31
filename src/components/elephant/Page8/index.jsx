@@ -9,6 +9,7 @@ const Page8 = ({ offset, color }) => {
     <InfoBlob
       BgImage="https://i.ibb.co/4Tt1Mrr/Vector-27.png"
       linkText="Learn More"
+      type = "button-pink" 
       title={
         <>
           Asian <br />
@@ -24,6 +25,7 @@ const Page8 = ({ offset, color }) => {
     <InfoBlob
       BgImage="https://i.ibb.co/4Tt1Mrr/Vector-27.png"
       linkText="Learn More"
+      type="button-pink" 
       title={
         <>
         The<br />
@@ -40,6 +42,7 @@ const Page8 = ({ offset, color }) => {
     <InfoBlob
       BgImage="https://i.ibb.co/4Tt1Mrr/Vector-27.png"
       linkText="Learn More"
+      type = "button-pink" 
       title={
         <>
         Save the <br />
