@@ -61,7 +61,7 @@
     top: 47%;
 
     .tooltip {
-      margin-left: 44.5%;
+      margin-left: 42.5%;
     }
   }
 
@@ -76,12 +76,37 @@
     top: 16%; 
 
     .tooltip {
-      margin-left: 75%;
+      margin-left: 45%;
     }
   
   }
 }
 
+.tooltip3 {
+  z-index: 9999;
+  
+  .wrapperCommonContainer{
+    top: 47%; 
+
+    .tooltip {
+      margin-left: 74%;
+    }
+  
+  }
+}
+
+.tooltip4 {
+  z-index: 9999;
+  
+  .wrapperCommonContainer{
+    top: 16%; 
+
+    .tooltip {
+      margin-left: 76%;
+    }
+  
+  }
+}
 
 
 

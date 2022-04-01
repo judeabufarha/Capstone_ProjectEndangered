@@ -25,7 +25,7 @@ const Page9 = ({ offset, color }) => {
     <ParallaxLayer offset={offset} speed={1.2}>
     <img
         className="craneEnviro"
-        src="https://i.ibb.co/51j8pD3/Vector-36.png"
+        src="https://i.ibb.co/7W6HYTY/Vector-44.png"
         alt="Wet Prairies 3D Enviroment"
       />
     </ParallaxLayer>

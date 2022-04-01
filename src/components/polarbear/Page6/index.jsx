@@ -27,7 +27,7 @@ const Page6 = ({ offset, color }) => {
             <div
               className="pastBackground"
               style={{
-                backgroundImage: "url('https://i.ibb.co/bbJdGTS/timeline.png')",
+                backgroundImage: "url('https://i.ibb.co/s16Q7xL/Group-48.png')",
               }}
             />
           
@@ -63,10 +63,27 @@ const Page6 = ({ offset, color }) => {
       <ParallaxLayer className="tooltip2" offset={offset} speed={3} aria-label='tooltip 2'>
         <div className="wrapperCommonContainer">
           <div className="commonContainerSpecial">
+            <Tooltip text={{title:'1973',description:'Commercial hunting of polar bears is now regulated.'}} width={250} />
+          </div>
+        </div>
+      </ParallaxLayer>
+
+      <ParallaxLayer className="tooltip3" offset={offset} speed={3} aria-label='tooltip 2'>
+        <div className="wrapperCommonContainer">
+          <div className="commonContainerSpecial">
+            <Tooltip text={{title:'2005',description:'The polar bear’s status is upgraded to vulnerable.'}} width={250} />
+          </div>
+        </div>
+      </ParallaxLayer>
+
+      <ParallaxLayer className="tooltip4" offset={offset} speed={3} aria-label='tooltip 2'>
+        <div className="wrapperCommonContainer">
+          <div className="commonContainerSpecial">
             <Tooltip text={{title:'2008',description:'Polar bears are classifies as endangered.'}} width={250} />
           </div>
         </div>
       </ParallaxLayer>
+
 
       
     <ParallaxLayer className="mobileTimeline" offset={offset} speed={1.2}>
