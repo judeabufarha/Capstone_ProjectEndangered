@@ -68,40 +68,8 @@ const Page5 = ({ offset, color }) => {
      
 
       <ParallaxLayer offset={offset} className={`page5 ${!now ? 'then' : 'now'}`} speed={0.8}>
-        <div className="wrapperCommonContainer marker marker-11">
-          <div className="commonContainerSpecial">
-            <MapMarker
-              size={`${now ? 'small' : 'medium'}`}
-              colour="salmonCircle"
-              className="map-marker-blue"
-              text={now ? mapItem('Alberta','Increasing') : mapItem('Alberta','Increasing')}
-            />
-          </div>
-        </div>
-        <div className="wrapperCommonContainer marker  marker-12">
-          <div className="commonContainerSpecial">
-            <MapMarker
-              size={`${now ? 'small' : 'medium'}`}
-              colour="salmonCircle"
-              className="map-marker-blue"
-              text={mapItem('Wisconsin','Increasing')}
-              css={{width:'500px'}}
-            />
-          </div>
-        </div>
-        <div className="wrapperCommonContainer marker  marker-13">
-          <div className="commonContainerSpecial">
-          <div className={`${!now ? 'increase' : 'decrease'}`}>
-            <MapMarker
-              size={`${now ? 'disappear' : 'small'}`}
-              colour="salmonCircle"
-              className="map-marker-blue"
-              text={mapItem('Louisiana','Increasing')}
-              css={{width:'500px'}}
-            />
-            </div>
-          </div>
-        </div>
+        
+       
         <div className="wrapperCommonContainer marker  marker-14">
           <div className="commonContainerSpecial">
           <div className={`${!now ? 'increase' : 'decrease'}`}>
@@ -115,7 +83,42 @@ const Page5 = ({ offset, color }) => {
           </div>
           </div>
         </div>
-  
+        <div className="wrapperCommonContainer marker  marker-12">
+          <div className="commonContainerSpecial">
+            <MapMarker
+              size={`${now ? 'small' : 'medium'}`}
+              colour="salmonCircle"
+              className="map-marker-blue"
+              text={mapItem('Wisconsin','Increasing')}
+              css={{width:'500px'}}
+            />
+          </div>
+        </div>
+
+        <div className="wrapperCommonContainer marker  marker-13">
+          <div className="commonContainerSpecial">
+          <div className={`${!now ? 'increase' : 'decrease'}`}>
+            <MapMarker
+              size={`${now ? 'disappear' : 'small'}`}
+              colour="salmonCircle"
+              className="map-marker-blue"
+              text={mapItem('Louisiana','Increasing')}
+              css={{width:'500px'}}
+            />
+            </div>
+          </div>
+        </div>
+       
+        <div className="wrapperCommonContainer marker marker-11">
+          <div className="commonContainerSpecial">
+            <MapMarker
+              size={`${now ? 'small' : 'medium'}`}
+              colour="salmonCircle"
+              className="map-marker-blue"
+              text={now ? mapItem('Alberta','Increasing') : mapItem('Alberta','Increasing')}
+            />
+          </div>
+        </div>
         
        
       </ParallaxLayer>

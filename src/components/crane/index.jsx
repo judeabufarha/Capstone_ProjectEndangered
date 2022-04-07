@@ -10,6 +10,7 @@ import Page6 from "./Page6";
 import Page7 from "./Page7";
 import Page8 from "./Page8";
 import Page9 from "./Page9";
+import { ResizeImg } from "../ResizeImg";
 
 import './styles.scss';
 import { useContext } from "react";
@@ -100,6 +101,7 @@ export const Crane = () => {
     }
   }
 
+  
   return (
     <>
       <Parallax

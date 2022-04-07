@@ -1,0 +1,22 @@
+.rotate-desktop-img {
+    display: none;
+  }
+  
+  @media (orientation: portrait) {
+
+    .rotate-desktop-img {
+        display: inline;
+        position: absolute;
+        top: 0rem;
+        left: 0rem;
+        object-fit:cover;
+        height: 100vh;
+        width: 100%;
+        z-index: 99999999 !important;
+    }
+    .container {
+        overflow-y: none;
+        overflow-x: none;
+    }
+  }
+  
