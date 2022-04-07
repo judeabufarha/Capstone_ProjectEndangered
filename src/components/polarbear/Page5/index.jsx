@@ -59,12 +59,7 @@ const Page5 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
-      <ParallaxLayer offset={offset} speed={0.6}>
-        <div className="desktop-map-legend">
-          <MapLegend colour="blue-mobile" outline="blue-outline-mobile" />
-        </div>
-      </ParallaxLayer>
-
+    
 
       <ParallaxLayer offset={offset} className={`page5 ${!now ? 'then' : 'now'}`} speed={0.8}>
 
@@ -382,6 +377,12 @@ const Page5 = ({ offset, color }) => {
 
 
       </ParallaxLayer>
+      <ParallaxLayer offset={offset} speed={0.6}>
+        <div className="desktop-map-legend">
+          <MapLegend colour="blue-mobile" outline="blue-outline-mobile" />
+        </div>
+      </ParallaxLayer>
+
     </>
   );
 };
