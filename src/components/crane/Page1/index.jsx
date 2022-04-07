@@ -57,7 +57,6 @@ const Page1 = ({ offset, color }) => (
       />
       </ParallaxLayer>
 
-
    
   </>
 );

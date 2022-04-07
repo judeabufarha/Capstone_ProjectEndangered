@@ -17,7 +17,7 @@ export const MapMarker = (props) => {
         className='shadowTooltip'
         content={props.text}
         background="#c4e1e4"
-        border="none"
+        border="#013440"
         placement="right"
         padding={20}
         offset={70}

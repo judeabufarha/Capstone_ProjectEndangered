@@ -19,7 +19,7 @@ const Page3 = ({ offset, color }) => {
       <ParallaxLayer offset={offset} speed={0.6}>
         <div className="wrapperCommonContainer importanceTitle">
           <div className="commonContainer">
-            <h1>The Importance of the Asian Elephant</h1>
+            <h1>The Importance of the Whooping Crane</h1>
           </div>
         </div>
       </ParallaxLayer>

@@ -42,6 +42,7 @@ const Page9 = ({ offset, color }) => {
     </ParallaxLayer>
     
     </>
+    
   );
 };
 

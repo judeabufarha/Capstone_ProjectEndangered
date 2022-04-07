@@ -108,6 +108,7 @@ export const Turtle = () => {
         <Page8 offset={7} color="white" />
         <Page9 offset={8} color="white" />
       </Parallax>
+      <img className="resize-desktop-img" src="https://i.ibb.co/m4kxQvn/Full-Screen.png"/>
     </>
   );
 };
