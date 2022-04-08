@@ -75,19 +75,7 @@ const Page5 = ({ offset, color }) => {
 
           </div>
         </div>
-        <div className="wrapperCommonContainer marker  marker-2">
-          <div className="commonContainerSpecial">
-            <div className={`${!now ? 'decrease' : 'increase'}`}>
-              <MapMarker
-                size={`small`}
-                colour="blueCircle"
-                className={`map-marker-blue`}
-                text={mapItem('Southern Beaufort Sea', 'Declining')}
-                css={{ width: '500px' }}
-              />
-            </div>
-          </div>
-        </div>
+       
         <div className="wrapperCommonContainer marker  marker-40">
           <div className="commonContainerSpecial">
             <MapMarker
@@ -128,6 +116,19 @@ const Page5 = ({ offset, color }) => {
             />
           </div>
         </div>
+        <div className="wrapperCommonContainer marker  marker-2">
+          <div className="commonContainerSpecial">
+            <div className={`${!now ? 'decrease' : 'increase'}`}>
+              <MapMarker
+                size={`small`}
+                colour="blueCircle"
+                className={`map-marker-blue`}
+                text={mapItem('Southern Beaufort Sea', 'Declining')}
+                css={{ width: '500px' }}
+              />
+            </div>
+          </div>
+        </div>
         <div className="wrapperCommonContainer marker  marker-43">
           <div className="commonContainerSpecial">
             <MapMarker
@@ -135,6 +136,16 @@ const Page5 = ({ offset, color }) => {
               colour="blueCircle"
               className="map-marker-blue"
               text={now ? mapItem('Barents Sea', 'Stable') : mapItem('Barents Sea', 'Stable')}
+            />
+          </div>
+        </div>
+        <div className="wrapperCommonContainer marker  marker-8">
+          <div className="commonContainerSpecial">
+            <MapMarker
+              size={`${now ? 'large' : 'large'}`}
+              colour="blueCircle"
+              className="map-marker-blue"
+              text={now ? mapItem('Foxe Basin', 'Stable') : mapItem('Foxe Basin', 'Stable')}
             />
           </div>
         </div>
@@ -194,16 +205,17 @@ const Page5 = ({ offset, color }) => {
             </div>
           </div>
         </div>
-         <div className="wrapperCommonContainer marker  marker-8">
+        <div className="wrapperCommonContainer marker  marker-37">
           <div className="commonContainerSpecial">
             <MapMarker
               size={`${now ? 'large' : 'large'}`}
               colour="blueCircle"
               className="map-marker-blue"
-              text={now ? mapItem('Foxe Basin', 'Stable') : mapItem('Foxe Basin', 'Stable')}
+              text={mapItem('Lancaster Sound', 'No data')}
             />
           </div>
         </div>
+         
         <div className="wrapperCommonContainer marker  marker-10">
           <div className="commonContainerSpecial">
             <MapMarker
@@ -237,16 +249,7 @@ const Page5 = ({ offset, color }) => {
             />
           </div>
         </div>
-    <div className="wrapperCommonContainer marker  marker-37">
-          <div className="commonContainerSpecial">
-            <MapMarker
-              size={`${now ? 'large' : 'large'}`}
-              colour="blueCircle"
-              className="map-marker-blue"
-              text={mapItem('Lancaster Sound', 'No data')}
-            />
-          </div>
-        </div>
+    
         <div className="wrapperCommonContainer marker marker-1">
           <div className="commonContainerSpecial">
             <MapMarker
