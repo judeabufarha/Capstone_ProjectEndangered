@@ -10,11 +10,7 @@ const Page1 = ({ offset, color }) => (
       <div className={`gradient ${color}`} />
     </ParallaxLayer>
 
-    <ParallaxLayer className="titleContainer" offset={offset} speed={0.6}>
-      
-    <h1 className="titleText">The<br></br></h1>
-    <h1 className="titleTextAnim">Polar Bear</h1>
-    </ParallaxLayer>
+   
 
     <ParallaxLayer className="backgroundMountains" offset={offset} speed={1.9}>
       <img
@@ -67,7 +63,11 @@ const Page1 = ({ offset, color }) => (
       />
     </ParallaxLayer>
 
-
+    <ParallaxLayer className="titleContainer" offset={offset} speed={0.6}>
+      
+      <h1 className="titleText">The<br></br></h1>
+      <h1 className="titleTextAnim">Polar Bear</h1>
+      </ParallaxLayer>
 
    
   </>
