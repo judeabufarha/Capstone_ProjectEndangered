@@ -7,13 +7,15 @@ import { TextButton } from "../text-button";
 export const HomePageAnimal = (props) => {
     const [placement, setPlacement] = useState(props.type);
 
+    //define variable for placement of component
     useEffect(() => {
-    setPlacement(props.type);
+        setPlacement(props.type);
     }, [props.type]);
     
     return (
         <div className="homepage-content">
             <div className="homepage-animal" id={props.bg}>
+                {/*specify component details when the component placement is odd*/}
                 {placement === "odd" && (
                     <div className="content-odd">
                         <div className="content-left">
@@ -40,6 +42,7 @@ export const HomePageAnimal = (props) => {
                     </div>
                 )}
 
+                {/*specify component details when the component placement is even*/}
                 {placement === "even" && (
                     <div className="content-even">
                         <div className="content-left">

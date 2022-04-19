@@ -9,18 +9,21 @@ export const HomePage = (props) => {
     const history = useHistory(); 
     const scrollAnchor = useRef(null);
 
+    //allow for smooth scroll down page
     smoothscroll.polyfill();
     window.__forceSmoothScrollPolyfill__ = true;
 
     return (
         <div className="homepage-container">
             <HeroImage
+                //on click, scroll to first animal on page
                 scrollFn={() => {
                     scrollAnchor.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
                 }}
             />
 
             <div className="scroll-content"  ref={scrollAnchor}>
+                {/*display for desktop*/}
                 <div className="homepage-animals-desktop">
                     <HomePageAnimal
                         type="odd"
@@ -30,7 +33,7 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/X20RgwQ/Vector.png"
                         alt="3d image of polar bears in habitat."
                         linkFn={() => {
-                            history.push("/polar-bear");
+                            history.push("/polar-bear"); //on click, push to animal page
                         }}
                     />
 
@@ -42,7 +45,7 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/HgJyygS/Vector.png"
                         alt="3d image of Asian elephant in habitat."
                         linkFn={() => {
-                            history.push("/asian-elephant");
+                            history.push("/asian-elephant"); //on click, push to animal page
                         }}
                     />
 
@@ -54,7 +57,7 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/3dLGy0s/Vector-38.png"
                         alt="3d image of whooping crane in habitat."
                         linkFn={() => {
-                            history.push("/whooping-crane");
+                            history.push("/whooping-crane"); //on click, push to animal page
                         }}
                     />
 
@@ -66,12 +69,13 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/ssM24wh/Vector-39.png"
                         alt="3d image of whooping crane in habitat."
                         linkFn={() => {
-                            history.push("/sea-turtle");
+                            history.push("/sea-turtle"); //on click, push to animal page
                         }}
                     />
 
                 </div>
 
+                {/*display for mobile*/}
                 <div className="homepage-animals-mobile">
                     <HomePageAnimal
                         type="odd"
@@ -81,7 +85,7 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/X20RgwQ/Vector.png"
                         alt="3d image of polar bears in habitat."
                         linkFn={() => {
-                            history.push("/polar-bear");
+                            history.push("/polar-bear"); //on click, push to animal page
                         }}
                     />
 
@@ -93,7 +97,7 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/HgJyygS/Vector.png"
                         alt="3d image of Asian elephant in habitat."
                         linkFn={() => {
-                            history.push("/asian-elephant");
+                            history.push("/asian-elephant"); //on click, push to animal page
                         }}
                     />
 
@@ -105,7 +109,7 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/3dLGy0s/Vector-38.png"
                         alt="3d image of whooping crane in habitat."
                         linkFn={() => {
-                            history.push("/whooping-crane");
+                            history.push("/whooping-crane"); //on click, push to animal page
                         }}
                     />
 
@@ -117,11 +121,11 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/ssM24wh/Vector-39.png"
                         alt="3d image of whooping crane in habitat."
                         linkFn={() => {
-                            history.push("/sea-turtle");
+                            history.push("/sea-turtle"); //on click, push to animal page
                         }}
                     />
 
-                    <img className="rotate-img" src="https://i.ibb.co/rtQrTgT/Rotate-Landscape.png"/>
+                    <img className="rotate-img" src="https://i.ibb.co/rtQrTgT/Rotate-Landscape.png"/> 
 
                 </div>
 
