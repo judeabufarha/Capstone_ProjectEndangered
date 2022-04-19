@@ -6,6 +6,7 @@ import { useState } from "react";
 import { MapLegend } from "../../../map-legend";
 
 export const MobilePage05 = (props) => {
+    //define variable for current animal and set value to passed prop
     const [animal, setAnimal]= useState(props.animal);
     const [now, setNow]= useState(true);
 
@@ -13,12 +14,14 @@ export const MobilePage05 = (props) => {
         <div className="mobile-page-05">
             <div className="mobile-population">
                 <div className="mobile-population-visual">
+                    {/*map image*/}
                     <img
                         className="mobile-population-map"
                         src={props.map}
                         alt={props.alt}
                     />
 
+                    {/*display specific map points depending on the current animal*/}
                     {animal === "polarBear" && (
                         <div className="mobile-population-points">
                             <MapMarkerMobile size={`${now ? 'large-mobile' : 'large-mobile'}`} colour="blue-mobile" top="15%" left="0%"/>
@@ -43,6 +46,7 @@ export const MobilePage05 = (props) => {
                         </div>
                     )}
 
+                    {/*display specific map points depending on the current animal*/}
                     {animal === "whoopingCrane" && (
                         <div className="mobile-population-points">
                             <MapMarkerMobile size={`${now ? 'small-mobile' : 'medium-mobile'}`} colour="red-mobile" top="22%" left="6%"/>
@@ -52,6 +56,7 @@ export const MobilePage05 = (props) => {
                         </div>
                     )}
 
+                    {/*display specific map points depending on the current animal*/}
                     {animal === "asianElephant" && (
                         <div className="mobile-population-points">
                             <MapMarkerMobile size={`${now ? 'large-mobile' : 'medium-mobile'}`} colour="green-mobile" top="48%" left="39%"/>
@@ -66,6 +71,7 @@ export const MobilePage05 = (props) => {
                         </div>
                     )}
 
+                    {/*display specific map points depending on the current animal*/}
                     {animal === "seaTurtle" && (
                         <div className="mobile-population-points">
                             <MapMarkerMobile size={`${now ? 'medium-mobile' : 'medium-mobile'}`} colour="turquoise-mobile" top="33%" left="10%"/>
@@ -88,30 +94,35 @@ export const MobilePage05 = (props) => {
                     <p className="mobile-population-details">{props.text}</p>
                 </div>
 
+                {/*display specific legend depending on the current animal*/}
                 {animal === "polarBear" && (
                     <div className="mobile-map-legend">
                         <MapLegend colour="blue-mobile" outline="blue-outline-mobile"/>
                     </div> 
                 )} 
 
+                {/*display specific legend depending on the current animal*/}
                 {animal === "whoopingCrane" && (
                     <div className="mobile-map-legend">
                         <MapLegend colour="red-mobile" outline="red-outline-mobile"/>
                     </div> 
                 )} 
 
+                {/*display specific legend depending on the current animal*/}
                 {animal === "asianElephant" && (
                     <div className="mobile-map-legend">
                         <MapLegend colour="green-mobile" outline="green-outline-mobile"/>
                     </div> 
                 )} 
 
+                {/*display specific legend depending on the current animal*/}
                 {animal === "seaTurtle" && (
                     <div className="mobile-map-legend">
                         <MapLegend colour="turquoise-mobile" outline="turquoise-outline-mobile"/>
                     </div> 
                 )}  
 
+                {/*display specific toggle switch depending on the current animal*/}
                 {animal === "polarBear" && (
                     <div className="mobile-population-toggle">
                         <ToggleButtons
@@ -119,12 +130,13 @@ export const MobilePage05 = (props) => {
                             base="base-orange"
                             text="then-now"
                             onClick={() => {
-                                setNow(!now);
+                                setNow(!now); //on click, transition map points to updated size
                             }}
                         />
                     </div>
                 )}
 
+                {/*display specific toggle switch depending on the current animal*/}
                 {animal === "whoopingCrane" && (
                     <div className="mobile-population-toggle">
                         <ToggleButtons
@@ -132,12 +144,13 @@ export const MobilePage05 = (props) => {
                             base="base-green"
                             text="then-now"
                             onClick={() => {
-                                setNow(!now);
+                                setNow(!now); //on click, transition map points to updated size
                             }}
                         />
                     </div>
                 )}     
 
+                {/*display specific toggle switch depending on the current animal*/}
                 {animal === "asianElephant" && (
                     <div className="mobile-population-toggle">
                         <ToggleButtons
@@ -145,12 +158,13 @@ export const MobilePage05 = (props) => {
                             base="base-pink"
                             text="then-now"
                             onClick={() => {
-                                setNow(!now);
+                                setNow(!now); //on click, transition map points to updated size
                             }}
                         />
                     </div>
                 )}   
 
+                {/*display specific toggle switch depending on the current animal*/}
                 {animal === "seaTurtle" && (
                     <div className="mobile-population-toggle">
                         <ToggleButtons
@@ -158,7 +172,7 @@ export const MobilePage05 = (props) => {
                             base="base-peach"
                             text="then-now"
                             onClick={() => {
-                                setNow(!now);
+                                setNow(!now); //on click, transition map points to updated size
                             }}
                         />
                     </div>

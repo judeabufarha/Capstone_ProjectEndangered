@@ -13,48 +13,62 @@ import { ToggleContext } from "../../../contexts/ToggleContext";
 import { useSwipeable } from 'react-swipeable';
 
 export const AsianElephantMobile = (props) => {
+    //define constant variables
     const { mobilePage, initializePage } = useContext(ToggleContext);
     const { pageState, setPageState, animal, AnimalDictionary, subMenuItems ,setsubMenuItems, templateMenu } = useContext(ToggleContext);
 
     var currentPage = mobilePage;
 
+    //detect swipe
     const handlers = useSwipeable({
-        onSwipedLeft: () => swipeLeft(),
-        onSwipedRight: () => swipeRight(),
+        onSwipedLeft: () => swipeLeft(), //call function for left swipe
+        onSwipedRight: () => swipeRight(), //call function for right swipe
         preventDefaultTouchmoveEvent: true,
         trackMouse: true
     });
 
+    //on swipe left
     const swipeLeft = () => {
+        //first check if on the last page
         if (currentPage != 8) {
-            currentPage ++;
-            initializePage(currentPage);
+            currentPage ++; //add to current page count
+            initializePage(currentPage); //set current page in context
             console.log("swipe left" + currentPage);
-            handleStepNavigation(currentPage);
+            handleStepNavigation(currentPage); //update side menu
         }
     };
 
+    //on swipe right
     const swipeRight = () => {
+        //first check if on the first page
         if (currentPage != 0) {
-            currentPage --;
-            initializePage(currentPage);
+            currentPage --; //remove from current page count
+            initializePage(currentPage); //set current page in context
             console.log("swipe right" + currentPage);
-            handleStepNavigation(currentPage);
+            handleStepNavigation(currentPage); //update side menu
         }
 
     };
 
+    //update side menu and pass current page to function
     const handleStepNavigation = (index) => {
+        //define temporary page state
         const tmpState = { ...pageState };
+        //set temporary state to index
         tmpState.currentStep = index;
+        //set page state in context
         setPageState(tmpState)
     
+        //define temporary sub menu items
         const tmpSubMenuItems = {...subMenuItems}
+
+        //use temporary variable to determine what sub menu items are displayed in side menu
         tmpSubMenuItems.animals[AnimalDictionary[animal]] = [...templateMenu];
         tmpSubMenuItems.animals[AnimalDictionary[animal]][index].isEnabled = true;
         setsubMenuItems({...tmpSubMenuItems})
     };
 
+    //define all refs
     const page1 = useRef(null);
     const page2 = useRef(null);
     const page3 = useRef(null);
@@ -65,47 +79,49 @@ export const AsianElephantMobile = (props) => {
     const page8 = useRef(null);
     const page9 = useRef(null);
 
+    //use current page value to determine what page is displayed
     useEffect(() => {
         if (currentPage == 0) {
-            page1.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+            page1.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 1
         }
 
         else if (currentPage == 1) {
-            page2.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+            page2.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 2
         }
 
         else if (currentPage == 2) {
-            page3.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+            page3.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 3
         }
 
         else if (currentPage == 3) {
-            page4.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+            page4.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 4
         }
 
         else if (currentPage == 4) {
-            page5.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+            page5.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 5
         }
 
         else if (currentPage == 5) {
-            page6.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+            page6.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 6
         }
 
         else if (currentPage == 6) {
-            page7.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+            page7.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 7
         }
 
         else if (currentPage == 7) {
-            page8.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+            page8.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 8
         }
 
         else if (currentPage == 8) {
-            page9.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+            page9.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 9
         }
     }, [currentPage]);
 
     return (
         <div className="asian-elephant-mobile-container" {...handlers}>
             <div className="mobile-page page 01" ref={page1}>
+                {/*use mobile page component 1 and pass animal specific props*/}
                 <MobilePage01 
                     title="Asian Elephant" 
                     image="https://i.ibb.co/c22ftyx/01.png" 
@@ -114,6 +130,7 @@ export const AsianElephantMobile = (props) => {
             </div>
 
             <div className="mobile-page page02" ref={page2}>
+                {/*use mobile page component 2 and pass animal specific props*/}
                 <MobilePage02
                     name="Elephas Maximus"
                     location="Asia"
@@ -123,6 +140,7 @@ export const AsianElephantMobile = (props) => {
             </div>
 
             <div className="mobile-page page03" ref={page3}>
+                {/*use mobile page component 3 and pass animal specific props*/}
                 <MobilePage03
                     title="Asian Elephant"
                     para1="The Asian elephant plays an important role in the forest and grasslands ecosystem. This is because they help to maintain the health of these habitats. Asian elephants eat many different plants, and as they travel around, their dung is dropped, which is filled with many different seeds. They help spread plants around the environment, which helps to keep the ecosystem diverse. This is important because it keeps the habitat healthy which benefits the many animals that live there."
@@ -137,6 +155,7 @@ export const AsianElephantMobile = (props) => {
             </div>
 
             <div className="mobile-page page04" ref={page4}>
+                {/*use mobile page component 4 and pass animal specific props*/}
                 <MobilePage04
                     status="Endangered"
                     image="https://i.ibb.co/pQyPS6p/Vector.png"
@@ -149,6 +168,7 @@ export const AsianElephantMobile = (props) => {
             </div>
 
             <div className="mobile-page page05" ref={page5}>
+                {/*use mobile page component 5 and pass animal specific props*/}
                 <MobilePage05
                     animal="asianElephant"
                     text="Explore the population of Asian elephants in different areas of the world."
@@ -158,6 +178,7 @@ export const AsianElephantMobile = (props) => {
             </div>
 
             <div className="mobile-page page06" ref={page6}>
+                {/*use mobile page component 6 for asian elephant and pass animal specific props*/}
                 <MobilePage06AsianElephant
                     animal="asianElephant"
                     image="https://i.ibb.co/mXYxC5d/06-History.png"
@@ -166,6 +187,7 @@ export const AsianElephantMobile = (props) => {
             </div>
 
             <div className="mobile-page page07" ref={page7}>
+                {/*use mobile page component 7 and pass animal specific props*/}
                 <MobilePage07
                     animal="asianElephant"
                     image1="https://i.ibb.co/BNn6mSf/07-Future-Positive.png"
@@ -178,6 +200,7 @@ export const AsianElephantMobile = (props) => {
             </div>
 
             <div className="mobile-page page08" ref={page8}>
+                {/*use mobile page component 8 and pass animal specific props*/}
                 <MobilePage08
                     animal="asianElephant"
                     text="Without change, the Asian elephant is in danger of extinction in the near future. It is up to us to take action in order to save the Asian elephant species. Many people are not aware of how humans are hurting the population, and you can help by spreading the word and sharing your knowledge. If you would like to learn more about how you can help the Asian elephant population, take a look at the conservation efforts below."
@@ -200,6 +223,7 @@ export const AsianElephantMobile = (props) => {
             </div>
 
             <div className="mobile-page page09" ref={page9}>
+                {/*use mobile page component 9 and pass animal specific props*/}
                 <MobilePage09
                     text="Launch into the Asian elephants’s habitat to explore their home and play activities to learn more about them."
                     image="https://i.ibb.co/jwm1hfw/Vector.png"
@@ -209,6 +233,7 @@ export const AsianElephantMobile = (props) => {
                 />
             </div>
 
+            {/*info image to rotate screen when in landscape*/}
             <img className="rotate-img" src="https://i.ibb.co/rtQrTgT/Rotate-Landscape.png"/>
         </div>
     );

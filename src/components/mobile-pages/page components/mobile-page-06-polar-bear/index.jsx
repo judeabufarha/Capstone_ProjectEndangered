@@ -7,6 +7,7 @@ export const MobilePage06PolarBear = (props) => {
 
     return (
         <div className="mobile-page-06-polar-bear">
+            {/*background image of timeline*/}
             <div className="pb-past-background">
                     <img
                         className="pb-past-image"
@@ -15,24 +16,30 @@ export const MobilePage06PolarBear = (props) => {
                     />
             </div>
             <div className="pb-past">
+                {/*page title*/}
                 <h1 className="pb-past-title">The Past</h1>
 
                 <div className="pb-past-timeline">
                     <div className="pb-past-timeline-base">
                         <div className="pb-past-points">
                             <div className="pb-past-point1">
+                                {/*use discus date component*/}
                                 <DiscusDate date="1960"/>
                             </div>
                             <div className="pb-past-point2">
+                                {/*use discus date component*/}
                                 <DiscusDate date="1980"/>
                             </div>
                             <div className="pb-past-point3">
+                                {/*use discus date component*/}
                                 <DiscusDate date="2000"/>
                             </div>
                             <div className="pb-past-point4">
+                                {/*use discus date component*/}
                                 <DiscusDate date="2020"/>
                             </div>
                         </div>
+                        {/*lines of timeline*/}
                         <img
                             className="pb-past-lines"
                             src="https://i.ibb.co/jRBsFZg/Lines.png"
@@ -40,6 +47,7 @@ export const MobilePage06PolarBear = (props) => {
                         />
                     </div>
 
+                    {/*timeline event marker*/}     
                     <div className="pb-past-event1">
                         <TimelineMarkerMobile
                             type="double"
@@ -50,6 +58,7 @@ export const MobilePage06PolarBear = (props) => {
                             text2="Commercial hunting of polar bears is now regulated."
                         />
                     </div>
+                    {/*timeline event marker*/}
                     <div className="pb-past-event2">
                         <TimelineMarkerMobile
                             type="double"
@@ -62,6 +71,7 @@ export const MobilePage06PolarBear = (props) => {
                     </div>
                 </div>
                 
+                {/*extra space for mobile scrolling*/}
                 <div className="mobile-space"></div>
             </div>
       </div>

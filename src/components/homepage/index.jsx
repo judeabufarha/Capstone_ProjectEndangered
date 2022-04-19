@@ -6,6 +6,7 @@ import { useHistory } from "react-router-dom";
 import smoothscroll from 'smoothscroll-polyfill';
 
 export const HomePage = (props) => {
+    //define constant variables
     const history = useHistory(); 
     const scrollAnchor = useRef(null);
 
@@ -15,6 +16,7 @@ export const HomePage = (props) => {
 
     return (
         <div className="homepage-container">
+            {/*use hero image component*/}
             <HeroImage
                 //on click, scroll to first animal on page
                 scrollFn={() => {
@@ -25,6 +27,7 @@ export const HomePage = (props) => {
             <div className="scroll-content"  ref={scrollAnchor}>
                 {/*display for desktop*/}
                 <div className="homepage-animals-desktop">
+                    {/*use homepage animal component*/}
                     <HomePageAnimal
                         type="odd"
                         bg="white-bg"
@@ -37,6 +40,7 @@ export const HomePage = (props) => {
                         }}
                     />
 
+                    {/*use homepage animal component*/}
                     <HomePageAnimal
                         type="even"
                         bg="grey-bg"
@@ -49,6 +53,7 @@ export const HomePage = (props) => {
                         }}
                     />
 
+                    {/*use homepage animal component*/}
                     <HomePageAnimal
                         type="odd"
                         bg="white-bg"
@@ -61,6 +66,7 @@ export const HomePage = (props) => {
                         }}
                     />
 
+                    {/*use homepage animal component*/}
                     <HomePageAnimal
                         type="even"
                         bg="grey-bg"
@@ -77,6 +83,7 @@ export const HomePage = (props) => {
 
                 {/*display for mobile*/}
                 <div className="homepage-animals-mobile">
+                    {/*use homepage animal component*/}
                     <HomePageAnimal
                         type="odd"
                         bg="white-bg"
@@ -89,6 +96,7 @@ export const HomePage = (props) => {
                         }}
                     />
 
+                    {/*use homepage animal component*/}
                     <HomePageAnimal
                         type="odd"
                         bg="grey-bg"
@@ -101,6 +109,7 @@ export const HomePage = (props) => {
                         }}
                     />
 
+                    {/*use homepage animal component*/}
                     <HomePageAnimal
                         type="odd"
                         bg="white-bg"
@@ -113,6 +122,7 @@ export const HomePage = (props) => {
                         }}
                     />
 
+                    {/*use homepage animal component*/}
                     <HomePageAnimal
                         type="odd"
                         bg="grey-bg"
@@ -125,6 +135,7 @@ export const HomePage = (props) => {
                         }}
                     />
 
+                    {/*info image to rotate screen when in landscape*/}
                     <img className="rotate-img" src="https://i.ibb.co/rtQrTgT/Rotate-Landscape.png"/> 
 
                 </div>
