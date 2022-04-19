@@ -8,10 +8,13 @@ export const MobilePage08 = (props) => {
         <div className="mobile-page-08">
             <div className="mobile-conservation">
                 <div className="mobile-conservation-content">
+                    {/*title of page and paragraph text*/}
                     <h1 className="mobile-conservation-title">Conservation</h1>
                     <p className="mobile-conservation-details">{props.text}</p>
+                    {/*conservation information*/}
                     <div className="mobile-conservation-blobs">
                         <div className="mobile-conservation-blob">
+                            {/*use info blob component*/}
                             <InfoBlob
                                 BgImage={props.blob1}
                                 linkText="Learn More"
@@ -19,12 +22,13 @@ export const MobilePage08 = (props) => {
                                 text={props.text1}
                                 butnColour={props.colour1}
                                 linkFn={() => {
-                                    window.open(props.link1, "_blank");
+                                    window.open(props.link1, "_blank"); //on click, open new tab to linked conservation resource 
                                 }}
                             />
                         </div>
 
                         <div className="mobile-conservation-blob">
+                            {/*use info blob component*/}
                             <InfoBlob
                                 BgImage={props.blob2}
                                 linkText="Learn More"
@@ -32,12 +36,13 @@ export const MobilePage08 = (props) => {
                                 text={props.text2}
                                 butnColour={props.colour2}
                                 linkFn={() => {
-                                    window.open(props.link2, "_blank");
+                                    window.open(props.link2, "_blank"); //on click, open new tab to linked conservation resource 
                                 }}
                             />
                         </div>
 
                         <div className="mobile-conservation-blob">
+                            {/*use info blob component*/}
                             <InfoBlob
                                 BgImage={props.blob3}
                                 linkText="Learn More"
@@ -45,7 +50,7 @@ export const MobilePage08 = (props) => {
                                 text={props.text3}
                                 butnColour={props.colour3}
                                 linkFn={() => {
-                                    window.open(props.link3, "_blank");
+                                    window.open(props.link3, "_blank"); //on click, open new tab to linked conservation resource 
                                 }}
                             />
                         </div>
@@ -53,6 +58,7 @@ export const MobilePage08 = (props) => {
                     </div>
                 </div>
                 
+                {/*extra space for mobile scrolling*/}
                 <div className="mobile-space"></div>
             </div>
       </div>

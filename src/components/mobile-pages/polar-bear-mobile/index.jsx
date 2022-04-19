@@ -13,100 +13,115 @@ import { ToggleContext } from "../../../contexts/ToggleContext";
 import { useSwipeable } from 'react-swipeable';
 
 export const PolarBearMobile = (props) => {
-    const { mobilePage, initializePage  } = useContext(ToggleContext);
-
-    const { pageState, setPageState, animal, AnimalDictionary, subMenuItems ,setsubMenuItems, templateMenu } = useContext(ToggleContext);
-
-    var currentPage = mobilePage;
-
-    const handlers = useSwipeable({
-        onSwipedLeft: () => swipeLeft(),
-        onSwipedRight: () => swipeRight(),
-        preventDefaultTouchmoveEvent: true,
-        trackMouse: true
-    });
-
-    const swipeLeft = () => {
-        if (currentPage != 8) {
-            currentPage ++;
-            initializePage(currentPage);
-            console.log("swipe left" + currentPage);
-            handleStepNavigation(currentPage);
-        }
-    };
-
-    const swipeRight = () => {
-        if (currentPage != 0) {
-            currentPage --;
-            initializePage(currentPage);
-            console.log("swipe right" + currentPage);
-            handleStepNavigation(currentPage);
-        }
-
-    };
-
-    const handleStepNavigation = (index) => {
-        const tmpState = { ...pageState };
-        tmpState.currentStep = index;
-        setPageState(tmpState)
-    
-        const tmpSubMenuItems = {...subMenuItems}
-        tmpSubMenuItems.animals[AnimalDictionary[animal]] = [...templateMenu];
-        tmpSubMenuItems.animals[AnimalDictionary[animal]][index].isEnabled = true;
-        setsubMenuItems({...tmpSubMenuItems})
-    };
-
-    const page1 = useRef(null);
-    const page2 = useRef(null);
-    const page3 = useRef(null);
-    const page4 = useRef(null);
-    const page5 = useRef(null);
-    const page6 = useRef(null);
-    const page7 = useRef(null);
-    const page8 = useRef(null);
-    const page9 = useRef(null);
-
-    useEffect(() => {
-        if (currentPage == 0) {
-            page1.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-        }
-
-        else if (currentPage == 1) {
-            page2.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-        }
-
-        else if (currentPage == 2) {
-            page3.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-        }
-
-        else if (currentPage == 3) {
-            page4.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-        }
-
-        else if (currentPage == 4) {
-            page5.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-        }
-
-        else if (currentPage == 5) {
-            page6.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-        }
-
-        else if (currentPage == 6) {
-            page7.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-        }
-
-        else if (currentPage == 7) {
-            page8.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-        }
-
-        else if (currentPage == 8) {
-            page9.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-        }
-    }, [currentPage]);
+     //define constant variables
+     const { mobilePage, initializePage } = useContext(ToggleContext);
+     const { pageState, setPageState, animal, AnimalDictionary, subMenuItems ,setsubMenuItems, templateMenu } = useContext(ToggleContext);
+ 
+     var currentPage = mobilePage;
+ 
+     //detect swipe
+     const handlers = useSwipeable({
+         onSwipedLeft: () => swipeLeft(), //call function for left swipe
+         onSwipedRight: () => swipeRight(), //call function for right swipe
+         preventDefaultTouchmoveEvent: true,
+         trackMouse: true
+     });
+ 
+     //on swipe left
+     const swipeLeft = () => {
+         //first check if on the last page
+         if (currentPage != 8) {
+             currentPage ++; //add to current page count
+             initializePage(currentPage); //set current page in context
+             console.log("swipe left" + currentPage);
+             handleStepNavigation(currentPage); //update side menu
+         }
+     };
+ 
+     //on swipe right
+     const swipeRight = () => {
+         //first check if on the first page
+         if (currentPage != 0) {
+             currentPage --; //remove from current page count
+             initializePage(currentPage); //set current page in context
+             console.log("swipe right" + currentPage);
+             handleStepNavigation(currentPage); //update side menu
+         }
+ 
+     };
+ 
+     //update side menu and pass current page to function
+     const handleStepNavigation = (index) => {
+         //define temporary page state
+         const tmpState = { ...pageState };
+         //set temporary state to index
+         tmpState.currentStep = index;
+         //set page state in context
+         setPageState(tmpState)
+     
+         //define temporary sub menu items
+         const tmpSubMenuItems = {...subMenuItems}
+ 
+         //use temporary variable to determine what sub menu items are displayed in side menu
+         tmpSubMenuItems.animals[AnimalDictionary[animal]] = [...templateMenu];
+         tmpSubMenuItems.animals[AnimalDictionary[animal]][index].isEnabled = true;
+         setsubMenuItems({...tmpSubMenuItems})
+     };
+ 
+     //define all refs
+     const page1 = useRef(null);
+     const page2 = useRef(null);
+     const page3 = useRef(null);
+     const page4 = useRef(null);
+     const page5 = useRef(null);
+     const page6 = useRef(null);
+     const page7 = useRef(null);
+     const page8 = useRef(null);
+     const page9 = useRef(null);
+ 
+     //use current page value to determine what page is displayed
+     useEffect(() => {
+         if (currentPage == 0) {
+             page1.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 1
+         }
+ 
+         else if (currentPage == 1) {
+             page2.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 2
+         }
+ 
+         else if (currentPage == 2) {
+             page3.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 3
+         }
+ 
+         else if (currentPage == 3) {
+             page4.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 4
+         }
+ 
+         else if (currentPage == 4) {
+             page5.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 5
+         }
+ 
+         else if (currentPage == 5) {
+             page6.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 6
+         }
+ 
+         else if (currentPage == 6) {
+             page7.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 7
+         }
+ 
+         else if (currentPage == 7) {
+             page8.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 8
+         }
+ 
+         else if (currentPage == 8) {
+             page9.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); //scroll to page 9
+         }
+     }, [currentPage]);
 
     return (
         <div className="polar-bear-mobile-container" {...handlers}>
             <div className="mobile-page page 01" ref={page1}>
+                {/*use mobile page component 1 and pass animal specific props*/}
                 <MobilePage01 
                     title="Polar Bear" 
                     image="https://i.ibb.co/37WjKvs/01-The-Polar-Bear.png" 
@@ -115,6 +130,7 @@ export const PolarBearMobile = (props) => {
             </div>
 
             <div className="mobile-page page02" ref={page2}>
+                {/*use mobile page component 2 and pass animal specific props*/}
                 <MobilePage02
                     name="Ursus Maritimus"
                     location="Arctic Circle"
@@ -124,6 +140,7 @@ export const PolarBearMobile = (props) => {
             </div>
 
             <div className="mobile-page page03" ref={page3}>
+                {/*use mobile page component 3 and pass animal specific props*/}
                 <MobilePage03
                     title="Polar Bear"
                     para1="The polar bear is a keystone species, which means they have an important role in balancing the Arctic ecosystem.  They are also at the top of the food chain, which makes them an apex predator. Without polar bears, the population of their prey would begin to grow, and the entire Arctic ecosystem would be thrown out of balance. Because the polar bear is a keystone species, they are a reflection of the health of their ecosystem. If the keystone species is endangered, the entire ecosystem is put at risk."
@@ -138,6 +155,7 @@ export const PolarBearMobile = (props) => {
             </div>
 
             <div className="mobile-page page04" ref={page4}>
+                {/*use mobile page component 4 and pass animal specific props*/}
                 <MobilePage04
                     status="Vulnerable"
                     image="https://i.ibb.co/zxn68hP/Vector.png"
@@ -149,6 +167,7 @@ export const PolarBearMobile = (props) => {
             </div>
 
             <div className="mobile-page page05" ref={page5}>
+                {/*use mobile page component 5 and pass animal specific props*/}
                 <MobilePage05
                     animal="polarBear"
                     text="Explore the population of polar bears in different areas of the world."
@@ -158,6 +177,7 @@ export const PolarBearMobile = (props) => {
             </div>
 
             <div className="mobile-page page06" ref={page6}>
+                {/*use mobile page component 6 for polar bear and pass animal specific props*/}
                 <MobilePage06PolarBear
                     animal="polarBear"
                     image="https://i.ibb.co/x3Y69ZC/06-History.png"
@@ -166,6 +186,7 @@ export const PolarBearMobile = (props) => {
             </div>
 
             <div className="mobile-page page07" ref={page7}>
+                {/*use mobile page component 7 and pass animal specific props*/}
                 <MobilePage07
                     animal="polarBear"
                     image1="https://i.ibb.co/6ynLGGX/07-Future-Positive.png"
@@ -178,6 +199,7 @@ export const PolarBearMobile = (props) => {
             </div>
 
             <div className="mobile-page page08" ref={page8}>
+                {/*use mobile page component 8 and pass animal specific props*/}
                 <MobilePage08
                     animal="polarBear"
                     text="Without global change, the polar bear will be extinct by 2100. It is up to us to change our ways in order to save the polar bear species. There are many ways each of us can help save the polar bears, including volunteering, fighting climate change, and raising money for conservation efforts. If you would like to learn more about how you can help the polar bear population, take a look at the conservation efforts below."
@@ -200,6 +222,7 @@ export const PolarBearMobile = (props) => {
             </div>
 
             <div className="mobile-page page09" ref={page9}>
+                {/*use mobile page component 9 and pass animal specific props*/}
                 <MobilePage09
                     text="Launch into the polar bear’s habitat to explore their home and play activities to learn more about them."
                     image="https://i.ibb.co/Q6wzNSn/Vector.png"
@@ -209,6 +232,7 @@ export const PolarBearMobile = (props) => {
                 />
             </div>
             
+            {/*info image to rotate screen when in landscape*/}
             <img className="rotate-img" src="https://i.ibb.co/rtQrTgT/Rotate-Landscape.png"/>
         </div>
     );

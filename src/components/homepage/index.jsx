@@ -6,22 +6,28 @@ import { useHistory } from "react-router-dom";
 import smoothscroll from 'smoothscroll-polyfill';
 
 export const HomePage = (props) => {
+    //define constant variables
     const history = useHistory(); 
     const scrollAnchor = useRef(null);
 
+    //allow for smooth scroll down page
     smoothscroll.polyfill();
     window.__forceSmoothScrollPolyfill__ = true;
 
     return (
         <div className="homepage-container">
+            {/*use hero image component*/}
             <HeroImage
+                //on click, scroll to first animal on page
                 scrollFn={() => {
                     scrollAnchor.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
                 }}
             />
 
             <div className="scroll-content"  ref={scrollAnchor}>
+                {/*display for desktop*/}
                 <div className="homepage-animals-desktop">
+                    {/*use homepage animal component*/}
                     <HomePageAnimal
                         type="odd"
                         bg="white-bg"
@@ -30,10 +36,11 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/X20RgwQ/Vector.png"
                         alt="3d image of polar bears in habitat."
                         linkFn={() => {
-                            history.push("/polar-bear");
+                            history.push("/polar-bear"); //on click, push to animal page
                         }}
                     />
 
+                    {/*use homepage animal component*/}
                     <HomePageAnimal
                         type="even"
                         bg="grey-bg"
@@ -42,10 +49,11 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/HgJyygS/Vector.png"
                         alt="3d image of Asian elephant in habitat."
                         linkFn={() => {
-                            history.push("/asian-elephant");
+                            history.push("/asian-elephant"); //on click, push to animal page
                         }}
                     />
 
+                    {/*use homepage animal component*/}
                     <HomePageAnimal
                         type="odd"
                         bg="white-bg"
@@ -54,10 +62,11 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/3dLGy0s/Vector-38.png"
                         alt="3d image of whooping crane in habitat."
                         linkFn={() => {
-                            history.push("/whooping-crane");
+                            history.push("/whooping-crane"); //on click, push to animal page
                         }}
                     />
 
+                    {/*use homepage animal component*/}
                     <HomePageAnimal
                         type="even"
                         bg="grey-bg"
@@ -66,13 +75,15 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/ssM24wh/Vector-39.png"
                         alt="3d image of whooping crane in habitat."
                         linkFn={() => {
-                            history.push("/sea-turtle");
+                            history.push("/sea-turtle"); //on click, push to animal page
                         }}
                     />
 
                 </div>
 
+                {/*display for mobile*/}
                 <div className="homepage-animals-mobile">
+                    {/*use homepage animal component*/}
                     <HomePageAnimal
                         type="odd"
                         bg="white-bg"
@@ -81,10 +92,11 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/X20RgwQ/Vector.png"
                         alt="3d image of polar bears in habitat."
                         linkFn={() => {
-                            history.push("/polar-bear");
+                            history.push("/polar-bear"); //on click, push to animal page
                         }}
                     />
 
+                    {/*use homepage animal component*/}
                     <HomePageAnimal
                         type="odd"
                         bg="grey-bg"
@@ -93,10 +105,11 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/HgJyygS/Vector.png"
                         alt="3d image of Asian elephant in habitat."
                         linkFn={() => {
-                            history.push("/asian-elephant");
+                            history.push("/asian-elephant"); //on click, push to animal page
                         }}
                     />
 
+                    {/*use homepage animal component*/}
                     <HomePageAnimal
                         type="odd"
                         bg="white-bg"
@@ -105,10 +118,11 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/3dLGy0s/Vector-38.png"
                         alt="3d image of whooping crane in habitat."
                         linkFn={() => {
-                            history.push("/whooping-crane");
+                            history.push("/whooping-crane"); //on click, push to animal page
                         }}
                     />
 
+                    {/*use homepage animal component*/}
                     <HomePageAnimal
                         type="odd"
                         bg="grey-bg"
@@ -117,11 +131,12 @@ export const HomePage = (props) => {
                         image="https://i.ibb.co/ssM24wh/Vector-39.png"
                         alt="3d image of whooping crane in habitat."
                         linkFn={() => {
-                            history.push("/sea-turtle");
+                            history.push("/sea-turtle"); //on click, push to animal page
                         }}
                     />
 
-                    <img className="rotate-img" src="https://i.ibb.co/rtQrTgT/Rotate-Landscape.png"/>
+                    {/*info image to rotate screen when in landscape*/}
+                    <img className="rotate-img" src="https://i.ibb.co/rtQrTgT/Rotate-Landscape.png"/> 
 
                 </div>
 

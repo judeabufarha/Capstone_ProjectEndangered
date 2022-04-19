@@ -4,10 +4,12 @@ import DiscusDate from "../../../DiscusDate";
 import { TimelineMarkerMobile } from "../../../timeline-marker-mobile";
 
 export const MobilePage06SeaTurtle = (props) => {
+    //define image for timeline points
     const urlOfImage = 'https://i.ibb.co/9p445Fk/Ellipse-12-1.png';
 
     return (
         <div className="mobile-page-06-sea-turtle">
+            {/*background image of timeline*/}
             <div className="st-past-background">
                     <img
                         className="ae-past-image"
@@ -16,24 +18,30 @@ export const MobilePage06SeaTurtle = (props) => {
                     />
             </div>
             <div className="st-past">
+                {/*page title*/}
                 <h1 className="st-past-title">The Past</h1>
 
                 <div className="st-past-timeline">
                     <div className="st-past-timeline-base">
                         <div className="st-past-points">
                             <div className="st-past-point1">
+                                {/*use discus date component*/}
                                 <DiscusDate date="1960" image={urlOfImage}/>
                             </div>
                             <div className="st-past-point2">
+                                {/*use discus date component*/}
                                 <DiscusDate date="1980" image={urlOfImage}/>
                             </div>
                             <div className="st-past-point3">
+                                {/*use discus date component*/}
                                 <DiscusDate date="2000" image={urlOfImage}/>
                             </div>
                             <div className="st-past-point4">
+                                {/*use discus date component*/}
                                 <DiscusDate date="2020" image={urlOfImage}/>
                             </div>
                         </div>
+                        {/*lines of timeline*/}
                         <img
                             className="st-past-lines"
                             src="https://i.ibb.co/jRBsFZg/Lines.png"
@@ -41,6 +49,7 @@ export const MobilePage06SeaTurtle = (props) => {
                         />
                     </div>
 
+                    {/*timeline event marker*/}
                     <div className="st-past-event1">
                         <TimelineMarkerMobile
                             type="double"
@@ -51,6 +60,7 @@ export const MobilePage06SeaTurtle = (props) => {
                             text2="The green sea turtle is classified as endangered internationally."
                         />
                     </div>
+                    {/*timeline event marker*/}
                     <div className="st-past-event2">
                         <TimelineMarkerMobile
                             type="single"
@@ -61,6 +71,7 @@ export const MobilePage06SeaTurtle = (props) => {
                     </div>
                 </div>
                 
+                {/*extra space for mobile scrolling*/}
                 <div className="mobile-space"></div>
             </div>
       </div>
