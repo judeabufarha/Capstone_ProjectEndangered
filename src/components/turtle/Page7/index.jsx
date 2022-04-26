@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import ToggleButtons from "../../toggle-buttons";
 import "./style.scss";
 
+
+/** Turtle Page 7 */
 const Page7 = ({ offset, color }) => {
   const [showImage, setShowImage] = useState(true);
 
@@ -18,6 +20,7 @@ const Page7 = ({ offset, color }) => {
         <div className={`gradient ${color}`} />
       </ParallaxLayer>
 
+ {/** Render background - 2 options postive and negative. Default is positive and can toggle between both with transition fade animation */}
       <ParallaxLayer offset={offset} speed={0} className="page7">
             <div className="future-background">
                     <img
@@ -35,6 +38,7 @@ const Page7 = ({ offset, color }) => {
             </div>
       </ParallaxLayer>
 
+ {/** Future Title layer */}
       <ParallaxLayer offset={offset} speed={0.6} className="page7">
         <div className="wrapperCommonContainer futureTitle">
           <div className="commonContainer">
@@ -43,6 +47,7 @@ const Page7 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+    {/** Toggle Button layer */}
       <ParallaxLayer offset={offset} speed={1.2} className="page7">
         <div className="wrapperCommonContainer futureText">
           <div className="commonContainer commonContainer_whiteRadius">

@@ -1,6 +1,7 @@
 import { ParallaxLayer } from "@react-spring/parallax";
 import "./style.scss";
 
+/** Turtle Page 4*/
 const Page4 = ({ offset, color }) => {
   return (
     <>
@@ -19,6 +20,7 @@ const Page4 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+    {/** Status and endangered title layer - moving together */}
       <ParallaxLayer className="" offset={offset} speed={0.9}>
         <div className="wrapperCommonContainer statusTextArea">
           <div className="commonContainerSpecial">
@@ -35,6 +37,7 @@ const Page4 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+      {/** Paragraphs section - moving at the same speed*/}
       <ParallaxLayer offset={offset} speed={1.2}>
         <div className="SideOceanImage">
           <div className="flexContainer100">

@@ -1,13 +1,9 @@
-// Background Image
-// Standing Polarbear Image 
-// Birds Image 
-// Text Area (component) - consists of h1:title and h2:text
-// Line 
 
 import { ParallaxLayer } from "@react-spring/parallax";
 import TextTitle from "../../textTitle";
 import "./style.scss";
 
+/** Page 2 for the Turtle  **/
 const Page2 = ({ offset, color }) => {
   
   const pageItemListTurt = [
@@ -38,6 +34,7 @@ const Page2 = ({ offset, color }) => {
       <div className={`gradient ${color}`} />
     </ParallaxLayer>
 
+     {/* Turtle title layer **/}
     <ParallaxLayer className="itemlists" offset={offset} speed={0.6}>
       <div className="textListContainer">
         <div className="textListContainer_flex">
@@ -47,6 +44,7 @@ const Page2 = ({ offset, color }) => {
     </ParallaxLayer>
     
 
+ {/* Turtle shadow layer **/}
     <ParallaxLayer className="turtleAndShadow" offset={offset} speed={0.6}>
       <img
         className="turtShadow"

@@ -18,6 +18,7 @@ const Page5 = ({ offset, color }) => {
         <div className={`gradient ${color}`} />
       </ParallaxLayer>
 
+       {/** Population title layer*/}
       <ParallaxLayer offset={offset} speed={0.6}>
         <div className="wrapperCommonContainer populationTitle">
           <div className="commonContainerSpecial">
@@ -26,6 +27,7 @@ const Page5 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+       {/** Toggle button layer*/}
       <ParallaxLayer
         className="p5toggleButtonsParent"
         offset={offset}
@@ -33,6 +35,7 @@ const Page5 = ({ offset, color }) => {
         style={{ height: `100px` }}
         aria-label="then-now toggle"
       >
+        
         <div className="wrapperCommonContainer ">
           <div className="commonContainerSpecial toggleButtons">
             <div className="flexContainer100">
@@ -67,7 +70,7 @@ const Page5 = ({ offset, color }) => {
       </ParallaxLayer>
 
      
-
+ {/** Markers changing size layer, each marker comoponent is rendered and passed a size for then and now also passed text for the tooltip*/}
       <ParallaxLayer offset={offset} className={`page5 ${!now ? 'then' : 'now'}`} speed={0.8}>
         <div className="wrapperCommonContainer marker marker-15"> 
           <div className="commonContainerSpecial">

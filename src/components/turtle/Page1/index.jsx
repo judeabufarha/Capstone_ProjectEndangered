@@ -1,6 +1,7 @@
 import { ParallaxLayer } from "@react-spring/parallax";
 import "./style.scss";
 
+/** Page 1 for the Turtle  **/
 const Page1 = ({ offset, color }) => (
   <>
    <ParallaxLayer offset={offset} speed={0.2}>
@@ -10,6 +11,8 @@ const Page1 = ({ offset, color }) => (
       <div className={`gradient ${color}`} />
     </ParallaxLayer>
 
+
+    {/* Turtle title layer **/}
     <ParallaxLayer className="turtleTitle" offset={offset} speed={0.6}>
     <h1 className="titleText">The<br></br></h1>
     <h1 className="titleTextAnim">Green Sea </h1>
@@ -17,7 +20,7 @@ const Page1 = ({ offset, color }) => (
     </ParallaxLayer>
 
   
-    
+    {/* Swimming Turtle layer **/}
     <ParallaxLayer className="turtleImageWithShadow" offset={offset} speed={0.8}>
       <img
         className="swimTurtle"
@@ -26,6 +29,7 @@ const Page1 = ({ offset, color }) => (
       />
     </ParallaxLayer>
 
+    {/* Bubble layer **/}
     <ParallaxLayer className="waterDetails" offset={offset} speed={1.2}>
       <img
         className="bubbles"
@@ -34,6 +38,7 @@ const Page1 = ({ offset, color }) => (
       />
     </ParallaxLayer>
 
+  {/* Light layer **/}
     <ParallaxLayer className="lightDetails" offset={offset} speed={1.0}>
       <img
         className="lightEffect"
@@ -42,6 +47,8 @@ const Page1 = ({ offset, color }) => (
       />
     </ParallaxLayer>
 
+
+  {/* Ground layer **/}
     <ParallaxLayer className="groundDetails" offset={offset} speed={0.6}>
       <img
         className="rockDetail"
