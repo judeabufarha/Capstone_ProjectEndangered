@@ -3,8 +3,10 @@ import InfoBlob from "../../infoBlob";
 import TrioImg from "../../trioImg";
 import "./styles.scss";
 
+/** Elephant Page 8 */
 const Page8 = ({ offset, color }) => {
 
+  /** Calling infoblob components passing a background image, text, button colour, title */
   const linkSections = [
     <InfoBlob
       BgImage="https://i.ibb.co/9cKpF7q/blob1.png"
@@ -59,6 +61,7 @@ const Page8 = ({ offset, color }) => {
         <div className={`gradient ${color}`} />
       </ParallaxLayer>
 
+{/** Conservation Title layer */}
       <ParallaxLayer className="page8" offset={offset} speed={0.6}>
         <div className="wrapperCommonContainer conservationTitle">
           <div className="commonContainer">
@@ -67,6 +70,7 @@ const Page8 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+{/** Paragraph layer */}
       <ParallaxLayer className="page8" offset={offset} speed={1.2}>
         <div className="wrapperCommonContainer conservationText">
           <div className="commonContainer">
@@ -77,6 +81,7 @@ const Page8 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+{/** Link Sections layer */}
       <ParallaxLayer className="page8" offset={offset} speed={1.2}>
         <div className="wrapperCommonContainer polarInfoImg">
           <div className="commonContainerSpecial">

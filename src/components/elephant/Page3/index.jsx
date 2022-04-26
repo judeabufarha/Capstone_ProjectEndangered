@@ -2,7 +2,10 @@ import { ParallaxLayer } from "@react-spring/parallax";
 import TrioImg from "../../trioImg";
 import "./style.scss";
 
+
+/** Elephant Page 3 **/
 const Page3 = ({ offset, color }) => {
+   /** group of 3 images on the imporatance page **/
   const groupAnimalsEleph = [
     <img src="https://i.ibb.co/jGS0qJ4/Vector-22.png" alt="long grass" />,
     <img src="https://i.ibb.co/G3M4302/Vector-23.png" alt="elephant"  />,
@@ -16,6 +19,7 @@ const Page3 = ({ offset, color }) => {
         <div className={`gradient ${color}`} />
       </ParallaxLayer>
 
+ {/** Imporatance title layer **/}
       <ParallaxLayer offset={offset} speed={0.6}>
         <div className="wrapperCommonContainer importanceTitle">
           <div className="commonContainer">
@@ -24,6 +28,7 @@ const Page3 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+ {/** Paragraph text section, line break between both - entire section moves at the same speed **/}
       <ParallaxLayer offset={offset} speed={0.9}>
         <div className="wrapperCommonContainer textAreaContainer">
           <div className="commonContainer">
@@ -38,6 +43,7 @@ const Page3 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+ {/** Group of 3 images moving together within the layer **/}
       <ParallaxLayer offset={offset} speed={1.2}>
         <div className="wrapperCommonContainer polarAnimImg">
           <div className="commonContainerSpecial">

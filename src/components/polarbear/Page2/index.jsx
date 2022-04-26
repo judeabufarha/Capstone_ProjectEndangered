@@ -1,15 +1,12 @@
-// Background Image
-// Standing Polarbear Image 
-// Birds Image 
-// Text Area (component) - consists of h1:title and h2:text
-// Line 
 
 import { ParallaxLayer } from "@react-spring/parallax";
 import TextTitle from "../../textTitle";
 import "./styles.scss";
 
+/** Page 2 for the PolarBear  **/
 const Page2 = ({ offset, color }) => {
   
+  /** Structure holding polarbear about information **/
   const pageItemList = [
     {
       title: "Scientific Name",
@@ -40,6 +37,7 @@ const Page2 = ({ offset, color }) => {
       <div className={`gradient ${color}`} />
     </ParallaxLayer>
 
+     {/** About information layer  **/}
     <ParallaxLayer className="itemlists" offset={offset} speed={0.6}>
       <div className="textListContainer">
         <div className="textListContainer_flex">
@@ -48,7 +46,7 @@ const Page2 = ({ offset, color }) => {
       </div>
     </ParallaxLayer>
     
-
+ {/** standing polarbear layer  **/}
     <ParallaxLayer className="standingPolarbear" offset={offset} speed={0.6}>
       <img
         className="standPolar"
@@ -57,6 +55,7 @@ const Page2 = ({ offset, color }) => {
       />
     </ParallaxLayer>
 
+{/** birds layer  **/}
     <ParallaxLayer className="birdsSkyImg" offset={offset} speed={1.0}>
       <img
         className="birdsSky"

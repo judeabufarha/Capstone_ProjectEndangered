@@ -3,6 +3,7 @@ import "./styles.scss";
 import { useState } from "react";
 import { useEffect} from "react";
 
+/** menu Item component for a specific menu itme styled for both expanded and collapsed*/
 export const MenuItem = ({icon,text,state,expand,onClick,displayExpandIcon}) => {
     
     const [ selectedState, setSelectedState ] = useState(state)
@@ -10,6 +11,7 @@ export const MenuItem = ({icon,text,state,expand,onClick,displayExpandIcon}) => 
     const [count, setCount] = useState('0');
     
 
+    /** displaying expanded icon */
     const displayIcon = typeof displayExpandIcon !== 'undefined' ? displayExpandIcon : true;
    
     console.log({state})
@@ -22,6 +24,7 @@ export const MenuItem = ({icon,text,state,expand,onClick,displayExpandIcon}) => 
         
     }, [])
 
+    {/** Handling click on menu item*/}
     const handleClick = () => {
 
         if(onClick){
@@ -40,6 +43,7 @@ export const MenuItem = ({icon,text,state,expand,onClick,displayExpandIcon}) => 
         console.log(count); 
     }
 
+    {/** Defining a state for the menu item for styling*/}
     return (
         <div className="menu-item-container">
             <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>

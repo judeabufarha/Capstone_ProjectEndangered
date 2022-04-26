@@ -1,4 +1,6 @@
 import "./styles.scss";
+
+  {/**Tooltip Component */}
 export const Tooltip = (props) => {
   const { text, position, width } = props;
   const { title, description } = text;

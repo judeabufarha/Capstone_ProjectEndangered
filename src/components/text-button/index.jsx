@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useEffect} from "react";
 import Ripples from 'react-ripples';
 
+/** text button component*/
 export const TextButton = (props) => {
     const [colour, setColour] = useState(props.colour);
     const [hex, setHex] = useState('#01344033');
@@ -11,16 +12,18 @@ export const TextButton = (props) => {
     useEffect(() => {
         setColour(props.colour);
 
+        /**light colour style*/
         if (colour === "light") {
             setHex('#01344033');
         }
-    
+        /**dark colour style*/
         else if (colour === "dark") {
             setHex('#FFFFFF66');
         }
 
     }, [props.colour])
 
+    /**handle button on click*/
     const HandleOnClick = () => {
       if(props.onClick){
         props.onClick();

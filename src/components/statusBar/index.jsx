@@ -9,6 +9,7 @@ export const Statusbar = () => {
   const { pageState, setPageState, animal, menuStructure, subMenuItems, setsubMenuItems, templateMenu, AnimalDictionary} = appContext;
   const {currentStep} = pageState;
 
+  /** Same function used on the home animal page to handle the navigations*/
   const handleStepNavigation = (index) => {
     const tmpState = {...pageState};
     tmpState.currentStep = index;
@@ -25,6 +26,7 @@ export const Statusbar = () => {
     console.log({pageState})
   },[]);
 
+  /** Status bar rendereing dot colour depending on page */
   const statusDots = [
     { backgroundColor: "#FFFFFF" },
     { backgroundColor: "#013440" },
@@ -43,6 +45,7 @@ export const Statusbar = () => {
         <span
           onClick={() => handleStepNavigation(index)}
           className="dot"
+          /** Opacity depending on if item is selected*/
           style={{
             backgroundColor: statusDots[currentStep].backgroundColor,
             opacity: index === currentStep ? 1 : 0.5,

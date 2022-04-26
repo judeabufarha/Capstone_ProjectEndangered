@@ -2,8 +2,10 @@ import { ParallaxLayer } from "@react-spring/parallax";
 import TextTitle from "../../textTitle";
 import "./style.scss";
 
+/** Page 2 for the Crane  **/
 const Page2 = ({ offset, color }) => {
   
+  /** Structure holding crane about information **/
   const pageItemListCrane = [
     {
       title: "Scientific Name",
@@ -32,6 +34,7 @@ const Page2 = ({ offset, color }) => {
       <div className={`gradient ${color}`} />
     </ParallaxLayer>
 
+    {/** About information layer  **/}
     <ParallaxLayer className="itemlists" offset={offset} speed={0.6}>
       <div className="textListContainer">
         <div className="textListContainer_flex">
@@ -40,7 +43,7 @@ const Page2 = ({ offset, color }) => {
       </div>
     </ParallaxLayer>
     
-
+    {/** Flying Crane layer  **/}
     <ParallaxLayer className="flyingCrane" offset={offset} speed={0.6}>
       <img
         className="flyingCraneImg"
@@ -49,6 +52,7 @@ const Page2 = ({ offset, color }) => {
       />
     </ParallaxLayer>
 
+    {/** Water Details layer **/}
     <ParallaxLayer className="AboutWaterDetails" offset={offset} speed={0.8}>
       <img
         className="AboutWaterDetailsImg"

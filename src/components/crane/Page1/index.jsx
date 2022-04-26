@@ -1,6 +1,7 @@
 import { ParallaxLayer } from "@react-spring/parallax";
 import "./style.scss";
 
+/** Page 1 for the Crane  **/
 const Page1 = ({ offset, color }) => (
   <>
    <ParallaxLayer offset={offset} speed={0.2}>
@@ -10,13 +11,14 @@ const Page1 = ({ offset, color }) => (
       <div className={`gradient ${color}`} />
     </ParallaxLayer>
 
+    {/* Crane title layer **/}
     <ParallaxLayer className="craneTitle" offset={offset} speed={0.6}>
     <h1 className="titleText">The<br></br></h1>
     <h1 className="titleTextAnim">Whooping </h1>
     <h1 className="titleTextAnimLine2">Crane </h1>
     </ParallaxLayer>
 
-   
+   {/* Crane water details layer **/}
     <ParallaxLayer className="craneWaterDetails" offset={offset} speed={0.6}>
       <img
         className="waterLilypads"
@@ -24,7 +26,8 @@ const Page1 = ({ offset, color }) => (
         alt="Water Detail For Crane"
       />
     </ParallaxLayer>
-       
+    
+     {/* Crane  background reeds layer **/}
     <ParallaxLayer className="backgroundReedsCrane" offset={offset} speed={0.9}>
       <img
         className="backgroundReeds"
@@ -33,6 +36,7 @@ const Page1 = ({ offset, color }) => (
       />
     </ParallaxLayer>
 
+  {/* Crane  forground reeds layer **/}
     <ParallaxLayer className="foregroundReedsCrane" offset={offset} speed={0.9}>
       <img
         className="foregroundReeds"
@@ -41,6 +45,7 @@ const Page1 = ({ offset, color }) => (
       />
     </ParallaxLayer>
 
+  {/* Crane  main crane layer **/}
     <ParallaxLayer className="homeCrane" offset={offset} speed={1.2}>
       <img
         className="homeCraneImg"
@@ -49,6 +54,7 @@ const Page1 = ({ offset, color }) => (
       />
     </ParallaxLayer>
  
+  {/* Crane sky layer **/}
     <ParallaxLayer className="craneSky" offset={offset} speed={1.6}>
       <img
         className="craneSkyDetails"

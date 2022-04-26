@@ -1,5 +1,6 @@
 import "./styles.scss";
 
+  {/**Trio Image Component passing in images as props */}
 const TrioImg = (props) => {
   const {images} = props;
 

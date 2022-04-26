@@ -1,13 +1,11 @@
-// Title
-// Paragraph 1
-// Line
-// Paragraph 2
-// Image Trio
+
 import { ParallaxLayer } from "@react-spring/parallax";
 import TrioImg from "../../trioImg";
 import "./styles.scss";
 
+/** Polarbear Page 3 **/
 const Page3 = ({ offset, color }) => {
+  /** group of 3 images on the imporatance page **/
   const groupAnimals = [
     <img src="https://i.ibb.co/RQfM4ck/fish.png" alt= 'fish' />,
     <img src="https://i.ibb.co/rGz54Tj/seal.png" alt= 'seal'/>,
@@ -21,6 +19,7 @@ const Page3 = ({ offset, color }) => {
         <div className={`gradient ${color}`} />
       </ParallaxLayer>
 
+    {/** Imporatance title layer **/}
       <ParallaxLayer offset={offset} speed={0.6}>
         <div className="wrapperCommonContainer importanceTitle">
           <div className="commonContainer">
@@ -29,6 +28,7 @@ const Page3 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+     {/** Paragraph text section, line break between both - entire section moves at the same speed **/}
       <ParallaxLayer offset={offset} speed={0.9}>
         <div className="wrapperCommonContainer textAreaContainer">
           <div className="commonContainer">

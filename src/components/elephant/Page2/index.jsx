@@ -2,8 +2,9 @@ import { ParallaxLayer } from "@react-spring/parallax";
 import TextTitle from "../../textTitle";
 import "./style.scss";
 
+/** Page 2 for the Elephant  **/
 const Page2 = ({ offset, color }) => {
-  
+  /** Structure holding elephant about information **/
   const pageItemListEleph = [
     {
       title: "Scientific Name",
@@ -32,6 +33,7 @@ const Page2 = ({ offset, color }) => {
       <div className={`gradient ${color}`} />
     </ParallaxLayer>
 
+{/** About information layer  **/}
     <ParallaxLayer className="itemlists" offset={offset} speed={0.6}>
       <div className="textListContainer">
         <div className="textListContainer_flex">
@@ -40,7 +42,7 @@ const Page2 = ({ offset, color }) => {
       </div>
     </ParallaxLayer>
     
-
+    {/** Elephant layer  **/}
     <ParallaxLayer className="aboutElephant" offset={offset} speed={0.6}>
       <img
         className="aboutElephantImg"
@@ -49,6 +51,7 @@ const Page2 = ({ offset, color }) => {
       />
     </ParallaxLayer>
 
+    {/** Grass layer  **/}
     <ParallaxLayer className="sideBottomGrass" offset={offset} speed={0.8}>
       <img
         className="sideBottomGrassImg"
@@ -57,6 +60,7 @@ const Page2 = ({ offset, color }) => {
       />
     </ParallaxLayer>
 
+  {/** Grass layer  **/}
     <ParallaxLayer className="sideLongGrass" offset={offset} speed={1.0}>
       <img
         className="sideLongGrassImg"
@@ -65,6 +69,7 @@ const Page2 = ({ offset, color }) => {
       />
     </ParallaxLayer>
 
+  {/** birds layer  **/}
     <ParallaxLayer className="aboutElephBirds" offset={offset} speed={1.2}>
       <img
         className="aboutElephBirdsImg"

@@ -7,7 +7,9 @@ import { SubMenuItem } from "../sub-menu-item";
 import { ToggleSwitch } from "../toggle-switch";
 import { useEffect } from "react";
 
+/**SideBar component*/
 export const Sidebar = () => {
+  /**Wrapping global context */
   const appContext = useContext(ToggleContext);
   const { showSidebar,
     pageState,
@@ -33,6 +35,7 @@ export const Sidebar = () => {
     console.log('animal in sidebar changed',animal)
   },[animal])
 
+/**Handiling step navigation to move through the pages */
   const handleStepNavigation = (index) => {
     const tmpState = { ...pageState };
     tmpState.currentStep = index;
@@ -40,6 +43,7 @@ export const Sidebar = () => {
     initializePage(index);
   }
 
+  /**setting up each indicual animal so th epaegs  act sepearly and are not linked togther with changes*/
   const setupAnimal = (index)=> {
     setAnimal(index);
     const app = appContext;
@@ -51,6 +55,7 @@ export const Sidebar = () => {
     }
   }
 
+  /**handle click and clean up to rest position of page */
   const handleClick = (event,index) => {
     // event.stopPropagation();
     const tmpShowSub = [...showSub] 
@@ -101,9 +106,11 @@ export const Sidebar = () => {
 
   return (
     <nav>
+      {/**hide and show sidebar */}
       <div className={showSidebar ? "sidebar show" : "sidebar"}>
         <div className="sidenav">
-        
+          {/**Each menu item has a showsub and hide where it is initated on click for the collapsible menu items*/}
+          {/**Homepage link*/}
           <NavLink
             exact
             to="/"
@@ -237,6 +244,7 @@ export const Sidebar = () => {
             alt="coloured-Logo"
             border="0"
           ></img>
+            {/**copyright statement*/}
           <p className="copyright">Copyright © 2022 Parallax Designs</p>
         </div>
       </div>

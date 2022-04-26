@@ -1,11 +1,11 @@
 import { ParallaxLayer } from "@react-spring/parallax";
 import ToggleButtons from "../../toggle-buttons";
-import { Map } from "../../interactive-map";
 import { MapMarker } from "../../map-marker";
 import "./style.scss";
 import { useState } from "react";
 import { MapLegend } from "../../map-legend";
 
+/** Elephant Page 5 */
 const Page5 = ({ offset, color }) => {
 
   const [now, setNow]= useState(true)
@@ -18,6 +18,7 @@ const Page5 = ({ offset, color }) => {
         <div className={`gradient ${color}`} />
       </ParallaxLayer>
 
+ {/** Population title layer*/}
       <ParallaxLayer offset={offset} speed={0.6}>
         <div className="wrapperCommonContainer populationTitle">
           <div className="commonContainerSpecial">
@@ -26,6 +27,7 @@ const Page5 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+     {/** Toggle button layer*/}
       <ParallaxLayer
         className="p5toggleButtonsParent"
         offset={offset}
@@ -33,6 +35,7 @@ const Page5 = ({ offset, color }) => {
         style={{ height: `100px` }}
         aria-label="then-now toggle"
       >
+          {/** Desktop legend layer */}
         <div className="wrapperCommonContainer ">
           <div className="commonContainerSpecial toggleButtons">
             <div className="flexContainer100">
@@ -49,6 +52,7 @@ const Page5 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+      {/** Paragraph layer */}
       <ParallaxLayer offset={offset} speed={0.6}>
         <div className="wrapperCommonContainer populationText">
           <div className="commonContainerSpecial">
@@ -59,12 +63,14 @@ const Page5 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+{/** Desktop legend layer */}
       <ParallaxLayer offset={offset} speed={0.6}>
       <div className="desktop-map-legend">
       <MapLegend colour="green-mobile" outline="green-outline-mobile"/>
       </div> 
       </ParallaxLayer>
 
+       {/** Markers changing size layer, each marker comoponent is rendered and passed a size for then and now also passed text for the tooltip*/}
       <ParallaxLayer offset={offset} className={`page5 ${!now ? 'then' : 'now'}`} speed={0.8}>
        
 

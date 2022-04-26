@@ -5,6 +5,7 @@ import "./styles.scss";
 import { useState } from "react";
 import { MapLegend } from "../../map-legend";
 
+ /** Polarbear Page 5 */
 const Page5 = ({ offset, color }) => {
 
   const [now, setNow] = useState(true)
@@ -17,6 +18,7 @@ const Page5 = ({ offset, color }) => {
         <div className={`gradient ${color}`} />
       </ParallaxLayer>
 
+{/** Population title layer*/}
       <ParallaxLayer offset={offset} speed={0.6}>
         <div className="wrapperCommonContainer populationTitle">
           <div className="commonContainerSpecial">
@@ -25,6 +27,7 @@ const Page5 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+ {/** Toggle button layer*/}
       <ParallaxLayer
         className="p5toggleButtonsParent"
         offset={offset}
@@ -47,7 +50,7 @@ const Page5 = ({ offset, color }) => {
           </div>
         </div>
       </ParallaxLayer>
-
+{/** Paragraph layer */}
       <ParallaxLayer offset={offset} speed={0.6}>
         <div className="wrapperCommonContainer populationText">
           <div className="commonContainerSpecial">

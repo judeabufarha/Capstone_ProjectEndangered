@@ -1,6 +1,7 @@
 import { ParallaxLayer } from "@react-spring/parallax";
 import "./style.scss";
 
+/** Page 1 for the PolarBear  **/
 const Page1 = ({ offset, color }) => (
   <>
    <ParallaxLayer offset={offset} speed={0.2}>
@@ -10,12 +11,14 @@ const Page1 = ({ offset, color }) => (
       <div className={`gradient ${color}`} />
     </ParallaxLayer>
 
+   {/* Polarbear title layer **/}
     <ParallaxLayer className="titleContainer" offset={offset} speed={0.6}>
       
     <h1 className="titleText">The<br></br></h1>
     <h1 className="titleTextAnim">Polar Bear</h1>
     </ParallaxLayer>
 
+ {/* Polarbear mountains layer **/}
     <ParallaxLayer className="backgroundMountains" offset={offset} speed={1.9}>
       <img
         className="mountain1"
@@ -34,6 +37,7 @@ const Page1 = ({ offset, color }) => (
       />
     </ParallaxLayer>
 
+ {/* Polarbear water layer **/}
     <ParallaxLayer className="water" offset={offset} speed={0.6}>
   
       <img
@@ -50,7 +54,7 @@ const Page1 = ({ offset, color }) => (
     </ParallaxLayer>
 
     
-
+ {/* Polarbear sky layer **/}
     <ParallaxLayer className="sky" offset={offset} speed={1.6}>
       <img
         className="bird"

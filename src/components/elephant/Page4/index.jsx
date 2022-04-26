@@ -1,6 +1,7 @@
 import { ParallaxLayer } from "@react-spring/parallax";
 import "./style.scss";
 
+/** Elephant Page 4*/
 const Page4 = ({ offset, color }) => {
   return (
     <>
@@ -10,6 +11,7 @@ const Page4 = ({ offset, color }) => {
         <div className={`gradient ${color}`} />
       </ParallaxLayer>
 
+   {/** Status and endangered title layer - moving together */}
       <ParallaxLayer className="" offset={offset} speed={0.6}>
         <div className="wrapperCommonContainer statusTitle">
           <div className="commonContainerSpecial">
@@ -19,6 +21,7 @@ const Page4 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+    {/** Paragraphs section - moving at the same speed*/}
       <ParallaxLayer className="" offset={offset} speed={0.9}>
         <div className="wrapperCommonContainer statusTextArea">
           <div className="commonContainerSpecial">
@@ -35,6 +38,7 @@ const Page4 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+{/** Grassland side image - seperate layer*/}
       <ParallaxLayer offset={offset} speed={1.2}>
         <div className="SideGrasslandImage">
           <div className="flexContainer100">

@@ -6,9 +6,11 @@ import Tooltip from "react-simple-tooltip";
 import { css } from "styled-components";
 import { MapTooltip } from "../map-tooltip";
 
+/** Map marker component for population page*/
 export const MapMarker = (props) => {
   return (
     <div className={`centered ${props.size}}`}>
+      {/** cutom css in tect stlying for tootip comonent */}
       <Tooltip
         customCss={css`
           top: 35px;
@@ -25,6 +27,7 @@ export const MapMarker = (props) => {
         color="#013440"
         arrow={15}
       >
+        {/** Accepting size and colour through props*/}
         <div style={{ top: "-30px" }} className={`circle ${props.size} ${props.colour}`}></div>
       </Tooltip>
     </div>

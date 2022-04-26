@@ -1,13 +1,8 @@
-// Title - status
-// Text
-// Paragraph 1
-// Paragraph 2
-// Paragraph 3
-// Side Image
 
 import { ParallaxLayer } from "@react-spring/parallax";
 import "./styles.scss";
 
+/** Polarbear Page 4*/
 const Page4 = ({ offset, color }) => {
   return (
     <>
@@ -17,6 +12,7 @@ const Page4 = ({ offset, color }) => {
         <div className={`gradient ${color}`} />
       </ParallaxLayer>
 
+ {/** Status and endangered title layer - moving together */}
       <ParallaxLayer className="" offset={offset} speed={0.6}>
         <div className="wrapperCommonContainer statusTitle">
           <div className="commonContainerSpecial">
@@ -26,6 +22,7 @@ const Page4 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+  {/** Paragraphs section - moving at the same speed*/}
       <ParallaxLayer className="" offset={offset} speed={0.9}>
         <div className="wrapperCommonContainer statusTextArea">
           <div className="commonContainerSpecial">

@@ -2,6 +2,7 @@ import { ParallaxLayer } from "@react-spring/parallax";
 import { TextButton } from "../../text-button";
 import "./style.scss";
 
+ /** Page 9 Crane */
 const Page9 = ({ offset, color }) => {
   return (
     <>
@@ -11,7 +12,7 @@ const Page9 = ({ offset, color }) => {
         <div className={`gradient ${color}`} />
       </ParallaxLayer>
 
- 
+      {/** Explore text layer layer */} 
       <ParallaxLayer offset={offset} speed={0.6}>
         <div className="wrapperCommonContainer enviroText">
           <div className="commonContainerSpecial">
@@ -22,6 +23,7 @@ const Page9 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
       
+    {/** Enviroment image layer */}
     <ParallaxLayer offset={offset} speed={1.2}>
     <img
         className="craneEnviro"
@@ -30,6 +32,7 @@ const Page9 = ({ offset, color }) => {
       />
     </ParallaxLayer>
 
+   {/** Button layer links to immersive experience */}
     <ParallaxLayer offset={offset} speed={1.2}>
       <div className="exploreButton" aria-label="begin exploring">
       <TextButton type="light" text="Begin Exploring" colour="light" 

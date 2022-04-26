@@ -10,7 +10,7 @@ import Page6 from "./Page6";
 import Page7 from "./Page7";
 import Page8 from "./Page8";
 import Page9 from "./Page9";
-import { ResizeImg } from "../ResizeImg";
+
 
 import './styles.scss';
 import { useContext } from "react";
@@ -18,45 +18,46 @@ import { ToggleContext } from "../../contexts/ToggleContext";
 import useWindowDimensions from "../../hooks/windowDimensions";
 import { useHistory } from "react-router-dom";
 
-import useMouse from "@react-hook/mouse-position";
 
 export const Crane = () => {
   const appContext = useContext(ToggleContext);
   const { pageState, setPageState, animal, AnimalDictionary, subMenuItems ,setsubMenuItems, templateMenu } = appContext;
   const pageCurrentState = pageState.currentStep;
 
+  /** Dealing with step navigation to update page postition  */
   const handleStepNavigation = (index) => {
     const tmpState = { ...pageState };
     tmpState.currentStep = index;
     setPageState(tmpState)
 
+    /** Creating a temoprary state to handle animal  */
     const tmpSubMenuItems = {...subMenuItems}
     tmpSubMenuItems.animals[AnimalDictionary[animal]] = [...templateMenu];
     tmpSubMenuItems.animals[AnimalDictionary[animal]][index].isEnabled = true;
     setsubMenuItems({...tmpSubMenuItems})
 
   }
+  /** Getting window dimesions to update the page postion with parallax and scroll */
   const { width } = useWindowDimensions();
   const ref = useRef();
   const offset = ref.current?.offset
 
+  /** Scrolling to each page and updating upon click for handle step every time  */
   useEffect(() => {
     ref.current.scrollTo(0)
     handleStepNavigation(0);
   }, [])
 
-  //const mouse = useMouse(ref, {
-    //fps: 60,
-    //enterDelay: 100,
-    //leaveDelay: 100,
-  //});
 
   // https://codesandbox.io/s/3nzke?file=/src/App.js:680-688
   useEffect(() => {
+    /** Implementing the wheel scroll */
     const handleWheel = (e) => {
         if (typeof offset !== "undefined") {
+          /** Moving forwards, up a page upon scroll*/
           const currentPage = offset + 1;
   
+          /** using the offset to change the page  */
           let newOffset;
           let min = width * offset;
           let max = width * (offset + 1)
@@ -65,6 +66,7 @@ export const Crane = () => {
             newOffset = offset + 1
   
           } else {
+             /** Moving backwards,down a page upon scroll*/
             newOffset = offset - 1
           }
           if (newOffset < 9 && newOffset >= 0) {
@@ -74,6 +76,7 @@ export const Crane = () => {
         }
     }
 
+     /** Listeining for the wheel scroll*/
     window.addEventListener("wheel", handleWheel, false);
     return (() => {
       window.removeEventListener("wheel", handleWheel, false);
@@ -82,6 +85,7 @@ export const Crane = () => {
   }, [offset])
 
   useEffect(() => {
+     /** Scrolling each time it updates */
     ref.current.scrollTo(pageCurrentState);
   }, [pageCurrentState]);
 
@@ -95,6 +99,7 @@ export const Crane = () => {
   );
 
   const checkSize = () => {
+     /** check size to know what to render desktop or mobile */
     if (window.innerWidth <= 800) {
         history.push("/whooping-crane-mobile");
         console.log("switch to crane")
@@ -111,6 +116,7 @@ export const Crane = () => {
         horizontal={true}
         enabled={true} //disable scroll
       >
+        { /** Rendering all animal pages */}
         <Page1 offset={0} color="page1CraneBackground" />
         <Page2 offset={1} color="page2CraneBackground" />
         <Page3 offset={2} color="white" />

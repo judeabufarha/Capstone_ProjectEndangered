@@ -1,6 +1,7 @@
 
 import "./style.scss"
 
+/**Text title component */
 const TextTitle = (props)=> (
   <ul className="textTitleList">
     {props.list.map(item => (

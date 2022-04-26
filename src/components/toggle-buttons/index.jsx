@@ -3,6 +3,7 @@ import "./styles.scss";
 import { useState } from "react";
 import { useEffect} from "react";
 
+/** Toggle button component accepts colous and text as props*/
 export const ToggleButtons = (props) => {
 
     const [toggled, setToggled] = useState(false); 
@@ -12,6 +13,7 @@ export const ToggleButtons = (props) => {
         setText(props.text);
     }, [props.text])
     
+    /**handle toggle on click*/
     const handleChange = () => { 
         setToggled(!toggled); 
         console.log('Toggle change: ' + toggled); 
@@ -21,8 +23,10 @@ export const ToggleButtons = (props) => {
         }
     }; 
 
+    /**Toggle button */
     return (
         <div className={ toggled ? 'toggleButtonActivated' : 'toggleButtonNormal'} onClick={handleChange}>
+             {/**then and now Toggle button */}
             { text === "then-now" && (
                 <div>
                     
@@ -39,7 +43,7 @@ export const ToggleButtons = (props) => {
                     </div>
                 </div>
             )}
-
+            {/**Positive Negative Toggle button */}
             { text === "positive-negative" && (
                 <div>
                     

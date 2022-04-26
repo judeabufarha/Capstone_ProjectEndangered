@@ -1,13 +1,10 @@
-// Title
-// Textbox paragraph
-// Toggle Button
-// Background image 1 and 2 (to toggle between)
 
 import { ParallaxLayer } from "@react-spring/parallax";
 import { useEffect, useState } from "react";
 import ToggleButtons from "../../toggle-buttons";
 import "./styles.scss";
 
+/** Elephant Page 7 */
 const Page7 = ({ offset, color }) => {
   const [showImage, setShowImage] = useState(true);
 
@@ -23,6 +20,7 @@ const Page7 = ({ offset, color }) => {
         <div className={`gradient ${color}`} />
       </ParallaxLayer>
 
+{/** Render background - 2 options postive and negative. Default is positive and can toggle between both with transition fade animation */}
       <ParallaxLayer offset={offset} speed={0} className="page7">
         <div className="future-background">
                     <img
