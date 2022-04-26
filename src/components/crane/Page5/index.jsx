@@ -1,11 +1,11 @@
 import { ParallaxLayer } from "@react-spring/parallax";
 import ToggleButtons from "../../toggle-buttons";
-import { Map } from "../../interactive-map";
 import { MapMarker } from "../../map-marker";
 import "./style.scss";
 import { useState } from "react";
 import { MapLegend } from "../../map-legend";
 
+ /** Crane Page 5 */
 const Page5 = ({ offset, color }) => {
 
   const [now, setNow]= useState(true)
@@ -18,6 +18,7 @@ const Page5 = ({ offset, color }) => {
         <div className={`gradient ${color}`} />
       </ParallaxLayer>
 
+       {/** Population title layer*/}
       <ParallaxLayer offset={offset} speed={0.6}>
         <div className="wrapperCommonContainer populationTitle">
           <div className="commonContainerSpecial">
@@ -26,6 +27,7 @@ const Page5 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+    {/** Toggle button layer*/}
       <ParallaxLayer
         className="p5toggleButtonsParent"
         offset={offset}
@@ -36,6 +38,7 @@ const Page5 = ({ offset, color }) => {
         <div className="wrapperCommonContainer ">
           <div className="commonContainerSpecial toggleButtons">
             <div className="flexContainer100">
+              {/** Toggle button component, passing green colour*/}
               <ToggleButtons
                 colour="toggle-green"
                 base="base-green"
@@ -49,12 +52,14 @@ const Page5 = ({ offset, color }) => {
         </div>
       </ParallaxLayer>
 
+       {/** Desktop legend layer */}
       <ParallaxLayer offset={offset} speed={0.6}>
         <div className="desktop-map-legend">
           <MapLegend colour="red-mobile" outline="red-outline-mobile"/>
         </div> 
       </ParallaxLayer>
 
+      {/** Paragraph layer */}
       <ParallaxLayer offset={offset} speed={0.6}>
         <div className="wrapperCommonContainer populationText">
           <div className="commonContainerSpecial">
@@ -67,12 +72,14 @@ const Page5 = ({ offset, color }) => {
 
      
 
+      {/** Markers changing size layer, each marker comoponent is rendered and passed a size for then and now also passed text for the tooltip*/}
       <ParallaxLayer offset={offset} className={`page5 ${!now ? 'then' : 'now'}`} speed={0.8}>
         
        
         <div className="wrapperCommonContainer marker  marker-14">
           <div className="commonContainerSpecial">
           <div className={`${!now ? 'increase' : 'decrease'}`}>
+              {/** Map marker component - example here starts at nothing which is size disapprear and grows to small upon toggle */}
             <MapMarker
               size={`${now ? 'disappear' : 'small'}`}
               colour="salmonCircle"

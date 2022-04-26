@@ -1,9 +1,8 @@
 import PropTypes from "prop-types";
-
 import { TextButton } from "../text-button";
-
 import './styles.scss';
 
+/** Info blob component which includes title, text, link, image, and button colour as props */
 const InfoBlob = (props) => {
   const { title, text, linkText, linkFn, BgImage, butnColour} = props;
   return (
